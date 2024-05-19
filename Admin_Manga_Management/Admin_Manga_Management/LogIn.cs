@@ -19,6 +19,7 @@ namespace Admin_Manga_Management
         }
         static SqlConnection sqlcon = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Database1.mdf;Integrated Security=True");
         static SqlCommand sqlcom = new SqlCommand();
+        static bool isLogin = false;
 
         private void Log_but_Click(object sender, EventArgs e)
         {
@@ -31,20 +32,42 @@ namespace Admin_Manga_Management
                 string Admin_User = (string)reader.GetValue(0);
                 string Admin_Pass = (string)reader.GetValue(1);
 
-                if(Admin_Username.Text == Admin_User && Admin_Password.Text == Admin_Pass)
+                if(Admin_User.Equals(Admin_Username.Text) && Admin_Pass.Equals(Admin_Password.Text)) 
                 {
-                    Dashboard_Home DH = new Dashboard_Home();
-                    DH.Show();
-                    this.Hide();
+                    
+                    isLogin = true;
+                    break;
                 }
                 else
                 {
-                    MessageBox.Show("Wrong Inputs" +
-                        "\nPlease Try Again");
-                }
+                    isLogin = false;
+                }               
             }
+            if (isLogin)
+            {
+                Dashboard_Home DH = new Dashboard_Home();
+                DH.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Inputs" +
+                    "\nPlease Try Again");
+            }
+            isLogin = false;
             sqlcon.Close();
 
+        }
+
+        private void Admin_Username_TextChanged(object sender, EventArgs e)
+        {
+            Admin_Username.ForeColor = Color.Black;
+        }
+
+        private void Admin_Password_TextChanged(object sender, EventArgs e)
+        {
+            Admin_Password.ForeColor = Color.Black;
+            Admin_Password.PasswordChar = '*';
         }
     }
 }

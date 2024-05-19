@@ -16,3 +16,5 @@ D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Ma
 D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.StaffsHome.resources
 D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Add_Admin.resources
 D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Remove_Admin.resources
+D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_ADD.resources
+D:\jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_Remove.resources

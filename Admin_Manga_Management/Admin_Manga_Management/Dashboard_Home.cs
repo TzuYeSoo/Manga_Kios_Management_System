@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,13 +17,23 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
-
+        static SqlConnection sqlcon = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Database1.mdf;Integrated Security=True");
+        static SqlCommand sqlcom = new SqlCommand();
+        static DataTable Dash_Table = new DataTable();
         private void Dashboard_Home_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.Customers' table. You can move, or remove it, as needed.
             this.customersTableAdapter.Fill(this.database1DataSet.Customers);
             // TODO: This line of code loads data into the 'database1DataSet.Book' table. You can move, or remove it, as needed.
             this.bookTableAdapter.Fill(this.database1DataSet.Book);
+
+
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT Customer_ID, Customer_Name, Order_Number, Book_Price, Book_Name, Customers.Book_Quantity FROM Customers INNER JOIN Book ON Book.Book_ID = Customers.Book_ID ",sqlcon);
+            SqlDataAdapter Adap = new SqlDataAdapter(sqlcom);
+            Adap.Fill(Dash_Table);
+            Dashboard_Grideview.DataSource = Dash_Table;
+            sqlcon.Close();
 
         }
 

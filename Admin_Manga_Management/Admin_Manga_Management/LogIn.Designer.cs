@@ -38,19 +38,26 @@
             // Admin_Username
             // 
             this.Admin_Username.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Admin_Username.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.Admin_Username.Location = new System.Drawing.Point(238, 208);
             this.Admin_Username.Name = "Admin_Username";
             this.Admin_Username.Size = new System.Drawing.Size(259, 32);
             this.Admin_Username.TabIndex = 0;
+            this.Admin_Username.Text = "Username";
+            this.Admin_Username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Admin_Username.TextChanged += new System.EventHandler(this.Admin_Username_TextChanged);
             // 
             // Admin_Password
             // 
             this.Admin_Password.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Admin_Password.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.Admin_Password.Location = new System.Drawing.Point(238, 262);
             this.Admin_Password.Name = "Admin_Password";
-            this.Admin_Password.PasswordChar = '*';
             this.Admin_Password.Size = new System.Drawing.Size(259, 32);
             this.Admin_Password.TabIndex = 1;
+            this.Admin_Password.Text = "Password";
+            this.Admin_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Admin_Password.TextChanged += new System.EventHandler(this.Admin_Password_TextChanged);
             // 
             // Log_but
             // 
@@ -70,7 +77,7 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // LogIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -80,7 +87,7 @@
             this.Controls.Add(this.Log_but);
             this.Controls.Add(this.Admin_Password);
             this.Controls.Add(this.Admin_Username);
-            this.Name = "Form1";
+            this.Name = "LogIn";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

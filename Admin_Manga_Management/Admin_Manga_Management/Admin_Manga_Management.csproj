@@ -93,6 +93,18 @@
     <Compile Include="Add_Admin.Designer.cs">
       <DependentUpon>Add_Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cashier_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier_ADD.Designer.cs">
+      <DependentUpon>Cashier_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier_Remove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier_Remove.Designer.cs">
+      <DependentUpon>Cashier_Remove.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remove_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +139,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Book_Inv.resx">
       <DependentUpon>Book_Inv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_ADD.resx">
+      <DependentUpon>Cashier_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_Remove.resx">
+      <DependentUpon>Cashier_Remove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard_Home.resx">
       <DependentUpon>Dashboard_Home.cs</DependentUpon>

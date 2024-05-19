@@ -34,7 +34,7 @@
             this.Trans_Staffs = new System.Windows.Forms.Button();
             this.BookInv_Staffs = new System.Windows.Forms.Button();
             this.Staffs_Staffs = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Cashier_GrideView = new System.Windows.Forms.DataGridView();
             this.cashierIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cashierUsernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cashierPasswordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,7 +64,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cashier_GrideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Admin_GridView)).BeginInit();
@@ -142,20 +142,21 @@
             this.Staffs_Staffs.Text = "Manage Staffs";
             this.Staffs_Staffs.UseVisualStyleBackColor = false;
             // 
-            // dataGridView1
+            // Cashier_GrideView
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Cashier_GrideView.AutoGenerateColumns = false;
+            this.Cashier_GrideView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Cashier_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Cashier_GrideView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cashierIDDataGridViewTextBoxColumn,
             this.cashierUsernameDataGridViewTextBoxColumn,
             this.cashierPasswordDataGridViewTextBoxColumn,
             this.cashierNameDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.cashierBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(225, 280);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(401, 158);
-            this.dataGridView1.TabIndex = 11;
+            this.Cashier_GrideView.DataSource = this.cashierBindingSource;
+            this.Cashier_GrideView.Location = new System.Drawing.Point(225, 280);
+            this.Cashier_GrideView.Name = "Cashier_GrideView";
+            this.Cashier_GrideView.Size = new System.Drawing.Size(569, 158);
+            this.Cashier_GrideView.TabIndex = 11;
             // 
             // cashierIDDataGridViewTextBoxColumn
             // 
@@ -194,6 +195,7 @@
             // Admin_GridView
             // 
             this.Admin_GridView.AutoGenerateColumns = false;
+            this.Admin_GridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Admin_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Admin_GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.adminIDDataGridViewTextBoxColumn,
@@ -203,7 +205,7 @@
             this.Admin_GridView.DataSource = this.adminBindingSource;
             this.Admin_GridView.Location = new System.Drawing.Point(225, 58);
             this.Admin_GridView.Name = "Admin_GridView";
-            this.Admin_GridView.Size = new System.Drawing.Size(401, 150);
+            this.Admin_GridView.Size = new System.Drawing.Size(569, 150);
             this.Admin_GridView.TabIndex = 12;
             // 
             // adminIDDataGridViewTextBoxColumn
@@ -272,40 +274,42 @@
             // 
             this.Add_User_Cash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Add_User_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_User_Cash.Location = new System.Drawing.Point(389, 251);
+            this.Add_User_Cash.Location = new System.Drawing.Point(557, 251);
             this.Add_User_Cash.Name = "Add_User_Cash";
             this.Add_User_Cash.Size = new System.Drawing.Size(75, 23);
             this.Add_User_Cash.TabIndex = 15;
-            this.Add_User_Cash.Text = "Add Cashier";
+            this.Add_User_Cash.Text = "Add ";
             this.Add_User_Cash.UseVisualStyleBackColor = false;
+            this.Add_User_Cash.Click += new System.EventHandler(this.Add_User_Cash_Click);
             // 
             // Edit_User_Cash
             // 
             this.Edit_User_Cash.BackColor = System.Drawing.SystemColors.Info;
             this.Edit_User_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_User_Cash.Location = new System.Drawing.Point(470, 251);
+            this.Edit_User_Cash.Location = new System.Drawing.Point(638, 251);
             this.Edit_User_Cash.Name = "Edit_User_Cash";
             this.Edit_User_Cash.Size = new System.Drawing.Size(75, 23);
             this.Edit_User_Cash.TabIndex = 16;
-            this.Edit_User_Cash.Text = "Edit Cashier";
+            this.Edit_User_Cash.Text = "Edit";
             this.Edit_User_Cash.UseVisualStyleBackColor = false;
             // 
             // Delete_User_Cash
             // 
             this.Delete_User_Cash.BackColor = System.Drawing.Color.LightCoral;
             this.Delete_User_Cash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete_User_Cash.Location = new System.Drawing.Point(551, 251);
+            this.Delete_User_Cash.Location = new System.Drawing.Point(719, 251);
             this.Delete_User_Cash.Name = "Delete_User_Cash";
             this.Delete_User_Cash.Size = new System.Drawing.Size(75, 23);
             this.Delete_User_Cash.TabIndex = 17;
             this.Delete_User_Cash.Text = "Remove Cashier";
             this.Delete_User_Cash.UseVisualStyleBackColor = false;
+            this.Delete_User_Cash.Click += new System.EventHandler(this.Delete_User_Cash_Click);
             // 
             // Add_User_Admin
             // 
             this.Add_User_Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Add_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_User_Admin.Location = new System.Drawing.Point(389, 29);
+            this.Add_User_Admin.Location = new System.Drawing.Point(557, 29);
             this.Add_User_Admin.Name = "Add_User_Admin";
             this.Add_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Add_User_Admin.TabIndex = 18;
@@ -317,7 +321,7 @@
             // 
             this.Edit_User_Admin.BackColor = System.Drawing.SystemColors.Info;
             this.Edit_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_User_Admin.Location = new System.Drawing.Point(470, 29);
+            this.Edit_User_Admin.Location = new System.Drawing.Point(638, 29);
             this.Edit_User_Admin.Name = "Edit_User_Admin";
             this.Edit_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Edit_User_Admin.TabIndex = 19;
@@ -328,7 +332,7 @@
             // 
             this.Remove_User_Admin.BackColor = System.Drawing.Color.LightCoral;
             this.Remove_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Remove_User_Admin.Location = new System.Drawing.Point(551, 29);
+            this.Remove_User_Admin.Location = new System.Drawing.Point(719, 29);
             this.Remove_User_Admin.Name = "Remove_User_Admin";
             this.Remove_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Remove_User_Admin.TabIndex = 20;
@@ -404,7 +408,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 450);
+            this.ClientSize = new System.Drawing.Size(831, 450);
             this.Controls.Add(this.Remove_User_Admin);
             this.Controls.Add(this.Edit_User_Admin);
             this.Controls.Add(this.Add_User_Admin);
@@ -414,7 +418,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Admin_Text);
             this.Controls.Add(this.Admin_GridView);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Cashier_GrideView);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -429,7 +433,7 @@
             this.Name = "StaffsHome";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.StaffsHome_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Cashier_GrideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Admin_GridView)).EndInit();
@@ -459,7 +463,7 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Cashier_GrideView;
         private System.Windows.Forms.DataGridView Admin_GridView;
         private System.Windows.Forms.Label Admin_Text;
         private System.Windows.Forms.Label label1;

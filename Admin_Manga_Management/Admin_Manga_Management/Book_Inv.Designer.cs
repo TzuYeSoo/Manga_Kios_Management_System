@@ -33,10 +33,10 @@
             this.Trans_book = new System.Windows.Forms.Button();
             this.Book_Book = new System.Windows.Forms.Button();
             this.Staffs_Book = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.BookInv_GrideView = new System.Windows.Forms.DataGridView();
+            this.Search_BookIDInv = new System.Windows.Forms.TextBox();
+            this.Search_BookNameInv = new System.Windows.Forms.TextBox();
+            this.Search_BookGenreInv = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,7 +61,7 @@
             this.RemoveBook_Book = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BookInv_GrideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -134,35 +134,35 @@
             this.Staffs_Book.UseVisualStyleBackColor = false;
             this.Staffs_Book.Click += new System.EventHandler(this.Staffs_Book_Click);
             // 
-            // dataGridView1
+            // BookInv_GrideView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(210, 133);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(578, 282);
-            this.dataGridView1.TabIndex = 11;
+            this.BookInv_GrideView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BookInv_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BookInv_GrideView.Location = new System.Drawing.Point(210, 133);
+            this.BookInv_GrideView.Name = "BookInv_GrideView";
+            this.BookInv_GrideView.Size = new System.Drawing.Size(578, 282);
+            this.BookInv_GrideView.TabIndex = 11;
             // 
-            // textBox1
+            // Search_BookIDInv
             // 
-            this.textBox1.Location = new System.Drawing.Point(210, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(123, 20);
-            this.textBox1.TabIndex = 13;
+            this.Search_BookIDInv.Location = new System.Drawing.Point(210, 67);
+            this.Search_BookIDInv.Name = "Search_BookIDInv";
+            this.Search_BookIDInv.Size = new System.Drawing.Size(123, 20);
+            this.Search_BookIDInv.TabIndex = 13;
             // 
-            // textBox2
+            // Search_BookNameInv
             // 
-            this.textBox2.Location = new System.Drawing.Point(371, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(138, 20);
-            this.textBox2.TabIndex = 14;
+            this.Search_BookNameInv.Location = new System.Drawing.Point(371, 67);
+            this.Search_BookNameInv.Name = "Search_BookNameInv";
+            this.Search_BookNameInv.Size = new System.Drawing.Size(138, 20);
+            this.Search_BookNameInv.TabIndex = 14;
             // 
-            // textBox3
+            // Search_BookGenreInv
             // 
-            this.textBox3.Location = new System.Drawing.Point(529, 67);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 15;
+            this.Search_BookGenreInv.Location = new System.Drawing.Point(529, 67);
+            this.Search_BookGenreInv.Name = "Search_BookGenreInv";
+            this.Search_BookGenreInv.Size = new System.Drawing.Size(121, 20);
+            this.Search_BookGenreInv.TabIndex = 15;
             // 
             // label1
             // 
@@ -348,7 +348,7 @@
             // 
             this.AddBook_Book.BackColor = System.Drawing.Color.Lime;
             this.AddBook_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddBook_Book.Location = new System.Drawing.Point(814, 344);
+            this.AddBook_Book.Location = new System.Drawing.Point(210, 421);
             this.AddBook_Book.Name = "AddBook_Book";
             this.AddBook_Book.Size = new System.Drawing.Size(116, 23);
             this.AddBook_Book.TabIndex = 29;
@@ -359,7 +359,7 @@
             // 
             this.RemoveBook_Book.BackColor = System.Drawing.Color.Red;
             this.RemoveBook_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RemoveBook_Book.Location = new System.Drawing.Point(936, 345);
+            this.RemoveBook_Book.Location = new System.Drawing.Point(332, 421);
             this.RemoveBook_Book.Name = "RemoveBook_Book";
             this.RemoveBook_Book.Size = new System.Drawing.Size(116, 23);
             this.RemoveBook_Book.TabIndex = 30;
@@ -370,7 +370,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Yellow;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(876, 374);
+            this.button3.Location = new System.Drawing.Point(454, 421);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(116, 23);
             this.button3.TabIndex = 31;
@@ -381,12 +381,13 @@
             // 
             this.search.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.search.Location = new System.Drawing.Point(687, 67);
+            this.search.Location = new System.Drawing.Point(687, 64);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(101, 23);
             this.search.TabIndex = 32;
             this.search.Text = "search book";
             this.search.UseVisualStyleBackColor = false;
+            this.search.Click += new System.EventHandler(this.search_Click);
             // 
             // Book_Inv
             // 
@@ -410,11 +411,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Search_BookGenreInv);
+            this.Controls.Add(this.Search_BookNameInv);
+            this.Controls.Add(this.Search_BookIDInv);
             this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.BookInv_GrideView);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
@@ -428,7 +429,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Book_Inv";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Book_Inv_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.BookInv_GrideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -454,11 +456,11 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView BookInv_GrideView;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Search_BookIDInv;
+        private System.Windows.Forms.TextBox Search_BookNameInv;
+        private System.Windows.Forms.TextBox Search_BookGenreInv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

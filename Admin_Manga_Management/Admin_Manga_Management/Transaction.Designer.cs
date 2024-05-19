@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Trans_GrideView = new System.Windows.Forms.DataGridView();
             this.customerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.customerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.orderNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,9 +41,9 @@
             this.database1DataSet1 = new Admin_Manga_Management.Database1DataSet1();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.Search_Date = new System.Windows.Forms.TextBox();
-            this.Seach_Name = new System.Windows.Forms.TextBox();
-            this.Search_ID = new System.Windows.Forms.TextBox();
+            this.Search_IDTrans = new System.Windows.Forms.TextBox();
+            this.Search_NameTrans = new System.Windows.Forms.TextBox();
+            this.Search_DateTrans = new System.Windows.Forms.TextBox();
             this.customersTableAdapter = new Admin_Manga_Management.Database1DataSet1TableAdapters.CustomersTableAdapter();
             this.SearchLabel = new System.Windows.Forms.Label();
             this.SearchLabel1 = new System.Windows.Forms.Label();
@@ -58,7 +58,10 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SearchBut_Trans = new System.Windows.Forms.Button();
+            this.Edit_Trans = new System.Windows.Forms.Button();
+            this.Remove_Trans = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Trans_GrideView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -70,11 +73,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Trans_GrideView
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Trans_GrideView.AutoGenerateColumns = false;
+            this.Trans_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Trans_GrideView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.customerIDDataGridViewTextBoxColumn,
             this.customerNameDataGridViewTextBoxColumn,
             this.orderNumberDataGridViewTextBoxColumn,
@@ -82,11 +85,11 @@
             this.bookIDDataGridViewTextBoxColumn,
             this.bookQuantityDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.customersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(212, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(607, 320);
-            this.dataGridView1.TabIndex = 1;
+            this.Trans_GrideView.DataSource = this.customersBindingSource;
+            this.Trans_GrideView.Location = new System.Drawing.Point(212, 118);
+            this.Trans_GrideView.Name = "Trans_GrideView";
+            this.Trans_GrideView.Size = new System.Drawing.Size(607, 234);
+            this.Trans_GrideView.TabIndex = 1;
             // 
             // customerIDDataGridViewTextBoxColumn
             // 
@@ -165,26 +168,26 @@
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
             // 
-            // Search_Date
+            // Search_IDTrans
             // 
-            this.Search_Date.Location = new System.Drawing.Point(212, 67);
-            this.Search_Date.Name = "Search_Date";
-            this.Search_Date.Size = new System.Drawing.Size(143, 20);
-            this.Search_Date.TabIndex = 3;
+            this.Search_IDTrans.Location = new System.Drawing.Point(212, 67);
+            this.Search_IDTrans.Name = "Search_IDTrans";
+            this.Search_IDTrans.Size = new System.Drawing.Size(143, 20);
+            this.Search_IDTrans.TabIndex = 3;
             // 
-            // Seach_Name
+            // Search_NameTrans
             // 
-            this.Seach_Name.Location = new System.Drawing.Point(361, 67);
-            this.Seach_Name.Name = "Seach_Name";
-            this.Seach_Name.Size = new System.Drawing.Size(143, 20);
-            this.Seach_Name.TabIndex = 4;
+            this.Search_NameTrans.Location = new System.Drawing.Point(361, 67);
+            this.Search_NameTrans.Name = "Search_NameTrans";
+            this.Search_NameTrans.Size = new System.Drawing.Size(143, 20);
+            this.Search_NameTrans.TabIndex = 4;
             // 
-            // Search_ID
+            // Search_DateTrans
             // 
-            this.Search_ID.Location = new System.Drawing.Point(510, 67);
-            this.Search_ID.Name = "Search_ID";
-            this.Search_ID.Size = new System.Drawing.Size(143, 20);
-            this.Search_ID.TabIndex = 5;
+            this.Search_DateTrans.Location = new System.Drawing.Point(510, 67);
+            this.Search_DateTrans.Name = "Search_DateTrans";
+            this.Search_DateTrans.Size = new System.Drawing.Size(143, 20);
+            this.Search_DateTrans.TabIndex = 5;
             // 
             // customersTableAdapter
             // 
@@ -194,7 +197,7 @@
             // 
             this.SearchLabel.AutoSize = true;
             this.SearchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchLabel.Location = new System.Drawing.Point(209, 48);
+            this.SearchLabel.Location = new System.Drawing.Point(358, 49);
             this.SearchLabel.Name = "SearchLabel";
             this.SearchLabel.Size = new System.Drawing.Size(90, 16);
             this.SearchLabel.TabIndex = 6;
@@ -204,7 +207,7 @@
             // 
             this.SearchLabel1.AutoSize = true;
             this.SearchLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchLabel1.Location = new System.Drawing.Point(358, 48);
+            this.SearchLabel1.Location = new System.Drawing.Point(209, 49);
             this.SearchLabel1.Name = "SearchLabel1";
             this.SearchLabel1.Size = new System.Drawing.Size(66, 16);
             this.SearchLabel1.TabIndex = 7;
@@ -344,11 +347,49 @@
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
             // 
+            // SearchBut_Trans
+            // 
+            this.SearchBut_Trans.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SearchBut_Trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SearchBut_Trans.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchBut_Trans.Location = new System.Drawing.Point(718, 64);
+            this.SearchBut_Trans.Name = "SearchBut_Trans";
+            this.SearchBut_Trans.Size = new System.Drawing.Size(101, 23);
+            this.SearchBut_Trans.TabIndex = 19;
+            this.SearchBut_Trans.Text = "Search";
+            this.SearchBut_Trans.UseVisualStyleBackColor = false;
+            this.SearchBut_Trans.Click += new System.EventHandler(this.SearchBut_Trans_Click);
+            // 
+            // Edit_Trans
+            // 
+            this.Edit_Trans.BackColor = System.Drawing.Color.Khaki;
+            this.Edit_Trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit_Trans.Location = new System.Drawing.Point(212, 360);
+            this.Edit_Trans.Name = "Edit_Trans";
+            this.Edit_Trans.Size = new System.Drawing.Size(123, 23);
+            this.Edit_Trans.TabIndex = 20;
+            this.Edit_Trans.Text = "Edit";
+            this.Edit_Trans.UseVisualStyleBackColor = false;
+            // 
+            // Remove_Trans
+            // 
+            this.Remove_Trans.BackColor = System.Drawing.Color.IndianRed;
+            this.Remove_Trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Remove_Trans.Location = new System.Drawing.Point(350, 360);
+            this.Remove_Trans.Name = "Remove_Trans";
+            this.Remove_Trans.Size = new System.Drawing.Size(123, 23);
+            this.Remove_Trans.TabIndex = 21;
+            this.Remove_Trans.Text = "Remove";
+            this.Remove_Trans.UseVisualStyleBackColor = false;
+            // 
             // Transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 450);
+            this.Controls.Add(this.Remove_Trans);
+            this.Controls.Add(this.Edit_Trans);
+            this.Controls.Add(this.SearchBut_Trans);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -362,16 +403,16 @@
             this.Controls.Add(this.SearchLabel2);
             this.Controls.Add(this.SearchLabel1);
             this.Controls.Add(this.SearchLabel);
-            this.Controls.Add(this.Search_ID);
-            this.Controls.Add(this.Seach_Name);
-            this.Controls.Add(this.Search_Date);
+            this.Controls.Add(this.Search_DateTrans);
+            this.Controls.Add(this.Search_NameTrans);
+            this.Controls.Add(this.Search_IDTrans);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Trans_GrideView);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Transaction";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Transaction_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Trans_GrideView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -389,11 +430,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Trans_GrideView;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox Search_Date;
-        private System.Windows.Forms.TextBox Seach_Name;
-        private System.Windows.Forms.TextBox Search_ID;
+        private System.Windows.Forms.TextBox Search_IDTrans;
+        private System.Windows.Forms.TextBox Search_NameTrans;
+        private System.Windows.Forms.TextBox Search_DateTrans;
         private Database1DataSet1 database1DataSet1;
         private System.Windows.Forms.BindingSource customersBindingSource;
         private Database1DataSet1TableAdapters.CustomersTableAdapter customersTableAdapter;
@@ -417,5 +458,8 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Button SearchBut_Trans;
+        private System.Windows.Forms.Button Edit_Trans;
+        private System.Windows.Forms.Button Remove_Trans;
     }
 }

@@ -46,7 +46,7 @@
             this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet3 = new Admin_Manga_Management.Database1DataSet3();
             this.adminTableAdapter = new Admin_Manga_Management.Database1DataSet3TableAdapters.AdminTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Add_AdminBUtt = new System.Windows.Forms.Button();
             this.Close_Button_Add = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
@@ -184,17 +184,17 @@
             // 
             this.adminTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // Add_AdminBUtt
             // 
-            this.button1.BackColor = System.Drawing.Color.LightGreen;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(88, 261);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Add_AdminBUtt.BackColor = System.Drawing.Color.LightGreen;
+            this.Add_AdminBUtt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add_AdminBUtt.Location = new System.Drawing.Point(88, 261);
+            this.Add_AdminBUtt.Name = "Add_AdminBUtt";
+            this.Add_AdminBUtt.Size = new System.Drawing.Size(75, 23);
+            this.Add_AdminBUtt.TabIndex = 10;
+            this.Add_AdminBUtt.Text = "Add";
+            this.Add_AdminBUtt.UseVisualStyleBackColor = false;
+            this.Add_AdminBUtt.Click += new System.EventHandler(this.button1_Click);
             // 
             // Close_Button_Add
             // 
@@ -216,7 +216,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(674, 308);
             this.Controls.Add(this.Close_Button_Add);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Add_AdminBUtt);
             this.Controls.Add(this.Admin_View_Add);
             this.Controls.Add(this.Admin_Con_Label);
             this.Controls.Add(this.Admin_Pass_Label);
@@ -257,7 +257,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn adminUserNameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn adminPasswordDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn contactDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Add_AdminBUtt;
         private System.Windows.Forms.Button Close_Button_Add;
     }
 }
