@@ -17,7 +17,7 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
-        static SqlConnection sqlcon = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Database1.mdf;Integrated Security=True");
+        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
         static SqlCommand sqlcom = new SqlCommand();
         static DataTable transaction_table = new DataTable();
 

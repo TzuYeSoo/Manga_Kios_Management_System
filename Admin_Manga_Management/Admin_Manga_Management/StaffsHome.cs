@@ -19,7 +19,7 @@ namespace Admin_Manga_Management
         }
         static DataTable dt1 = new DataTable();
         static DataTable dt2 = new DataTable();
-        static SqlConnection sqlcon = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Database1.mdf;Integrated Security=True");
+        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
         static SqlCommand sqlcom1 = new SqlCommand();
         static SqlCommand sqlcom2 = new SqlCommand();
         private void StaffsHome_Load(object sender, EventArgs e)

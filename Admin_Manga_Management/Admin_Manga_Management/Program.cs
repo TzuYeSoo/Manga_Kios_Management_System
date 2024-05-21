@@ -18,5 +18,11 @@ namespace Admin_Manga_Management
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogIn());
         }
+        
+    }
+    public class sqlConntector
+    {
+        public static string connector = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Nicol\\Source\\Repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Database1.mdf;Integrated Security=True";
+        
     }
 }
