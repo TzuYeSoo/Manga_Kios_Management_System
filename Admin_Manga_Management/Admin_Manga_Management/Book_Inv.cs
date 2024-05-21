@@ -77,7 +77,7 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
                 sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book " +
-                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_ID = '" + BookT1 +"'", sqlcon);
+                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_ID LIKE '" + BookT1 +"'", sqlcon);
                 SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
                 Book_Inventory.Clear();
                 sqa.Fill(Book_Inventory);
@@ -88,7 +88,7 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
                 sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book " +
-                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Category.Bookgenre = '" + BookT1 + "'", sqlcon);
+                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Category.Bookgenre LIKE '" + BookT1 + "%'", sqlcon);
                 SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
                 Book_Inventory.Clear();
                 sqa.Fill(Book_Inventory);
@@ -99,7 +99,7 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
                 sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book " +
-                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_Name = '" + BookT1 + "'", sqlcon);
+                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_Name LIKE '" + BookT1 + "%'", sqlcon);
                 SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
                 Book_Inventory.Clear();
                 sqa.Fill(Book_Inventory);
@@ -114,7 +114,7 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
                 sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book " +
-                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_ID = '" + BookT1 + "'", sqlcon);
+                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_ID LIKE '" + BookT1 + "%'", sqlcon);
                 SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
                 Book_Inventory.Clear();
                 sqa.Fill(Book_Inventory);
@@ -126,7 +126,7 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
                 sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book " +
-                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_Name = '" + BookT1 + "' AND Category.Bookgenre = '" + BookT2 + "'", sqlcon);
+                    "INNER JOIN Category ON Category.Category_ID = Book.Category_ID WHERE Book.Book_Name LIKE '" + BookT1 + "&' AND Category.Bookgenre = '" + BookT2 + "'", sqlcon);
                 SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
                 Book_Inventory.Clear();
                 sqa.Fill(Book_Inventory);
@@ -134,6 +134,54 @@ namespace Admin_Manga_Management
                 sqlcon.Close();
 
             }
+        }
+
+        private void Search_BookNameInv_TextChanged(object sender, EventArgs e)
+        {
+            if(Search_BookNameInv.Text.ToString().Equals(""))
+            {
+                sqlcon.Open();
+                sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book INNER JOIN Category ON Category.Category_ID = Book.Category_ID ", sqlcon);
+                SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
+                Book_Inventory.Clear();
+                sqa.Fill(Book_Inventory);
+                BookInv_GrideView.DataSource = Book_Inventory;
+                sqlcon.Close();
+            }
+        }
+
+        private void Search_BookGenreInv_TextChanged(object sender, EventArgs e)
+        {
+            if (Search_BookGenreInv.Text.ToString().Equals(""))
+            {
+                sqlcon.Open();
+                sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book INNER JOIN Category ON Category.Category_ID = Book.Category_ID ", sqlcon);
+                SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
+                Book_Inventory.Clear();
+                sqa.Fill(Book_Inventory);
+                BookInv_GrideView.DataSource = Book_Inventory;
+                sqlcon.Close();
+            }
+        }
+
+        private void Search_BookIDInv_TextChanged(object sender, EventArgs e)
+        {
+            
+            if (Search_BookIDInv.Text.ToString().Equals(""))
+            {
+                sqlcon.Open();
+                sqlcom = new SqlCommand("SELECT Book_ID ,Book_Name, Bookgenre, Book_Price, Book_Quantity FROM Book INNER JOIN Category ON Category.Category_ID = Book.Category_ID ", sqlcon);
+                SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
+                Book_Inventory.Clear();
+                sqa.Fill(Book_Inventory);
+                BookInv_GrideView.DataSource = Book_Inventory;
+                sqlcon.Close();
+            }
+        }
+
+        private void AddBook_Book_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

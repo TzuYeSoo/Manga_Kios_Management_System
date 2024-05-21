@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Admin_Manga_Management",
+    "\\Admin_Manga_Management\\Admin_Manga_Management"
   ],
-  "SelectedNode": "\\Admin_Manga_Management.sln",
+  "SelectedNode": "\\Admin_Manga_Management\\Admin_Manga_Management\\Transaction.cs",
   "PreviewInSolutionExplorer": false
 }
