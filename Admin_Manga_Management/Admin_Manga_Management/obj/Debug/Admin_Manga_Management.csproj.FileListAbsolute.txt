@@ -81,3 +81,5 @@ C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Managemen
 C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.exe
 C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.pdb
 C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Edit_BookInv.resources
+C:\Users\Nicol\Source\Repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Add_Book.resources
+C:\Users\Nicol\Source\Repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Edit_BookInv.resources

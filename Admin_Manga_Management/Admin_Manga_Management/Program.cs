@@ -22,6 +22,6 @@ namespace Admin_Manga_Management
     }
     public class sqlConnector
     {
-        public static string connector = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\Database1.mdf;Integrated Security=True";
+        public static string connector = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nicol\Source\Repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\Database1.mdf;Integrated Security=True";
         }
 }

@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Admin_Manga_Management",
+    "\\Admin_Manga_Management\\Admin_Manga_Management"
   ],
+  "SelectedNode": "\\Admin_Manga_Management\\Admin_Manga_Management\\Edit_BookInv.cs",
   "PreviewInSolutionExplorer": false
 }
