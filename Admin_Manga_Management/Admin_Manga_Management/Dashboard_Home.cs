@@ -17,7 +17,7 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
-        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
+        static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom = new SqlCommand();
         static DataTable Dash_Table = new DataTable();
         private void Dashboard_Home_Load(object sender, EventArgs e)
@@ -59,5 +59,7 @@ namespace Admin_Manga_Management
             sfh.Show();
             this.Hide();
         }
+
+     
     }
 }

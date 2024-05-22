@@ -151,7 +151,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox6.BackColor = System.Drawing.Color.Silver;
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(30, 49);

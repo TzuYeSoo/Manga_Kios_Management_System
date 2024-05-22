@@ -19,7 +19,7 @@ namespace Admin_Manga_Management
         }
         static DataTable dt1 = new DataTable();
         static DataTable dt2 = new DataTable();
-        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
+        static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom1 = new SqlCommand();
         static SqlCommand sqlcom2 = new SqlCommand();
         private void StaffsHome_Load(object sender, EventArgs e)

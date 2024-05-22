@@ -17,7 +17,7 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
-        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
+        static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom = new SqlCommand();
         static SqlCommand sqlcom2 = new SqlCommand();
         static DataTable Book_Inventory = new DataTable();
@@ -181,7 +181,17 @@ namespace Admin_Manga_Management
 
         private void AddBook_Book_Click(object sender, EventArgs e)
         {
+            Add_Book ab = new Add_Book();
+            ab.Show();
+            this.Hide();
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Edit_BookInv booke = new Edit_BookInv();
+            booke.Show();
+            this.Hide();
         }
     }
 }

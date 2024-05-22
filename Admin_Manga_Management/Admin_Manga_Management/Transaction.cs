@@ -17,7 +17,7 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
-        static SqlConnection sqlcon = new SqlConnection(sqlConntector.connector);
+        static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom = new SqlCommand();
         static DataTable transaction_table = new DataTable();
 
