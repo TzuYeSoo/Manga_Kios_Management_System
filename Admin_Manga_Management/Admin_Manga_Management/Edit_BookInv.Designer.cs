@@ -31,7 +31,7 @@
             this.Confirm_BookID = new System.Windows.Forms.TextBox();
             this.Edit_BookGrideView = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Edit_EditButt = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Edit_BookName_Edit = new System.Windows.Forms.TextBox();
@@ -43,7 +43,7 @@
             this.Edit_BookQuanti_Edit = new System.Windows.Forms.TextBox();
             this.Edit_BookDesc_Edit = new System.Windows.Forms.TextBox();
             this.Edit_BookGen_Edit = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Confirm_ID = new System.Windows.Forms.Button();
             this.Close_EditBook = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Edit_BookGrideView)).BeginInit();
             this.SuspendLayout();
@@ -77,18 +77,18 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Edit Book";
             // 
-            // button1
+            // Edit_EditButt
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(884, 208);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 28);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Edit_EditButt.BackColor = System.Drawing.Color.Yellow;
+            this.Edit_EditButt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Edit_EditButt.Location = new System.Drawing.Point(884, 208);
+            this.Edit_EditButt.Margin = new System.Windows.Forms.Padding(4);
+            this.Edit_EditButt.Name = "Edit_EditButt";
+            this.Edit_EditButt.Size = new System.Drawing.Size(167, 28);
+            this.Edit_EditButt.TabIndex = 3;
+            this.Edit_EditButt.Text = "Edit";
+            this.Edit_EditButt.UseVisualStyleBackColor = false;
+            this.Edit_EditButt.Click += new System.EventHandler(this.Edit_EditButt_Click);
             // 
             // label2
             // 
@@ -197,19 +197,20 @@
             this.Edit_BookGen_Edit.Name = "Edit_BookGen_Edit";
             this.Edit_BookGen_Edit.Size = new System.Drawing.Size(217, 24);
             this.Edit_BookGen_Edit.TabIndex = 17;
+            this.Edit_BookGen_Edit.SelectedIndexChanged += new System.EventHandler(this.Edit_BookGen_Edit_SelectedIndexChanged);
             // 
-            // button2
+            // Confirm_ID
             // 
-            this.button2.BackColor = System.Drawing.Color.Lime;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(151, 76);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 28);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Confirm ID";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.Confirm_ID.BackColor = System.Drawing.Color.Lime;
+            this.Confirm_ID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Confirm_ID.Location = new System.Drawing.Point(151, 76);
+            this.Confirm_ID.Margin = new System.Windows.Forms.Padding(4);
+            this.Confirm_ID.Name = "Confirm_ID";
+            this.Confirm_ID.Size = new System.Drawing.Size(100, 28);
+            this.Confirm_ID.TabIndex = 18;
+            this.Confirm_ID.Text = "Confirm ID";
+            this.Confirm_ID.UseVisualStyleBackColor = false;
+            this.Confirm_ID.Click += new System.EventHandler(this.Confirm_ID_Click);
             // 
             // Close_EditBook
             // 
@@ -230,7 +231,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.Close_EditBook);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Confirm_ID);
             this.Controls.Add(this.Edit_BookGen_Edit);
             this.Controls.Add(this.Edit_BookDesc_Edit);
             this.Controls.Add(this.Edit_BookQuanti_Edit);
@@ -242,7 +243,7 @@
             this.Controls.Add(this.Edit_BookName_Edit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Edit_EditButt);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Edit_BookGrideView);
             this.Controls.Add(this.Confirm_BookID);
@@ -261,7 +262,7 @@
         private System.Windows.Forms.TextBox Confirm_BookID;
         private System.Windows.Forms.DataGridView Edit_BookGrideView;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Edit_EditButt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Edit_BookName_Edit;
@@ -273,7 +274,7 @@
         private System.Windows.Forms.TextBox Edit_BookQuanti_Edit;
         private System.Windows.Forms.TextBox Edit_BookDesc_Edit;
         private System.Windows.Forms.ComboBox Edit_BookGen_Edit;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Confirm_ID;
         private System.Windows.Forms.Button Close_EditBook;
     }
 }

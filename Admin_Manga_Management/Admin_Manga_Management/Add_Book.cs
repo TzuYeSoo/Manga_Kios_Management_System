@@ -61,7 +61,7 @@ namespace Admin_Manga_Management
 
             if (Add_BookID_Add.Text != null)
             {
-                sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Category ON Category.Category_ID = Book.Category_ID ", sqlcon);
+                sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Book_GenereName ON Book_GenreName.Category_ID = Book.Category_ID ", sqlcon);
                 SqlDataAdapter sda2 = new SqlDataAdapter(sqlcom);
                 dt.Clear();
                 sda2.Fill(dt);
