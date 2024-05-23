@@ -103,7 +103,7 @@ namespace Admin_Manga_Management
         private void Edit_BookGen_Edit_SelectedIndexChanged(object sender, EventArgs e)
         {
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Category_ID FROM Category WHERE Bookgenre = @genre", sqlcon);
+            sqlcom = new SqlCommand("SELECT Bookgenre FROM Book_GenreName WHERE Bookgenre = @genre", sqlcon);
             sqlcom.Parameters.AddWithValue("@genre", Edit_BookGen_Edit.SelectedItem.ToString());
             BookOptions = sqlcom.ExecuteScalar().ToString();
 
