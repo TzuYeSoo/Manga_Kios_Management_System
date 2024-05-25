@@ -109,5 +109,12 @@ namespace Admin_Manga_Management
 
             sqlcon.Close();
         }
+
+        private void Close_EditBook_Click(object sender, EventArgs e)
+        {
+            Book_Inv Binv = new Book_Inv();
+            Binv.Show();
+            this.Hide()
+;        }
     }
 }

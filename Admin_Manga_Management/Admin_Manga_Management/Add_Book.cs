@@ -57,11 +57,6 @@ namespace Admin_Manga_Management
                 {
 
 
-                    if ()
-                    {
-
-                    }
-
                     for (int i = 0; i < GenreNames.Items.Count; i++)
                     {
                         if (GenreNames.GetItemChecked(i))
@@ -72,7 +67,7 @@ namespace Admin_Manga_Management
                             sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
                             sqlcom2.ExecuteNonQuery();
                         }
-                        if(i > GenreNames.Items.Count)
+                        if(i >= GenreNames.Items.Count)
                         {
                             sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
                             sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
@@ -104,6 +99,12 @@ namespace Admin_Manga_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Do you want to exit this site? ", "Alert" ,MessageBoxButtons.YesNo);
+
+            if ()
+            {
+
+            }
             Book_Inv bo = new Book_Inv();
             bo.Show();
             this.Hide();

@@ -48,6 +48,7 @@ namespace Admin_Manga_Management
                 Dashboard_Home DH = new Dashboard_Home();
                 DH.Show();
                 this.Hide();
+                
             }
             else
             {
