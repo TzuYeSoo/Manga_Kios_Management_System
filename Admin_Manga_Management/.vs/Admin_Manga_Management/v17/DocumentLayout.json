@@ -3,22 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashier_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_STI_STUDENT_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Book_GenreName.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashier_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_remove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_STI_STUDENT_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Book.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\book_inv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\book_inv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\book_inv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\dashboard_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\dashboard_home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,21 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Add_Book.cs",
               "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Add_Book.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs*",
-              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs*",
-              "ViewState": "AQIAAEMAAAAAAAAAAAApwFoAAAA3AAAA",
+              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAApwFoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T00:23:25.304Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cashier_Remove.cs",
+              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Remove.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Cashier_Remove.cs",
+              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Remove.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\Cashier_Remove.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T03:45:26.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cashier_Remove.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Remove.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Cashier_Remove.cs",
+              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Remove.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Cashier_Remove.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T03:45:20.649Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dashboard_Home.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Dashboard_Home.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Dashboard_Home.cs",
+              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Dashboard_Home.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Dashboard_Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T03:36:23.459Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -50,39 +93,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "dbo.Book_GenreName [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_STI_STUDENT_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Book_GenreName.sql",
-              "ToolTip": "dbo.Book_GenreName [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-25T02:27:24.193Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "dbo.Book [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_STI_STUDENT_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Book.sql",
-              "ToolTip": "dbo.Book [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-05-25T02:20:00.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Add_Book.cs [Design]",
               "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Add_Book.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs [Design]*",
-              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs [Design]*",
+              "ToolTip": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T00:39:12.377Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Book_Inv.cs [Design]",
               "DocumentMoniker": "C:\\Users\\STI-STUDENT\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Book_Inv.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Book_Inv.cs",
@@ -101,10 +124,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{007a3a6b-b5b2-454d-a2bd-cf929f989be2}"
             },
             {
               "$type": "Bookmark",

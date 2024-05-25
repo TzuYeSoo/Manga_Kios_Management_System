@@ -123,6 +123,7 @@
             // 
             this.BookInv_GrideView.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.BookInv_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.BookInv_GrideView.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BookInv_GrideView.Location = new System.Drawing.Point(210, 133);
             this.BookInv_GrideView.Name = "BookInv_GrideView";
             this.BookInv_GrideView.RowHeadersWidth = 51;
