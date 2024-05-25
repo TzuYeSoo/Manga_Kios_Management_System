@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Admin_Manga_Management
 {
@@ -22,7 +23,7 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom2;
         static DataTable dt = new DataTable();
         static string BookOptions;
-        
+        static string BGname;
 
         private void Edit_BookInv_Load(object sender, EventArgs e)
         {
@@ -74,77 +75,88 @@ namespace Admin_Manga_Management
                     
 
                 }
+                rdr.Close();
                     
                     
                 
             }
             sqlcom2 = new SqlCommand("SELECT Bookgenre FROM Book_GenreName WHERE Book_ID = '" + Confirm_BookID +"'",sqlcon );
-             foreach (CheckBox genre in Book_GenreEdit.Items)
-            {
-                SqlDataReader rdr = sqlcom2.ExecuteReader();
+            SqlDataReader rdr1 = sqlcom2.ExecuteReader();
 
-                if (genre.Checked)
+           
+            
+                for (int i = 0; i < Book_GenreEdit.Items.Count; i++)
                 {
-                    while (rdr.Read())
+                while (rdr1.Read())
+                {
+                    if (Book_GenreEdit.Items[i].Equals(rdr1.GetValue(0)))
                     {
-                        
+                        Book_GenreEdit.SetItemCheckState(i, CheckState.Checked);
                     }
 
                 }
-                
-            }
+
+
+                }
+
+            
+            
             sqlcon.Close();
         }
 
         private void Edit_EditButt_Click(object sender, EventArgs e)
         {
-            try
-            {
-                sqlcon.Open();
+            sqlcon.Open();
+            //try
+            //{
+                
                 
                 if (Edit_BookName_Edit.Text != "" && Confirm_BookID.Text != "" && Edit_BookQuanti_Edit.Text != ""
                     && Edit_BookPrice_Edit.Text != "")
                 {
-                    sqlcom2 = new SqlCommand("ALTER TABLE Book_GenreName DROP COlUMN bookgenre and Book_ID " +
+                    sqlcom = new SqlCommand("DELETE FROM Book_GenreName " +
                         "WHERE Book_ID = '" + Confirm_BookID +"'",sqlcon);
+                    sqlcom.ExecuteNonQuery();
 
-                    foreach (CheckBox genre in Book_GenreEdit.Items)
+
+
+                for (int i = 0; i < Book_GenreEdit.Items.Count; i++)
                     {
+                        if (Book_GenreEdit.GetItemChecked(i))
+                        {
+                            BGname = $"{Book_GenreEdit.Items[i]}"; ;
+                            sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID)", sqlcon);
+                            sqlcom2.Parameters.AddWithValue("book_ID", Confirm_ID.Text);
+                            sqlcom2.Parameters.AddWithValue("@bookgenre", BGname);
+                            sqlcom2.ExecuteNonQuery();
 
-                            if (genre.Checked)
-                            {
-                                
-                                sqlcom = new SqlCommand("INSERT INTO Book_GenreName VALUES (Book_ID = @bookID, Bookgenre = @bookgenre)", sqlcon);
-                                sqlcom.Parameters.AddWithValue("@bookID", Confirm_BookID.Text);
-                                sqlcom.Parameters.AddWithValue("@bookgenre", genre);
+                        }
+                        if (i >= Book_GenreEdit.Items.Count)
+                        {
+                            sqlcom = new SqlCommand($"UPDATE Book SET Book_ID = '@bookID', Book_Name = '@bookname', " +
+                                "Book_Price = @price, Book_Quantity = @quantity, Description = '@description'", sqlcon);
+                            sqlcom.Parameters.Add("@bookname", Edit_BookName_Edit.Text);
+                            sqlcom.Parameters.Add("@bookID", Confirm_BookID.Text);
+                            sqlcom.Parameters.Add("@quantity", Edit_BookQuanti_Edit.Text);
+                            sqlcom.Parameters.Add("@price", Edit_BookPrice_Edit.Text);
+                            sqlcom.Parameters.Add("@description", Edit_BookDesc_Edit.Text);
 
-
-                            }
                         }
                     }
-
-                    sqlcon.Open();
-                    sqlcom = new SqlCommand($"UPDATE Book SET Book_ID = '@bookID', Book_Name = '@bookname', " +
-                        "Book_Price = @price, Book_Quantity = @quantity, Description = '@description'", sqlcon);
-                    sqlcom.Parameters.Add("@bookname", Edit_BookName_Edit.Text);
-                    sqlcom.Parameters.Add("@bookID", Confirm_BookID.Text);
-                    sqlcom.Parameters.Add("@quantity", Edit_BookQuanti_Edit.Text);
-                    sqlcom.Parameters.Add("@price", Edit_BookPrice_Edit.Text);
-                    sqlcom.Parameters.Add("@description", Edit_BookDesc_Edit.Text);
+                    datagrid();
+                }
 
                 
-                
-
-                sqlcon.Close();
-
+/*
             }catch(SqlException ex)
             {
                 MessageBox.Show("Existing Book File");
 
             }
-            
+*/
+            sqlcon.Close();
 
-            
+
         }
 
        

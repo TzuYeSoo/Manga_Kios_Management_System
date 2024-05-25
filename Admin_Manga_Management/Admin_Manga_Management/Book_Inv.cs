@@ -57,11 +57,11 @@ namespace Admin_Manga_Management
         {
 
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT  Book.*, Book_genreName.Bookgenre FROM Book " +
+            sqlcom = new SqlCommand("SELECT Book_genreName.Bookgenre FROM Book " +
                 "LEFT JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID" +
                 " WHERE Book_ID LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
-                "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Book_Name LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
+                "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Book_Price = " + Search_Book_Bar_Admin.Text + " " +
                "OR Book_Quantity =  " + Search_Book_Bar_Admin.Text +" ", sqlcon);
 
