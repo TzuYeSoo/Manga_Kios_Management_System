@@ -26,7 +26,7 @@ namespace Admin_Manga_Management
         private void Edit_BookInv_Load(object sender, EventArgs e)
         {
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Category ON Category.Category_ID = Book.Category_ID", sqlcon);
+            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID", sqlcon);
             SqlDataAdapter sda2 = new SqlDataAdapter(sqlcom);
             dt.Clear();
             sda2.Fill(dt);
@@ -56,7 +56,7 @@ namespace Admin_Manga_Management
                 Edit_BookQuanti_Edit.ReadOnly = false;
                 Edit_BookDesc_Edit.ReadOnly = false;
 
-                sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, Book_Quantity, Description, Bookgenre FROM Book INNER JOIN Category ON Book.Category_ID = Category.Category_ID" +
+                sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, Book_Quantity, Description, Bookgenre FROM Book INNER JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID" +
                     " WHERE Book_ID = '" + Confirm_BookID.Text +"'", sqlcon);
                 SqlDataReader rdr = sqlcom.ExecuteReader();
 
@@ -87,7 +87,7 @@ namespace Admin_Manga_Management
 
             sqlcon.Open();
             sqlcom = new SqlCommand($"UPDATE Book SET Book_ID = '@bookID', Book_Name = '@bookname', " +
-                "Book_Price = @price, Book_Quantity = @quantity, Description = '@description', Category_ID = '@category'" ,sqlcon);
+                "Book_Price = @price, Book_Quantity = @quantity, Description = '@description',  = '@category'" ,sqlcon);
             sqlcom.Parameters.Add("@bookname", Edit_BookName_Edit);
             sqlcom.Parameters.Add("@bookID", Confirm_BookID);
             sqlcom.Parameters.Add("@quantity", Edit_BookQuanti_Edit);

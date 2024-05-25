@@ -45,7 +45,7 @@ namespace Admin_Manga_Management
         private void Book_Inv_Load(object sender, EventArgs e)
         {
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Book_GenreName ON BookgenreName.Book_ID = Book.Book_ID ", sqlcon);
+            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book LEFT JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID ", sqlcon);
             SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
             Book_Inventory.Clear();
             sqa.Fill(Book_Inventory);
@@ -57,8 +57,8 @@ namespace Admin_Manga_Management
         {
 
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT  Book.*, Category.Bookgenre FROM Book " +
-                "INNER JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID" +
+            sqlcom = new SqlCommand("SELECT  Book.*, Book_genreName.Bookgenre FROM Book " +
+                "LEFT JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID" +
                 " WHERE Book_ID LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Book_Name LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +

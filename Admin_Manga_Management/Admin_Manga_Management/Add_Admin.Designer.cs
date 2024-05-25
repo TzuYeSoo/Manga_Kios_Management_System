@@ -228,6 +228,7 @@
             this.Controls.Add(this.AdminUsername_Add);
             this.Controls.Add(this.AdminID_Add);
             this.Name = "Add_Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).EndInit();

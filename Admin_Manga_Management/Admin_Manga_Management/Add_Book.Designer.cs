@@ -43,7 +43,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.Add_Book_FROMADD = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.GenreNames = new System.Windows.Forms.CheckedListBox();
             ((System.ComponentModel.ISupportInitialize)(this.Book_GrideView_BookADD)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             // 
             this.Add_BookID_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookID_Add.Location = new System.Drawing.Point(28, 72);
-            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookID_Add.Name = "Add_BookID_Add";
             this.Add_BookID_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookID_Add.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.Book_GrideView_BookADD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Book_GrideView_BookADD.Location = new System.Drawing.Point(28, 202);
-            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(2);
             this.Book_GrideView_BookADD.Name = "Book_GrideView_BookADD";
             this.Book_GrideView_BookADD.RowHeadersWidth = 51;
             this.Book_GrideView_BookADD.RowTemplate.Height = 24;
@@ -95,7 +95,7 @@
             // 
             this.Add_BookQuantity_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookQuantity_Add.Location = new System.Drawing.Point(188, 72);
-            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookQuantity_Add.Name = "Add_BookQuantity_Add";
             this.Add_BookQuantity_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookQuantity_Add.TabIndex = 5;
@@ -104,7 +104,7 @@
             // 
             this.Add_BookPrice_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookPrice_Add.Location = new System.Drawing.Point(28, 158);
-            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookPrice_Add.Name = "Add_BookPrice_Add";
             this.Add_BookPrice_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookPrice_Add.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.Add_BookName_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookName_Add.Location = new System.Drawing.Point(28, 115);
-            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookName_Add.Name = "Add_BookName_Add";
             this.Add_BookName_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookName_Add.TabIndex = 7;
@@ -170,7 +170,7 @@
             // 
             this.Add_BookDescrip_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookDescrip_Add.Location = new System.Drawing.Point(345, 72);
-            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookDescrip_Add.Multiline = true;
             this.Add_BookDescrip_Add.Name = "Add_BookDescrip_Add";
             this.Add_BookDescrip_Add.Size = new System.Drawing.Size(223, 84);
@@ -193,7 +193,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(535, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 14;
@@ -206,7 +206,7 @@
             this.Add_Book_FROMADD.BackColor = System.Drawing.Color.Lime;
             this.Add_Book_FROMADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Book_FROMADD.Location = new System.Drawing.Point(345, 161);
-            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(2);
             this.Add_Book_FROMADD.Name = "Add_Book_FROMADD";
             this.Add_Book_FROMADD.Size = new System.Drawing.Size(222, 22);
             this.Add_Book_FROMADD.TabIndex = 15;
@@ -214,20 +214,21 @@
             this.Add_Book_FROMADD.UseVisualStyleBackColor = false;
             this.Add_Book_FROMADD.Click += new System.EventHandler(this.Add_Book_FROMADD_Click);
             // 
-            // checkedListBox1
+            // GenreNames
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(188, 114);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(139, 64);
-            this.checkedListBox1.TabIndex = 16;
+            this.GenreNames.FormattingEnabled = true;
+            this.GenreNames.Location = new System.Drawing.Point(188, 114);
+            this.GenreNames.Name = "GenreNames";
+            this.GenreNames.Size = new System.Drawing.Size(139, 64);
+            this.GenreNames.TabIndex = 16;
             // 
             // Add_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.checkedListBox1);
+            this.Controls.Add(this.GenreNames);
             this.Controls.Add(this.Add_Book_FROMADD);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
@@ -243,8 +244,9 @@
             this.Controls.Add(this.Add_BookINV);
             this.Controls.Add(this.Book_GrideView_BookADD);
             this.Controls.Add(this.Add_BookID_Add);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Add_Book";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Add_Book_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Book_GrideView_BookADD)).EndInit();
@@ -270,6 +272,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Add_Book_FROMADD;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.CheckedListBox GenreNames;
     }
 }
