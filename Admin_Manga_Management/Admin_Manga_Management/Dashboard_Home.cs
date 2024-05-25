@@ -35,6 +35,8 @@ namespace Admin_Manga_Management
             Dashboard_Grideview.DataSource = Dash_Table;
             sqlcon.Close();
 
+            TransHis_Chart]
+
         }
 
         private void Trans_OP_Click(object sender, EventArgs e)
