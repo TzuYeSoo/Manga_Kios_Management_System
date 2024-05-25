@@ -101,10 +101,6 @@ namespace Admin_Manga_Management
         {
             MessageBox.Show("Do you want to exit this site? ", "Alert" ,MessageBoxButtons.YesNo);
 
-            if ()
-            {
-
-            }
             Book_Inv bo = new Book_Inv();
             bo.Show();
             this.Hide();
