@@ -31,7 +31,7 @@ namespace Admin_Manga_Management
             sqlcon.Open();
             GridviewOutput();
 
-            sqlcom2 = new SqlCommand("SELECT Bookgenre FROM Book_GenreName", sqlcon);
+            sqlcom2 = new SqlCommand("SELECT BookgenreNames FROM BookOPtions", sqlcon);
             SqlDataReader rdr = sqlcom2.ExecuteReader();
             
 
@@ -49,50 +49,66 @@ namespace Admin_Manga_Management
 
         private void Add_Book_FROMADD_Click(object sender, EventArgs e)
         {
-            sqlcon.Open();
-            try
+            if (Add_BookID_Add.Text != "" && Add_BookName_Add.Text != "" && Add_BookPrice_Add.Text != ""
+                        && Add_BookQuantity_Add.Text != "")
             {
-                if (Add_BookID_Add.Text != " " && Add_BookName_Add.Text != " " && Add_BookPrice_Add.Text != " "
-                    && Add_BookQuantity_Add.Text != " ")
+                sqlcon.Open();
+                try
                 {
-
-
-                    for (int i = 0; i < GenreNames.Items.Count; i++)
+                    if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        if (GenreNames.GetItemChecked(i))
+
+
+                        for (int i = 0; i < GenreNames.Items.Count; i++)
                         {
-                            BGName = $"{GenreNames.Items[i]}"; ;
-                            sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID)", sqlcon);
-                            sqlcom2.Parameters.AddWithValue("book_ID", Add_BookID_Add.Text);
-                            sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
-                            sqlcom2.ExecuteNonQuery();
+                            if (GenreNames.GetItemChecked(i))
+                            {
+                                BGName = $"{GenreNames.Items[i]}"; ;
+                                sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID)", sqlcon);
+                                sqlcom2.Parameters.AddWithValue("book_ID", Add_BookID_Add.Text);
+                                sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
+                                sqlcom2.ExecuteNonQuery();
+                            }
+                            if (i >= GenreNames.Items.Count)
+                            {
+                                sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
+                                sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
+                                sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
+                                sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
+                                sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
+                                sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
+                                sqlcom.ExecuteNonQuery();
+                            }
+
                         }
-                        if(i >= GenreNames.Items.Count)
+                        Add_BookID_Add.Clear();
+                        Add_BookName_Add.Clear();
+                        Add_BookQuantity_Add.Clear();
+                        Add_BookDescrip_Add.Clear();
+                        Add_BookPrice_Add.Clear();
+                        for (int i = 0; i < GenreNames.Items.Count; i++)
                         {
-                            sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
-                            sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
-                            sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
-                            sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
-                            sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
-                            sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
-                            sqlcom.ExecuteNonQuery();
+                            GenreNames.SetItemChecked(i, false);
                         }
+                        GridviewOutput();
+
+
 
                     }
-                    GridviewOutput();
-
-
-
+                   
                 }
-                else
+                catch (SqlException ex)
                 {
-                    MessageBox.Show("Please Input Credentials");
+                    MessageBox.Show("Existing Data Files");
                 }
-            }catch (SqlException ex)
-            {
-                MessageBox.Show("Existing Data Files");
+                sqlcon.Close();
+
             }
-            sqlcon.Close();
+            else
+            {
+                MessageBox.Show("Please Input Credentials");
+            }
+
         }
 
        
