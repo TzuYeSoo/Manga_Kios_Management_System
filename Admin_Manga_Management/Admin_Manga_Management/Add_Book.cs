@@ -58,28 +58,25 @@ namespace Admin_Manga_Management
                     if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
 
+                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
+                    sqlcom.ExecuteNonQuery();
 
-                        for (int i = 0; i < GenreNames.Items.Count; i++)
+
+                    for (int i = 0; i < GenreNames.Items.Count; i++)
                         {
                             if (GenreNames.GetItemChecked(i))
                             {
                                 BGName = $"{GenreNames.Items[i]}"; ;
                                 sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID)", sqlcon);
-                                sqlcom2.Parameters.AddWithValue("book_ID", Add_BookID_Add.Text);
+                                sqlcom2.Parameters.AddWithValue("@book_ID", Add_BookID_Add.Text);
                                 sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
                                 sqlcom2.ExecuteNonQuery();
                             }
-                            if (i >= GenreNames.Items.Count)
-                            {
-                                sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
-                                sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
-                                sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
-                                sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
-                                sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
-                                sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
-                                sqlcom.ExecuteNonQuery();
-                            }
-
                         }
                         Add_BookID_Add.Clear();
                         Add_BookName_Add.Clear();
