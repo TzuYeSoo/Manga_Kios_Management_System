@@ -18,20 +18,15 @@ namespace Admin_Manga_Management
             InitializeComponent();
         }
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
-        static SqlCommand sqlcom = new SqlCommand();
+        static SqlCommand sqlcom;
+        static SqlCommand sqlcom2;
         static DataTable transaction_table = new DataTable();
 
         private void Transaction_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet1.Customers' table. You can move, or remove it, as needed.
-            this.customersTableAdapter.Fill(this.database1DataSet1.Customers);
 
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT * FROM Customers", sqlcon);
-            SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
-            transaction_table.Clear();
-            adapter.Fill(transaction_table);
-            Trans_GrideView.DataSource = transaction_table;
+            datatrans();
             sqlcon.Close();
 
         }
@@ -69,7 +64,34 @@ namespace Admin_Manga_Management
 
         private void SearchBut_Trans_Click(object sender, EventArgs e)
         {
-           
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name, Book_Price FROM Customers INNER JOIN Book ON Customers.Book_ID = Book.Book_ID " +
+                "WHERE Customer_ID LIKE '%"+ Search_IDTrans.Text +"%' " +
+                "OR Customer_Name LIKE '%"+ Search_IDTrans.Text + "%' " +
+                "OR Order_Number LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR Book_Name LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR Customers.Book_Quantity LIKE '" + Search_IDTrans.Text + "' " +
+                "OR Book_Price LIKE '"+ Search_IDTrans.Text+"' " +
+                "OR Date LIKE '%" + Search_IDTrans.Text + "%'"
+                , sqlcon);
+
+            sqlcom.ExecuteNonQuery();
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
+            transaction_table.Clear();
+            adapter.Fill(transaction_table);
+            Trans_GridView.DataSource = transaction_table;
+
+            
+            sqlcon.Close();
+
+        }
+        public void datatrans()
+        {
+            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name FROM Customers INNER JOIN Book ON Customers.Book_ID = Book.Book_ID", sqlcon);
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
+            transaction_table.Clear();
+            adapter.Fill(transaction_table);
+            Trans_GridView.DataSource = transaction_table;
         }
     }
 }

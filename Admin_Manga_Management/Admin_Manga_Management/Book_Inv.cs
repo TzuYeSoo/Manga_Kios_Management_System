@@ -58,13 +58,13 @@ namespace Admin_Manga_Management
 
             sqlcon.Open();
             sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book " +
-                "LEFT JOIN Book_GenreName ON Book_GenreName.Book_ID = Book.Book_ID " +
+                "LEFT JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID " +
                 "WHERE Book_Name LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Book.Book_ID LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
                 "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
-                "OR Book_Price = " + Search_Book_Bar_Admin.Text + " " +
-               "OR Book_Quantity =  " + Search_Book_Bar_Admin.Text +" ", sqlcon);
-
+                "OR Book_Price LIKE '" + Search_Book_Bar_Admin.Text + "' " +
+               "OR Book_Quantity LIKE '" + Search_Book_Bar_Admin.Text +"' ", sqlcon);
+            sqlcom.ExecuteNonQuery();
             SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
             Book_Inventory.Clear();
             sqa.Fill(Book_Inventory);
