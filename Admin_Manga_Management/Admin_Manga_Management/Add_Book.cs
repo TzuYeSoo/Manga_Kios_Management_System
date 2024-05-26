@@ -59,7 +59,7 @@ namespace Admin_Manga_Management
                     {
 
                     sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
-                    sqlcom.Parameters.AddWithValue("@bookID", Add_BookID_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@bookId", Add_BookID_Add.Text);
                     sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
                     sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
