@@ -120,6 +120,12 @@
     <Compile Include="Edit_BookInv.Designer.cs">
       <DependentUpon>Edit_BookInv.cs</DependentUpon>
     </Compile>
+    <Compile Include="Edit_Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Transaction.Designer.cs">
+      <DependentUpon>Edit_Transaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remove_Book.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_BookInv.resx">
       <DependentUpon>Edit_BookInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Transaction.resx">
+      <DependentUpon>Edit_Transaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Remove_Admin.resx">
       <DependentUpon>Remove_Admin.cs</DependentUpon>

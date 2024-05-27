@@ -73,6 +73,16 @@ namespace Admin_Manga_Management
 
         private void Remove_Book_Load(object sender, EventArgs e)
         {
+            Book_Hisotry.ColumnHeadersDefaultCellStyle.BackColor = Color.SteelBlue;
+            Book_Hisotry.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            Book_Hisotry.EnableHeadersVisualStyles = false;
+            Book_Hisotry.DefaultCellStyle.BackColor = Color.LightSteelBlue;
+
+            Delete_Book_History.ColumnHeadersDefaultCellStyle.BackColor = Color.Crimson;
+            Delete_Book_History.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            Delete_Book_History.EnableHeadersVisualStyles = false;
+            Delete_Book_History.DefaultCellStyle.BackColor = Color.LightPink;
+
             sqlcon.Open();
             dataBookHis();
             dataBookRemove();

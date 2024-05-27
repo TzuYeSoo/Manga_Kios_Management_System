@@ -93,5 +93,12 @@ namespace Admin_Manga_Management
             adapter.Fill(transaction_table);
             Trans_GridView.DataSource = transaction_table;
         }
+
+        private void Edit_Trans_Click(object sender, EventArgs e)
+        {
+            Form1 edt = new Form1();
+            edt.Show();
+            this.Close();
+        }
     }
 }
