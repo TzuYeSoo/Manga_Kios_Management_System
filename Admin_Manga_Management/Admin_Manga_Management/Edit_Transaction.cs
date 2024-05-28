@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,8 +54,12 @@ namespace Admin_Manga_Management
             {
                 if(MessageBox.Show("","", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
+                    
+                 
+                   
 
-                    sqlcom = new SqlCommand("SELECT Customer_Name, Order_Number, Cashier_ID, " +
+
+                    sqlcom = new SqlCommand("SELECT Customers.Customer_ID, Customer_Name, Order_Number, Cashier_ID, " +
                         "Book_Name, Customers.Book_Quantity, Book_Price, Date FROM Customers " +
                         "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
                         "INNER JOIN Book ON OrderBook.Book_ID = Book.Book_ID WHERE Customers.Customer_ID = '" + textBoxCustomersID.Text +"'", sqlcon);
@@ -63,28 +68,28 @@ namespace Admin_Manga_Management
 
                     while (rdr.Read())
                     {
-                        
-                       
-                        Cname = (string)rdr.GetValue(0);
-                        Ordernum = (string)rdr.GetValue(1);
-                        if(rdr.GetValue(2).ToString() != "")
+
+                        CID = (string)rdr.GetValue(0);
+                        Cname = (string)rdr.GetValue(1);
+                        Ordernum = (string)rdr.GetValue(2);
+                        if(rdr.GetValue(3).ToString() != "")
                         {
-                            CASID = (string)rdr.GetValue(2);
+                            CASID = (string)rdr.GetValue(3);
                         }
 
-                        bookname = (string)rdr.GetValue(3);
-                        BookQuan = rdr.GetValue(4).ToString();
+                        bookname = (string)rdr.GetValue(4);
+                        BookQuan = rdr.GetValue(5).ToString();
                         
-                        Bdate = (string)rdr.GetValue(6);
+                        Bdate = (string)rdr.GetValue(7);
 
                         for (int i = 0; i < BookNames.Items.Count; i++)
                         {
                             string Booksss = $"{BookNames.Items[i]}";
 
-                            if (Booksss.Equals((string)rdr.GetValue(3)))
+                            if (Booksss.Equals((string)rdr.GetValue(4)))
                             {
-                                BookP += Convert.ToDouble(rdr.GetValue(5));
                                 BookNames.SetItemChecked(i, true);
+                                Book_Price.Text = rdr.GetValue(6).ToString();
                             }
                         }
 
@@ -110,18 +115,62 @@ namespace Admin_Manga_Management
             textBoxCustomerName.Text = Cname;
             textBoxDate.Text = Bdate;
             textBoxBookQuantity.Text = BookQuan;
-            Book_Price.Text = BookP.ToString();
+            ;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(textBoxBookQuantity.Text != "" && textBoxCustomerName.Text != "" && textBoxCustomersID.Text != ""
+            if(textBoxBookQuantity.Text != "" && textBoxCustomerName.Text != "" 
                 && textBoxDate.Text != "" && Book_Price.Text != "")
             {
                 if(MessageBox.Show("Are sure you want to continue the edit in this customer???","Edit Customer", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
+                    
                     sqlcon.Open();
-                    sqlcom = new SqlCommand("UPDATE Customers SET Customer_Name = @cname, Book_Quantity = @bquan, ");
+                    sqlcom = new SqlCommand("DELETE FROM OrderBook WHERE Customer_ID = @cuid",sqlcon);
+                    sqlcom.Parameters.AddWithValue("@cuid", CID);
+                    sqlcom.ExecuteNonQuery();
+                    for (int i = 0; i < BookNames.Items.Count; i++)
+                    {
+
+                        if (BookNames.GetItemChecked(i))
+                        {
+
+                            sqlcom2 = new SqlCommand("SELECT Book_Price, Book_ID FROM Book WHERE Book_Name = '" + BookNames.Items[i] + "'", sqlcon);
+                            SqlDataReader rdr1 = sqlcom2.ExecuteReader();
+                            if (rdr1.Read())
+                            {
+
+                                BookP += Convert.ToDouble(rdr1.GetValue(0));
+                                BID = (string)rdr1.GetValue(1);
+
+                                
+                            }
+                            rdr1.Close();
+
+                            sqlcom = new SqlCommand("INSERT INTO OrderBook VALUES(@cusid, @bID)", sqlcon);
+                            sqlcom.Parameters.AddWithValue("@cusid", CID);
+                            sqlcom.Parameters.AddWithValue("@bID", BID);
+                            sqlcom.ExecuteNonQuery();
+
+                        }
+                    }
+
+                    
+
+                   
+                    Book_Price.Text = BookP.ToString();
+                    
+                    sqlcom = new SqlCommand("UPDATE Customers SET Customer_Name = @cname, Book_Quantity = @bquan," +
+                        "Total_Cost = @bookprice WHERE Customer_ID = @cid", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@cname", textBoxCustomerName.Text);
+                    sqlcom.Parameters.AddWithValue("@bquan", textBoxBookQuantity.Text);
+                    sqlcom.Parameters.AddWithValue("@bookprice", BookP);
+                    sqlcom.Parameters.AddWithValue("@cid", textBoxCustomersID.Text);
+                    sqlcom.ExecuteNonQuery();
+
+
+                    dataTrans();
                     sqlcon.Close();
 
                 }
