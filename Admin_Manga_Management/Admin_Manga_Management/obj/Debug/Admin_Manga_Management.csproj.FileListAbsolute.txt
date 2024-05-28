@@ -174,3 +174,4 @@ C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Ad
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.exe
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.pdb
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Form1.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Form1.resources

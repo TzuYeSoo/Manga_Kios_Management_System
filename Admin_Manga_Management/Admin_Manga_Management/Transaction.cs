@@ -87,7 +87,9 @@ namespace Admin_Manga_Management
         }
         public void datatrans()
         {
-            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name FROM Customers INNER JOIN Book ON Customers.Book_ID = Book.Book_ID", sqlcon);
+            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name FROM Customers " +
+                 "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
+                 "INNER JOIN Book ON OrderBook.Book_ID = Book.Book_ID", sqlcon);
             SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
             transaction_table.Clear();
             adapter.Fill(transaction_table);
