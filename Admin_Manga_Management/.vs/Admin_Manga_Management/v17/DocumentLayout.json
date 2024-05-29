@@ -1,25 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\",
+  "WorkspaceRootPath": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\desktop\\jessie\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\legas\\onedrive\\desktop\\manga management\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\desktop\\jessie\\admin_manga_management\\admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\legas\\onedrive\\desktop\\manga management\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\add_book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\legas\\onedrive\\desktop\\manga management\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\desktop\\jessie\\admin_manga_management\\admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\legas\\onedrive\\desktop\\manga management\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\desktop\\jessie\\admin_manga_management\\admin_manga_management\\edit_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\edit_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\edit_transaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\sti-student\\desktop\\jessie\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,36 +42,74 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Program.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Program.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Program.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\Program.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBgAAAAFAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T02:39:47.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Add_Book.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Add_Book.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs*",
+              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs*",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwEkAAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T02:23:56.135Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Add_Book.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Add_Book.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Add_Book.cs [Design]*",
+              "RelativeToolTip": "Admin_Manga_Management\\Add_Book.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T02:22:34.548Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "LogIn.cs",
-              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\LogIn.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
               "RelativeToolTip": "Admin_Manga_Management\\LogIn.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAkwE0AAAAVAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAiwBkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T02:07:58.256Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "LogIn.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\LogIn.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs [Design]",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs [Design]",
               "RelativeToolTip": "Admin_Manga_Management\\LogIn.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T02:07:54.458Z",
@@ -67,24 +117,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CashierHome.cs",
-              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
               "RelativeToolTip": "Admin_Manga_Management\\CashierHome.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAArAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAUwBgAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T02:00:20.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "CashierHome.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs [Design]",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs [Design]",
               "RelativeToolTip": "Admin_Manga_Management\\CashierHome.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-29T01:53:29.481Z",
@@ -92,11 +142,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Edit_Transaction.cs",
-              "DocumentMoniker": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Edit_Transaction.cs",
+              "DocumentMoniker": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Edit_Transaction.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Edit_Transaction.cs",
-              "ToolTip": "C:\\Users\\STI-STUDENT\\Desktop\\Jessie\\Admin_Manga_Management\\Admin_Manga_Management\\Edit_Transaction.cs",
+              "ToolTip": "C:\\Users\\legas\\OneDrive\\Desktop\\Manga Management\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Edit_Transaction.cs",
               "RelativeToolTip": "Admin_Manga_Management\\Edit_Transaction.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAqwGMAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -44,7 +44,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Add_Book_FROMADD = new System.Windows.Forms.Button();
             this.GenreNames = new System.Windows.Forms.CheckedListBox();
+            this.Book_Image = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.Book_GrideView_BookADD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Book_Image)).BeginInit();
             this.SuspendLayout();
             // 
             // Add_BookID_Add
@@ -222,12 +224,22 @@
             this.GenreNames.Size = new System.Drawing.Size(139, 64);
             this.GenreNames.TabIndex = 16;
             // 
+            // Book_Image
+            // 
+            this.Book_Image.Location = new System.Drawing.Point(601, 72);
+            this.Book_Image.Name = "Book_Image";
+            this.Book_Image.Size = new System.Drawing.Size(186, 180);
+            this.Book_Image.TabIndex = 17;
+            this.Book_Image.TabStop = false;
+            this.Book_Image.Click += new System.EventHandler(this.Book_Image_Click);
+            // 
             // Add_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(814, 366);
+            this.Controls.Add(this.Book_Image);
             this.Controls.Add(this.GenreNames);
             this.Controls.Add(this.Add_Book_FROMADD);
             this.Controls.Add(this.button1);
@@ -250,6 +262,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Add_Book_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Book_GrideView_BookADD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Book_Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -273,5 +286,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Add_Book_FROMADD;
         private System.Windows.Forms.CheckedListBox GenreNames;
+        private System.Windows.Forms.PictureBox Book_Image;
     }
 }

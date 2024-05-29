@@ -23,42 +23,46 @@ namespace Admin_Manga_Management
 
         private void Log_but_Click(object sender, EventArgs e)
         {
-            sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Admin_Username, Admin_Password FROM Admin", sqlcon);  
-            SqlDataReader reader = sqlcom.ExecuteReader();
+                sqlcon.Open();
+                sqlcom = new SqlCommand("SELECT Admin_Username, Admin_Password FROM Admin", sqlcon);
+                SqlDataReader reader = sqlcom.ExecuteReader();
 
-            while (reader.Read())
-            {
-                string Admin_User = (string)reader.GetValue(0);
-                string Admin_Pass = (string)reader.GetValue(1);
-
-                if(Admin_User.Equals(Admin_Username.Text) && Admin_Pass.Equals(Admin_Password.Text)) 
+                while (reader.Read())
                 {
-                    
-                    isLogin = true;
-                    break;
+                    string Admin_User = (string)reader.GetValue(0);
+                    string Admin_Pass = (string)reader.GetValue(1);
+
+                    if (Admin_User.Equals(Admin_Username.Text) && Admin_Pass.Equals(Admin_Password.Text))
+                    {
+
+                        isLogin = true;
+                        break;
+                    }
+                    else
+                    {
+                        isLogin = false;
+                    }
+                }
+                if (isLogin)
+                {
+                    Dashboard_Home DH = new Dashboard_Home();
+                    DH.Show();
+                    this.Hide();
+
                 }
                 else
                 {
-                    isLogin = false;
-                }               
-            }
-            if (isLogin)
-            {
-                Dashboard_Home DH = new Dashboard_Home();
-                DH.Show();
-                this.Hide();
-                
-            }
-            else
-            {
-                MessageBox.Show("Wrong Inputs" +
-                    "\nPlease Try Again");
-            }
-            isLogin = false;
-            sqlcon.Close();
+                    MessageBox.Show("Wrong Inputs" +
+                        "\nPlease Try Again");
+                }
+                isLogin = false;
+                sqlcon.Close();
 
-        }
+
+            }
+
+
+        
 
         private void Admin_Username_TextChanged(object sender, EventArgs e)
         {
@@ -71,11 +75,5 @@ namespace Admin_Manga_Management
             Admin_Password.PasswordChar = '*';
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CashierHome csh = new CashierHome();
-            csh.Show();
-            this.Hide();
-        }
     }
 }

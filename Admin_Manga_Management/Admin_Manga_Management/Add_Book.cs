@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Odbc;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -14,10 +16,12 @@ namespace Admin_Manga_Management
 {
     public partial class Add_Book : Form
     {
+        
         public Add_Book()
         {
             InitializeComponent();
         }
+        private Image Book_Im;
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
         static SqlCommand sqlcom2;
@@ -49,6 +53,15 @@ namespace Admin_Manga_Management
 
         private void Add_Book_FROMADD_Click(object sender, EventArgs e)
         {
+            byte[] imageBytes = null;
+            if(Book_Im != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    Book_Im.Save(ms, Book_Im.RawFormat);
+                    imageBytes = ms.ToArray();
+                }
+            }
             if (Add_BookID_Add.Text != "" && Add_BookName_Add.Text != "" && Add_BookPrice_Add.Text != ""
                         && Add_BookQuantity_Add.Text != "")
             {
@@ -58,12 +71,13 @@ namespace Admin_Manga_Management
                     if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
 
-                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description)", sqlcon);
+                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description, @BookImage)", sqlcon);
                     sqlcom.Parameters.AddWithValue("@bookId", Add_BookID_Add.Text);
                     sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
                     sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
                     sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@BookImage", imageBytes ?? (object)DBNull.Value);
                     sqlcom.ExecuteNonQuery();
 
 
@@ -129,6 +143,22 @@ namespace Admin_Manga_Management
 
         }
 
+        private void Book_Image_Click(object sender, EventArgs e)
+        {
+           // try
+           // {
+                OpenFileDialog ofd = new OpenFileDialog
+                {
+                    Filter = "Image Files|*.jpg;*.jpeg;*.bmp"
+                };
+                if(ofd.ShowDialog() == DialogResult.OK)
+                {
+                    string imagePath = ofd.FileName;
+                    Book_Im = Image.FromFile(ofd.FileName);
+                    Book_Image.Image = Book_Im;
+                }
 
+            
+        }
     }
 }
