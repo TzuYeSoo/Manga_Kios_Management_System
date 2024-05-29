@@ -26,5 +26,10 @@ namespace Admin_Manga_Management
         {
 
         }
+
+        private void Remove_Transaction_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

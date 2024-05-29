@@ -37,6 +37,9 @@
             this.Confirm_BID = new System.Windows.Forms.Button();
             this.Close_RBook = new System.Windows.Forms.Button();
             this.Remove_Button = new System.Windows.Forms.Button();
+            this.RetrieveBook = new System.Windows.Forms.Button();
+            this.RConfirm_ID = new System.Windows.Forms.Button();
+            this.RBook = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Book_History)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Book_Hisotry)).BeginInit();
             this.SuspendLayout();
@@ -45,7 +48,7 @@
             // 
             this.Delete_Book_History.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Delete_Book_History.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Delete_Book_History.Location = new System.Drawing.Point(24, 242);
+            this.Delete_Book_History.Location = new System.Drawing.Point(24, 290);
             this.Delete_Book_History.Margin = new System.Windows.Forms.Padding(2);
             this.Delete_Book_History.Name = "Delete_Book_History";
             this.Delete_Book_History.RowHeadersWidth = 62;
@@ -68,7 +71,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 224);
+            this.label2.Location = new System.Drawing.Point(23, 244);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(152, 17);
@@ -151,11 +154,53 @@
             this.Remove_Button.UseVisualStyleBackColor = false;
             this.Remove_Button.Click += new System.EventHandler(this.Remove_Button_Click);
             // 
+            // RetrieveBook
+            // 
+            this.RetrieveBook.BackColor = System.Drawing.Color.LightCoral;
+            this.RetrieveBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RetrieveBook.ForeColor = System.Drawing.Color.Black;
+            this.RetrieveBook.Location = new System.Drawing.Point(289, 263);
+            this.RetrieveBook.Margin = new System.Windows.Forms.Padding(2);
+            this.RetrieveBook.Name = "RetrieveBook";
+            this.RetrieveBook.Size = new System.Drawing.Size(77, 23);
+            this.RetrieveBook.TabIndex = 10;
+            this.RetrieveBook.Text = "Retrieve";
+            this.RetrieveBook.UseVisualStyleBackColor = false;
+            this.RetrieveBook.Click += new System.EventHandler(this.RetrieveBook_Click);
+            // 
+            // RConfirm_ID
+            // 
+            this.RConfirm_ID.BackColor = System.Drawing.Color.Lime;
+            this.RConfirm_ID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RConfirm_ID.ForeColor = System.Drawing.Color.Black;
+            this.RConfirm_ID.Location = new System.Drawing.Point(208, 263);
+            this.RConfirm_ID.Margin = new System.Windows.Forms.Padding(2);
+            this.RConfirm_ID.Name = "RConfirm_ID";
+            this.RConfirm_ID.Size = new System.Drawing.Size(77, 23);
+            this.RConfirm_ID.TabIndex = 9;
+            this.RConfirm_ID.Text = "Confirm ID";
+            this.RConfirm_ID.UseVisualStyleBackColor = false;
+            this.RConfirm_ID.Click += new System.EventHandler(this.RConfirm_ID_Click);
+            // 
+            // RBook
+            // 
+            this.RBook.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.RBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RBook.Location = new System.Drawing.Point(26, 263);
+            this.RBook.Margin = new System.Windows.Forms.Padding(2);
+            this.RBook.Name = "RBook";
+            this.RBook.Size = new System.Drawing.Size(178, 23);
+            this.RBook.TabIndex = 11;
+            this.RBook.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Remove_Book
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
+            this.Controls.Add(this.RBook);
+            this.Controls.Add(this.RetrieveBook);
+            this.Controls.Add(this.RConfirm_ID);
             this.Controls.Add(this.Remove_Button);
             this.Controls.Add(this.Close_RBook);
             this.Controls.Add(this.Confirm_BID);
@@ -187,5 +232,8 @@
         private System.Windows.Forms.Button Confirm_BID;
         private System.Windows.Forms.Button Close_RBook;
         private System.Windows.Forms.Button Remove_Button;
+        private System.Windows.Forms.Button RetrieveBook;
+        private System.Windows.Forms.Button RConfirm_ID;
+        private System.Windows.Forms.TextBox RBook;
     }
 }

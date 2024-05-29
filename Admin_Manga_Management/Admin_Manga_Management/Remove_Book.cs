@@ -24,6 +24,8 @@ namespace Admin_Manga_Management
         static DataTable dt2 = new DataTable();
         static string Bname, BID, Bdesc, Bgenre, BPrice, BQuantity;
         static List<string> Bookg = new List<string>();
+        static int stat = 0;
+        static bool checkBRM = false, checkBRT = false;
 
         private void Close_RBook_Click(object sender, EventArgs e)
         {
@@ -36,23 +38,118 @@ namespace Admin_Manga_Management
             
         }
 
-        private void Remove_Button_Click(object sender, EventArgs e)
+        private void RetrieveBook_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Confirm to remove this Book","Remove Book",MessageBoxButtons.OKCancel) == DialogResult.OK)
+            sqlcon.Open();
+            if(checkBRT == true)
             {
-                sqlcon.Open();
-                sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 0 WHERE Book_ID = @Bid",sqlcon);
-                sqlcom.Parameters.AddWithValue("@Bid", RConfirm_BookID.Text);
-                sqlcom.ExecuteNonQuery();
+                if(RBook.Text != "")
+                {
+                    if(MessageBox.Show("Do you want to retrieve this Book?", "Retrieve Book", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 1 WHERE Book_ID = @EMPID", sqlcon);
+                        sqlcom.Parameters.AddWithValue("@EMPID", RBook.Text);
+                        sqlcom.ExecuteNonQuery();
 
+                        RBook.Clear();
+                        checkBRT = false;
 
-                dataBookHis();
-                dataBookRemove();
+                        dataBookHis();
+                        dataBookRemove();
 
-                RConfirm_BookID.Clear();
-                sqlcon.Close();
+                    }                   
+                }
+                else
+                {
+                    MessageBox.Show("Reinput the ID Verify it again");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please Verify ID first");
+            }
+            sqlcon.Close();
+        }
+
+        private void RConfirm_ID_Click(object sender, EventArgs e)
+        {
+            sqlcon.Open();
+            if(RBook.Text == "")
+            {
+                MessageBox.Show("Please input ID value first");
+            }
+            else
+            {
+                sqlcom = new SqlCommand("SELECT Book_Status FROM Book WHERE Book_ID = @EMPID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@EMPID", RBook.Text);
+
+                SqlDataReader rdr = sqlcom.ExecuteReader();
+                if (rdr.Read())
+                {
+                    stat = Convert.ToInt16(rdr.GetValue(0));
+                }
+                rdr.Close();
+
+                if (stat == 0)
+                {
+                    if(MessageBox.Show("Do you want to confirm this ID?", "Confirm Book ID", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        checkBRT = true;
+
+                        sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID" +
+                            " WHERE Book.Book_ID = @BID", sqlcon);
+                        sqlcom.Parameters.AddWithValue("@BID", RBook.Text);
+
+                        SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
+                        dt.Clear();
+                        sda.Fill(dt);
+                        Delete_Book_History.DataSource = dt;
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Book Already Active");
+                }
+
             }
             
+
+            sqlcon.Close();
+        }
+
+        private void Remove_Button_Click(object sender, EventArgs e)
+        {
+            sqlcon.Open();
+            if (checkBRM == true)
+            {
+                if (RConfirm_BookID.Text != "")
+                {
+                    if (MessageBox.Show("Do you want to retrieve this Book?", "Retrieve Book", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 1 WHERE Book_ID = @EMPID", sqlcon);
+                        sqlcom.Parameters.AddWithValue("@EMPID", RConfirm_BookID.Text);
+                        sqlcom.ExecuteNonQuery();
+
+                        RConfirm_BookID.Clear();
+                        checkBRM = false;
+
+                        dataBookHis();
+                        dataBookRemove();
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Reinput the ID Verify it again");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please Verify ID first");
+            }
+            sqlcon.Close();
+
         }
 
         private void Remove_Book_Load(object sender, EventArgs e)
@@ -92,16 +189,47 @@ namespace Admin_Manga_Management
         private void Confirm_BID_Click(object sender, EventArgs e)
         {
             sqlcon.Open();
-            if (MessageBox.Show("Confirm to access this book", "Access Book", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if (RConfirm_BookID.Text == "")
             {
-                
-                sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book RIGHT JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID WHERE Book.Book_ID ='" + RConfirm_BookID.Text + "' AND Book.Book_Status = 1", sqlcon);
-                SqlDataAdapter sda = new SqlDataAdapter (sqlcom);
-                dt.Clear();
-                sda.Fill(dt);
-                Book_Hisotry.DataSource = dt;
+                MessageBox.Show("Please input ID value first");
+            }
+            else
+            {
+                sqlcom = new SqlCommand("SELECT Book_Status FROM Book WHERE Book_ID = @EMPID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@EMPID", RConfirm_BookID.Text);
+
+                SqlDataReader rdr = sqlcom.ExecuteReader();
+                if (rdr.Read())
+                {
+                    stat = Convert.ToInt16(rdr.GetValue(0));
+                }
+                rdr.Close();
+
+                if (stat == 1)
+                {
+                    if (MessageBox.Show("Do you want to confirm this ID?", "Confirm Book ID", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    {
+                        checkBRM = true;
+
+                        sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book INNER JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID" +
+                            " WHERE Book.Book_ID = @BID", sqlcon);
+                        sqlcom.Parameters.AddWithValue("@BID", RConfirm_BookID.Text);
+
+                       SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
+                        dt.Clear();
+                        sda.Fill(dt);
+                        Book_Hisotry.DataSource = dt;
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("Book Already Inactive");
+                }
 
             }
+
+
             sqlcon.Close();
         }
     }

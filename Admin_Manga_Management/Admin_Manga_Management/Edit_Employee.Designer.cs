@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Search_Bar = new System.Windows.Forms.TextBox();
             this.Confirm_ID = new System.Windows.Forms.Button();
             this.comboBoxEmpPos = new System.Windows.Forms.ComboBox();
             this.dataEditHis = new System.Windows.Forms.DataGridView();
@@ -49,13 +49,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataEditHis)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Search_Bar
             // 
-            this.textBox1.Location = new System.Drawing.Point(17, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Search_Bar.Location = new System.Drawing.Point(17, 185);
+            this.Search_Bar.Name = "Search_Bar";
+            this.Search_Bar.Size = new System.Drawing.Size(258, 20);
+            this.Search_Bar.TabIndex = 0;
+            this.Search_Bar.TextChanged += new System.EventHandler(this.Search_Bar_TextChanged);
             // 
             // Confirm_ID
             // 
@@ -233,7 +233,7 @@
             this.Controls.Add(this.dataEditHis);
             this.Controls.Add(this.comboBoxEmpPos);
             this.Controls.Add(this.Confirm_ID);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Search_Bar);
             this.Name = "Edit_Employee";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Edit_Employee_Load);
@@ -245,7 +245,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Search_Bar;
         private System.Windows.Forms.Button Confirm_ID;
         private System.Windows.Forms.ComboBox comboBoxEmpPos;
         private System.Windows.Forms.DataGridView dataEditHis;

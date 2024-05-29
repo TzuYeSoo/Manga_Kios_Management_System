@@ -81,7 +81,7 @@
             // 
             this.Book_Hisotry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Book_Hisotry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Book_Hisotry.Location = new System.Drawing.Point(25, 83);
+            this.Book_Hisotry.Location = new System.Drawing.Point(11, 86);
             this.Book_Hisotry.Margin = new System.Windows.Forms.Padding(2);
             this.Book_Hisotry.Name = "Book_Hisotry";
             this.Book_Hisotry.RowHeadersWidth = 62;
@@ -126,12 +126,12 @@
             // 
             this.Delete_Book_History.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Delete_Book_History.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Delete_Book_History.Location = new System.Drawing.Point(24, 243);
+            this.Delete_Book_History.Location = new System.Drawing.Point(10, 291);
             this.Delete_Book_History.Margin = new System.Windows.Forms.Padding(2);
             this.Delete_Book_History.Name = "Delete_Book_History";
             this.Delete_Book_History.RowHeadersWidth = 62;
             this.Delete_Book_History.RowTemplate.Height = 28;
-            this.Delete_Book_History.Size = new System.Drawing.Size(755, 170);
+            this.Delete_Book_History.Size = new System.Drawing.Size(754, 170);
             this.Delete_Book_History.TabIndex = 9;
             // 
             // Close_RBook
@@ -151,7 +151,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 481);
             this.Controls.Add(this.Close_RBook);
             this.Controls.Add(this.Remove_Button);
             this.Controls.Add(this.Confirm_BID);
@@ -163,6 +163,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Remove_Transaction";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Remove_Transaction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Book_Hisotry)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Delete_Book_History)).EndInit();
             this.ResumeLayout(false);

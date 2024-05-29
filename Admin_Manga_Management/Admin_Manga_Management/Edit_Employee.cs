@@ -22,6 +22,7 @@ namespace Admin_Manga_Management
         static DataTable dt = new DataTable();
         static string Empuser, Emppass, Empcon, Empname;
         static bool chechcon = false;
+        static int stat = 0;
 
         private void Edit_Employee_Load(object sender, EventArgs e)
         {
@@ -33,7 +34,7 @@ namespace Admin_Manga_Management
         private void Edit_Click(object sender, EventArgs e)
         {
             sqlcon.Open();
-            if(chechcon = true)
+            if(chechcon == true)
             {
                 if (textBoxEmpID.Text != "")
                 {
@@ -51,6 +52,13 @@ namespace Admin_Manga_Management
 
                         datahis();
                         chechcon = false;
+
+                        textBoxEmpuser.Clear();
+                        textBoxEmppass.Clear();
+                        textBoxEmpcon.Clear();
+                        textBoxEmpID.Clear();
+                        textBoxEmpname.Clear();
+                        comboBoxEmpPos.Text = "";
                     }
                 }
                 else
@@ -64,22 +72,25 @@ namespace Admin_Manga_Management
             sqlcon.Close();
         }
 
-        public void datahis()
+        private void Search_Bar_TextChanged(object sender, EventArgs e)
         {
-            sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Emp_Status = 1", sqlcon);
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Emp_Status = 1 AND " +
+                "Employee_ID LIKE '" + Search_Bar.Text + "' OR " +
+                "Emp_UserName LIKE '%"+ Search_Bar.Text + "%' OR " +
+                "Emp_Name LIKE '%"+ Search_Bar.Text + "%'", sqlcon);
             SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
 
             dt.Clear();
             sda.Fill(dt);
             dataEditHis.DataSource = dt;
+
+            sqlcon.Close();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        public void datahis()
         {
-            sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Emp_Status = 1 AND " +
-                "Employee_ID LIKE '@emipd' OR" +
-                "Emp_UserName LIKE '%@empuser%' OR" +
-                "Emp_Name LIKE '%@empname%'", sqlcon);
+            sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Emp_Status = 1", sqlcon);
             SqlDataAdapter sda = new SqlDataAdapter(sqlcom);
 
             dt.Clear();
@@ -99,47 +110,65 @@ namespace Admin_Manga_Management
 
         private void Confirm_ID_Click(object sender, EventArgs e)
         {
+            sqlcon.Open();
             try
             {
-                sqlcon.Open();
-                if (textBoxEmpID.Text != "")
+                
+                sqlcom = new SqlCommand("SELECT Emp_Status FROM Admin WHERE Employee_ID = @empID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@empID", textBoxEmpID.Text);
+                SqlDataReader rdr1 = sqlcom.ExecuteReader();
+
+                if (rdr1.Read())
                 {
-                    if (MessageBox.Show("Do you want to confirm the ID?", "Confirm to edit this staff", MessageBoxButtons.OKCancel) == DialogResult.OK)
-                    {
-                        sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Employee_ID = @empID", sqlcon);
-                        sqlcom.Parameters.AddWithValue("@empID", textBoxEmpID.Text);
-
-                        SqlDataReader rdr = sqlcom.ExecuteReader();
-                        if (rdr.Read())
-                        {
-                            Empuser = (string)rdr.GetValue(1);
-                            Emppass = (string)rdr.GetValue(2);
-                            if (rdr.GetValue(3).ToString() != "")
-                            {
-                                Empcon = (string)rdr.GetValue(3);
-                            }
-
-                            Empname = (string)rdr.GetValue(6);
-                            comboBoxEmpPos.Text = (string)rdr.GetValue(4);
-
-                        }
-                        rdr.Close();
-                        chechcon = true;
-                    }
-                    textBoxEmpcon.Text = Empcon;
-                    textBoxEmppass.Text = Emppass;
-                    textBoxEmpuser.Text = Empuser;
-                    textBoxEmpname.Text = Empname;
-
+                    stat = Convert.ToUInt16(rdr1.GetValue(0));
                 }
-                sqlcon.Close();
+                rdr1.Close();
+                if (stat == 1)
+                {
+                    if (textBoxEmpID.Text != "")
+                    {
+                        if (MessageBox.Show("Do you want to confirm the ID?", "Confirm to edit this staff", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                        {
+                            sqlcom = new SqlCommand("SELECT * FROM Admin WHERE Employee_ID = @empID", sqlcon);
+                            sqlcom.Parameters.AddWithValue("@empID", textBoxEmpID.Text);
+
+                            SqlDataReader rdr = sqlcom.ExecuteReader();
+                            if (rdr.Read())
+                            {
+                                Empuser = (string)rdr.GetValue(1);
+                                Emppass = (string)rdr.GetValue(2);
+                                if (rdr.GetValue(3).ToString() != "")
+                                {
+                                    Empcon = (string)rdr.GetValue(3);
+                                }
+                                stat = Convert.ToInt16(rdr.GetValue(5));
+                                Empname = (string)rdr.GetValue(6);
+                                comboBoxEmpPos.Text = (string)rdr.GetValue(4);
+
+                            }
+                            rdr.Close();
+                            chechcon = true;
+                        }
+                        textBoxEmpcon.Text = Empcon;
+                        textBoxEmppass.Text = Emppass;
+                        textBoxEmpuser.Text = Empuser;
+                        textBoxEmpname.Text = Empname;
+                    }
+                }
+
+
+
 
             }
             catch (SqlException ex)
             {
                 MessageBox.Show("Not Existing Account");
+                sqlcon.Close();
             }
-           
+            sqlcon.Close();
+
+
+
         }
     }
 }
