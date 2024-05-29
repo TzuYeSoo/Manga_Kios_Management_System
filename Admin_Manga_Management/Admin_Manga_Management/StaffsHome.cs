@@ -24,26 +24,17 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom2 = new SqlCommand();
         private void StaffsHome_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'database1DataSet3.Admin' table. You can move, or remove it, as needed.
-            this.adminTableAdapter.Fill(this.database1DataSet3.Admin);
-            // TODO: This line of code loads data into the 'database1DataSet2.Cashier' table. You can move, or remove it, as needed.
-            this.cashierTableAdapter.Fill(this.database1DataSet2.Cashier);
+           
 
             sqlcon.Open();
             sqlcom1 = new SqlCommand("SELECT * FROM Admin", sqlcon);
             SqlDataAdapter adp1 = new SqlDataAdapter(sqlcom1);
             dt1.Clear();
             adp1.Fill(dt1);
-            Admin_GridView.DataSource = dt1;
+            Employee_Data.DataSource = dt1;
             sqlcon.Close();
 
-            sqlcon.Open();
-            sqlcom2 = new SqlCommand("SELECT * FROM Cashier",sqlcon);
-            SqlDataAdapter adp2 = new SqlDataAdapter(sqlcom2);
-            dt2.Clear();
-            adp2.Fill(dt2);
-            Cashier_GrideView.DataSource = dt2;
-            sqlcon.Close();
+
 
         }
 
@@ -82,18 +73,5 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
-        private void Add_User_Cash_Click(object sender, EventArgs e)
-        {
-            Cashier_ADD cs = new Cashier_ADD();
-            cs.Show();
-            this.Hide();
-        }
-
-        private void Delete_User_Cash_Click(object sender, EventArgs e)
-        {
-            Cashier_Remove cr = new Cashier_Remove();
-            cr.Show();
-            this.Hide();
-        }
     }
 }

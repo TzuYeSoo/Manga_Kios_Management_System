@@ -38,19 +38,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Admin_Pass_Label = new System.Windows.Forms.Label();
             this.Admin_Con_Label = new System.Windows.Forms.Label();
-            this.Admin_View_Add = new System.Windows.Forms.DataGridView();
-            this.adminIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminUserNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.adminPasswordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet3 = new Admin_Manga_Management.Database1DataSet3();
             this.adminTableAdapter = new Admin_Manga_Management.Database1DataSet3TableAdapters.AdminTableAdapter();
             this.Add_AdminBUtt = new System.Windows.Forms.Button();
             this.Close_Button_Add = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).BeginInit();
+            this.Admin_View_Add = new System.Windows.Forms.DataGridView();
+            this.EmailBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.PositionBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminID_Add
@@ -72,7 +72,7 @@
             // AdminPass_Add
             // 
             this.AdminPass_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminPass_Add.Location = new System.Drawing.Point(42, 168);
+            this.AdminPass_Add.Location = new System.Drawing.Point(239, 86);
             this.AdminPass_Add.Name = "AdminPass_Add";
             this.AdminPass_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminPass_Add.TabIndex = 2;
@@ -80,7 +80,7 @@
             // AdminCon_Add
             // 
             this.AdminCon_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminCon_Add.Location = new System.Drawing.Point(42, 209);
+            this.AdminCon_Add.Location = new System.Drawing.Point(239, 127);
             this.AdminCon_Add.Name = "AdminCon_Add";
             this.AdminCon_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminCon_Add.TabIndex = 3;
@@ -116,7 +116,7 @@
             // Admin_Pass_Label
             // 
             this.Admin_Pass_Label.AutoSize = true;
-            this.Admin_Pass_Label.Location = new System.Drawing.Point(39, 152);
+            this.Admin_Pass_Label.Location = new System.Drawing.Point(236, 70);
             this.Admin_Pass_Label.Name = "Admin_Pass_Label";
             this.Admin_Pass_Label.Size = new System.Drawing.Size(85, 13);
             this.Admin_Pass_Label.TabIndex = 7;
@@ -125,50 +125,11 @@
             // Admin_Con_Label
             // 
             this.Admin_Con_Label.AutoSize = true;
-            this.Admin_Con_Label.Location = new System.Drawing.Point(39, 193);
+            this.Admin_Con_Label.Location = new System.Drawing.Point(236, 111);
             this.Admin_Con_Label.Name = "Admin_Con_Label";
             this.Admin_Con_Label.Size = new System.Drawing.Size(44, 13);
             this.Admin_Con_Label.TabIndex = 8;
             this.Admin_Con_Label.Text = "Contact";
-            // 
-            // Admin_View_Add
-            // 
-            this.Admin_View_Add.AutoGenerateColumns = false;
-            this.Admin_View_Add.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Admin_View_Add.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.adminIDDataGridViewTextBoxColumn,
-            this.adminUserNameDataGridViewTextBoxColumn,
-            this.adminPasswordDataGridViewTextBoxColumn,
-            this.contactDataGridViewTextBoxColumn});
-            this.Admin_View_Add.DataSource = this.adminBindingSource;
-            this.Admin_View_Add.Location = new System.Drawing.Point(269, 86);
-            this.Admin_View_Add.Name = "Admin_View_Add";
-            this.Admin_View_Add.Size = new System.Drawing.Size(399, 198);
-            this.Admin_View_Add.TabIndex = 9;
-            // 
-            // adminIDDataGridViewTextBoxColumn
-            // 
-            this.adminIDDataGridViewTextBoxColumn.DataPropertyName = "Admin_ID";
-            this.adminIDDataGridViewTextBoxColumn.HeaderText = "Admin_ID";
-            this.adminIDDataGridViewTextBoxColumn.Name = "adminIDDataGridViewTextBoxColumn";
-            // 
-            // adminUserNameDataGridViewTextBoxColumn
-            // 
-            this.adminUserNameDataGridViewTextBoxColumn.DataPropertyName = "Admin_UserName";
-            this.adminUserNameDataGridViewTextBoxColumn.HeaderText = "Admin_UserName";
-            this.adminUserNameDataGridViewTextBoxColumn.Name = "adminUserNameDataGridViewTextBoxColumn";
-            // 
-            // adminPasswordDataGridViewTextBoxColumn
-            // 
-            this.adminPasswordDataGridViewTextBoxColumn.DataPropertyName = "Admin_Password";
-            this.adminPasswordDataGridViewTextBoxColumn.HeaderText = "Admin_Password";
-            this.adminPasswordDataGridViewTextBoxColumn.Name = "adminPasswordDataGridViewTextBoxColumn";
-            // 
-            // contactDataGridViewTextBoxColumn
-            // 
-            this.contactDataGridViewTextBoxColumn.DataPropertyName = "Contact";
-            this.contactDataGridViewTextBoxColumn.HeaderText = "Contact";
-            this.contactDataGridViewTextBoxColumn.Name = "contactDataGridViewTextBoxColumn";
             // 
             // adminBindingSource
             // 
@@ -188,7 +149,7 @@
             // 
             this.Add_AdminBUtt.BackColor = System.Drawing.Color.LightGreen;
             this.Add_AdminBUtt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_AdminBUtt.Location = new System.Drawing.Point(88, 261);
+            this.Add_AdminBUtt.Location = new System.Drawing.Point(634, 127);
             this.Add_AdminBUtt.Name = "Add_AdminBUtt";
             this.Add_AdminBUtt.Size = new System.Drawing.Size(75, 23);
             this.Add_AdminBUtt.TabIndex = 10;
@@ -201,7 +162,7 @@
             this.Close_Button_Add.BackColor = System.Drawing.Color.IndianRed;
             this.Close_Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close_Button_Add.ForeColor = System.Drawing.Color.Transparent;
-            this.Close_Button_Add.Location = new System.Drawing.Point(593, 9);
+            this.Close_Button_Add.Location = new System.Drawing.Point(634, 13);
             this.Close_Button_Add.Name = "Close_Button_Add";
             this.Close_Button_Add.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Close_Button_Add.Size = new System.Drawing.Size(75, 23);
@@ -210,14 +171,60 @@
             this.Close_Button_Add.UseVisualStyleBackColor = false;
             this.Close_Button_Add.Click += new System.EventHandler(this.Close_Button_Add_Click);
             // 
+            // Admin_View_Add
+            // 
+            this.Admin_View_Add.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Admin_View_Add.Location = new System.Drawing.Point(42, 173);
+            this.Admin_View_Add.Name = "Admin_View_Add";
+            this.Admin_View_Add.Size = new System.Drawing.Size(667, 161);
+            this.Admin_View_Add.TabIndex = 12;
+            // 
+            // EmailBox
+            // 
+            this.EmailBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailBox.Location = new System.Drawing.Point(427, 127);
+            this.EmailBox.Name = "EmailBox";
+            this.EmailBox.Size = new System.Drawing.Size(182, 22);
+            this.EmailBox.TabIndex = 13;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(424, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Position";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(424, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Email";
+            // 
+            // PositionBox
+            // 
+            this.PositionBox.FormattingEnabled = true;
+            this.PositionBox.Location = new System.Drawing.Point(427, 87);
+            this.PositionBox.Name = "PositionBox";
+            this.PositionBox.Size = new System.Drawing.Size(182, 21);
+            this.PositionBox.TabIndex = 17;
+            // 
             // Add_Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 308);
+            this.ClientSize = new System.Drawing.Size(746, 381);
+            this.Controls.Add(this.PositionBox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.EmailBox);
+            this.Controls.Add(this.Admin_View_Add);
             this.Controls.Add(this.Close_Button_Add);
             this.Controls.Add(this.Add_AdminBUtt);
-            this.Controls.Add(this.Admin_View_Add);
             this.Controls.Add(this.Admin_Con_Label);
             this.Controls.Add(this.Admin_Pass_Label);
             this.Controls.Add(this.label3);
@@ -231,9 +238,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Admin_View_Add)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,15 +257,15 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label Admin_Pass_Label;
         private System.Windows.Forms.Label Admin_Con_Label;
-        private System.Windows.Forms.DataGridView Admin_View_Add;
         private Database1DataSet3 database1DataSet3;
         private System.Windows.Forms.BindingSource adminBindingSource;
         private Database1DataSet3TableAdapters.AdminTableAdapter adminTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminUserNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn adminPasswordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn contactDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button Add_AdminBUtt;
         private System.Windows.Forms.Button Close_Button_Add;
+        private System.Windows.Forms.DataGridView Admin_View_Add;
+        private System.Windows.Forms.TextBox EmailBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox PositionBox;
     }
 }

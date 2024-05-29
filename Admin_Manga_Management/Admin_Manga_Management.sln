@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Admin_Manga_Management", "Admin_Manga_Management\Admin_Manga_Management.csproj", "{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kiosk_Customer", "Kiosk_Customer\Kiosk_Customer.csproj", "{8D66C3FA-E815-4B91-A169-56F43DBD4955}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D66C3FA-E815-4B91-A169-56F43DBD4955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D66C3FA-E815-4B91-A169-56F43DBD4955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D66C3FA-E815-4B91-A169-56F43DBD4955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D66C3FA-E815-4B91-A169-56F43DBD4955}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

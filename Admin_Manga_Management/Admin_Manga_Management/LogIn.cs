@@ -75,5 +75,9 @@ namespace Admin_Manga_Management
             Admin_Password.PasswordChar = '*';
         }
 
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tsad");
+        }
     }
 }

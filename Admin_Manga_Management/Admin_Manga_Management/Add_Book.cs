@@ -19,6 +19,7 @@ namespace Admin_Manga_Management
         
         public Add_Book()
         {
+           
             InitializeComponent();
         }
         private Image Book_Im;
@@ -71,12 +72,13 @@ namespace Admin_Manga_Management
                     if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
 
-                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description, @BookImage)", sqlcon);
+                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description,@bookstat ,@BookImage)", sqlcon);
                     sqlcom.Parameters.AddWithValue("@bookId", Add_BookID_Add.Text);
                     sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
                     sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
                     sqlcom.Parameters.AddWithValue("@description", Add_BookDescrip_Add.Text);
+                    sqlcom.Parameters.AddWithValue("@bookstat", 1);
                     sqlcom.Parameters.AddWithValue("@BookImage", imageBytes ?? (object)DBNull.Value);
                     sqlcom.ExecuteNonQuery();
 
@@ -86,9 +88,10 @@ namespace Admin_Manga_Management
                             if (GenreNames.GetItemChecked(i))
                             {
                                 BGName = $"{GenreNames.Items[i]}"; ;
-                                sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID)", sqlcon);
+                                sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID )", sqlcon);
                                 sqlcom2.Parameters.AddWithValue("@book_ID", Add_BookID_Add.Text);
                                 sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
+                                
                                 sqlcom2.ExecuteNonQuery();
                             }
                         }
@@ -145,9 +148,10 @@ namespace Admin_Manga_Management
 
         private void Book_Image_Click(object sender, EventArgs e)
         {
-           // try
-           // {
-                OpenFileDialog ofd = new OpenFileDialog
+            // try
+            // {
+            Book_Image.SizeMode = PictureBoxSizeMode.StretchImage;
+            OpenFileDialog ofd = new OpenFileDialog
                 {
                     Filter = "Image Files|*.jpg;*.jpeg;*.bmp"
                 };

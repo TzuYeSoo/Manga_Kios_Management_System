@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Book));
             this.Add_BookID_Add = new System.Windows.Forms.TextBox();
             this.Book_GrideView_BookADD = new System.Windows.Forms.DataGridView();
             this.Add_BookINV = new System.Windows.Forms.Label();
@@ -197,7 +198,7 @@
             this.button1.Location = new System.Drawing.Point(535, 4);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.Size = new System.Drawing.Size(56, 25);
             this.button1.TabIndex = 14;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = false;
@@ -226,7 +227,10 @@
             // 
             // Book_Image
             // 
-            this.Book_Image.Location = new System.Drawing.Point(601, 72);
+            this.Book_Image.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Book_Image.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Book_Image.BackgroundImage")));
+            this.Book_Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Book_Image.Location = new System.Drawing.Point(592, 114);
             this.Book_Image.Name = "Book_Image";
             this.Book_Image.Size = new System.Drawing.Size(186, 180);
             this.Book_Image.TabIndex = 17;
@@ -238,7 +242,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.ClientSize = new System.Drawing.Size(814, 366);
+            this.ClientSize = new System.Drawing.Size(790, 366);
             this.Controls.Add(this.Book_Image);
             this.Controls.Add(this.GenreNames);
             this.Controls.Add(this.Add_Book_FROMADD);
