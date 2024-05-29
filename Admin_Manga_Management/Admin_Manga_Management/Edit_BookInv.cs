@@ -141,7 +141,7 @@ namespace Admin_Manga_Management
             if (MessageBox.Show("Confirm to edit this ID", "EDIT BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 sqlcon.Open();
-                if (Confirm_BookID.Text != null)
+                if (Confirm_BookID.Text != "")
                 {
 
                     Edit_BookName_Edit.ReadOnly = false;

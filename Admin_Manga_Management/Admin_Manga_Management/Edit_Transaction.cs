@@ -54,11 +54,7 @@ namespace Admin_Manga_Management
             {
                 if(MessageBox.Show("","", MessageBoxButtons.OKCancel) == DialogResult.OK)
                 {
-                    
-                 
-                   
-
-
+    
                     sqlcom = new SqlCommand("SELECT Customers.Customer_ID, Customer_Name, Order_Number, Cashier_ID, " +
                         "Book_Name, Customers.Book_Quantity, Book_Price, Date FROM Customers " +
                         "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
@@ -99,6 +95,9 @@ namespace Admin_Manga_Management
                     dt.Clear();
                     sqda.Fill(dt);
                     Trans_HisGrid.DataSource = dt;
+
+                    textBoxCustomerName.ReadOnly = true;
+                    textBoxCustomerName.ReadOnly = true;
                 }
                
             }

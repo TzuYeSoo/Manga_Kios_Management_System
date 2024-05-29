@@ -70,5 +70,12 @@ namespace Admin_Manga_Management
             Admin_Password.ForeColor = Color.Black;
             Admin_Password.PasswordChar = '*';
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CashierHome csh = new CashierHome();
+            csh.Show();
+            this.Hide();
+        }
     }
 }

@@ -126,6 +126,12 @@
     <Compile Include="Edit_Transaction.Designer.cs">
       <DependentUpon>Edit_Transaction.cs</DependentUpon>
     </Compile>
+    <Compile Include="CashierHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierHome.Designer.cs">
+      <DependentUpon>CashierHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="Remove_Transaction.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Book_Inv.resx">
       <DependentUpon>Book_Inv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierHome.resx">
+      <DependentUpon>CashierHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier_ADD.resx">
       <DependentUpon>Cashier_ADD.cs</DependentUpon>
