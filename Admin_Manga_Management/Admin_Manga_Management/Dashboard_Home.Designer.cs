@@ -39,23 +39,23 @@
             this.bookBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bookTableAdapter = new Admin_Manga_Management.Database1DataSetTableAdapters.BookTableAdapter();
             this.customersTableAdapter = new Admin_Manga_Management.Database1DataSetTableAdapters.CustomersTableAdapter();
+            this.Dashboard_Grideview = new System.Windows.Forms.DataGridView();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Dashboard_Grideview = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dashboard_Grideview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dashboard_Grideview)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -125,6 +125,7 @@
             this.Settings_Ad.TabIndex = 5;
             this.Settings_Ad.Text = "Settings";
             this.Settings_Ad.UseVisualStyleBackColor = false;
+            this.Settings_Ad.Click += new System.EventHandler(this.Settings_Ad_Click);
             // 
             // customersBindingSource
             // 
@@ -148,6 +149,14 @@
             // customersTableAdapter
             // 
             this.customersTableAdapter.ClearBeforeFill = true;
+            // 
+            // Dashboard_Grideview
+            // 
+            this.Dashboard_Grideview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dashboard_Grideview.Location = new System.Drawing.Point(230, 259);
+            this.Dashboard_Grideview.Name = "Dashboard_Grideview";
+            this.Dashboard_Grideview.Size = new System.Drawing.Size(558, 179);
+            this.Dashboard_Grideview.TabIndex = 11;
             // 
             // pictureBox6
             // 
@@ -213,14 +222,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Dashboard_Grideview
-            // 
-            this.Dashboard_Grideview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Dashboard_Grideview.Location = new System.Drawing.Point(230, 259);
-            this.Dashboard_Grideview.Name = "Dashboard_Grideview";
-            this.Dashboard_Grideview.Size = new System.Drawing.Size(558, 179);
-            this.Dashboard_Grideview.TabIndex = 11;
-            // 
             // Dashboard_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -244,13 +245,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bookBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dashboard_Grideview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Dashboard_Grideview)).EndInit();
             this.ResumeLayout(false);
 
         }

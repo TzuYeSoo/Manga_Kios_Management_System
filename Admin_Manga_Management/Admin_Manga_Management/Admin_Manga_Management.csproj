@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Encap.cs" />
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -125,6 +126,12 @@
     </Compile>
     <Compile Include="Edit_Employee.Designer.cs">
       <DependentUpon>Edit_Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting_Admin.Designer.cs">
+      <DependentUpon>Setting_Admin.cs</DependentUpon>
     </Compile>
     <Compile Include="Remove_Transaction.cs">
       <SubType>Form</SubType>
@@ -202,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Remove_Transaction.resx">
       <DependentUpon>Remove_Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting_Admin.resx">
+      <DependentUpon>Setting_Admin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffsHome.resx">
       <DependentUpon>StaffsHome.cs</DependentUpon>

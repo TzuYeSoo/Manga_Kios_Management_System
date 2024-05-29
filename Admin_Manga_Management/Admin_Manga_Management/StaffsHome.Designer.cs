@@ -44,24 +44,24 @@
             this.Add_User_Admin = new System.Windows.Forms.Button();
             this.Edit_User_Admin = new System.Windows.Forms.Button();
             this.Remove_User_Admin = new System.Windows.Forms.Button();
+            this.Employee_Data = new System.Windows.Forms.DataGridView();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Employee_Data = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Employee_Data)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Employee_Data)).BeginInit();
             this.SuspendLayout();
             // 
             // Dash_Staffs
@@ -88,6 +88,7 @@
             this.Settings_Staffs.TabIndex = 2;
             this.Settings_Staffs.Text = "Settings";
             this.Settings_Staffs.UseVisualStyleBackColor = false;
+            this.Settings_Staffs.Click += new System.EventHandler(this.Settings_Staffs_Click);
             // 
             // Trans_Staffs
             // 
@@ -202,6 +203,14 @@
             this.Remove_User_Admin.UseVisualStyleBackColor = false;
             this.Remove_User_Admin.Click += new System.EventHandler(this.Remove_User_Admin_Click);
             // 
+            // Employee_Data
+            // 
+            this.Employee_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Employee_Data.Location = new System.Drawing.Point(225, 76);
+            this.Employee_Data.Name = "Employee_Data";
+            this.Employee_Data.Size = new System.Drawing.Size(569, 331);
+            this.Employee_Data.TabIndex = 21;
+            // 
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Silver;
@@ -266,14 +275,6 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Employee_Data
-            // 
-            this.Employee_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Employee_Data.Location = new System.Drawing.Point(225, 76);
-            this.Employee_Data.Name = "Employee_Data";
-            this.Employee_Data.Size = new System.Drawing.Size(569, 331);
-            this.Employee_Data.TabIndex = 21;
-            // 
             // StaffsHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -302,13 +303,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Employee_Data)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Employee_Data)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

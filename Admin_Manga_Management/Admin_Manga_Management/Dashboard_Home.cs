@@ -59,6 +59,11 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
-     
+        private void Settings_Ad_Click(object sender, EventArgs e)
+        {
+            Setting_Admin sa = new Setting_Admin();
+            sa.Show();
+            this.Hide();
+        }
     }
 }

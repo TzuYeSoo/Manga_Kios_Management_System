@@ -79,5 +79,12 @@ namespace Admin_Manga_Management
             empEdit.Show();
             this.Hide();
         }
+
+        private void Settings_Staffs_Click(object sender, EventArgs e)
+        {
+            Setting_Admin sa = new Setting_Admin();
+            sa.Show();
+            this.Hide();
+        }
     }
 }

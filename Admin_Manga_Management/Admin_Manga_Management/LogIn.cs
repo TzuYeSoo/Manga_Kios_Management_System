@@ -20,19 +20,18 @@ namespace Admin_Manga_Management
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom = new SqlCommand();
         static bool isLogin = false;
-
+        static Encap enc;
         private void Log_but_Click(object sender, EventArgs e)
         {
                 sqlcon.Open();
-                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password FROM Admin WHERE Emp_Status = 1", sqlcon);
+                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password, Emp_Name FROM Admin WHERE Emp_Status = 1", sqlcon);
                 SqlDataReader reader = sqlcom.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    string Admin_User = (string)reader.GetValue(0);
-                    string Admin_Pass = (string)reader.GetValue(1);
+                    enc = new Encap((string)reader.GetValue(0), (string)reader.GetValue(1), (string)reader.GetValue(2));
 
-                    if (Admin_User.Equals(Admin_Username.Text) && Admin_Pass.Equals(Admin_Password.Text))
+                    if (enc.Username.Equals(Admin_Username.Text) && enc.Password.Equals(Admin_Password.Text))
                     {
 
                         isLogin = true;
@@ -73,6 +72,11 @@ namespace Admin_Manga_Management
         {
             Admin_Password.ForeColor = Color.Black;
             Admin_Password.PasswordChar = '*';
+        }
+
+        private void LogIn_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
