@@ -37,7 +37,19 @@ namespace Admin_Manga_Management
 
         private void Remove_Remove_Click(object sender, EventArgs e)
         {
-            
+            if(RRemoveBox.Text != "")
+            {
+                if(MessageBox.Show("Remove This Account", "Remove Account", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                {
+                    sqlcon.Open();
+
+                    sqlcom = new SqlCommand("UPDATE Admin SET EM_Status = 0 WHERE Admin_ID = @AID", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@AID", AdminID_Remove.Text);
+                    sqlcom.ExecuteNonQuery();
+                    sqlcon.Close();
+                    AdminID_Remove.Clear();
+                }
+            }
 
         }
 
@@ -121,7 +133,7 @@ namespace Admin_Manga_Management
                     sqlcon.Open();
                     sqlcom = new SqlCommand("UPDATE Admin SET EM_Status = 1 WHERE Admin_ID = @AID", sqlcon);
                     sqlcom.Parameters.AddWithValue("@AID",RRemoveBox.Text);
-
+                    sqlcom.ExecuteNonQuery();
                     EmpdataHis();
                     EmpdataHisR();
                     sqlcon.Close();
