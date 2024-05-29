@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 447);
+            this.ClientSize = new System.Drawing.Size(674, 496);
             this.Controls.Add(this.RConfirm_ID);
             this.Controls.Add(this.Retrieve_EM);
             this.Controls.Add(this.label1);

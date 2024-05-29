@@ -24,7 +24,7 @@ namespace Admin_Manga_Management
         private void Log_but_Click(object sender, EventArgs e)
         {
                 sqlcon.Open();
-                sqlcom = new SqlCommand("SELECT Admin_Username, Admin_Password FROM Admin", sqlcon);
+                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password FROM Admin WHERE Emp_Status = 1", sqlcon);
                 SqlDataReader reader = sqlcom.ExecuteReader();
 
                 while (reader.Read())

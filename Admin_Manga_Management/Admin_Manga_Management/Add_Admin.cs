@@ -38,9 +38,7 @@ namespace Admin_Manga_Management
             try
             {
 
- 
-
-                if (AdminID_Add.Text == "" || AdminUsername_Add.Text == "" || AdminPass_Add.Text == "")
+                if (AdminUsername_Add.Text == "" || AdminPass_Add.Text == "" || PositionBox.SelectedIndex < -1 || TName.Text == "")
                 {
                     MessageBox.Show("Please Input Every needed Credentials");
                 }
@@ -48,20 +46,18 @@ namespace Admin_Manga_Management
                 {
                     if(MessageBox.Show("Are you sure you want to Add this Acount?", "Admin Add", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        sqlcom2 = new SqlCommand("INSERT INTO Admin VALUES(@emuser, @empass, @con, @empos, @emstat, @email) ", sqlcon);
+                        sqlcom2 = new SqlCommand("INSERT INTO Admin VALUES(@emuser, @empass, @con, @empos, @emstat, @empname) ", sqlcon);
                         sqlcom2.Parameters.AddWithValue("@emuser", AdminUsername_Add.Text);
                         sqlcom2.Parameters.AddWithValue("@empass", AdminPass_Add.Text);
                         sqlcom2.Parameters.AddWithValue("@con", AdminCon_Add.Text);
                         sqlcom2.Parameters.AddWithValue("@empos", PositionBox.SelectedItem);
                         sqlcom2.Parameters.AddWithValue("@emstat", 1);
-                        sqlcom2.Parameters.AddWithValue("@empass", EmailBox.Text);
+                        sqlcom2.Parameters.AddWithValue("@empname", TName.Text);
                         sqlcom2.ExecuteNonQuery();
                         Datatable();
                        
 
                     }
-
-
 
                 }
             }catch (SqlException ex) 

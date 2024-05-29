@@ -179,3 +179,4 @@ C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Managemen
 C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Remove_Transaction.resources
 C:\Users\STI-STUDENT\Desktop\Jessie\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.CashierHome.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.CashierHome.resources
+C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Edit_Employee.resources

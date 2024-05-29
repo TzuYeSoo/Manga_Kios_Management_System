@@ -188,6 +188,7 @@
             this.Edit_User_Admin.TabIndex = 19;
             this.Edit_User_Admin.Text = "Edit";
             this.Edit_User_Admin.UseVisualStyleBackColor = false;
+            this.Edit_User_Admin.Click += new System.EventHandler(this.Edit_User_Admin_Click);
             // 
             // Remove_User_Admin
             // 

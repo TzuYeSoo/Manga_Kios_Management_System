@@ -73,5 +73,11 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
+        private void Edit_User_Admin_Click(object sender, EventArgs e)
+        {
+            Edit_Employee empEdit = new Edit_Employee();
+            empEdit.Show();
+            this.Hide();
+        }
     }
 }
