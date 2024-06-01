@@ -33,6 +33,7 @@
             this.Admin_Password = new System.Windows.Forms.TextBox();
             this.Log_but = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,9 +41,10 @@
             // 
             this.Admin_Username.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_Username.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Admin_Username.Location = new System.Drawing.Point(238, 208);
+            this.Admin_Username.Location = new System.Drawing.Point(357, 320);
+            this.Admin_Username.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Admin_Username.Name = "Admin_Username";
-            this.Admin_Username.Size = new System.Drawing.Size(259, 32);
+            this.Admin_Username.Size = new System.Drawing.Size(386, 44);
             this.Admin_Username.TabIndex = 0;
             this.Admin_Username.Text = "Username";
             this.Admin_Username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -52,9 +54,10 @@
             // 
             this.Admin_Password.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_Password.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.Admin_Password.Location = new System.Drawing.Point(238, 262);
+            this.Admin_Password.Location = new System.Drawing.Point(357, 403);
+            this.Admin_Password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Admin_Password.Name = "Admin_Password";
-            this.Admin_Password.Size = new System.Drawing.Size(259, 32);
+            this.Admin_Password.Size = new System.Drawing.Size(386, 44);
             this.Admin_Password.TabIndex = 1;
             this.Admin_Password.Text = "Password";
             this.Admin_Password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -62,9 +65,10 @@
             // 
             // Log_but
             // 
-            this.Log_but.Location = new System.Drawing.Point(308, 315);
+            this.Log_but.Location = new System.Drawing.Point(462, 485);
+            this.Log_but.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Log_but.Name = "Log_but";
-            this.Log_but.Size = new System.Drawing.Size(120, 30);
+            this.Log_but.Size = new System.Drawing.Size(180, 46);
             this.Log_but.TabIndex = 2;
             this.Log_but.Text = "Sign In";
             this.Log_but.UseVisualStyleBackColor = true;
@@ -72,24 +76,37 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(238, 34);
+            this.pictureBox1.Location = new System.Drawing.Point(357, 52);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 150);
+            this.pictureBox1.Size = new System.Drawing.Size(388, 231);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(238, 541);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 52);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Log_but);
             this.Controls.Add(this.Admin_Password);
             this.Controls.Add(this.Admin_Username);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "LogIn";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LogIn_Load);
@@ -105,6 +122,7 @@
         private System.Windows.Forms.TextBox Admin_Password;
         private System.Windows.Forms.Button Log_but;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

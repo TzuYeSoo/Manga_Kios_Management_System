@@ -72,8 +72,7 @@ namespace Admin_Manga_Management
                     if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
 
-                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@bookId, @name, @price, @quantity, @description,@bookstat ,@BookImage)", sqlcon);
-                    sqlcom.Parameters.AddWithValue("@bookId", Add_BookID_Add.Text);
+                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@name, @price, @quantity, @description,@bookstat ,@BookImage)", sqlcon);
                     sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
                     sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);

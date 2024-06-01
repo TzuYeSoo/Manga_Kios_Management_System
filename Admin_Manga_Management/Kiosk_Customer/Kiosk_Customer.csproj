@@ -46,14 +46,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Book_Selection.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Book_Selection.Designer.cs">
+      <DependentUpon>Book_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kiosk_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kiosk_Home.Designer.cs">
+      <DependentUpon>Kiosk_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BookChoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BookChoice.Designer.cs">
+      <DependentUpon>BookChoice.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Book_Selection.resx">
+      <DependentUpon>Book_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kiosk_Home.resx">
+      <DependentUpon>Kiosk_Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +81,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BookChoice.resx">
+      <DependentUpon>BookChoice.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

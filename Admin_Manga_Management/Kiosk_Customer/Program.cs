@@ -16,7 +16,12 @@ namespace Kiosk_Customer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Kiosk_Home());
         }
+    }
+    public class sqlConnector
+    {
+        public static string connector = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\Database1.mdf;Integrated Security=True";
+
     }
 }
