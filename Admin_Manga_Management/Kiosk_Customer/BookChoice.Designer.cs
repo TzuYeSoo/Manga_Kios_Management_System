@@ -60,15 +60,16 @@
             this.BookPrice.TabIndex = 2;
             this.BookPrice.Text = "label2";
             // 
-            // UserControl1
+            // BookChoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.BookPrice);
             this.Controls.Add(this.BookName);
             this.Controls.Add(this.BookImage);
-            this.Name = "UserControl1";
+            this.Name = "BookChoice";
             this.Size = new System.Drawing.Size(328, 367);
+            this.Load += new System.EventHandler(this.BookChoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BookImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -76,9 +77,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox BookImage;
         private System.Windows.Forms.Label BookName;
         private System.Windows.Forms.Label BookPrice;
+        public System.Windows.Forms.PictureBox BookImage;
     }
 }

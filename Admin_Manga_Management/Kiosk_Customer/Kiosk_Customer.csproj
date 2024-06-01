@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddToCart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddToCart.Designer.cs">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book_Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book_Cart.Designer.cs">
+      <DependentUpon>Book_Cart.cs</DependentUpon>
+    </Compile>
     <Compile Include="Book_Selection.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Book_Selection.Designer.cs">
       <DependentUpon>Book_Selection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfo.Designer.cs">
+      <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="Kiosk_Home.cs">
       <SubType>Form</SubType>
@@ -66,8 +84,23 @@
     <Compile Include="BookChoice.Designer.cs">
       <DependentUpon>BookChoice.cs</DependentUpon>
     </Compile>
+    <Compile Include="SelectBook.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SelectBook.Designer.cs">
+      <DependentUpon>SelectBook.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddToCart.resx">
+      <DependentUpon>AddToCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book_Cart.resx">
+      <DependentUpon>Book_Cart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Book_Selection.resx">
       <DependentUpon>Book_Selection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfo.resx">
+      <DependentUpon>BookInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kiosk_Home.resx">
       <DependentUpon>Kiosk_Home.cs</DependentUpon>
@@ -83,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="BookChoice.resx">
       <DependentUpon>BookChoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBook.resx">
+      <DependentUpon>SelectBook.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

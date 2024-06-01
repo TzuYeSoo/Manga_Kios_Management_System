@@ -20,11 +20,19 @@ namespace Kiosk_Customer
         private string Bname;
         private double Bprice;
         private int BID;
+
+        
         public string getBook { get { return Bname; } set { Bname = value; BookName.Text = value; } }
         public double getBookPrice { get { return Bprice; } set { Bprice = value; BookPrice.Text = value.ToString(); } }
         public int getBookID { get { return BID; } set { BID = value; } }
 
 
+
         #endregion
+
+        private void BookChoice_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

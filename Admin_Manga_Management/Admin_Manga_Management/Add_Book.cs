@@ -29,6 +29,7 @@ namespace Admin_Manga_Management
         static DataTable dt = new DataTable();
         static string BookOptionsts;
         static string BGName;
+        static int BookID;
         private void Add_Book_Load(object sender, EventArgs e)
         {
             
@@ -67,12 +68,13 @@ namespace Admin_Manga_Management
                         && Add_BookQuantity_Add.Text != "")
             {
                 sqlcon.Open();
-                try
-                {
+                //try
+                //{
                     if (MessageBox.Show("Do you want to add this book?", "ADD THIS BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
 
-                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@name, @price, @quantity, @description,@bookstat ,@BookImage)", sqlcon);
+                    sqlcom = new SqlCommand("INSERT INTO Book VALUES(@name, @price, @quantity, @description,@bookstat ,@BookImage) ", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@CBookname", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@name", Add_BookName_Add.Text);
                     sqlcom.Parameters.AddWithValue("@price", Add_BookPrice_Add.Text);
                     sqlcom.Parameters.AddWithValue("@quantity", Add_BookQuantity_Add.Text);
@@ -86,11 +88,20 @@ namespace Admin_Manga_Management
                         {
                             if (GenreNames.GetItemChecked(i))
                             {
+                                sqlcom = new SqlCommand("SELECT Book_ID FROM Book WHERE Book_Name = @bookn AND Book_Price = @bookPrice",sqlcon);
+                                sqlcom.Parameters.AddWithValue("@bookn", Add_BookName_Add.Text);
+                                sqlcom.Parameters.AddWithValue("@bookPrice", Convert.ToDouble(Add_BookPrice_Add.Text));
+                                SqlDataReader rdr = sqlcom.ExecuteReader();
+                                if (rdr.Read())
+                                {
+                                BookID = Convert.ToInt16(rdr.GetValue(0));
+                                }
+                                rdr.Close();
                                 BGName = $"{GenreNames.Items[i]}"; ;
                                 sqlcom2 = new SqlCommand("INSERT INTO Book_GenreName VALUES(@bookgenre, @book_ID )", sqlcon);
-                                sqlcom2.Parameters.AddWithValue("@book_ID", Add_BookID_Add.Text);
+                                sqlcom2.Parameters.AddWithValue("@book_ID", BookID);
                                 sqlcom2.Parameters.AddWithValue("@bookgenre", BGName);
-                                
+
                                 sqlcom2.ExecuteNonQuery();
                             }
                         }
@@ -109,11 +120,11 @@ namespace Admin_Manga_Management
 
                     }
                    
-                }
-                catch (SqlException ex)
-                {
-                    MessageBox.Show("Existing Data Files");
-                }
+                //}
+                //catch (SqlException ex)
+                //{
+                   // MessageBox.Show("Existing Data Files");
+                //}
                 sqlcon.Close();
 
             }

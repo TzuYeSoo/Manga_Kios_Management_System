@@ -10,3 +10,7 @@ C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Mana
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.csproj.CoreCompileInputs.cache
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.exe
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.pdb
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.BookInfo.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.SelectBook.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.AddToCart.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Book_Cart.resources
