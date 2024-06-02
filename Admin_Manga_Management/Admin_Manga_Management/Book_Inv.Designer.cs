@@ -206,7 +206,7 @@
             // 
             // AddBook_Book
             // 
-            this.AddBook_Book.BackColor = System.Drawing.Color.Lime;
+            this.AddBook_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AddBook_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddBook_Book.Location = new System.Drawing.Point(315, 648);
             this.AddBook_Book.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -219,7 +219,7 @@
             // 
             // RemoveBook_Book
             // 
-            this.RemoveBook_Book.BackColor = System.Drawing.Color.Red;
+            this.RemoveBook_Book.BackColor = System.Drawing.Color.IndianRed;
             this.RemoveBook_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RemoveBook_Book.Location = new System.Drawing.Point(498, 648);
             this.RemoveBook_Book.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -232,7 +232,7 @@
             // 
             // EditBook_Book
             // 
-            this.EditBook_Book.BackColor = System.Drawing.Color.Yellow;
+            this.EditBook_Book.BackColor = System.Drawing.Color.LemonChiffon;
             this.EditBook_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditBook_Book.Location = new System.Drawing.Point(681, 648);
             this.EditBook_Book.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);

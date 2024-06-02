@@ -86,5 +86,6 @@ namespace Admin_Manga_Management
             sa.Show();
             this.Hide();
         }
+
     }
 }
