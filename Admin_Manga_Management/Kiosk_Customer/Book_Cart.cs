@@ -58,6 +58,13 @@ namespace Kiosk_Customer
 
         }
 
+        private void back_Book_Click(object sender, EventArgs e)
+        {
+           Form1 f1 = new Form1();
+            f1.Show();
+            this.Close();
+        }
+
         private void Book_Cart_Load(object sender, EventArgs e)
         {
 

@@ -68,7 +68,8 @@ namespace Kiosk_Customer
             SelectBook BSelect = new SelectBook();
             Book_Cart bc = new Book_Cart();
             bc.getID = ID;
-            bc.getQuantity = Convert.ToInt16(BSelect.Quantity.Text);
+            bc.getQuantity = BSelect.Quan;
+            BSelect.Quan = 1;
 
             Form1 form1 = new Form1();
             form1.Show();

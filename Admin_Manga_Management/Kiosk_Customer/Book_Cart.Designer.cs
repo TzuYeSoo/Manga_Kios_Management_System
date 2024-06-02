@@ -30,7 +30,7 @@
         {
             this.CartPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.back_Book = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CartPanel
@@ -50,21 +50,22 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // back_Book
             // 
-            this.button2.Location = new System.Drawing.Point(12, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 31);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.back_Book.Location = new System.Drawing.Point(12, 12);
+            this.back_Book.Name = "back_Book";
+            this.back_Book.Size = new System.Drawing.Size(75, 31);
+            this.back_Book.TabIndex = 2;
+            this.back_Book.Text = "back_Book";
+            this.back_Book.UseVisualStyleBackColor = true;
+            this.back_Book.Click += new System.EventHandler(this.back_Book_Click);
             // 
             // Book_Cart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.back_Book);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.CartPanel);
             this.Name = "Book_Cart";
@@ -78,6 +79,6 @@
 
         private System.Windows.Forms.FlowLayoutPanel CartPanel;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button back_Book;
     }
 }

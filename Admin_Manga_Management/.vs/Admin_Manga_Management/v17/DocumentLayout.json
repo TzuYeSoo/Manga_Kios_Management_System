@@ -11,51 +11,43 @@
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\selectbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\selectbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\addtocart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\selectbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_cart.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_cart.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\selectbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\selectbook.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookchoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\kiosk_customer\\bookchoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookchoice.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -94,8 +86,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -104,10 +104,9 @@
               "RelativeDocumentMoniker": "Kiosk_Customer\\BookInfo.cs",
               "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs",
               "RelativeToolTip": "Kiosk_Customer\\BookInfo.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAuwBsAAAAMAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAlwEcAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:54:53.382Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-06-02T03:37:27.071Z",
               "EditorCaption": ""
             },
             {
@@ -119,17 +118,46 @@
               "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs [Design]",
               "RelativeToolTip": "Kiosk_Customer\\BookInfo.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T14:54:35.484Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-06-02T03:37:25.036Z",
               "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SelectBook.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs",
+              "RelativeDocumentMoniker": "Kiosk_Customer\\SelectBook.cs",
+              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs [Design]",
+              "RelativeToolTip": "Kiosk_Customer\\SelectBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:33:10.911Z",
+              "EditorCaption": " [Design]"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SelectBook.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.Designer.cs",
+              "RelativeDocumentMoniker": "Kiosk_Customer\\SelectBook.Designer.cs",
+              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.Designer.cs",
+              "RelativeToolTip": "Kiosk_Customer\\SelectBook.Designer.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAlwGkAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T15:36:27.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectBook.cs",
+              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs",
+              "RelativeDocumentMoniker": "Kiosk_Customer\\SelectBook.cs",
+              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs",
+              "RelativeToolTip": "Kiosk_Customer\\SelectBook.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAiwBkAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:22:26.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -145,20 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Book_Cart.cs",
-              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Cart.cs",
-              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Cart.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAiwD4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:11:02.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "AddToCart.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\AddToCart.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\AddToCart.cs",
@@ -171,19 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Book_Cart.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Cart.cs",
-              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Cart.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:00:16.142Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Book_Selection.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Selection.cs",
@@ -195,32 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SelectBook.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\SelectBook.cs",
-              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\SelectBook.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T15:33:10.911Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Book_Cart.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.Designer.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Cart.Designer.cs",
-              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.Designer.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Cart.Designer.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAqwEYAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T16:44:19.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Program.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Program.cs",
@@ -233,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "BookChoice.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookChoice.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\BookChoice.cs",
@@ -246,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "BookChoice.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookChoice.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\BookChoice.cs",
@@ -258,20 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SelectBook.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.Designer.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\SelectBook.Designer.cs",
-              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\SelectBook.Designer.cs",
-              "RelativeToolTip": "Kiosk_Customer\\SelectBook.Designer.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAuwFMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-01T15:36:27.727Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "BookChoice.Designer.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookChoice.Designer.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\BookChoice.Designer.cs",
@@ -284,7 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "Kiosk_Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Kiosk_Home.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Kiosk_Home.cs",
@@ -296,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "LogIn.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\LogIn.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\LogIn.cs",
@@ -308,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "Kiosk_Home.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Kiosk_Home.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Kiosk_Home.cs",
@@ -321,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "Book_Selection.Designer.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.Designer.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Selection.Designer.cs",
@@ -334,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "Setting_Admin.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Setting_Admin.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Setting_Admin.cs",
@@ -347,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "Dashboard_Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Dashboard_Home.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Dashboard_Home.cs",
@@ -359,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "Setting_Admin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Setting_Admin.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Setting_Admin.cs",

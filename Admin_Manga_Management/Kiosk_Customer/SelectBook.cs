@@ -17,12 +17,13 @@ namespace Kiosk_Customer
             InitializeComponent();
         }
 
-        static int quantity = 1;
+        public static int quantity = 1;
         private string name;
         private double price;
 
         public double Bp { get { return price; } set { price = value; BookP.Text = value.ToString(); } }
         public string BN { get { return name; } set { name = value; BookN.Text = value; } }
+        public int Quan { get { return quantity;  } set { quantity = value; Quantity.Text = quantity.ToString(); } }
         private void AddQuan_Click(object sender, EventArgs e)
         {
             quantity++;
