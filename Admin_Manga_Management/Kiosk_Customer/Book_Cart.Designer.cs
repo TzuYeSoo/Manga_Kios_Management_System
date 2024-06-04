@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.CartPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.check_out = new System.Windows.Forms.Button();
             this.back_Book = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -41,14 +41,15 @@
             this.CartPanel.Size = new System.Drawing.Size(438, 322);
             this.CartPanel.TabIndex = 0;
             // 
-            // button1
+            // check_out
             // 
-            this.button1.Location = new System.Drawing.Point(713, 398);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 40);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.check_out.Location = new System.Drawing.Point(688, 388);
+            this.check_out.Name = "check_out";
+            this.check_out.Size = new System.Drawing.Size(86, 40);
+            this.check_out.TabIndex = 1;
+            this.check_out.Text = "Checkout";
+            this.check_out.UseVisualStyleBackColor = true;
+            this.check_out.Click += new System.EventHandler(this.check_out_Click);
             // 
             // back_Book
             // 
@@ -66,7 +67,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back_Book);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.check_out);
             this.Controls.Add(this.CartPanel);
             this.Name = "Book_Cart";
             this.Text = "Book_Cart";
@@ -78,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.FlowLayoutPanel CartPanel;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button check_out;
         private System.Windows.Forms.Button back_Book;
     }
 }

@@ -34,23 +34,23 @@ namespace Kiosk_Customer
             
             if (rdr.Read())
             {
-                AddToCart add = new AddToCart();
+                Cart_Control add = new Cart_Control();
 
                 byte[] imageBynari = (byte[])rdr.GetValue(2);
                 using (MemoryStream ms = new MemoryStream(imageBynari))
                 {
-                    add.BookIm.Image = Image.FromStream(ms);
-                    add.BookIm.SizeMode = PictureBoxSizeMode.StretchImage;
-                    add.getquan = quan;
+                    add.Book_Im.Image = Image.FromStream(ms);
+                    add.Book_Im.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
-                MessageBox.Show(quan +"asada" + id);
-
-                add.BookIm.Tag = rdr.GetValue(2);
-                add.BookP = Convert.ToDouble(rdr.GetValue(1));
-                add.Bname = (string)rdr.GetValue(0);
-
+                add.Book_Im.Tag = rdr.GetValue(2);
+                add.Bprice.Text = (Convert.ToDouble(rdr.GetValue(1)) * quan).ToString();
+                add.Bname.Text= (string)rdr.GetValue(0);
+                add.Quans.Text = quan.ToString();
                 CartPanel.Controls.Add(add);
+                
+                
             }
+            rdr.Close();
             sqlcon.Close();
             
             
@@ -65,15 +65,43 @@ namespace Kiosk_Customer
             this.Close();
         }
 
+        private void check_out_Click(object sender, EventArgs e)
+        {
+            Checkout_Cus cout = new Checkout_Cus();
+
+            for(int i = 0; i < ID.Count; i++)
+            {
+                cout.getBID = ID.ElementAt(i);
+                cout.getQUAN = Quantity.ElementAt(i);
+            }
+            
+            cout.Show();
+            this.Hide();
+        }
+
         private void Book_Cart_Load(object sender, EventArgs e)
         {
-
+            showBooks();
+        }
+        public void showBooks()
+        {
+            Cart_Control ad = new Cart_Control();
             for (int i = 0; i < ID.Count; i++)
             {
-                
-                Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
+                if (ad.Quans.Text == "0")
+                {
+                    ID.Remove(i);
+                    Quantity.Remove(i);
 
-
+                    CartPanel.Controls.Clear();
+                    Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
+                }
+                else
+                {
+                    Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
+                    ID.Remove(i);
+                    Quantity.Remove(i);
+                }
             }
         }
     }

@@ -18,11 +18,13 @@ namespace Kiosk_Customer
         }
         private string BN;
         private double BP;
+        private bool cout;
         private int quantity;
 
         public string Bname { get { return BN; } set { BN = value; Bookn.Text = value; } }
         public double BookP { get { return BP; } set { BP = value; Bookp.Text = value.ToString(); } }
         public int getquan { get { return quantity; }set { quantity = value; Quantity.Text = value.ToString(); } }
+
         private void button2_Click(object sender, EventArgs e)
         {
             quantity++;

@@ -70,6 +70,12 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Checkout_Cus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkout_Cus.Designer.cs">
+      <DependentUpon>Checkout_Cus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kiosk_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +96,18 @@
     <Compile Include="SelectBook.Designer.cs">
       <DependentUpon>SelectBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cart_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cart_Control.Designer.cs">
+      <DependentUpon>Cart_Control.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Checkout_Books.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Checkout_Books.Designer.cs">
+      <DependentUpon>Checkout_Books.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddToCart.resx">
       <DependentUpon>AddToCart.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout_Cus.resx">
+      <DependentUpon>Checkout_Cus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kiosk_Home.resx">
       <DependentUpon>Kiosk_Home.cs</DependentUpon>
@@ -119,6 +140,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SelectBook.resx">
       <DependentUpon>SelectBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart_Control.resx">
+      <DependentUpon>Cart_Control.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout_Books.resx">
+      <DependentUpon>Checkout_Books.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
