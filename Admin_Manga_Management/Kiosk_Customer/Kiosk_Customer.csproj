@@ -70,11 +70,11 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Checkout_Cus.cs">
+    <Compile Include="Complete_Order.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Checkout_Cus.Designer.cs">
-      <DependentUpon>Checkout_Cus.cs</DependentUpon>
+    <Compile Include="Complete_Order.Designer.cs">
+      <DependentUpon>Complete_Order.cs</DependentUpon>
     </Compile>
     <Compile Include="Kiosk_Home.cs">
       <SubType>Form</SubType>
@@ -120,8 +120,8 @@
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Checkout_Cus.resx">
-      <DependentUpon>Checkout_Cus.cs</DependentUpon>
+    <EmbeddedResource Include="Complete_Order.resx">
+      <DependentUpon>Complete_Order.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kiosk_Home.resx">
       <DependentUpon>Kiosk_Home.cs</DependentUpon>

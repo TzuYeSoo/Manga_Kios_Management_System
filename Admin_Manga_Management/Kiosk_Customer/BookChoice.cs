@@ -28,29 +28,22 @@ namespace Kiosk_Customer
 
 
 
+
         #endregion
-
-        private void BookChoice_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BookName_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void BookImage_Click(object sender, EventArgs e)
         {
 
+            BookInfo bc = new BookInfo();
+            
+            bc.ID = getBookID;
+
+            bc.BookPanel();
+            bc.ShowDialog();
+
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void BookChoice_Load(object sender, EventArgs e)
         {
 
         }

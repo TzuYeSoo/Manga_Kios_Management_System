@@ -23,8 +23,18 @@ namespace Kiosk_Customer
         static SqlCommand sqlcom;
         private int getID;
 
-        private void Form2_Load(object sender, EventArgs e)
+
+
+        public int ID { get { return getID; } set { getID = value; } }
+
+        private void Back_Click(object sender, EventArgs e)
         {
+
+            this.Hide();
+        }
+        public void BookPanel()
+        {
+            MessageBox.Show("asdad" + ID);
             sqlcon.Open();
             sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage FROM Book WHERE Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@BID", ID);
@@ -49,32 +59,32 @@ namespace Kiosk_Customer
                 BSelect.Bp = Convert.ToDouble(rdr.GetValue(1));
 
                 Selected_Book.Controls.Add(BSelect);
+
             }
 
             sqlcon.Close();
-        }
 
-        public int ID { get { return getID; } set { getID = value; } }
-
-        private void Back_Click(object sender, EventArgs e)
-        {
-            Form1 f1 = new Form1();
-            f1.Show();
-            this.Hide();
         }
 
         private void Add_To_Cart_Click(object sender, EventArgs e)
         {
-            SelectBook BSelect = new SelectBook();
-            Book_Cart bc = new Book_Cart();
-            bc.getID = ID;
-            bc.getQuantity = BSelect.Quan;
-            BSelect.Quan = 1;
+            SelectBook sl = new SelectBook();
 
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
+            if(sl.Quan != 0)
+            {
+                
+                Book_Cart Bcart = new Book_Cart();
+                Bcart.getID = ID;
+                Bcart.getQuantity = sl.Quan;
+                sl.Quan = 1;
+                this.Hide();
 
+            }
+            else
+            {
+                MessageBox.Show("Please input Right Quantity!", "Quantity", MessageBoxButtons.OK,MessageBoxIcon.Error) ;
+            }
+            
         }
     }
 }

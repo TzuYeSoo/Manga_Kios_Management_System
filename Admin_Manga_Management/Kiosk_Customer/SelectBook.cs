@@ -17,7 +17,7 @@ namespace Kiosk_Customer
             InitializeComponent();
         }
 
-        public static int quantity = 1;
+        public static int quantity;
         private string name;
         private double price;
 
@@ -38,6 +38,11 @@ namespace Kiosk_Customer
                 Quantity.Text = quantity.ToString();
 
             }
+        }
+
+        private void SelectBook_Load(object sender, EventArgs e)
+        {
+            Quantity.Text = quantity.ToString();
         }
     }
 }

@@ -23,8 +23,11 @@ namespace Kiosk_Customer
         public static LinkedList<int> ID = new LinkedList<int>();
         public static LinkedList<int> Quantity = new LinkedList<int>();
         private int setID, setquan;
+        private decimal tcost;
         public int getID { get { return setID; } set { setID = value; ID.AddLast(value); } }
         public int getQuantity { get { return setquan; } set { setquan = value; Quantity.AddLast(value); } }
+        public decimal getTcost { get { return tcost; }set { tcost = value; } }
+        
         public void Book_CartOUt(int id, int quan)
         {
             sqlcon.Open();
@@ -43,18 +46,18 @@ namespace Kiosk_Customer
                     add.Book_Im.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
                 add.Book_Im.Tag = rdr.GetValue(2);
-                add.Bprice.Text = (Convert.ToDouble(rdr.GetValue(1)) * quan).ToString();
+                add.Bprice.Text = rdr.GetValue(1).ToString();
+                tcost += (Convert.ToDecimal(rdr.GetValue(1)) * quan);
                 add.Bname.Text= (string)rdr.GetValue(0);
                 add.Quans.Text = quan.ToString();
+                add.getquan = quan;
+                add.getID = id;
                 CartPanel.Controls.Add(add);
-                
-                
+                add.gettcost = tcost;
+
             }
             rdr.Close();
             sqlcon.Close();
-            
-            
-
 
         }
 
@@ -67,42 +70,34 @@ namespace Kiosk_Customer
 
         private void check_out_Click(object sender, EventArgs e)
         {
-            Checkout_Cus cout = new Checkout_Cus();
-
-            for(int i = 0; i < ID.Count; i++)
+            if(MessageBox.Show("Do you want to continue to order this book", "Complete Order", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                cout.getBID = ID.ElementAt(i);
-                cout.getQUAN = Quantity.ElementAt(i);
+
+                Complete_Order corder = new Complete_Order();
+                corder.ShowDialog();
             }
             
-            cout.Show();
-            this.Hide();
+        }
+        public void textch(decimal total)
+        {
+            
+            TTPrice.Text = total.ToString();
         }
 
         private void Book_Cart_Load(object sender, EventArgs e)
         {
             showBooks();
+            TTPrice.Text = tcost.ToString();
+
         }
         public void showBooks()
         {
-            Cart_Control ad = new Cart_Control();
+   
             for (int i = 0; i < ID.Count; i++)
             {
-                if (ad.Quans.Text == "0")
-                {
-                    ID.Remove(i);
-                    Quantity.Remove(i);
-
-                    CartPanel.Controls.Clear();
                     Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
-                }
-                else
-                {
-                    Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
-                    ID.Remove(i);
-                    Quantity.Remove(i);
-                }
             }
+            
         }
     }
 }

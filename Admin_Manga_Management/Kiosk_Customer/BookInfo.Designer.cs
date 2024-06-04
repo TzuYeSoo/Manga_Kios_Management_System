@@ -37,16 +37,18 @@
             // Selected_Book
             // 
             this.Selected_Book.AutoScroll = true;
-            this.Selected_Book.Location = new System.Drawing.Point(150, 29);
+            this.Selected_Book.Location = new System.Drawing.Point(133, 23);
+            this.Selected_Book.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Selected_Book.Name = "Selected_Book";
-            this.Selected_Book.Size = new System.Drawing.Size(440, 371);
+            this.Selected_Book.Size = new System.Drawing.Size(248, 297);
             this.Selected_Book.TabIndex = 0;
             // 
             // Add_To_Cart
             // 
-            this.Add_To_Cart.Location = new System.Drawing.Point(617, 359);
+            this.Add_To_Cart.Location = new System.Drawing.Point(228, 353);
+            this.Add_To_Cart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add_To_Cart.Name = "Add_To_Cart";
-            this.Add_To_Cart.Size = new System.Drawing.Size(75, 52);
+            this.Add_To_Cart.Size = new System.Drawing.Size(67, 42);
             this.Add_To_Cart.TabIndex = 1;
             this.Add_To_Cart.Text = "Add to Cart";
             this.Add_To_Cart.UseVisualStyleBackColor = true;
@@ -54,18 +56,20 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(713, 359);
+            this.button2.Location = new System.Drawing.Point(314, 353);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 52);
+            this.button2.Size = new System.Drawing.Size(67, 42);
             this.button2.TabIndex = 2;
             this.button2.Text = "Check Out";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(12, 12);
+            this.Back.Location = new System.Drawing.Point(11, 10);
+            this.Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(75, 52);
+            this.Back.Size = new System.Drawing.Size(67, 42);
             this.Back.TabIndex = 3;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = true;
@@ -73,16 +77,16 @@
             // 
             // BookInfo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(461, 556);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.Add_To_Cart);
             this.Controls.Add(this.Selected_Book);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookInfo";
             this.Text = "Form2";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
 
         }

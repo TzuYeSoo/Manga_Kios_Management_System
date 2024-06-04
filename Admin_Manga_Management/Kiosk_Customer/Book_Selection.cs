@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,6 @@ namespace Kiosk_Customer
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
         static BookChoice BookS;
-
         public void BookShow()
         {
             sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, BookImage FROM Book", sqlcon);  
@@ -47,20 +47,9 @@ namespace Kiosk_Customer
                 BookS.getBookPrice = Convert.ToDouble(rdr.GetValue(2));
                 
                 Books.Controls.Add(BookS);
-
-                BookS.Click += new System.EventHandler(UserControl_Click);
             }
             rdr.Close();
 
-        }
-        void UserControl_Click(Object sender, EventArgs e)
-        {
-            BookChoice book = (BookChoice)sender;
-
-            BookInfo f2 = new BookInfo();
-            f2.ID = book.getBookID;
-            f2.Show();
-            this.Hide();
         }
 
         private void Form1_Load(object sender, EventArgs e)

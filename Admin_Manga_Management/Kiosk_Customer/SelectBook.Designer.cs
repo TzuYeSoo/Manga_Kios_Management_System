@@ -39,17 +39,19 @@
             // 
             // BookImage
             // 
-            this.BookImage.Location = new System.Drawing.Point(38, 33);
+            this.BookImage.Location = new System.Drawing.Point(34, 26);
+            this.BookImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BookImage.Name = "BookImage";
-            this.BookImage.Size = new System.Drawing.Size(366, 312);
+            this.BookImage.Size = new System.Drawing.Size(325, 250);
             this.BookImage.TabIndex = 0;
             this.BookImage.TabStop = false;
             // 
             // AddQuan
             // 
-            this.AddQuan.Location = new System.Drawing.Point(350, 384);
+            this.AddQuan.Location = new System.Drawing.Point(311, 307);
+            this.AddQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddQuan.Name = "AddQuan";
-            this.AddQuan.Size = new System.Drawing.Size(75, 35);
+            this.AddQuan.Size = new System.Drawing.Size(67, 28);
             this.AddQuan.TabIndex = 1;
             this.AddQuan.Text = "Add";
             this.AddQuan.UseVisualStyleBackColor = true;
@@ -58,35 +60,35 @@
             // BookN
             // 
             this.BookN.AutoSize = true;
-            this.BookN.Location = new System.Drawing.Point(110, 352);
+            this.BookN.Location = new System.Drawing.Point(98, 282);
             this.BookN.Name = "BookN";
-            this.BookN.Size = new System.Drawing.Size(92, 20);
+            this.BookN.Size = new System.Drawing.Size(79, 16);
             this.BookN.TabIndex = 2;
             this.BookN.Text = "Book Name";
             // 
             // BookP
             // 
             this.BookP.AutoSize = true;
-            this.BookP.Location = new System.Drawing.Point(110, 391);
+            this.BookP.Location = new System.Drawing.Point(98, 313);
             this.BookP.Name = "BookP";
-            this.BookP.Size = new System.Drawing.Size(85, 20);
+            this.BookP.Size = new System.Drawing.Size(73, 16);
             this.BookP.TabIndex = 3;
             this.BookP.Text = "Book Price";
             // 
             // Quantity
             // 
             this.Quantity.AutoSize = true;
-            this.Quantity.Location = new System.Drawing.Point(310, 391);
+            this.Quantity.Location = new System.Drawing.Point(276, 313);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(18, 20);
+            this.Quantity.Size = new System.Drawing.Size(0, 16);
             this.Quantity.TabIndex = 4;
-            this.Quantity.Text = "1";
             // 
             // MinQuan
             // 
-            this.MinQuan.Location = new System.Drawing.Point(229, 384);
+            this.MinQuan.Location = new System.Drawing.Point(204, 307);
+            this.MinQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinQuan.Name = "MinQuan";
-            this.MinQuan.Size = new System.Drawing.Size(75, 35);
+            this.MinQuan.Size = new System.Drawing.Size(67, 28);
             this.MinQuan.TabIndex = 5;
             this.MinQuan.Text = "Minus";
             this.MinQuan.UseVisualStyleBackColor = true;
@@ -94,7 +96,7 @@
             // 
             // SelectBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.MinQuan);
             this.Controls.Add(this.Quantity);
@@ -102,8 +104,10 @@
             this.Controls.Add(this.BookN);
             this.Controls.Add(this.AddQuan);
             this.Controls.Add(this.BookImage);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "SelectBook";
-            this.Size = new System.Drawing.Size(469, 434);
+            this.Size = new System.Drawing.Size(417, 347);
+            this.Load += new System.EventHandler(this.SelectBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BookImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
