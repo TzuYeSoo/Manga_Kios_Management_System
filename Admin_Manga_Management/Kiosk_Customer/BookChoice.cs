@@ -34,5 +34,25 @@ namespace Kiosk_Customer
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookImage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

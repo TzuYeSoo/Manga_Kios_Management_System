@@ -39,5 +39,10 @@ namespace Kiosk_Customer
                 Quantity.Text = quantity.ToString();
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
