@@ -87,15 +87,16 @@
             this.Payment.TabIndex = 9;
             this.Payment.Text = "Payment";
             this.Payment.UseVisualStyleBackColor = true;
+            this.Payment.Click += new System.EventHandler(this.Payment_Click);
             // 
             // TotalPrice
             // 
             this.TotalPrice.AutoSize = true;
-            this.TotalPrice.Location = new System.Drawing.Point(469, 446);
+            this.TotalPrice.Location = new System.Drawing.Point(412, 446);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(53, 20);
+            this.TotalPrice.Size = new System.Drawing.Size(110, 20);
             this.TotalPrice.TabIndex = 0;
-            this.TotalPrice.Text = "label1";
+            this.TotalPrice.Text = "<Total Price>";
             // 
             // CashierHome
             // 

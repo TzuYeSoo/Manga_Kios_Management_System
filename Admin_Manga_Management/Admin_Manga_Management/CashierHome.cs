@@ -111,12 +111,29 @@ namespace Admin_Manga_Management
             ckc.Show();
             this.Hide();
         }
+
+        private void Payment_Click(object sender, EventArgs e)
+        {
+            if (TotalPrice.Text != "<Total Price>" && TotalPrice.Text != "0")
+            {
+                Cashier_RecievePayment crp = new Cashier_RecievePayment();
+                crp.Show();
+                this.Hide();
+
+            }
+            else
+            {
+                MessageBox.Show("Please Input Order First");
+            }
+            
+        }
+
         public void Paying(int bid)
         {
             sqlcon.Open();
             PayCus pay = new PayCus();
 
-            sqlcom = new SqlCommand("SELECT Customer_Name, Book_Name, Book_Price, OrderBook.Book_Quantity FROM Customers " +
+            sqlcom = new SqlCommand("SELECT Customer_Name, Book_Name, Book_Price, OrderBook.Book_Quantity, Book.Book_ID FROM Customers " +
                 "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
                 "INNER JOIN Book ON OrderBook.Book_ID = Book.Book_ID WHERE Customers.Customer_ID = @cid AND Customer_Status = 1 AND OrderBook.Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@cid", getID);
@@ -130,12 +147,14 @@ namespace Admin_Manga_Management
                 pay.Bname.Text = (string)rdr.GetValue(1);
                 pay.OrderPrice.Text = rdr.GetValue(2).ToString();
                 pay.getQuantity = Convert.ToInt32(rdr.GetValue(3));
-
+                pay.getCID = Convert.ToInt32(rdr.GetValue(4));
+                totalcost += Convert.ToDecimal(rdr.GetValue(2)) * Convert.ToInt32(rdr.GetValue(3));
                 PayOrder.Controls.Add(pay);
-                totalcost += Convert.ToDecimal(rdr.GetValue(2));
-                pay.gettcost = Convert.ToDecimal(rdr.GetValue(2));
-                TotalPrice.Text += (Convert.ToDecimal(rdr.GetValue(2)) * Convert.ToInt32(rdr.GetValue(3))).ToString();
+                pay.gettcost = totalcost;
+
             }
+
+            TotalPrice.Text = totalcost.ToString();
             sqlcon.Close();
         }
       

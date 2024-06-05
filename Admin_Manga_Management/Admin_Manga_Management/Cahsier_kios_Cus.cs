@@ -39,7 +39,11 @@ namespace Admin_Manga_Management
 
                     
                 }
-                bids.AddLast(Convert.ToInt32(rdr.GetValue(1)));
+                if (!bids.Contains(Convert.ToInt32(rdr.GetValue(1))))
+                {
+                    bids.AddLast(Convert.ToInt32(rdr.GetValue(1)));
+                }
+                
 
             }
             rdr.Close();
@@ -71,8 +75,9 @@ namespace Admin_Manga_Management
             chome.getID = Convert.ToInt16(ckc.CustIDlabel.Text);
             chome.getord = Convert.ToInt32(ckc.OrdNumber.Text);
             chome.getname = ckc.CustName.Text;
-            for(int i = 0; i < bids.Count - 1; i++)
+            for(int i = 0; i < bids.Count; i++)
             {
+          
                 chome.Paying(bids.ElementAt(i));
             }
             

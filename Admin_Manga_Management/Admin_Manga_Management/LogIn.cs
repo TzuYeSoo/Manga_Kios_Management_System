@@ -21,10 +21,11 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom = new SqlCommand();
         static bool isLogin = false;
         static Encap enc;
+        static string Postion;
         private void Log_but_Click(object sender, EventArgs e)
         {
                 sqlcon.Open();
-                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password, Emp_Name FROM Admin WHERE Emp_Status = 1", sqlcon);
+                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password, Emp_Position FROM Admin WHERE Emp_Status = 1", sqlcon);
                 SqlDataReader reader = sqlcom.ExecuteReader();
 
                 while (reader.Read())
@@ -35,6 +36,7 @@ namespace Admin_Manga_Management
                     {
 
                         isLogin = true;
+                        Postion = (string)reader.GetValue(2);
                         break;
                     }
                     else
@@ -42,20 +44,28 @@ namespace Admin_Manga_Management
                         isLogin = false;
                     }
                 }
-                if (isLogin)
+            if (isLogin)
+            {
+                if (Postion.Equals("Admin"))
                 {
                     Dashboard_Home DH = new Dashboard_Home();
                     DH.Show();
                     this.Hide();
-
                 }
-                else
+                else if (Postion.Equals("Cashier"))
                 {
-                    MessageBox.Show("Wrong Inputs" +
-                        "\nPlease Try Again");
+                    CashierHome Cashier = new CashierHome();
+                    Cashier.Show();
+                    this.Hide();
                 }
+
+            }
+            else
+            {
+                MessageBox.Show("Wrong Inputs");
                 isLogin = false;
-                sqlcon.Close();
+            }
+            sqlcon.Close();
 
 
             }

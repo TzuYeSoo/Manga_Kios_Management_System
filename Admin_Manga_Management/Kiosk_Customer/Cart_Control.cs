@@ -16,6 +16,8 @@ namespace Kiosk_Customer
         public Cart_Control()
         {
             InitializeComponent();
+            Min_Quan.Click += new EventHandler(minButton_Click);
+            Add_Quan.Click += new EventHandler(addButton_Click);
         }
         public static  Book_Cart bcart;
         SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
@@ -48,7 +50,7 @@ namespace Kiosk_Customer
 
                 quantity--;
                 Quans.Text = quantity.ToString();
-                gettcost = tcost;
+               // gettcost = tcost;
                 bcart.TTPrice.Text = tcost.ToString();
                 MessageBox.Show(bcart.TTPrice.Text);
             }
@@ -74,8 +76,28 @@ namespace Kiosk_Customer
 
                 quantity++;
                 Quans.Text = quantity.ToString();
-                gettcost = tcost;
+                //gettcost = tcost;
             sqlcon.Close();
+        }
+        private void minButton_Click(object sender, EventArgs e)
+        {
+            // Access the form's method to update the label
+            if (this.ParentForm is Book_Cart mainForm)
+            {
+                mainForm.TTPrice.Text = tcost.ToString();
+                // Or directly access the label
+                // mainForm.MyLabel.Text = "Button in user control clicked!";
+            }
+        }
+        private void addButton_Click(object sender, EventArgs e)
+        {
+            // Access the form's method to update the label
+            if (this.ParentForm is Book_Cart mainForm)
+            {
+                mainForm.TTPrice.Text = tcost.ToString();
+                // Or directly access the label
+                // mainForm.MyLabel.Text = "Button in user control clicked!";
+            }
         }
 
     }

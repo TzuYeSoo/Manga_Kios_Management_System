@@ -105,7 +105,7 @@
             this.Controls.Add(this.min_quan);
             this.Controls.Add(this.plus_quan);
             this.Name = "PayCus";
-            this.Size = new System.Drawing.Size(522, 60);
+            this.Size = new System.Drawing.Size(522, 62);
             this.ResumeLayout(false);
             this.PerformLayout();
 

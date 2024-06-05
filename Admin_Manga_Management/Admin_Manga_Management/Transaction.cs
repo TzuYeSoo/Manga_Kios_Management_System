@@ -62,29 +62,7 @@ namespace Admin_Manga_Management
 
        
 
-        private void SearchBut_Trans_Click(object sender, EventArgs e)
-        {
-            sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name, Book_Price FROM Customers INNER JOIN Book ON Customers.Book_ID = Book.Book_ID " +
-                "WHERE Customer_ID LIKE '%"+ Search_IDTrans.Text +"%' " +
-                "OR Customer_Name LIKE '%"+ Search_IDTrans.Text + "%' " +
-                "OR Order_Number LIKE '%" + Search_IDTrans.Text + "%' " +
-                "OR Book_Name LIKE '%" + Search_IDTrans.Text + "%' " +
-                "OR Customers.Book_Quantity LIKE '" + Search_IDTrans.Text + "' " +
-                "OR Book_Price LIKE '"+ Search_IDTrans.Text+"' " +
-                "OR Date LIKE '%" + Search_IDTrans.Text + "%'"
-                , sqlcon);
-
-            sqlcom.ExecuteNonQuery();
-            SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
-            transaction_table.Clear();
-            adapter.Fill(transaction_table);
-            Trans_GridView.DataSource = transaction_table;
-
-            
-            sqlcon.Close();
-
-        }
+      
         public void datatrans()
         {
             sqlcom = new SqlCommand("SELECT Customers.*, Book_Name FROM Customers " +
@@ -101,6 +79,30 @@ namespace Admin_Manga_Management
             Form1 edt = new Form1();
             edt.Show();
             this.Close();
+        }
+
+        private void Search_IDTrans_TextChanged(object sender, EventArgs e)
+        {
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT Customers.*, Book_Name, Book_Price FROM Customers INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
+                "INNER JOIN Book ON OrderBook.Book_ID = Book.Book_ID " +
+                "WHERE Customers.Customer_ID LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR Customer_Name LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR Order_Number LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR Book_Name LIKE '%" + Search_IDTrans.Text + "%' " +
+                "OR OrderBook.Book_Quantity LIKE '" + Search_IDTrans.Text + "' " +
+                "OR Book_Price LIKE '" + Search_IDTrans.Text + "' " +
+                "OR Date LIKE '%" + Search_IDTrans.Text + "%'"
+                , sqlcon);
+
+            sqlcom.ExecuteNonQuery();
+            SqlDataAdapter adapter = new SqlDataAdapter(sqlcom);
+            transaction_table.Clear();
+            adapter.Fill(transaction_table);
+            Trans_GridView.DataSource = transaction_table;
+
+
+            sqlcon.Close();
         }
     }
 }

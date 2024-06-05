@@ -64,6 +64,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cashier_CompleteOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cashier_CompleteOrder.Designer.cs">
+      <DependentUpon>Cashier_CompleteOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Encap.cs" />
     <Compile Include="Database1DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -132,6 +138,12 @@
     </Compile>
     <Compile Include="Cahsier_kios_Cus.Designer.cs">
       <DependentUpon>Cahsier_kios_Cus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cashier_RecievePayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier_RecievePayment.Designer.cs">
+      <DependentUpon>Cashier_RecievePayment.cs</DependentUpon>
     </Compile>
     <Compile Include="Setting_Admin.cs">
       <SubType>Form</SubType>
@@ -212,6 +224,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashierHome.resx">
       <DependentUpon>CashierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_CompleteOrder.resx">
+      <DependentUpon>Cashier_CompleteOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_RecievePayment.resx">
+      <DependentUpon>Cashier_RecievePayment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Chasier_KiosControl.resx">
       <DependentUpon>Chasier_KiosControl.cs</DependentUpon>
