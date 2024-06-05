@@ -3,52 +3,47 @@
   "WorkspaceRootPath": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\cart_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\cart_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\chasier_kioscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\chasier_kioscontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\paycus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\paycus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashier_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\paycus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\paycus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NICOL_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Customers.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\complete_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\complete_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\complete_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\complete_order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\cart_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\cart_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\bookchoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\checkout_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\checkout_books.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|c:\\users\\nicol\\source\\repos\\manga_kios_management_system\\admin_manga_management\\kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D66C3FA-E815-4B91-A169-56F43DBD4955}|Kiosk_Customer\\Kiosk_Customer.csproj|solutionrelative:kiosk_customer\\book_selection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,20 +53,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Cart_Control.cs",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Cart_Control.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Cart_Control.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Cart_Control.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Cart_Control.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAACwAAAAcAAAA",
+              "Title": "CashierHome.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\CashierHome.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAYwCwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:41:10.642Z",
+              "WhenOpened": "2024-06-05T00:12:37.13Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PayCus.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\PayCus.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\PayCus.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\PayCus.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\PayCus.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAiwDMAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T02:13:54.861Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Program.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Program.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Program.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T04:40:54.699Z",
               "EditorCaption": ""
             },
             {
@@ -84,139 +106,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Book_Cart.cs",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Cart.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Cart.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAAAFIAAAAMAAAA",
+              "DocumentIndex": 4,
+              "Title": "Chasier_KiosControl.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Chasier_KiosControl.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Chasier_KiosControl.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Chasier_KiosControl.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Chasier_KiosControl.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T13:25:09.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookInfo.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\BookInfo.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\BookInfo.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T13:24:30.163Z",
+              "WhenOpened": "2024-06-05T04:29:11.569Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Cahsier_kios_Cus.cs",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAIA5wCYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:39:43.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "CashierHome.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\CashierHome.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T00:12:26.42Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cashier_Books.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Books.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Cashier_Books.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_Books.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Cashier_Books.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T00:19:41.503Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cahsier_kios_Cus.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\Cahsier_kios_Cus.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\Cahsier_kios_Cus.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T03:39:42.617Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "dbo.Customers [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/C__USERS_NICOL_SOURCE_REPOS_MANGA_KIOS_MANAGEMENT_SYSTEM_ADMIN_MANGA_MANAGEMENT_ADMIN_MANGA_MANAGEMENT_DATABASE1.MDF/True/SqlTable/dbo.Customers.sql",
+              "ToolTip": "dbo.Customers [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-05T03:51:39.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PayCus.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\PayCus.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\PayCus.cs",
+              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\PayCus.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\PayCus.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T02:01:09.047Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Book_Cart.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs",
               "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Cart.cs",
               "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Cart.cs [Design]",
               "RelativeToolTip": "Kiosk_Customer\\Book_Cart.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:02:22.882Z",
+              "WhenOpened": "2024-06-05T03:45:11.037Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Complete_Order.cs",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Complete_Order.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Complete_Order.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Complete_Order.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Complete_Order.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAuwCIAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:25:09.562Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Complete_Order.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Complete_Order.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Complete_Order.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Complete_Order.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\Complete_Order.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:10:17.69Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cart_Control.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Cart_Control.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Cart_Control.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Cart_Control.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\Cart_Control.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T14:41:08.006Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\BookInfo.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookInfo.cs",
-              "RelativeToolTip": "Kiosk_Customer\\BookInfo.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAwE4AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:14:27.449Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BookChoice.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookChoice.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\BookChoice.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\BookChoice.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\BookChoice.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:13:29.908Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Checkout_Books.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Checkout_Books.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Checkout_Books.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Checkout_Books.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\Checkout_Books.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:13:34.608Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Book_Selection.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Selection.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.cs [Design]",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Selection.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:02:03.957Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Book_Selection.cs",
-              "DocumentMoniker": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.cs",
-              "RelativeDocumentMoniker": "Kiosk_Customer\\Book_Selection.cs",
-              "ToolTip": "C:\\Users\\Nicol\\source\\repos\\Manga_Kios_Management_System\\Admin_Manga_Management\\Kiosk_Customer\\Book_Selection.cs",
-              "RelativeToolTip": "Kiosk_Customer\\Book_Selection.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:02:06.02Z",
-              "EditorCaption": ""
             }
           ]
         },

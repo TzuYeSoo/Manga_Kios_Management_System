@@ -75,13 +75,9 @@ namespace Kiosk_Customer
 
                 Complete_Order corder = new Complete_Order();
                 corder.ShowDialog();
+                this.Hide();
             }
             
-        }
-        public void textch(decimal total)
-        {
-            
-            TTPrice.Text = total.ToString();
         }
 
         private void Book_Cart_Load(object sender, EventArgs e)
@@ -98,6 +94,17 @@ namespace Kiosk_Customer
                     Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
             }
             
+        }
+        public void removecarts()
+        {
+            Complete_Order co = new Complete_Order();
+            for (int i = 0;i < ID.Count; i++)
+            {
+                co.getidi = ID.ElementAt(i);
+                co.getquan = Quantity.ElementAt(i);
+            }
+            ID.Clear();
+            Quantity.Clear();
         }
     }
 }

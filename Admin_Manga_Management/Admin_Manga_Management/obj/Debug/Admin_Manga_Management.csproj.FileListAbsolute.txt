@@ -187,3 +187,7 @@ C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Remove_Book.resources
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Remove_Transaction.resources
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Setting_Admin.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_Books.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cahsier_kios_Cus.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Chasier_KiosControl.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.PayCus.resources

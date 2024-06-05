@@ -81,7 +81,9 @@ namespace Admin_Manga_Management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            CashierHome cs = new CashierHome();
+            cs.Show();
+            this.Hide();
         }
     }
 }

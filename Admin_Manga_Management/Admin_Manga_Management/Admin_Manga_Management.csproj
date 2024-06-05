@@ -127,6 +127,12 @@
     <Compile Include="Edit_Employee.Designer.cs">
       <DependentUpon>Edit_Employee.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cahsier_kios_Cus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cahsier_kios_Cus.Designer.cs">
+      <DependentUpon>Cahsier_kios_Cus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Setting_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,14 +183,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cashier_Books.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cashier_Books.Designer.cs">
+      <DependentUpon>Cashier_Books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chasier_KiosControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chasier_KiosControl.Designer.cs">
+      <DependentUpon>Chasier_KiosControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayCus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayCus.Designer.cs">
+      <DependentUpon>PayCus.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Book.resx">
       <DependentUpon>Add_Book.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Book_Inv.resx">
       <DependentUpon>Book_Inv.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Cahsier_kios_Cus.resx">
+      <DependentUpon>Cahsier_kios_Cus.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CashierHome.resx">
       <DependentUpon>CashierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chasier_KiosControl.resx">
+      <DependentUpon>Chasier_KiosControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard_Home.resx">
       <DependentUpon>Dashboard_Home.cs</DependentUpon>
@@ -231,6 +261,12 @@
     </Compile>
     <EmbeddedResource Include="Transaction.resx">
       <DependentUpon>Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_Books.resx">
+      <DependentUpon>Cashier_Books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayCus.resx">
+      <DependentUpon>PayCus.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
