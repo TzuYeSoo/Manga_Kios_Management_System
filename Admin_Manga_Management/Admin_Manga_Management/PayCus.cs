@@ -37,7 +37,6 @@ namespace Admin_Manga_Management
 
             if (rdr.Read())
             {
-                MessageBox.Show(Convert.ToDecimal(rdr.GetValue(0)) + "" + tcost);
                 gettcost = gettcost + Convert.ToDecimal(rdr.GetValue(0));
             }
 
@@ -55,17 +54,19 @@ namespace Admin_Manga_Management
             sqlcom = new SqlCommand("SELECT Book_Price FROM Book WHERE Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@BID", cid );
             SqlDataReader rdr = sqlcom.ExecuteReader();
-
-            if (rdr.Read())
+            if (quantity > 1)
             {
-                MessageBox.Show(Convert.ToDecimal(rdr.GetValue(0)) +""+tcost);
-                gettcost = gettcost - Convert.ToDecimal(rdr.GetValue(0));
+
+                if (rdr.Read())
+                {
+                    gettcost = gettcost - Convert.ToDecimal(rdr.GetValue(0));
+                }
+
+                rdr.Close();
+
+                quantity--;
+                LabelQuan.Text = quantity.ToString();
             }
-
-            rdr.Close();
-
-            quantity--;
-            LabelQuan.Text = quantity.ToString();
             
             sqlcon.Close();
         }

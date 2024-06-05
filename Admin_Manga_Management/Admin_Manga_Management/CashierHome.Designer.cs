@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashierHome));
             this.Search_Box_Book = new System.Windows.Forms.TextBox();
             this.Walkin = new System.Windows.Forms.Button();
             this.Kios_Cus = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
             this.PayOrder = new System.Windows.Forms.FlowLayoutPanel();
             this.Payment = new System.Windows.Forms.Button();
             this.TotalPrice = new System.Windows.Forms.Label();
+            this.logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Search_Box_Book
@@ -49,7 +51,7 @@
             // 
             this.Walkin.Location = new System.Drawing.Point(0, 4);
             this.Walkin.Name = "Walkin";
-            this.Walkin.Size = new System.Drawing.Size(530, 73);
+            this.Walkin.Size = new System.Drawing.Size(522, 73);
             this.Walkin.TabIndex = 5;
             this.Walkin.Text = "Line Customers";
             this.Walkin.UseVisualStyleBackColor = true;
@@ -58,7 +60,7 @@
             // 
             this.Kios_Cus.Location = new System.Drawing.Point(528, 4);
             this.Kios_Cus.Name = "Kios_Cus";
-            this.Kios_Cus.Size = new System.Drawing.Size(563, 73);
+            this.Kios_Cus.Size = new System.Drawing.Size(488, 73);
             this.Kios_Cus.TabIndex = 6;
             this.Kios_Cus.Text = "Self_Service Customer";
             this.Kios_Cus.UseVisualStyleBackColor = true;
@@ -98,11 +100,22 @@
             this.TotalPrice.TabIndex = 0;
             this.TotalPrice.Text = "<Total Price>";
             // 
+            // logout
+            // 
+            this.logout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logout.BackgroundImage")));
+            this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logout.Location = new System.Drawing.Point(1022, 5);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(75, 72);
+            this.logout.TabIndex = 10;
+            this.logout.UseVisualStyleBackColor = true;
+            // 
             // CashierHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 554);
+            this.Controls.Add(this.logout);
             this.Controls.Add(this.TotalPrice);
             this.Controls.Add(this.Payment);
             this.Controls.Add(this.PayOrder);
@@ -128,5 +141,6 @@
         private System.Windows.Forms.FlowLayoutPanel PayOrder;
         private System.Windows.Forms.Button Payment;
         public System.Windows.Forms.Label TotalPrice;
+        private System.Windows.Forms.Button logout;
     }
 }

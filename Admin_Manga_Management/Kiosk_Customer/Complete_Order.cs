@@ -64,7 +64,7 @@ namespace Kiosk_Customer
                         sqlcom.Parameters.AddWithValue("@quan", Quan.ElementAt(i));
                         sqlcom.ExecuteNonQuery();
                     }
-                    
+
                 
                
                 Name.Clear();
@@ -77,8 +77,9 @@ namespace Kiosk_Customer
         }
         public void RunNum()
         {
-            Random rand = new Random(2000);
-            ord = rand.Next();  
+
+            Random rand = new Random();
+            ord = rand.Next(1,2000);  
         }
         public decimal TCOST { get { return iTCOST; } set { iTCOST = value;} }
         public int getidi { get { return ID; }set { ID = value; IDS.AddLast(value); } }

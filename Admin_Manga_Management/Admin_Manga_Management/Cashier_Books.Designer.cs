@@ -33,6 +33,7 @@
             this.Bname = new System.Windows.Forms.Label();
             this.Bprice = new System.Windows.Forms.Label();
             this.bookim = new System.Windows.Forms.PictureBox();
+            this.labelID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bookim)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,11 +81,22 @@
             this.bookim.TabIndex = 0;
             this.bookim.TabStop = false;
             // 
+            // labelID
+            // 
+            this.labelID.AutoSize = true;
+            this.labelID.Location = new System.Drawing.Point(3, 8);
+            this.labelID.Name = "labelID";
+            this.labelID.Size = new System.Drawing.Size(44, 16);
+            this.labelID.TabIndex = 5;
+            this.labelID.Text = "label3";
+            this.labelID.Visible = false;
+            // 
             // Cashier_Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Controls.Add(this.labelID);
             this.Controls.Add(this.Bprice);
             this.Controls.Add(this.Bname);
             this.Controls.Add(this.label2);
@@ -104,5 +116,6 @@
         public System.Windows.Forms.Label Bname;
         public System.Windows.Forms.Label Bprice;
         public System.Windows.Forms.PictureBox bookim;
+        public System.Windows.Forms.Label labelID;
     }
 }

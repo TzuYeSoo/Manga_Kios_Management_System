@@ -192,3 +192,5 @@ C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Chasier_KiosControl.resources
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.PayCus.resources
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_RecievePayment.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_CompleteOrder.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cash_Home.resources

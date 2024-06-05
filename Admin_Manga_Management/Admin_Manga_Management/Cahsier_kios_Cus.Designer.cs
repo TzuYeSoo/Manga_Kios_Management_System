@@ -58,6 +58,7 @@
             this.Walkin.TabIndex = 7;
             this.Walkin.Text = "Line Customers";
             this.Walkin.UseVisualStyleBackColor = true;
+            this.Walkin.Click += new System.EventHandler(this.Walkin_Click);
             // 
             // Cahsier_kios_Cus
             // 

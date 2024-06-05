@@ -28,21 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PayCus));
             this.min_quan = new System.Windows.Forms.Button();
             this.plus_quan = new System.Windows.Forms.Button();
             this.LabelQuan = new System.Windows.Forms.Label();
             this.Bname = new System.Windows.Forms.Label();
             this.Cname = new System.Windows.Forms.Label();
             this.OrderPrice = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // min_quan
             // 
+            this.min_quan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("min_quan.BackgroundImage")));
+            this.min_quan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.min_quan.Location = new System.Drawing.Point(380, 19);
             this.min_quan.Name = "min_quan";
             this.min_quan.Size = new System.Drawing.Size(30, 30);
             this.min_quan.TabIndex = 1;
-            this.min_quan.Text = "button1";
             this.min_quan.UseVisualStyleBackColor = true;
             this.min_quan.Click += new System.EventHandler(this.min_quan_Click);
             // 
@@ -93,11 +97,21 @@
             this.OrderPrice.TabIndex = 5;
             this.OrderPrice.Text = "<Order Price>";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(519, 10);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // PayCus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.OrderPrice);
             this.Controls.Add(this.Cname);
             this.Controls.Add(this.Bname);
@@ -106,6 +120,7 @@
             this.Controls.Add(this.plus_quan);
             this.Name = "PayCus";
             this.Size = new System.Drawing.Size(522, 62);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,5 +134,6 @@
         public System.Windows.Forms.Label Bname;
         public System.Windows.Forms.Label Cname;
         public System.Windows.Forms.Label OrderPrice;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

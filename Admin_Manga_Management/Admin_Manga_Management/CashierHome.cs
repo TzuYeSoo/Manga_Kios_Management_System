@@ -22,9 +22,7 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom;
         private int id, ord;
         private string name;
-        private decimal price;
-        static LinkedList<int> cid = new LinkedList<int>();
-        static LinkedList<int> bid = new LinkedList<int>();
+        private decimal pricecost,price;
 
         public int getID { get { return id; } set { id = value; } }
         public int getord { get { return ord; } set { ord = value; } }
@@ -52,7 +50,7 @@ namespace Admin_Manga_Management
             if (Search_Box_Book.Text != "")
             {
              
-                sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage FROM Book WHERE Book_Name LIKE '%" + Search_Box_Book.Text + "%'", sqlcon);
+                sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage, Book_ID FROM Book WHERE Book_Name LIKE '%" + Search_Box_Book.Text + "%'", sqlcon);
                 Book_Items.Controls.Clear();
                 SqlDataReader rdr1 = sqlcom.ExecuteReader();
 
@@ -83,13 +81,13 @@ namespace Admin_Manga_Management
         }
         public void Cashhome()
         {
-            sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage FROM Book", sqlcon);
+            sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage, Book_ID FROM Book", sqlcon);
 
             SqlDataReader rdr = sqlcom.ExecuteReader();
-
+            Cashier_Books book = new Cashier_Books();
             while (rdr.Read())
             {
-                Cashier_Books book = new Cashier_Books();
+                
 
                 book.Bprice.Text = rdr.GetValue(1).ToString();
                 book.Bname.Text = (string)rdr.GetValue(0);
@@ -100,16 +98,51 @@ namespace Admin_Manga_Management
                     book.bookim.SizeMode = PictureBoxSizeMode.StretchImage;
                 }
                 book.bookim.Tag = rdr.GetValue(2);
-
+                book.labelID.Text = rdr.GetValue(3).ToString();
                 Book_Items.Controls.Add(book);
+                book.Click += new System.EventHandler(home_Click);
             }
+           
+        }
+        public void home_Click(Object sender, EventArgs e)
+        {
+            Cashier_Books book = (Cashier_Books)sender;
+
+            PayCus pay = new PayCus();
+
+            pay.Bname.Text = book.Bname.Text;
+            pay.OrderPrice.Text = book.Bprice.Text;
+            pay.LabelQuan.Text = "1";
+            pay.getCID = Convert.ToInt32(book.labelID.Text);
+            pay.getQuantity = 1;
+            pricecost += Convert.ToDecimal(book.Bprice.Text);
+            
+            PayOrder.Controls.Add(pay);
+            TotalPrice.Text = pricecost.ToString();
+            pay.gettcost = pricecost;
+            MessageBox.Show(pay.gettcost + "");
         }
 
         private void Kios_Cus_Click(object sender, EventArgs e)
         {
-            Cahsier_kios_Cus ckc = new Cahsier_kios_Cus();
-            ckc.Show();
-            this.Hide();
+            if(PayOrder.Controls.Count != 0)
+            {
+                if (MessageBox.Show("This will clear the previos Order\n Continue to clear the order?", "Clear Order", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    PayOrder.Controls.Clear();
+                    Cahsier_kios_Cus ckc = new Cahsier_kios_Cus();
+                    ckc.Show();
+                    this.Hide();
+                }
+
+            }
+            else
+            {
+                Cahsier_kios_Cus ckc = new Cahsier_kios_Cus();
+                ckc.Show();
+                this.Hide();
+
+            }          
         }
 
         private void Payment_Click(object sender, EventArgs e)
@@ -117,6 +150,8 @@ namespace Admin_Manga_Management
             if (TotalPrice.Text != "<Total Price>" && TotalPrice.Text != "0")
             {
                 Cashier_RecievePayment crp = new Cashier_RecievePayment();
+                crp.getCID = getID;
+                crp.tcost = Convert.ToDecimal(TotalPrice.Text);
                 crp.Show();
                 this.Hide();
 
@@ -133,7 +168,7 @@ namespace Admin_Manga_Management
             sqlcon.Open();
             PayCus pay = new PayCus();
 
-            sqlcom = new SqlCommand("SELECT Customer_Name, Book_Name, Book_Price, OrderBook.Book_Quantity, Book.Book_ID FROM Customers " +
+            sqlcom = new SqlCommand("SELECT Customer_Name, Book_Name, Book_Price, OrderBook.Book_Quantity, Book.Book_ID, Total_Cost FROM Customers " +
                 "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID " +
                 "INNER JOIN Book ON OrderBook.Book_ID = Book.Book_ID WHERE Customers.Customer_ID = @cid AND Customer_Status = 1 AND OrderBook.Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@cid", getID);
@@ -148,7 +183,7 @@ namespace Admin_Manga_Management
                 pay.OrderPrice.Text = rdr.GetValue(2).ToString();
                 pay.getQuantity = Convert.ToInt32(rdr.GetValue(3));
                 pay.getCID = Convert.ToInt32(rdr.GetValue(4));
-                totalcost += Convert.ToDecimal(rdr.GetValue(2)) * Convert.ToInt32(rdr.GetValue(3));
+                totalcost = Convert.ToDecimal(rdr.GetValue(5));
                 PayOrder.Controls.Add(pay);
                 pay.gettcost = totalcost;
 

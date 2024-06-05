@@ -28,45 +28,112 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.CashR = new System.Windows.Forms.TextBox();
+            this.Complete = new System.Windows.Forms.Button();
+            this.corder = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.TCost = new System.Windows.Forms.Label();
+            this.cash = new System.Windows.Forms.Label();
+            this.change = new System.Windows.Forms.Label();
+            this.ConPayment = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // CashR
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(112, 312);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(520, 27);
-            this.textBox1.TabIndex = 0;
+            this.CashR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CashR.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.CashR.Location = new System.Drawing.Point(102, 256);
+            this.CashR.Name = "CashR";
+            this.CashR.Size = new System.Drawing.Size(520, 27);
+            this.CashR.TabIndex = 0;
+            this.CashR.Text = "Insert Money Recieved";
+            this.CashR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CashR.TextChanged += new System.EventHandler(this.CashR_TextChanged);
             // 
-            // button1
+            // Complete
             // 
-            this.button1.Location = new System.Drawing.Point(296, 345);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Complete Transaction";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Complete.Location = new System.Drawing.Point(296, 345);
+            this.Complete.Name = "Complete";
+            this.Complete.Size = new System.Drawing.Size(161, 38);
+            this.Complete.TabIndex = 1;
+            this.Complete.Text = "Complete Transaction";
+            this.Complete.UseVisualStyleBackColor = true;
+            this.Complete.Click += new System.EventHandler(this.Complete_Click);
             // 
-            // flowLayoutPanel1
+            // corder
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(23, 12);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(700, 294);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.corder.Location = new System.Drawing.Point(23, 12);
+            this.corder.Name = "corder";
+            this.corder.Size = new System.Drawing.Size(700, 202);
+            this.corder.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox1.Location = new System.Drawing.Point(23, 220);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(700, 10);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
+            // TCost
+            // 
+            this.TCost.AutoSize = true;
+            this.TCost.Location = new System.Drawing.Point(637, 233);
+            this.TCost.Name = "TCost";
+            this.TCost.Size = new System.Drawing.Size(86, 16);
+            this.TCost.TabIndex = 4;
+            this.TCost.Text = "<Total Price>";
+            this.TCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cash
+            // 
+            this.cash.AutoSize = true;
+            this.cash.Location = new System.Drawing.Point(637, 262);
+            this.cash.Name = "cash";
+            this.cash.Size = new System.Drawing.Size(106, 16);
+            this.cash.TabIndex = 5;
+            this.cash.Text = "<Cash Recieve>";
+            this.cash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // change
+            // 
+            this.change.AutoSize = true;
+            this.change.Location = new System.Drawing.Point(637, 295);
+            this.change.Name = "change";
+            this.change.Size = new System.Drawing.Size(68, 16);
+            this.change.TabIndex = 6;
+            this.change.Text = "<Change>";
+            this.change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ConPayment
+            // 
+            this.ConPayment.Location = new System.Drawing.Point(296, 289);
+            this.ConPayment.Name = "ConPayment";
+            this.ConPayment.Size = new System.Drawing.Size(161, 38);
+            this.ConPayment.TabIndex = 7;
+            this.ConPayment.Text = "Confirm Payment";
+            this.ConPayment.UseVisualStyleBackColor = true;
+            this.ConPayment.Click += new System.EventHandler(this.ConPayment_Click);
             // 
             // Cashier_RecievePayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(747, 391);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ConPayment);
+            this.Controls.Add(this.change);
+            this.Controls.Add(this.cash);
+            this.Controls.Add(this.TCost);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.corder);
+            this.Controls.Add(this.Complete);
+            this.Controls.Add(this.CashR);
             this.Name = "Cashier_RecievePayment";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Cashier_RecievePayment_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,8 +141,13 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TextBox CashR;
+        private System.Windows.Forms.Button Complete;
+        private System.Windows.Forms.FlowLayoutPanel corder;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label TCost;
+        private System.Windows.Forms.Label cash;
+        private System.Windows.Forms.Label change;
+        private System.Windows.Forms.Button ConPayment;
     }
 }

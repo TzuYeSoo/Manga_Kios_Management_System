@@ -21,11 +21,14 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom = new SqlCommand();
         static bool isLogin = false;
         static Encap enc;
+
         static string Postion;
+        static int ID;
+        public int EID { get { return ID; } }
         private void Log_but_Click(object sender, EventArgs e)
         {
                 sqlcon.Open();
-                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password, Emp_Position FROM Admin WHERE Emp_Status = 1", sqlcon);
+                sqlcom = new SqlCommand("SELECT Emp_Username, Emp_Password, Emp_Position, Employee_ID FROM Admin WHERE Emp_Status = 1", sqlcon);
                 SqlDataReader reader = sqlcom.ExecuteReader();
 
                 while (reader.Read())
@@ -37,6 +40,7 @@ namespace Admin_Manga_Management
 
                         isLogin = true;
                         Postion = (string)reader.GetValue(2);
+                        ID = Convert.ToInt16(reader.GetValue(3));
                         break;
                     }
                     else
@@ -54,9 +58,14 @@ namespace Admin_Manga_Management
                 }
                 else if (Postion.Equals("Cashier"))
                 {
+                    Cashier_RecievePayment crp = new Cashier_RecievePayment();
+                    crp.empID = ID;
+                    MessageBox.Show(ID + "");
+                    MessageBox.Show(crp.empID + "");
                     CashierHome Cashier = new CashierHome();
                     Cashier.Show();
                     this.Hide();
+
                 }
 
             }
@@ -87,13 +96,6 @@ namespace Admin_Manga_Management
         private void LogIn_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            CashierHome cs = new CashierHome();
-            cs.Show();
-            this.Hide();
         }
     }
 }

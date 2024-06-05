@@ -213,6 +213,12 @@
     <Compile Include="PayCus.Designer.cs">
       <DependentUpon>PayCus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cash_Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cash_Home.Designer.cs">
+      <DependentUpon>Cash_Home.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Book.resx">
       <DependentUpon>Add_Book.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +236,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier_RecievePayment.resx">
       <DependentUpon>Cashier_RecievePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cash_Home.resx">
+      <DependentUpon>Cash_Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Chasier_KiosControl.resx">
       <DependentUpon>Chasier_KiosControl.cs</DependentUpon>

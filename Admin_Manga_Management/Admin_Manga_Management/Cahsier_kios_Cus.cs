@@ -108,5 +108,17 @@ namespace Admin_Manga_Management
             }
             sqlcon.Close();
         }
+        public void clearItems()
+        {
+            cids.Clear();
+            bids.Clear();
+        }
+
+        private void Walkin_Click(object sender, EventArgs e)
+        {
+            CashierHome ch = new CashierHome();
+            ch.Show();
+            this.Hide();
+        }
     }
 }

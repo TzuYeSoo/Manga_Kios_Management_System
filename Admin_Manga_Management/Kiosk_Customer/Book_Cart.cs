@@ -74,6 +74,7 @@ namespace Kiosk_Customer
             {
 
                 Complete_Order corder = new Complete_Order();
+                corder.TCOST = Convert.ToDecimal(TTPrice.Text);
                 corder.ShowDialog();
                 this.Hide();
             }
