@@ -71,7 +71,11 @@ namespace Admin_Manga_Management
             chome.getID = Convert.ToInt16(ckc.CustIDlabel.Text);
             chome.getord = Convert.ToInt32(ckc.OrdNumber.Text);
             chome.getname = ckc.CustName.Text;
-            chome.Paying();
+            for(int i = 0; i < bids.Count - 1; i++)
+            {
+                chome.Paying(bids.ElementAt(i));
+            }
+            
             chome.Show();
             this.Hide();
 
