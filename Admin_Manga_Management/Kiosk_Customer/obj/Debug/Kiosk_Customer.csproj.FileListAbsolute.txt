@@ -25,7 +25,6 @@ C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Ad
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Book_Cart.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Form1.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.BookInfo.resources
-C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Checkout_Cus.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Kiosk_Home.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Properties.Resources.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.BookChoice.resources
@@ -55,3 +54,4 @@ C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.exe
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.pdb
 C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Complete_Order.resources
+C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Complete_Order.resources

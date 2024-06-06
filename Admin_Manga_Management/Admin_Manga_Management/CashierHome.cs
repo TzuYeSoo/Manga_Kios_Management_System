@@ -84,11 +84,11 @@ namespace Admin_Manga_Management
             sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage, Book_ID FROM Book", sqlcon);
 
             SqlDataReader rdr = sqlcom.ExecuteReader();
-            Cashier_Books book = new Cashier_Books();
+            
             while (rdr.Read())
             {
-                
 
+                Cashier_Books book = new Cashier_Books();
                 book.Bprice.Text = rdr.GetValue(1).ToString();
                 book.Bname.Text = (string)rdr.GetValue(0);
                 byte[] imageBinary = (byte[])rdr.GetValue(2);
@@ -120,7 +120,6 @@ namespace Admin_Manga_Management
             PayOrder.Controls.Add(pay);
             TotalPrice.Text = pricecost.ToString();
             pay.gettcost = pricecost;
-            MessageBox.Show(pay.gettcost + "");
         }
 
         private void Kios_Cus_Click(object sender, EventArgs e)

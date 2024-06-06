@@ -140,12 +140,29 @@ namespace Admin_Manga_Management
                 sqlcom.Parameters.AddWithValue("@eid", empID);
                 sqlcom.Parameters.AddWithValue("@tcost", Finalcost);
                 sqlcom.ExecuteNonQuery();
-
+                MessageBox.Show(empID + "");
+                Cashier_REC cre = new Cashier_REC();
                 for (int i = 0; i < bid.Count; i++)
                 {
+                    sqlcom = new SqlCommand("SELECT Book_Name, Book.Book_Price, OrderBook.Book_Quantity FROM Book " +
+                        "INNER JOIN OrderBook ON Book.Book_ID = OrderBook.Book_ID WHERE Book.Book_ID = @BID", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@BID", bid.ElementAt(i));
+                    SqlDataReader rdr = sqlcom.ExecuteReader();
+                    if (rdr.Read())
+                    {
+                        cre.addText(Convert.ToDecimal(rdr.GetValue(1)), (string)rdr.GetValue(0), Convert.ToInt32(rdr.GetValue(2)));
+
+                    }
+                    cre.Tcost.Text = TCost.Text;
+                    cre.Cash.Text = cash.Text;
+                    cre.Change.Text = cash.Text;
+                    cre.ShowDialog();
+                    rdr.Close();
                     mindstock(bid.ElementAt(i), quan.ElementAt(i));
                 }
-                
+                Cashier_REC cashier_REC = new Cashier_REC();
+
+                this.Close();
 
             }
             
