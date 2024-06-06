@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LogIn));
             this.Admin_Username = new System.Windows.Forms.TextBox();
             this.Admin_Password = new System.Windows.Forms.TextBox();
             this.Log_but = new System.Windows.Forms.Button();
@@ -40,7 +41,7 @@
             this.Admin_Username.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_Username.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.Admin_Username.Location = new System.Drawing.Point(379, 264);
-            this.Admin_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Admin_Username.Margin = new System.Windows.Forms.Padding(4);
             this.Admin_Username.Name = "Admin_Username";
             this.Admin_Username.Size = new System.Drawing.Size(344, 38);
             this.Admin_Username.TabIndex = 0;
@@ -53,7 +54,7 @@
             this.Admin_Password.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_Password.ForeColor = System.Drawing.SystemColors.InactiveCaption;
             this.Admin_Password.Location = new System.Drawing.Point(379, 330);
-            this.Admin_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Admin_Password.Margin = new System.Windows.Forms.Padding(4);
             this.Admin_Password.Name = "Admin_Password";
             this.Admin_Password.Size = new System.Drawing.Size(344, 38);
             this.Admin_Password.TabIndex = 1;
@@ -64,7 +65,7 @@
             // Log_but
             // 
             this.Log_but.Location = new System.Drawing.Point(473, 396);
-            this.Log_but.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Log_but.Margin = new System.Windows.Forms.Padding(4);
             this.Log_but.Name = "Log_but";
             this.Log_but.Size = new System.Drawing.Size(160, 37);
             this.Log_but.TabIndex = 2;
@@ -75,12 +76,12 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Staffs_removebg_preview;
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(379, 50);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(420, 57);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(345, 185);
+            this.pictureBox1.Size = new System.Drawing.Size(263, 173);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -95,8 +96,9 @@
             this.Controls.Add(this.Log_but);
             this.Controls.Add(this.Admin_Password);
             this.Controls.Add(this.Admin_Username);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LogIn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.LogIn_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

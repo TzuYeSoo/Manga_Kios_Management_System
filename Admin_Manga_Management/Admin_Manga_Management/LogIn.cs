@@ -60,8 +60,6 @@ namespace Admin_Manga_Management
                 {
                     Cashier_RecievePayment crp = new Cashier_RecievePayment();
                     crp.empID = ID;
-                    MessageBox.Show(ID + "");
-                    MessageBox.Show(crp.empID + "");
                     CashierHome Cashier = new CashierHome();
                     Cashier.Show();
                     this.Hide();

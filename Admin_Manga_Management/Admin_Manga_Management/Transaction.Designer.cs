@@ -38,8 +38,6 @@
             this.Settings_trans = new System.Windows.Forms.Button();
             this.Trans_trans = new System.Windows.Forms.Button();
             this.Book_trans = new System.Windows.Forms.Button();
-            this.Edit_Trans = new System.Windows.Forms.Button();
-            this.Remove_Trans = new System.Windows.Forms.Button();
             this.Trans_GridView = new System.Windows.Forms.DataGridView();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -73,7 +71,7 @@
             // Search_IDTrans
             // 
             this.Search_IDTrans.Location = new System.Drawing.Point(283, 81);
-            this.Search_IDTrans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Search_IDTrans.Margin = new System.Windows.Forms.Padding(4);
             this.Search_IDTrans.Name = "Search_IDTrans";
             this.Search_IDTrans.Size = new System.Drawing.Size(277, 22);
             this.Search_IDTrans.TabIndex = 3;
@@ -90,7 +88,7 @@
             this.Dash_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dash_trans.ForeColor = System.Drawing.Color.Transparent;
             this.Dash_trans.Location = new System.Drawing.Point(0, 49);
-            this.Dash_trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dash_trans.Margin = new System.Windows.Forms.Padding(4);
             this.Dash_trans.Name = "Dash_trans";
             this.Dash_trans.Size = new System.Drawing.Size(259, 58);
             this.Dash_trans.TabIndex = 9;
@@ -105,7 +103,7 @@
             this.Staffs_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Staffs_trans.ForeColor = System.Drawing.Color.Transparent;
             this.Staffs_trans.Location = new System.Drawing.Point(0, 148);
-            this.Staffs_trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Staffs_trans.Margin = new System.Windows.Forms.Padding(4);
             this.Staffs_trans.Name = "Staffs_trans";
             this.Staffs_trans.Size = new System.Drawing.Size(259, 58);
             this.Staffs_trans.TabIndex = 10;
@@ -120,7 +118,7 @@
             this.Settings_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_trans.ForeColor = System.Drawing.Color.Transparent;
             this.Settings_trans.Location = new System.Drawing.Point(0, 443);
-            this.Settings_trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Settings_trans.Margin = new System.Windows.Forms.Padding(4);
             this.Settings_trans.Name = "Settings_trans";
             this.Settings_trans.Size = new System.Drawing.Size(259, 58);
             this.Settings_trans.TabIndex = 11;
@@ -135,7 +133,7 @@
             this.Trans_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Trans_trans.ForeColor = System.Drawing.Color.Transparent;
             this.Trans_trans.Location = new System.Drawing.Point(0, 345);
-            this.Trans_trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Trans_trans.Margin = new System.Windows.Forms.Padding(4);
             this.Trans_trans.Name = "Trans_trans";
             this.Trans_trans.Size = new System.Drawing.Size(259, 58);
             this.Trans_trans.TabIndex = 12;
@@ -149,38 +147,13 @@
             this.Book_trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Book_trans.ForeColor = System.Drawing.Color.Transparent;
             this.Book_trans.Location = new System.Drawing.Point(0, 246);
-            this.Book_trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Book_trans.Margin = new System.Windows.Forms.Padding(4);
             this.Book_trans.Name = "Book_trans";
             this.Book_trans.Size = new System.Drawing.Size(259, 58);
             this.Book_trans.TabIndex = 13;
             this.Book_trans.Text = "Book Inventory";
             this.Book_trans.UseVisualStyleBackColor = false;
             this.Book_trans.Click += new System.EventHandler(this.Book_trans_Click);
-            // 
-            // Edit_Trans
-            // 
-            this.Edit_Trans.BackColor = System.Drawing.Color.Khaki;
-            this.Edit_Trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_Trans.Location = new System.Drawing.Point(283, 443);
-            this.Edit_Trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Edit_Trans.Name = "Edit_Trans";
-            this.Edit_Trans.Size = new System.Drawing.Size(164, 28);
-            this.Edit_Trans.TabIndex = 20;
-            this.Edit_Trans.Text = "Edit";
-            this.Edit_Trans.UseVisualStyleBackColor = false;
-            this.Edit_Trans.Click += new System.EventHandler(this.Edit_Trans_Click);
-            // 
-            // Remove_Trans
-            // 
-            this.Remove_Trans.BackColor = System.Drawing.Color.IndianRed;
-            this.Remove_Trans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Remove_Trans.Location = new System.Drawing.Point(467, 443);
-            this.Remove_Trans.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Remove_Trans.Name = "Remove_Trans";
-            this.Remove_Trans.Size = new System.Drawing.Size(164, 28);
-            this.Remove_Trans.TabIndex = 21;
-            this.Remove_Trans.Text = "Remove";
-            this.Remove_Trans.UseVisualStyleBackColor = false;
             // 
             // Trans_GridView
             // 
@@ -199,7 +172,7 @@
             this.pictureBox7.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox7.Location = new System.Drawing.Point(60, 454);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 37);
             this.pictureBox7.TabIndex = 18;
@@ -211,7 +184,7 @@
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox6.Location = new System.Drawing.Point(39, 159);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(40, 37);
             this.pictureBox6.TabIndex = 17;
@@ -223,7 +196,7 @@
             this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox5.Location = new System.Drawing.Point(48, 60);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(40, 37);
             this.pictureBox5.TabIndex = 16;
@@ -235,7 +208,7 @@
             this.pictureBox4.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Transactions_removebg_preview;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox4.Location = new System.Drawing.Point(40, 356);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(40, 37);
             this.pictureBox4.TabIndex = 15;
@@ -247,7 +220,7 @@
             this.pictureBox3.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox3.Location = new System.Drawing.Point(25, 251);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(53, 49);
             this.pictureBox3.TabIndex = 14;
@@ -257,7 +230,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox2.Location = new System.Drawing.Point(283, 113);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(809, 31);
             this.pictureBox2.TabIndex = 2;
@@ -267,7 +240,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(259, 554);
             this.pictureBox1.TabIndex = 0;
@@ -279,8 +252,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1108, 554);
             this.Controls.Add(this.Trans_GridView);
-            this.Controls.Add(this.Remove_Trans);
-            this.Controls.Add(this.Edit_Trans);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -294,8 +265,9 @@
             this.Controls.Add(this.Search_IDTrans);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Transaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Transaction_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
@@ -331,8 +303,6 @@
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button Edit_Trans;
-        private System.Windows.Forms.Button Remove_Trans;
         private System.Windows.Forms.DataGridView Trans_GridView;
     }
 }

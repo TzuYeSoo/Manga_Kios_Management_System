@@ -97,7 +97,6 @@ namespace Admin_Manga_Management
 
             if (rdr1.Read())
             {
-                MessageBox.Show(" " + rdr1.GetValue(0));
                 ckc.CustIDlabel.Text = rdr1.GetValue(0).ToString();
                 ckc.OrdNumber.Text = rdr1.GetValue(2).ToString();
                 ckc.CustName.Text = (string)rdr1.GetValue(1);

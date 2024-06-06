@@ -27,7 +27,7 @@ namespace Admin_Manga_Management
            
 
             sqlcon.Open();
-            sqlcom1 = new SqlCommand("SELECT * FROM Admin", sqlcon);
+            sqlcom1 = new SqlCommand("SELECT * FROM Admin WHERE Emp_Status = 1", sqlcon);
             SqlDataAdapter adp1 = new SqlDataAdapter(sqlcom1);
             dt1.Clear();
             adp1.Fill(dt1);

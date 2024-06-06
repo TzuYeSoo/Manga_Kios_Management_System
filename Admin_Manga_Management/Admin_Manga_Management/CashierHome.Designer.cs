@@ -41,7 +41,7 @@
             // 
             // Search_Box_Book
             // 
-            this.Search_Box_Book.Location = new System.Drawing.Point(822, 97);
+            this.Search_Box_Book.Location = new System.Drawing.Point(879, 97);
             this.Search_Box_Book.Name = "Search_Box_Book";
             this.Search_Box_Book.Size = new System.Drawing.Size(209, 26);
             this.Search_Box_Book.TabIndex = 4;
@@ -109,6 +109,7 @@
             this.logout.Size = new System.Drawing.Size(75, 72);
             this.logout.TabIndex = 10;
             this.logout.UseVisualStyleBackColor = true;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // CashierHome
             // 
@@ -126,6 +127,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CashierHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier";
             this.Load += new System.EventHandler(this.CashierHome_Load);
             this.ResumeLayout(false);

@@ -69,6 +69,7 @@
             this.Controls.Add(this.Walkin);
             this.Controls.Add(this.CustPanel);
             this.Name = "Cahsier_kios_Cus";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Cahsier_kios_Cus_Load);
             this.ResumeLayout(false);

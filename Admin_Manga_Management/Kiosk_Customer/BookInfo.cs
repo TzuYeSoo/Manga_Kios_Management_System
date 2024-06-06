@@ -34,7 +34,6 @@ namespace Kiosk_Customer
         }
         public void BookPanel()
         {
-            MessageBox.Show("asdad" + ID);
             sqlcon.Open();
             sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, BookImage FROM Book WHERE Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@BID", ID);

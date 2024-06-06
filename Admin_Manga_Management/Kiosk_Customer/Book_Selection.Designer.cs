@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Books = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.CartItem = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,35 +61,27 @@
             // 
             // CartItem
             // 
-            this.CartItem.Location = new System.Drawing.Point(819, 10);
+            this.CartItem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CartItem.BackgroundImage")));
+            this.CartItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CartItem.Location = new System.Drawing.Point(910, 14);
             this.CartItem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CartItem.Name = "CartItem";
-            this.CartItem.Size = new System.Drawing.Size(132, 50);
+            this.CartItem.Size = new System.Drawing.Size(50, 40);
             this.CartItem.TabIndex = 2;
-            this.CartItem.Text = "Cart";
             this.CartItem.UseVisualStyleBackColor = true;
             this.CartItem.Click += new System.EventHandler(this.CartItem_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(12, 24);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(972, 498);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.CartItem);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Books);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -103,6 +95,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button CartItem;
-        private System.Windows.Forms.Button button1;
     }
 }

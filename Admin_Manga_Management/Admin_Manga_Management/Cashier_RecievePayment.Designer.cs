@@ -131,6 +131,7 @@
             this.Controls.Add(this.Complete);
             this.Controls.Add(this.CashR);
             this.Name = "Cashier_RecievePayment";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Cashier_RecievePayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

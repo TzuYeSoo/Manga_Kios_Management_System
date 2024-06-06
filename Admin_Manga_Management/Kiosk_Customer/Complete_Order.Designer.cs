@@ -67,6 +67,7 @@
             this.Controls.Add(this.Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.COrder);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Order";
             this.ResumeLayout(false);
             this.PerformLayout();

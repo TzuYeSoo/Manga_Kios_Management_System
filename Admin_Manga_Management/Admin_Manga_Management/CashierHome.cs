@@ -145,6 +145,13 @@ namespace Admin_Manga_Management
             }          
         }
 
+        private void logout_Click(object sender, EventArgs e)
+        {
+            LogIn log = new LogIn();
+            log.Show();
+            this.Hide();
+        }
+
         private void Payment_Click(object sender, EventArgs e)
         {
             if (TotalPrice.Text != "<Total Price>" && TotalPrice.Text != "0")

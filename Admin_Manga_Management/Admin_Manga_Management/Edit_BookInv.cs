@@ -97,7 +97,6 @@ namespace Admin_Manga_Management
 
                 Edit_BookName_Edit.ReadOnly = true;
                 Edit_BookPrice_Edit.ReadOnly = true;
-                Edit_BookQuanti_Edit.ReadOnly = true;
                 Edit_BookDesc_Edit.ReadOnly = true;
                 for (int x = 0; x < Book_GenreEdit.Items.Count; x++)
                 {

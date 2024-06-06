@@ -78,7 +78,6 @@ namespace Admin_Manga_Management
               //+ bid.ElementAt(i));
                 Customer_Order(quan.ElementAt(i), bid.ElementAt(i));
             }
-            MessageBox.Show(getCID + "");
         }
         public void getlist()
         {

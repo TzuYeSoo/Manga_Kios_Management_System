@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectBook));
             this.BookImage = new System.Windows.Forms.PictureBox();
             this.AddQuan = new System.Windows.Forms.Button();
             this.BookN = new System.Windows.Forms.Label();
@@ -39,21 +40,22 @@
             // 
             // BookImage
             // 
-            this.BookImage.Location = new System.Drawing.Point(34, 26);
+            this.BookImage.Location = new System.Drawing.Point(34, 16);
             this.BookImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BookImage.Name = "BookImage";
-            this.BookImage.Size = new System.Drawing.Size(325, 250);
+            this.BookImage.Size = new System.Drawing.Size(325, 260);
             this.BookImage.TabIndex = 0;
             this.BookImage.TabStop = false;
             // 
             // AddQuan
             // 
-            this.AddQuan.Location = new System.Drawing.Point(311, 307);
+            this.AddQuan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddQuan.BackgroundImage")));
+            this.AddQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.AddQuan.Location = new System.Drawing.Point(312, 306);
             this.AddQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddQuan.Name = "AddQuan";
-            this.AddQuan.Size = new System.Drawing.Size(67, 28);
+            this.AddQuan.Size = new System.Drawing.Size(30, 30);
             this.AddQuan.TabIndex = 1;
-            this.AddQuan.Text = "Add";
             this.AddQuan.UseVisualStyleBackColor = true;
             this.AddQuan.Click += new System.EventHandler(this.AddQuan_Click);
             // 
@@ -85,12 +87,14 @@
             // 
             // MinQuan
             // 
-            this.MinQuan.Location = new System.Drawing.Point(204, 307);
+            this.MinQuan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MinQuan.BackgroundImage")));
+            this.MinQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MinQuan.Cursor = System.Windows.Forms.Cursors.Default;
+            this.MinQuan.Location = new System.Drawing.Point(226, 307);
             this.MinQuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinQuan.Name = "MinQuan";
-            this.MinQuan.Size = new System.Drawing.Size(67, 28);
+            this.MinQuan.Size = new System.Drawing.Size(30, 30);
             this.MinQuan.TabIndex = 5;
-            this.MinQuan.Text = "Minus";
             this.MinQuan.UseVisualStyleBackColor = true;
             this.MinQuan.Click += new System.EventHandler(this.MinQuan_Click);
             // 

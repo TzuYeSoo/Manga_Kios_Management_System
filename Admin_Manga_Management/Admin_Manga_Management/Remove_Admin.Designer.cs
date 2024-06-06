@@ -47,29 +47,29 @@
             // Remove_Admin_GrideView
             // 
             this.Remove_Admin_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Remove_Admin_GrideView.Location = new System.Drawing.Point(26, 182);
-            this.Remove_Admin_GrideView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Remove_Admin_GrideView.Location = new System.Drawing.Point(23, 146);
+            this.Remove_Admin_GrideView.Margin = new System.Windows.Forms.Padding(4);
             this.Remove_Admin_GrideView.Name = "Remove_Admin_GrideView";
             this.Remove_Admin_GrideView.RowHeadersWidth = 62;
-            this.Remove_Admin_GrideView.Size = new System.Drawing.Size(968, 217);
+            this.Remove_Admin_GrideView.Size = new System.Drawing.Size(860, 174);
             this.Remove_Admin_GrideView.TabIndex = 0;
             // 
             // AdminID_Remove
             // 
-            this.AdminID_Remove.Location = new System.Drawing.Point(26, 142);
-            this.AdminID_Remove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AdminID_Remove.Location = new System.Drawing.Point(23, 114);
+            this.AdminID_Remove.Margin = new System.Windows.Forms.Padding(4);
             this.AdminID_Remove.Name = "AdminID_Remove";
-            this.AdminID_Remove.Size = new System.Drawing.Size(238, 26);
+            this.AdminID_Remove.Size = new System.Drawing.Size(212, 22);
             this.AdminID_Remove.TabIndex = 1;
             // 
             // Remove_Remove
             // 
             this.Remove_Remove.BackColor = System.Drawing.Color.IndianRed;
             this.Remove_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Remove_Remove.Location = new System.Drawing.Point(396, 137);
-            this.Remove_Remove.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Remove_Remove.Location = new System.Drawing.Point(352, 110);
+            this.Remove_Remove.Margin = new System.Windows.Forms.Padding(4);
             this.Remove_Remove.Name = "Remove_Remove";
-            this.Remove_Remove.Size = new System.Drawing.Size(112, 35);
+            this.Remove_Remove.Size = new System.Drawing.Size(100, 28);
             this.Remove_Remove.TabIndex = 2;
             this.Remove_Remove.Text = "Remove";
             this.Remove_Remove.UseVisualStyleBackColor = false;
@@ -79,20 +79,20 @@
             // 
             this.Admin_RemoveLabel.AutoSize = true;
             this.Admin_RemoveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Admin_RemoveLabel.Location = new System.Drawing.Point(18, 14);
+            this.Admin_RemoveLabel.Location = new System.Drawing.Point(16, 11);
             this.Admin_RemoveLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Admin_RemoveLabel.Name = "Admin_RemoveLabel";
-            this.Admin_RemoveLabel.Size = new System.Drawing.Size(238, 36);
+            this.Admin_RemoveLabel.Size = new System.Drawing.Size(206, 29);
             this.Admin_RemoveLabel.TabIndex = 3;
             this.Admin_RemoveLabel.Text = "Employee Status";
             // 
             // AdminID_RemoveLabel
             // 
             this.AdminID_RemoveLabel.AutoSize = true;
-            this.AdminID_RemoveLabel.Location = new System.Drawing.Point(28, 117);
+            this.AdminID_RemoveLabel.Location = new System.Drawing.Point(25, 94);
             this.AdminID_RemoveLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AdminID_RemoveLabel.Name = "AdminID_RemoveLabel";
-            this.AdminID_RemoveLabel.Size = new System.Drawing.Size(100, 20);
+            this.AdminID_RemoveLabel.Size = new System.Drawing.Size(85, 16);
             this.AdminID_RemoveLabel.TabIndex = 4;
             this.AdminID_RemoveLabel.Text = "Employee ID";
             // 
@@ -100,10 +100,10 @@
             // 
             this.Close_Remove_Admin.BackColor = System.Drawing.Color.IndianRed;
             this.Close_Remove_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Close_Remove_Admin.Location = new System.Drawing.Point(880, 49);
-            this.Close_Remove_Admin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Close_Remove_Admin.Location = new System.Drawing.Point(782, 39);
+            this.Close_Remove_Admin.Margin = new System.Windows.Forms.Padding(4);
             this.Close_Remove_Admin.Name = "Close_Remove_Admin";
-            this.Close_Remove_Admin.Size = new System.Drawing.Size(112, 35);
+            this.Close_Remove_Admin.Size = new System.Drawing.Size(100, 28);
             this.Close_Remove_Admin.TabIndex = 5;
             this.Close_Remove_Admin.Text = "Close";
             this.Close_Remove_Admin.UseVisualStyleBackColor = false;
@@ -114,10 +114,10 @@
             this.ConfirmID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ConfirmID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ConfirmID.ForeColor = System.Drawing.Color.Black;
-            this.ConfirmID.Location = new System.Drawing.Point(274, 137);
-            this.ConfirmID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ConfirmID.Location = new System.Drawing.Point(244, 110);
+            this.ConfirmID.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmID.Name = "ConfirmID";
-            this.ConfirmID.Size = new System.Drawing.Size(112, 35);
+            this.ConfirmID.Size = new System.Drawing.Size(100, 28);
             this.ConfirmID.TabIndex = 6;
             this.ConfirmID.Text = "Confirm ID";
             this.ConfirmID.UseVisualStyleBackColor = false;
@@ -126,39 +126,39 @@
             // Delete_His
             // 
             this.Delete_His.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Delete_His.Location = new System.Drawing.Point(26, 478);
-            this.Delete_His.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Delete_His.Location = new System.Drawing.Point(23, 382);
+            this.Delete_His.Margin = new System.Windows.Forms.Padding(4);
             this.Delete_His.Name = "Delete_His";
             this.Delete_His.RowHeadersWidth = 62;
-            this.Delete_His.Size = new System.Drawing.Size(968, 217);
+            this.Delete_His.Size = new System.Drawing.Size(860, 174);
             this.Delete_His.TabIndex = 7;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 414);
+            this.label1.Location = new System.Drawing.Point(25, 331);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.Size = new System.Drawing.Size(85, 16);
             this.label1.TabIndex = 9;
             this.label1.Text = "Employee ID";
             // 
             // RRemoveBox
             // 
-            this.RRemoveBox.Location = new System.Drawing.Point(26, 438);
-            this.RRemoveBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RRemoveBox.Location = new System.Drawing.Point(23, 350);
+            this.RRemoveBox.Margin = new System.Windows.Forms.Padding(4);
             this.RRemoveBox.Name = "RRemoveBox";
-            this.RRemoveBox.Size = new System.Drawing.Size(238, 26);
+            this.RRemoveBox.Size = new System.Drawing.Size(212, 22);
             this.RRemoveBox.TabIndex = 8;
             // 
             // RConfirm_ID
             // 
             this.RConfirm_ID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.RConfirm_ID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RConfirm_ID.Location = new System.Drawing.Point(274, 434);
-            this.RConfirm_ID.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.RConfirm_ID.Location = new System.Drawing.Point(244, 347);
+            this.RConfirm_ID.Margin = new System.Windows.Forms.Padding(4);
             this.RConfirm_ID.Name = "RConfirm_ID";
-            this.RConfirm_ID.Size = new System.Drawing.Size(112, 35);
+            this.RConfirm_ID.Size = new System.Drawing.Size(100, 28);
             this.RConfirm_ID.TabIndex = 11;
             this.RConfirm_ID.Text = "Confirm ID";
             this.RConfirm_ID.UseVisualStyleBackColor = false;
@@ -166,12 +166,12 @@
             // 
             // Retrieve_EM
             // 
-            this.Retrieve_EM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Retrieve_EM.BackColor = System.Drawing.Color.IndianRed;
             this.Retrieve_EM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Retrieve_EM.Location = new System.Drawing.Point(396, 434);
-            this.Retrieve_EM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Retrieve_EM.Location = new System.Drawing.Point(352, 347);
+            this.Retrieve_EM.Margin = new System.Windows.Forms.Padding(4);
             this.Retrieve_EM.Name = "Retrieve_EM";
-            this.Retrieve_EM.Size = new System.Drawing.Size(112, 35);
+            this.Retrieve_EM.Size = new System.Drawing.Size(100, 28);
             this.Retrieve_EM.TabIndex = 10;
             this.Retrieve_EM.Text = "Retrieve";
             this.Retrieve_EM.UseVisualStyleBackColor = false;
@@ -179,9 +179,9 @@
             // 
             // Remove_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 763);
+            this.ClientSize = new System.Drawing.Size(899, 610);
             this.Controls.Add(this.RConfirm_ID);
             this.Controls.Add(this.Retrieve_EM);
             this.Controls.Add(this.label1);
@@ -194,8 +194,9 @@
             this.Controls.Add(this.Remove_Remove);
             this.Controls.Add(this.AdminID_Remove);
             this.Controls.Add(this.Remove_Admin_GrideView);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Remove_Admin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Remove_Admin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Remove_Admin_GrideView)).EndInit();

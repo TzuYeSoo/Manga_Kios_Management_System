@@ -46,10 +46,10 @@
             // 
             // check_out
             // 
-            this.check_out.Location = new System.Drawing.Point(612, 310);
+            this.check_out.Location = new System.Drawing.Point(598, 310);
             this.check_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.check_out.Name = "check_out";
-            this.check_out.Size = new System.Drawing.Size(76, 32);
+            this.check_out.Size = new System.Drawing.Size(90, 27);
             this.check_out.TabIndex = 1;
             this.check_out.Text = "Checkout";
             this.check_out.UseVisualStyleBackColor = true;
@@ -62,7 +62,7 @@
             this.back_Book.Name = "back_Book";
             this.back_Book.Size = new System.Drawing.Size(67, 25);
             this.back_Book.TabIndex = 2;
-            this.back_Book.Text = "back_Book";
+            this.back_Book.Text = "Back";
             this.back_Book.UseVisualStyleBackColor = true;
             this.back_Book.Click += new System.EventHandler(this.back_Book_Click);
             // 
@@ -88,6 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.TTPrice);
             this.Controls.Add(this.label1);
@@ -96,6 +97,7 @@
             this.Controls.Add(this.CartPanel);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Book_Cart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Book_Cart";
             this.Load += new System.EventHandler(this.Book_Cart_Load);
             this.ResumeLayout(false);

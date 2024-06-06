@@ -33,10 +33,8 @@
             this.BookPrice = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.BookImage = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.Genre = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,7 +47,7 @@
             this.BookName.AutoSize = true;
             this.BookName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookName.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BookName.Location = new System.Drawing.Point(117, 358);
+            this.BookName.Location = new System.Drawing.Point(121, 280);
             this.BookName.Name = "BookName";
             this.BookName.Size = new System.Drawing.Size(116, 20);
             this.BookName.TabIndex = 1;
@@ -60,7 +58,7 @@
             this.BookPrice.AutoSize = true;
             this.BookPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookPrice.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.BookPrice.Location = new System.Drawing.Point(116, 383);
+            this.BookPrice.Location = new System.Drawing.Point(120, 305);
             this.BookPrice.Name = "BookPrice";
             this.BookPrice.Size = new System.Drawing.Size(111, 20);
             this.BookPrice.TabIndex = 2;
@@ -77,24 +75,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(56, 383);
+            this.label1.Location = new System.Drawing.Point(60, 305);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Price:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(59, 135);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Popular";
             // 
             // contextMenuStrip2
             // 
@@ -105,24 +91,13 @@
             // BookImage
             // 
             this.BookImage.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.BookImage.Location = new System.Drawing.Point(60, 174);
+            this.BookImage.Location = new System.Drawing.Point(15, 20);
             this.BookImage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BookImage.Name = "BookImage";
-            this.BookImage.Size = new System.Drawing.Size(152, 176);
+            this.BookImage.Size = new System.Drawing.Size(248, 239);
             this.BookImage.TabIndex = 0;
             this.BookImage.TabStop = false;
             this.BookImage.Click += new System.EventHandler(this.BookImage_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(-11, -16);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(292, 93);
-            this.textBox1.TabIndex = 8;
             // 
             // label3
             // 
@@ -139,7 +114,7 @@
             this.Genre.AutoSize = true;
             this.Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Genre.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Genre.Location = new System.Drawing.Point(116, 405);
+            this.Genre.Location = new System.Drawing.Point(120, 327);
             this.Genre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Genre.Name = "Genre";
             this.Genre.Size = new System.Drawing.Size(75, 20);
@@ -151,7 +126,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(7, 358);
+            this.label4.Location = new System.Drawing.Point(11, 280);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 20);
@@ -163,7 +138,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(4, 405);
+            this.label5.Location = new System.Drawing.Point(8, 327);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(103, 20);
@@ -182,12 +157,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BookPrice);
             this.Controls.Add(this.BookName);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.BookImage);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookChoice";
-            this.Size = new System.Drawing.Size(272, 442);
+            this.Size = new System.Drawing.Size(278, 387);
             this.Load += new System.EventHandler(this.BookChoice_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BookImage)).EndInit();
             this.ResumeLayout(false);
@@ -201,9 +174,7 @@
         public System.Windows.Forms.PictureBox BookImage;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;

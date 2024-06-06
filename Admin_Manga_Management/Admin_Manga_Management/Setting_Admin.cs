@@ -26,5 +26,33 @@ namespace Admin_Manga_Management
                 this.Hide();
             }
         }
+
+        private void TransHis_Click(object sender, EventArgs e)
+        {
+            Transaction ts = new Transaction();
+            ts.Show();
+            this.Hide();
+        }
+
+        private void Book_Inv_Click(object sender, EventArgs e)
+        {
+            Book_Inv book = new Book_Inv();
+            book.Show();
+            this.Hide();
+        }
+
+        private void Staffs_Click(object sender, EventArgs e)
+        {
+            StaffsHome sth = new StaffsHome();
+            sth.Show();
+            this.Hide();    
+        }
+
+        private void Dashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard_Home dh = new Dashboard_Home  ();
+            dh.Show();  
+            this.Hide();    
+        }
     }
 }

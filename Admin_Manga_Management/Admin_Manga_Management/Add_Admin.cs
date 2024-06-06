@@ -89,5 +89,15 @@ namespace Admin_Manga_Management
             sqlad.Fill(Admin_Users);
             Admin_View_Add.DataSource = Admin_Users;
         }
+
+        private void AdminUsername_Add_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AdminPass_Add_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
