@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Admin));
             this.AdminUsername_Add = new System.Windows.Forms.TextBox();
             this.AdminPass_Add = new System.Windows.Forms.TextBox();
             this.AdminCon_Add = new System.Windows.Forms.TextBox();
@@ -36,7 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Admin_Pass_Label = new System.Windows.Forms.Label();
             this.Admin_Con_Label = new System.Windows.Forms.Label();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.adminBindingSource = new System.Windows.Forms.BindingSource();
             this.database1DataSet3 = new Admin_Manga_Management.Database1DataSet3();
             this.adminTableAdapter = new Admin_Manga_Management.Database1DataSet3TableAdapters.AdminTableAdapter();
             this.Add_AdminBUtt = new System.Windows.Forms.Button();
@@ -213,6 +213,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(746, 381);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.TName);

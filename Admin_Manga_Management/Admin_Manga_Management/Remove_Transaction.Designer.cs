@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Remove_Transaction));
             this.label1 = new System.Windows.Forms.Label();
             this.Remove_Button = new System.Windows.Forms.Button();
             this.Confirm_BID = new System.Windows.Forms.Button();
@@ -57,7 +58,7 @@
             this.Remove_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Remove_Button.ForeColor = System.Drawing.Color.Black;
             this.Remove_Button.Location = new System.Drawing.Point(286, 56);
-            this.Remove_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Remove_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Remove_Button.Name = "Remove_Button";
             this.Remove_Button.Size = new System.Drawing.Size(77, 23);
             this.Remove_Button.TabIndex = 15;
@@ -70,7 +71,7 @@
             this.Confirm_BID.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Confirm_BID.ForeColor = System.Drawing.Color.Black;
             this.Confirm_BID.Location = new System.Drawing.Point(205, 56);
-            this.Confirm_BID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Confirm_BID.Margin = new System.Windows.Forms.Padding(2);
             this.Confirm_BID.Name = "Confirm_BID";
             this.Confirm_BID.Size = new System.Drawing.Size(77, 23);
             this.Confirm_BID.TabIndex = 14;
@@ -82,7 +83,7 @@
             this.Book_Hisotry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Book_Hisotry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Book_Hisotry.Location = new System.Drawing.Point(11, 86);
-            this.Book_Hisotry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_Hisotry.Margin = new System.Windows.Forms.Padding(2);
             this.Book_Hisotry.Name = "Book_Hisotry";
             this.Book_Hisotry.RowHeadersWidth = 62;
             this.Book_Hisotry.RowTemplate.Height = 28;
@@ -105,7 +106,7 @@
             this.RConfirm_BookID.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.RConfirm_BookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RConfirm_BookID.Location = new System.Drawing.Point(24, 59);
-            this.RConfirm_BookID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RConfirm_BookID.Margin = new System.Windows.Forms.Padding(2);
             this.RConfirm_BookID.Name = "RConfirm_BookID";
             this.RConfirm_BookID.Size = new System.Drawing.Size(178, 23);
             this.RConfirm_BookID.TabIndex = 11;
@@ -127,7 +128,7 @@
             this.Delete_Book_History.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Delete_Book_History.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Delete_Book_History.Location = new System.Drawing.Point(10, 291);
-            this.Delete_Book_History.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Delete_Book_History.Margin = new System.Windows.Forms.Padding(2);
             this.Delete_Book_History.Name = "Delete_Book_History";
             this.Delete_Book_History.RowHeadersWidth = 62;
             this.Delete_Book_History.RowTemplate.Height = 28;
@@ -140,7 +141,7 @@
             this.Close_RBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close_RBook.ForeColor = System.Drawing.Color.Black;
             this.Close_RBook.Location = new System.Drawing.Point(712, 10);
-            this.Close_RBook.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Close_RBook.Margin = new System.Windows.Forms.Padding(2);
             this.Close_RBook.Name = "Close_RBook";
             this.Close_RBook.Size = new System.Drawing.Size(77, 21);
             this.Close_RBook.TabIndex = 16;
@@ -151,6 +152,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 481);
             this.Controls.Add(this.Close_RBook);
             this.Controls.Add(this.Remove_Button);

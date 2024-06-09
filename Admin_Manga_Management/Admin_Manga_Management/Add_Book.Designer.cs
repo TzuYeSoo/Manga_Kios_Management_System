@@ -54,7 +54,7 @@
             // 
             this.Add_BookID_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookID_Add.Location = new System.Drawing.Point(28, 72);
-            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookID_Add.Name = "Add_BookID_Add";
             this.Add_BookID_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookID_Add.TabIndex = 0;
@@ -63,7 +63,7 @@
             // 
             this.Book_GrideView_BookADD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Book_GrideView_BookADD.Location = new System.Drawing.Point(28, 202);
-            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(2);
             this.Book_GrideView_BookADD.Name = "Book_GrideView_BookADD";
             this.Book_GrideView_BookADD.RowHeadersWidth = 51;
             this.Book_GrideView_BookADD.RowTemplate.Height = 24;
@@ -98,7 +98,7 @@
             // 
             this.Add_BookQuantity_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookQuantity_Add.Location = new System.Drawing.Point(188, 72);
-            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookQuantity_Add.Name = "Add_BookQuantity_Add";
             this.Add_BookQuantity_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookQuantity_Add.TabIndex = 5;
@@ -107,7 +107,7 @@
             // 
             this.Add_BookPrice_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookPrice_Add.Location = new System.Drawing.Point(28, 158);
-            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookPrice_Add.Name = "Add_BookPrice_Add";
             this.Add_BookPrice_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookPrice_Add.TabIndex = 6;
@@ -116,7 +116,7 @@
             // 
             this.Add_BookName_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookName_Add.Location = new System.Drawing.Point(28, 115);
-            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookName_Add.Name = "Add_BookName_Add";
             this.Add_BookName_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookName_Add.TabIndex = 7;
@@ -173,7 +173,7 @@
             // 
             this.Add_BookDescrip_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookDescrip_Add.Location = new System.Drawing.Point(345, 72);
-            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookDescrip_Add.Multiline = true;
             this.Add_BookDescrip_Add.Name = "Add_BookDescrip_Add";
             this.Add_BookDescrip_Add.Size = new System.Drawing.Size(223, 84);
@@ -196,7 +196,7 @@
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(724, 9);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 25);
             this.button1.TabIndex = 14;
@@ -209,7 +209,7 @@
             this.Add_Book_FROMADD.BackColor = System.Drawing.Color.LightGreen;
             this.Add_Book_FROMADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add_Book_FROMADD.Location = new System.Drawing.Point(345, 161);
-            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(2);
             this.Add_Book_FROMADD.Name = "Add_Book_FROMADD";
             this.Add_Book_FROMADD.Size = new System.Drawing.Size(222, 22);
             this.Add_Book_FROMADD.TabIndex = 15;
@@ -242,6 +242,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(790, 366);
             this.Controls.Add(this.Book_Image);
             this.Controls.Add(this.GenreNames);
@@ -260,7 +262,7 @@
             this.Controls.Add(this.Add_BookINV);
             this.Controls.Add(this.Book_GrideView_BookADD);
             this.Controls.Add(this.Add_BookID_Add);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Add_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";

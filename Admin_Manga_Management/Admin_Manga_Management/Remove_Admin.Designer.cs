@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Remove_Admin));
             this.Remove_Admin_GrideView = new System.Windows.Forms.DataGridView();
             this.AdminID_Remove = new System.Windows.Forms.TextBox();
             this.Remove_Remove = new System.Windows.Forms.Button();
@@ -169,6 +170,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(674, 496);
             this.Controls.Add(this.RConfirm_ID);
             this.Controls.Add(this.Retrieve_EM);

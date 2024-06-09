@@ -193,7 +193,7 @@
             // 
             this.Book_GenreEdit.FormattingEnabled = true;
             this.Book_GenreEdit.Location = new System.Drawing.Point(228, 129);
-            this.Book_GenreEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_GenreEdit.Margin = new System.Windows.Forms.Padding(2);
             this.Book_GenreEdit.Name = "Book_GenreEdit";
             this.Book_GenreEdit.Size = new System.Drawing.Size(165, 49);
             this.Book_GenreEdit.TabIndex = 20;
@@ -214,6 +214,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Confirm_ID);
             this.Controls.Add(this.Book_GenreEdit);

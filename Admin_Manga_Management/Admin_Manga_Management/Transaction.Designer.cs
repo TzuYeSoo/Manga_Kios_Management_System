@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transaction));
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet1 = new Admin_Manga_Management.Database1DataSet1();
             this.Search_IDTrans = new System.Windows.Forms.TextBox();
@@ -153,7 +154,7 @@
             // 
             this.Trans_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Trans_GridView.Location = new System.Drawing.Point(212, 114);
-            this.Trans_GridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Trans_GridView.Margin = new System.Windows.Forms.Padding(2);
             this.Trans_GridView.Name = "Trans_GridView";
             this.Trans_GridView.RowHeadersWidth = 62;
             this.Trans_GridView.RowTemplate.Height = 28;
@@ -237,6 +238,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 450);
             this.Controls.Add(this.Trans_GridView);
             this.Controls.Add(this.pictureBox7);
@@ -252,6 +255,7 @@
             this.Controls.Add(this.Search_IDTrans);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "Transaction";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";

@@ -209,7 +209,7 @@
             // 
             this.BookNames.FormattingEnabled = true;
             this.BookNames.Location = new System.Drawing.Point(166, 77);
-            this.BookNames.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BookNames.Margin = new System.Windows.Forms.Padding(2);
             this.BookNames.Name = "BookNames";
             this.BookNames.Size = new System.Drawing.Size(128, 49);
             this.BookNames.TabIndex = 20;
@@ -218,6 +218,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BookNames);
             this.Controls.Add(this.label2);

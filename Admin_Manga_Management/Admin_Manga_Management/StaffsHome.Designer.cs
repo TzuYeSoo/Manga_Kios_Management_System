@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffsHome));
             this.Dash_Staffs = new System.Windows.Forms.Button();
             this.Settings_Staffs = new System.Windows.Forms.Button();
             this.Trans_Staffs = new System.Windows.Forms.Button();
@@ -280,6 +281,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 450);
             this.Controls.Add(this.Employee_Data);
             this.Controls.Add(this.Remove_User_Admin);
