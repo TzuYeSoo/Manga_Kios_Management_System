@@ -119,5 +119,15 @@ namespace Admin_Manga_Management
             ch.Show();
             this.Hide();
         }
+
+        private void Kios_Cus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CustPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -43,8 +43,8 @@
             // 
             this.CashR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CashR.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.CashR.Location = new System.Drawing.Point(76, 208);
-            this.CashR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CashR.Location = new System.Drawing.Point(76, 204);
+            this.CashR.Margin = new System.Windows.Forms.Padding(2);
             this.CashR.Name = "CashR";
             this.CashR.Size = new System.Drawing.Size(391, 23);
             this.CashR.TabIndex = 0;
@@ -54,8 +54,8 @@
             // 
             // Complete
             // 
-            this.Complete.Location = new System.Drawing.Point(222, 280);
-            this.Complete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Complete.Location = new System.Drawing.Point(222, 274);
+            this.Complete.Margin = new System.Windows.Forms.Padding(2);
             this.Complete.Name = "Complete";
             this.Complete.Size = new System.Drawing.Size(121, 31);
             this.Complete.TabIndex = 1;
@@ -66,7 +66,7 @@
             // corder
             // 
             this.corder.Location = new System.Drawing.Point(17, 10);
-            this.corder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.corder.Margin = new System.Windows.Forms.Padding(2);
             this.corder.Name = "corder";
             this.corder.Size = new System.Drawing.Size(525, 164);
             this.corder.TabIndex = 2;
@@ -75,7 +75,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Location = new System.Drawing.Point(17, 179);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(525, 8);
             this.pictureBox1.TabIndex = 3;
@@ -84,40 +84,37 @@
             // TCost
             // 
             this.TCost.AutoSize = true;
-            this.TCost.Location = new System.Drawing.Point(478, 189);
+            this.TCost.Location = new System.Drawing.Point(473, 189);
             this.TCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TCost.Name = "TCost";
-            this.TCost.Size = new System.Drawing.Size(70, 13);
+            this.TCost.Size = new System.Drawing.Size(0, 13);
             this.TCost.TabIndex = 4;
-            this.TCost.Text = "<Total Price>";
             this.TCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cash
             // 
             this.cash.AutoSize = true;
-            this.cash.Location = new System.Drawing.Point(478, 213);
+            this.cash.Location = new System.Drawing.Point(473, 213);
             this.cash.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cash.Name = "cash";
-            this.cash.Size = new System.Drawing.Size(86, 13);
+            this.cash.Size = new System.Drawing.Size(0, 13);
             this.cash.TabIndex = 5;
-            this.cash.Text = "<Cash Recieve>";
             this.cash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // change
             // 
             this.change.AutoSize = true;
-            this.change.Location = new System.Drawing.Point(478, 240);
+            this.change.Location = new System.Drawing.Point(473, 240);
             this.change.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(56, 13);
+            this.change.Size = new System.Drawing.Size(0, 13);
             this.change.TabIndex = 6;
-            this.change.Text = "<Change>";
             this.change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConPayment
             // 
             this.ConPayment.Location = new System.Drawing.Point(222, 235);
-            this.ConPayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConPayment.Margin = new System.Windows.Forms.Padding(2);
             this.ConPayment.Name = "ConPayment";
             this.ConPayment.Size = new System.Drawing.Size(121, 31);
             this.ConPayment.TabIndex = 7;
@@ -138,10 +135,10 @@
             this.Controls.Add(this.corder);
             this.Controls.Add(this.Complete);
             this.Controls.Add(this.CashR);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cashier_RecievePayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Cashier Kiosk";
             this.Load += new System.EventHandler(this.Cashier_RecievePayment_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

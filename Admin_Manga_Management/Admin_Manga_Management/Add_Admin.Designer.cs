@@ -55,70 +55,63 @@
             // AdminUsername_Add
             // 
             this.AdminUsername_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminUsername_Add.Location = new System.Drawing.Point(56, 103);
-            this.AdminUsername_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminUsername_Add.Location = new System.Drawing.Point(42, 84);
             this.AdminUsername_Add.Name = "AdminUsername_Add";
-            this.AdminUsername_Add.Size = new System.Drawing.Size(241, 26);
+            this.AdminUsername_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminUsername_Add.TabIndex = 1;
             this.AdminUsername_Add.TextChanged += new System.EventHandler(this.AdminUsername_Add_TextChanged);
             // 
             // AdminPass_Add
             // 
             this.AdminPass_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminPass_Add.Location = new System.Drawing.Point(56, 156);
-            this.AdminPass_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminPass_Add.Location = new System.Drawing.Point(42, 127);
             this.AdminPass_Add.Name = "AdminPass_Add";
-            this.AdminPass_Add.Size = new System.Drawing.Size(241, 26);
+            this.AdminPass_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminPass_Add.TabIndex = 2;
             this.AdminPass_Add.TextChanged += new System.EventHandler(this.AdminPass_Add_TextChanged);
             // 
             // AdminCon_Add
             // 
             this.AdminCon_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminCon_Add.Location = new System.Drawing.Point(569, 105);
-            this.AdminCon_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AdminCon_Add.Location = new System.Drawing.Point(427, 85);
             this.AdminCon_Add.Name = "AdminCon_Add";
-            this.AdminCon_Add.Size = new System.Drawing.Size(241, 26);
+            this.AdminCon_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminCon_Add.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 11);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(38, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(179, 29);
+            this.label1.Size = new System.Drawing.Size(140, 25);
             this.label1.TabIndex = 4;
             this.label1.Text = "Add Employee";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 86);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(40, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 16);
+            this.label3.Size = new System.Drawing.Size(104, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Employee Username";
             // 
             // Admin_Pass_Label
             // 
             this.Admin_Pass_Label.AutoSize = true;
-            this.Admin_Pass_Label.Location = new System.Drawing.Point(53, 137);
-            this.Admin_Pass_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Admin_Pass_Label.Location = new System.Drawing.Point(40, 111);
             this.Admin_Pass_Label.Name = "Admin_Pass_Label";
-            this.Admin_Pass_Label.Size = new System.Drawing.Size(132, 16);
+            this.Admin_Pass_Label.Size = new System.Drawing.Size(102, 13);
             this.Admin_Pass_Label.TabIndex = 7;
             this.Admin_Pass_Label.Text = "Employee Password";
             // 
             // Admin_Con_Label
             // 
             this.Admin_Con_Label.AutoSize = true;
-            this.Admin_Con_Label.Location = new System.Drawing.Point(565, 85);
-            this.Admin_Con_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Admin_Con_Label.Location = new System.Drawing.Point(424, 69);
             this.Admin_Con_Label.Name = "Admin_Con_Label";
-            this.Admin_Con_Label.Size = new System.Drawing.Size(52, 16);
+            this.Admin_Con_Label.Size = new System.Drawing.Size(44, 13);
             this.Admin_Con_Label.TabIndex = 8;
             this.Admin_Con_Label.Text = "Contact";
             // 
@@ -140,10 +133,9 @@
             // 
             this.Add_AdminBUtt.BackColor = System.Drawing.Color.LightGreen;
             this.Add_AdminBUtt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_AdminBUtt.Location = new System.Drawing.Point(569, 156);
-            this.Add_AdminBUtt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Add_AdminBUtt.Location = new System.Drawing.Point(427, 127);
             this.Add_AdminBUtt.Name = "Add_AdminBUtt";
-            this.Add_AdminBUtt.Size = new System.Drawing.Size(243, 28);
+            this.Add_AdminBUtt.Size = new System.Drawing.Size(182, 23);
             this.Add_AdminBUtt.TabIndex = 10;
             this.Add_AdminBUtt.Text = "Add";
             this.Add_AdminBUtt.UseVisualStyleBackColor = false;
@@ -154,11 +146,10 @@
             this.Close_Button_Add.BackColor = System.Drawing.Color.IndianRed;
             this.Close_Button_Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Close_Button_Add.ForeColor = System.Drawing.Color.Transparent;
-            this.Close_Button_Add.Location = new System.Drawing.Point(845, 16);
-            this.Close_Button_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Close_Button_Add.Location = new System.Drawing.Point(634, 13);
             this.Close_Button_Add.Name = "Close_Button_Add";
             this.Close_Button_Add.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Close_Button_Add.Size = new System.Drawing.Size(100, 28);
+            this.Close_Button_Add.Size = new System.Drawing.Size(75, 23);
             this.Close_Button_Add.TabIndex = 11;
             this.Close_Button_Add.Text = "Close";
             this.Close_Button_Add.UseVisualStyleBackColor = false;
@@ -167,30 +158,27 @@
             // Admin_View_Add
             // 
             this.Admin_View_Add.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Admin_View_Add.Location = new System.Drawing.Point(56, 213);
-            this.Admin_View_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Admin_View_Add.Location = new System.Drawing.Point(42, 173);
             this.Admin_View_Add.Name = "Admin_View_Add";
             this.Admin_View_Add.RowHeadersWidth = 62;
-            this.Admin_View_Add.Size = new System.Drawing.Size(889, 198);
+            this.Admin_View_Add.Size = new System.Drawing.Size(667, 161);
             this.Admin_View_Add.TabIndex = 12;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(311, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(233, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 16);
+            this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "Position";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(565, 137);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(424, 111);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(0, 16);
+            this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 16;
             // 
             // PositionBox
@@ -199,36 +187,33 @@
             this.PositionBox.Items.AddRange(new object[] {
             "Admin",
             "Cashier"});
-            this.PositionBox.Location = new System.Drawing.Point(315, 105);
-            this.PositionBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PositionBox.Location = new System.Drawing.Point(236, 85);
             this.PositionBox.Name = "PositionBox";
-            this.PositionBox.Size = new System.Drawing.Size(241, 24);
+            this.PositionBox.Size = new System.Drawing.Size(182, 21);
             this.PositionBox.TabIndex = 17;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(311, 137);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(233, 111);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 19;
             this.label5.Text = "Name";
             // 
             // TName
             // 
             this.TName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TName.Location = new System.Drawing.Point(315, 156);
-            this.TName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TName.Location = new System.Drawing.Point(236, 127);
             this.TName.Name = "TName";
-            this.TName.Size = new System.Drawing.Size(241, 26);
+            this.TName.Size = new System.Drawing.Size(182, 22);
             this.TName.TabIndex = 18;
             // 
             // Add_Admin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(995, 469);
+            this.ClientSize = new System.Drawing.Size(746, 381);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.TName);
             this.Controls.Add(this.PositionBox);
@@ -244,10 +229,9 @@
             this.Controls.Add(this.AdminCon_Add);
             this.Controls.Add(this.AdminPass_Add);
             this.Controls.Add(this.AdminUsername_Add);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Add_Admin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Administrator";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet3)).EndInit();

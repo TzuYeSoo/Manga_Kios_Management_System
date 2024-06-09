@@ -36,41 +36,50 @@
             // CustPanel
             // 
             this.CustPanel.AutoScroll = true;
-            this.CustPanel.Location = new System.Drawing.Point(0, 108);
+            this.CustPanel.Location = new System.Drawing.Point(0, 88);
+            this.CustPanel.Margin = new System.Windows.Forms.Padding(2);
             this.CustPanel.Name = "CustPanel";
-            this.CustPanel.Size = new System.Drawing.Size(1094, 344);
+            this.CustPanel.Size = new System.Drawing.Size(820, 280);
             this.CustPanel.TabIndex = 0;
+            this.CustPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CustPanel_Paint);
             // 
             // Kios_Cus
             // 
-            this.Kios_Cus.Location = new System.Drawing.Point(530, 0);
+            this.Kios_Cus.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Kios_Cus.Location = new System.Drawing.Point(398, 0);
+            this.Kios_Cus.Margin = new System.Windows.Forms.Padding(2);
             this.Kios_Cus.Name = "Kios_Cus";
-            this.Kios_Cus.Size = new System.Drawing.Size(563, 73);
+            this.Kios_Cus.Size = new System.Drawing.Size(422, 59);
             this.Kios_Cus.TabIndex = 8;
-            this.Kios_Cus.Text = "Self_Service Customer";
+            this.Kios_Cus.Text = "Self-Service Customer";
             this.Kios_Cus.UseVisualStyleBackColor = true;
+            this.Kios_Cus.Click += new System.EventHandler(this.Kios_Cus_Click);
             // 
             // Walkin
             // 
+            this.Walkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Walkin.Location = new System.Drawing.Point(2, 0);
+            this.Walkin.Margin = new System.Windows.Forms.Padding(2);
             this.Walkin.Name = "Walkin";
-            this.Walkin.Size = new System.Drawing.Size(530, 73);
+            this.Walkin.Size = new System.Drawing.Size(398, 59);
             this.Walkin.TabIndex = 7;
-            this.Walkin.Text = "Line Customers";
+            this.Walkin.Text = "WALK IN";
             this.Walkin.UseVisualStyleBackColor = true;
             this.Walkin.Click += new System.EventHandler(this.Walkin_Click);
             // 
             // Cahsier_kios_Cus
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(820, 366);
             this.Controls.Add(this.Kios_Cus);
             this.Controls.Add(this.Walkin);
             this.Controls.Add(this.CustPanel);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cahsier_kios_Cus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Cashier Kiosk";
             this.Load += new System.EventHandler(this.Cahsier_kios_Cus_Load);
             this.ResumeLayout(false);
 

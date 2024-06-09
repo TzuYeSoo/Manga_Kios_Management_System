@@ -41,28 +41,30 @@
             // 
             // Search_Box_Book
             // 
-            this.Search_Box_Book.Location = new System.Drawing.Point(879, 97);
+            this.Search_Box_Book.Location = new System.Drawing.Point(528, 101);
             this.Search_Box_Book.Name = "Search_Box_Book";
-            this.Search_Box_Book.Size = new System.Drawing.Size(209, 26);
+            this.Search_Box_Book.Size = new System.Drawing.Size(488, 22);
             this.Search_Box_Book.TabIndex = 4;
             this.Search_Box_Book.TextChanged += new System.EventHandler(this.Search_Box_Book_TextChanged);
             // 
             // Walkin
             // 
+            this.Walkin.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Walkin.Location = new System.Drawing.Point(0, 4);
             this.Walkin.Name = "Walkin";
             this.Walkin.Size = new System.Drawing.Size(522, 73);
             this.Walkin.TabIndex = 5;
-            this.Walkin.Text = "Line Customers";
+            this.Walkin.Text = "WALK IN";
             this.Walkin.UseVisualStyleBackColor = true;
             // 
             // Kios_Cus
             // 
+            this.Kios_Cus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Kios_Cus.Location = new System.Drawing.Point(528, 4);
             this.Kios_Cus.Name = "Kios_Cus";
             this.Kios_Cus.Size = new System.Drawing.Size(488, 73);
             this.Kios_Cus.TabIndex = 6;
-            this.Kios_Cus.Text = "Self_Service Customer";
+            this.Kios_Cus.Text = "Self-Service Customer";
             this.Kios_Cus.UseVisualStyleBackColor = true;
             this.Kios_Cus.Click += new System.EventHandler(this.Kios_Cus_Click);
             // 
@@ -83,12 +85,14 @@
             // 
             // Payment
             // 
+            this.Payment.BackColor = System.Drawing.Color.IndianRed;
+            this.Payment.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Payment.Location = new System.Drawing.Point(0, 469);
             this.Payment.Name = "Payment";
             this.Payment.Size = new System.Drawing.Size(530, 83);
             this.Payment.TabIndex = 9;
             this.Payment.Text = "Payment";
-            this.Payment.UseVisualStyleBackColor = true;
+            this.Payment.UseVisualStyleBackColor = false;
             this.Payment.Click += new System.EventHandler(this.Payment_Click);
             // 
             // TotalPrice
@@ -96,9 +100,8 @@
             this.TotalPrice.AutoSize = true;
             this.TotalPrice.Location = new System.Drawing.Point(412, 446);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(110, 20);
+            this.TotalPrice.Size = new System.Drawing.Size(0, 16);
             this.TotalPrice.TabIndex = 0;
-            this.TotalPrice.Text = "<Total Price>";
             // 
             // logout
             // 
@@ -113,7 +116,7 @@
             // 
             // CashierHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1096, 554);
             this.Controls.Add(this.logout);

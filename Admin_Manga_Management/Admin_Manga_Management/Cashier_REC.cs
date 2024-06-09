@@ -37,5 +37,10 @@ namespace Admin_Manga_Management
 
             this.Close();
         }
+
+        private void Cash_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

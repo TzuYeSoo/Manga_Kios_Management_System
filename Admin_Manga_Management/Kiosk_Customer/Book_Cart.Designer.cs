@@ -38,18 +38,18 @@
             // CartPanel
             // 
             this.CartPanel.AutoScroll = true;
-            this.CartPanel.Location = new System.Drawing.Point(130, 30);
-            this.CartPanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CartPanel.Location = new System.Drawing.Point(98, 24);
+            this.CartPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CartPanel.Name = "CartPanel";
-            this.CartPanel.Size = new System.Drawing.Size(389, 258);
+            this.CartPanel.Size = new System.Drawing.Size(292, 210);
             this.CartPanel.TabIndex = 0;
             // 
             // check_out
             // 
-            this.check_out.Location = new System.Drawing.Point(598, 310);
-            this.check_out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.check_out.Location = new System.Drawing.Point(448, 252);
+            this.check_out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.check_out.Name = "check_out";
-            this.check_out.Size = new System.Drawing.Size(90, 27);
+            this.check_out.Size = new System.Drawing.Size(68, 22);
             this.check_out.TabIndex = 1;
             this.check_out.Text = "Checkout";
             this.check_out.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@
             // 
             // back_Book
             // 
-            this.back_Book.Location = new System.Drawing.Point(11, 10);
-            this.back_Book.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.back_Book.Location = new System.Drawing.Point(8, 8);
+            this.back_Book.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.back_Book.Name = "back_Book";
-            this.back_Book.Size = new System.Drawing.Size(67, 25);
+            this.back_Book.Size = new System.Drawing.Size(50, 20);
             this.back_Book.TabIndex = 2;
             this.back_Book.Text = "Back";
             this.back_Book.UseVisualStyleBackColor = true;
@@ -69,36 +69,37 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(391, 290);
+            this.label1.Location = new System.Drawing.Point(293, 236);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 16);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Total Cost: ";
             // 
             // TTPrice
             // 
             this.TTPrice.AutoSize = true;
-            this.TTPrice.Location = new System.Drawing.Point(472, 290);
+            this.TTPrice.Location = new System.Drawing.Point(354, 236);
+            this.TTPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TTPrice.Name = "TTPrice";
-            this.TTPrice.Size = new System.Drawing.Size(44, 16);
+            this.TTPrice.Size = new System.Drawing.Size(0, 13);
             this.TTPrice.TabIndex = 4;
-            this.TTPrice.Text = "label2";
             // 
             // Book_Cart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.TTPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.back_Book);
             this.Controls.Add(this.check_out);
             this.Controls.Add(this.CartPanel);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Book_Cart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Book_Cart";
+            this.Text = "EIWA STORE";
             this.Load += new System.EventHandler(this.Book_Cart_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

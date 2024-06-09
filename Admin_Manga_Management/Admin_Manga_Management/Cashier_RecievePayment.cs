@@ -140,7 +140,6 @@ namespace Admin_Manga_Management
                 sqlcom.Parameters.AddWithValue("@eid", empID);
                 sqlcom.Parameters.AddWithValue("@tcost", Finalcost);
                 sqlcom.ExecuteNonQuery();
-                MessageBox.Show(empID + "");
                 Cashier_REC cre = new Cashier_REC();
                 for (int i = 0; i < bid.Count; i++)
                 {

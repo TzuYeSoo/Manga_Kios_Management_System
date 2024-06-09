@@ -147,7 +147,7 @@ namespace Admin_Manga_Management
         private void logout_Click(object sender, EventArgs e)
         {
             LogIn log = new LogIn();
-            log.Show();
+            log.Show(); 
             this.Hide();
         }
 
@@ -160,7 +160,6 @@ namespace Admin_Manga_Management
                 crp.tcost = Convert.ToDecimal(TotalPrice.Text);
                 crp.Show();
                 this.Hide();
-
             }
             else
             {
