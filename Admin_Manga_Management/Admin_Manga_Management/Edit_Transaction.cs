@@ -23,6 +23,12 @@ namespace Admin_Manga_Management
         SqlCommand sqlcom2;
         DataTable dt = new DataTable();
         static string bookname, BID, CID, Ordernum, BookQuan, Bdate, Cname, CASID;
+
+        private void labelBookQuantity_Click(object sender, EventArgs e)
+        {
+
+        }
+
         static double BookP;
 
 

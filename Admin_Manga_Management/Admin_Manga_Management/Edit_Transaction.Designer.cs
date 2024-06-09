@@ -89,60 +89,61 @@
             // labelCutomersID
             // 
             this.labelCutomersID.AutoSize = true;
-            this.labelCutomersID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelCutomersID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCutomersID.Location = new System.Drawing.Point(9, 58);
             this.labelCutomersID.Name = "labelCutomersID";
-            this.labelCutomersID.Size = new System.Drawing.Size(84, 16);
+            this.labelCutomersID.Size = new System.Drawing.Size(89, 17);
             this.labelCutomersID.TabIndex = 7;
             this.labelCutomersID.Text = "Customer_ID";
             // 
             // labelBookID
             // 
             this.labelBookID.AutoSize = true;
-            this.labelBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelBookID.Location = new System.Drawing.Point(163, 58);
             this.labelBookID.Name = "labelBookID";
-            this.labelBookID.Size = new System.Drawing.Size(83, 16);
+            this.labelBookID.Size = new System.Drawing.Size(85, 17);
             this.labelBookID.TabIndex = 8;
             this.labelBookID.Text = "Book_Name";
             // 
             // labelCashierID
             // 
             this.labelCashierID.AutoSize = true;
-            this.labelCashierID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelCashierID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCashierID.Location = new System.Drawing.Point(477, 61);
             this.labelCashierID.Name = "labelCashierID";
-            this.labelCashierID.Size = new System.Drawing.Size(97, 16);
+            this.labelCashierID.Size = new System.Drawing.Size(101, 17);
             this.labelCashierID.TabIndex = 9;
             this.labelCashierID.Text = "Cashier_Name";
             // 
             // labelCustomerName
             // 
             this.labelCustomerName.AutoSize = true;
-            this.labelCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCustomerName.Location = new System.Drawing.Point(9, 110);
             this.labelCustomerName.Name = "labelCustomerName";
-            this.labelCustomerName.Size = new System.Drawing.Size(108, 16);
+            this.labelCustomerName.Size = new System.Drawing.Size(113, 17);
             this.labelCustomerName.TabIndex = 10;
             this.labelCustomerName.Text = "Customer_Name";
             // 
             // labelBookQuantity
             // 
             this.labelBookQuantity.AutoSize = true;
-            this.labelBookQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelBookQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelBookQuantity.Location = new System.Drawing.Point(322, 110);
             this.labelBookQuantity.Name = "labelBookQuantity";
-            this.labelBookQuantity.Size = new System.Drawing.Size(94, 16);
+            this.labelBookQuantity.Size = new System.Drawing.Size(101, 17);
             this.labelBookQuantity.TabIndex = 11;
             this.labelBookQuantity.Text = "Book_Quantity";
+            this.labelBookQuantity.Click += new System.EventHandler(this.labelBookQuantity_Click);
             // 
             // labelDate
             // 
             this.labelDate.AutoSize = true;
-            this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelDate.Location = new System.Drawing.Point(477, 110);
             this.labelDate.Name = "labelDate";
-            this.labelDate.Size = new System.Drawing.Size(36, 16);
+            this.labelDate.Size = new System.Drawing.Size(38, 17);
             this.labelDate.TabIndex = 13;
             this.labelDate.Text = "Date";
             // 
@@ -159,7 +160,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(-1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(153, 25);
             this.label1.TabIndex = 15;
@@ -191,10 +192,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(322, 58);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 16);
+            this.label2.Size = new System.Drawing.Size(76, 17);
             this.label2.TabIndex = 19;
             this.label2.Text = "Book Price";
             // 

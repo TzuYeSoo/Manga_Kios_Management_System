@@ -28,6 +28,11 @@ namespace Kiosk_Customer
         {
 
         }
+
+        private void Kiosk_Home_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

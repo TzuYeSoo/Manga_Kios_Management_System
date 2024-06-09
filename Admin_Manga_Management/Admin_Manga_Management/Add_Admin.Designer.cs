@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Admin));
             this.AdminUsername_Add = new System.Windows.Forms.TextBox();
             this.AdminPass_Add = new System.Windows.Forms.TextBox();
@@ -36,7 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Admin_Pass_Label = new System.Windows.Forms.Label();
             this.Admin_Con_Label = new System.Windows.Forms.Label();
-            this.adminBindingSource = new System.Windows.Forms.BindingSource();
+            this.adminBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet3 = new Admin_Manga_Management.Database1DataSet3();
             this.adminTableAdapter = new Admin_Manga_Management.Database1DataSet3TableAdapters.AdminTableAdapter();
             this.Add_AdminBUtt = new System.Windows.Forms.Button();
@@ -55,7 +56,7 @@
             // AdminUsername_Add
             // 
             this.AdminUsername_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminUsername_Add.Location = new System.Drawing.Point(42, 84);
+            this.AdminUsername_Add.Location = new System.Drawing.Point(42, 88);
             this.AdminUsername_Add.Name = "AdminUsername_Add";
             this.AdminUsername_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminUsername_Add.TabIndex = 1;
@@ -64,7 +65,7 @@
             // AdminPass_Add
             // 
             this.AdminPass_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminPass_Add.Location = new System.Drawing.Point(42, 127);
+            this.AdminPass_Add.Location = new System.Drawing.Point(42, 131);
             this.AdminPass_Add.Name = "AdminPass_Add";
             this.AdminPass_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminPass_Add.TabIndex = 2;
@@ -73,7 +74,7 @@
             // AdminCon_Add
             // 
             this.AdminCon_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AdminCon_Add.Location = new System.Drawing.Point(427, 85);
+            this.AdminCon_Add.Location = new System.Drawing.Point(431, 87);
             this.AdminCon_Add.Name = "AdminCon_Add";
             this.AdminCon_Add.Size = new System.Drawing.Size(182, 22);
             this.AdminCon_Add.TabIndex = 3;
@@ -82,7 +83,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 9);
+            this.label1.Location = new System.Drawing.Point(-1, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(140, 25);
             this.label1.TabIndex = 4;
@@ -91,27 +92,30 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(40, 70);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(104, 13);
+            this.label3.Size = new System.Drawing.Size(139, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Employee Username";
             // 
             // Admin_Pass_Label
             // 
             this.Admin_Pass_Label.AutoSize = true;
-            this.Admin_Pass_Label.Location = new System.Drawing.Point(40, 111);
+            this.Admin_Pass_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Admin_Pass_Label.Location = new System.Drawing.Point(40, 113);
             this.Admin_Pass_Label.Name = "Admin_Pass_Label";
-            this.Admin_Pass_Label.Size = new System.Drawing.Size(102, 13);
+            this.Admin_Pass_Label.Size = new System.Drawing.Size(135, 17);
             this.Admin_Pass_Label.TabIndex = 7;
             this.Admin_Pass_Label.Text = "Employee Password";
             // 
             // Admin_Con_Label
             // 
             this.Admin_Con_Label.AutoSize = true;
-            this.Admin_Con_Label.Location = new System.Drawing.Point(424, 69);
+            this.Admin_Con_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Admin_Con_Label.Location = new System.Drawing.Point(427, 69);
             this.Admin_Con_Label.Name = "Admin_Con_Label";
-            this.Admin_Con_Label.Size = new System.Drawing.Size(44, 13);
+            this.Admin_Con_Label.Size = new System.Drawing.Size(56, 17);
             this.Admin_Con_Label.TabIndex = 8;
             this.Admin_Con_Label.Text = "Contact";
             // 
@@ -133,7 +137,7 @@
             // 
             this.Add_AdminBUtt.BackColor = System.Drawing.Color.LightGreen;
             this.Add_AdminBUtt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_AdminBUtt.Location = new System.Drawing.Point(427, 127);
+            this.Add_AdminBUtt.Location = new System.Drawing.Point(431, 127);
             this.Add_AdminBUtt.Name = "Add_AdminBUtt";
             this.Add_AdminBUtt.Size = new System.Drawing.Size(182, 23);
             this.Add_AdminBUtt.TabIndex = 10;
@@ -167,9 +171,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 68);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(233, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(58, 17);
             this.label2.TabIndex = 15;
             this.label2.Text = "Position";
             // 
@@ -187,7 +192,7 @@
             this.PositionBox.Items.AddRange(new object[] {
             "Admin",
             "Cashier"});
-            this.PositionBox.Location = new System.Drawing.Point(236, 85);
+            this.PositionBox.Location = new System.Drawing.Point(236, 87);
             this.PositionBox.Name = "PositionBox";
             this.PositionBox.Size = new System.Drawing.Size(182, 21);
             this.PositionBox.TabIndex = 17;
@@ -195,16 +200,17 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(233, 111);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.Location = new System.Drawing.Point(233, 112);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(45, 17);
             this.label5.TabIndex = 19;
             this.label5.Text = "Name";
             // 
             // TName
             // 
             this.TName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TName.Location = new System.Drawing.Point(236, 127);
+            this.TName.Location = new System.Drawing.Point(236, 130);
             this.TName.Name = "TName";
             this.TName.Size = new System.Drawing.Size(182, 22);
             this.TName.TabIndex = 18;

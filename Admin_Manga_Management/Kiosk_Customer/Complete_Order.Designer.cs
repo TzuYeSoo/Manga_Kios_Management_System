@@ -35,9 +35,10 @@
             // 
             // COrder
             // 
-            this.COrder.Location = new System.Drawing.Point(75, 124);
+            this.COrder.Location = new System.Drawing.Point(56, 101);
+            this.COrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.COrder.Name = "COrder";
-            this.COrder.Size = new System.Drawing.Size(223, 30);
+            this.COrder.Size = new System.Drawing.Size(167, 24);
             this.COrder.TabIndex = 0;
             this.COrder.Text = "Complete";
             this.COrder.UseVisualStyleBackColor = true;
@@ -46,27 +47,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(72, 77);
+            this.label1.Location = new System.Drawing.Point(54, 63);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
             // Name
             // 
-            this.Name.Location = new System.Drawing.Point(75, 96);
+            this.Name.Location = new System.Drawing.Point(56, 78);
+            this.Name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(223, 22);
+            this.Name.Size = new System.Drawing.Size(168, 20);
             this.Name.TabIndex = 2;
             // 
             // Complete_Order
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 196);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(294, 159);
             this.Controls.Add(this.Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.COrder);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "Complete_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Order";
             this.ResumeLayout(false);

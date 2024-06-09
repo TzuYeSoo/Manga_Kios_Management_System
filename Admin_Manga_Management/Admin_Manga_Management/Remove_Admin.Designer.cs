@@ -77,7 +77,7 @@
             // 
             this.Admin_RemoveLabel.AutoSize = true;
             this.Admin_RemoveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Admin_RemoveLabel.Location = new System.Drawing.Point(12, 9);
+            this.Admin_RemoveLabel.Location = new System.Drawing.Point(0, 0);
             this.Admin_RemoveLabel.Name = "Admin_RemoveLabel";
             this.Admin_RemoveLabel.Size = new System.Drawing.Size(160, 25);
             this.Admin_RemoveLabel.TabIndex = 3;
@@ -86,9 +86,10 @@
             // AdminID_RemoveLabel
             // 
             this.AdminID_RemoveLabel.AutoSize = true;
-            this.AdminID_RemoveLabel.Location = new System.Drawing.Point(19, 76);
+            this.AdminID_RemoveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.AdminID_RemoveLabel.Location = new System.Drawing.Point(18, 74);
             this.AdminID_RemoveLabel.Name = "AdminID_RemoveLabel";
-            this.AdminID_RemoveLabel.Size = new System.Drawing.Size(67, 13);
+            this.AdminID_RemoveLabel.Size = new System.Drawing.Size(87, 17);
             this.AdminID_RemoveLabel.TabIndex = 4;
             this.AdminID_RemoveLabel.Text = "Employee ID";
             // 
@@ -129,9 +130,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 269);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.Location = new System.Drawing.Point(18, 265);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "Employee ID";
             // 
