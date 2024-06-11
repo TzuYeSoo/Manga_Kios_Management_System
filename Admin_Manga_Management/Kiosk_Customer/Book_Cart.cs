@@ -72,14 +72,23 @@ namespace Kiosk_Customer
 
         private void check_out_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Do you want to continue to order this book", "Complete Order", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if(CartPanel.Controls.Count == 0)
             {
+                MessageBox.Show("PLease Make an order first");
 
-                Complete_Order corder = new Complete_Order();
-                corder.TCOST = Convert.ToDecimal(TTPrice.Text);
-                corder.ShowDialog();
-                this.Hide();
             }
+            else
+            {
+                if (MessageBox.Show("Do you want to continue to order this book", "Complete Order", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+
+                    Complete_Order corder = new Complete_Order();
+                    corder.TCOST = Convert.ToDecimal(TTPrice.Text);
+                    corder.ShowDialog();
+                    this.Hide();
+                }
+            }
+            
             
         }
 
