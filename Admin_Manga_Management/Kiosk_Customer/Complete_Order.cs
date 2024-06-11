@@ -81,28 +81,14 @@ namespace Kiosk_Customer
 
                     if (rdr1.Read())
                     {
-                        if(csnum.tcost.Text == "<Total Price>" && csnum.Bname.Text == "<Book Name>" && csnum.Price.Text == "<Price>" && csnum.Quan.Text == "<Quantity>")
-                        {
-                            
-                            csnum.tcost.Text = iTCOST.ToString();
-                            csnum.Bname.Text = (string)rdr1.GetValue(0);
-                            csnum.Price.Text = rdr1.GetValue(1).ToString();
-                            csnum.Quan.Text = Quan.ElementAt(i).ToString();
-                            csnum.ord_num.Text = cid.ToString();
-                        }
-                        else
-                        {
-                            
-                            csnum.Bname.Text += "\n" + (string)rdr1.GetValue(0);
-                            csnum.Price.Text += "\n" + rdr1.GetValue(1).ToString();
-                            csnum.Quan.Text += "\n" + Quan.ElementAt(i).ToString();
-                            
-                        }
-                       
-                        
+                        csnum.tcost.Text = iTCOST.ToString();
+                        csnum.Bname.Text += "\n" + (string)rdr1.GetValue(0);
+                        csnum.Price.Text += "\n" + rdr1.GetValue(1).ToString();
+                        csnum.Quan.Text += "\n" + Quan.ElementAt(i).ToString();
+                        csnum.ord_num.Text = cid.ToString();
                     }
-                   
-                    
+
+
                     rdr1.Close();
 
 

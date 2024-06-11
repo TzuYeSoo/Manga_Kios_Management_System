@@ -157,7 +157,6 @@
             this.Controls.Add(this.label3);
             this.Name = "Customer_Number";
             this.Text = "Kiosk";
-            this.Load += new System.EventHandler(this.Customer_Number_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -53,25 +53,6 @@ namespace Admin_Manga_Management
             sqlcon.Close();
         }
 
-        private void search_Click(object sender, EventArgs e) 
-        {
-
-            sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book " +
-                "LEFT JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID " +
-                "WHERE Book_Name LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
-                "OR Book.Book_ID LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
-                "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
-                "OR Book_Price LIKE '" + Search_Book_Bar_Admin.Text + "' " +
-               "OR Book_Quantity LIKE '" + Search_Book_Bar_Admin.Text +"' ", sqlcon);
-            sqlcom.ExecuteNonQuery();
-            SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
-            Book_Inventory.Clear();
-            sqa.Fill(Book_Inventory);
-            BookInv_GrideView.DataSource = Book_Inventory;
-
-            sqlcon.Close();
-        }
 
         
         
@@ -96,6 +77,25 @@ namespace Admin_Manga_Management
             Remove_Book rm = new Remove_Book();
             rm.Show();
             this.Hide();
+        }
+
+        private void Search_Book_Bar_Admin_TextChanged(object sender, EventArgs e)
+        {
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT Book.*, Bookgenre FROM Book " +
+                "LEFT JOIN Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID " +
+                "WHERE Book_Name LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
+                "OR Book.Book_ID LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
+                "OR Bookgenre LIKE '%" + Search_Book_Bar_Admin.Text + "%' " +
+                "OR Book_Price LIKE '" + Search_Book_Bar_Admin.Text + "' " +
+               "OR Book_Quantity LIKE '" + Search_Book_Bar_Admin.Text + "' ", sqlcon);
+            sqlcom.ExecuteNonQuery();
+            SqlDataAdapter sqa = new SqlDataAdapter(sqlcom);
+            Book_Inventory.Clear();
+            sqa.Fill(Book_Inventory);
+            BookInv_GrideView.DataSource = Book_Inventory;
+
+            sqlcon.Close();
         }
     }
 }

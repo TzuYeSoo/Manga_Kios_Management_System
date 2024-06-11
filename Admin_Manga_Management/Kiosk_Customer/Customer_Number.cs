@@ -17,16 +17,7 @@ namespace Kiosk_Customer
             InitializeComponent();
         }
 
-        private void Customer_Number_Load(object sender, EventArgs e)
-        {
 
-        }
-        public void addText(decimal price, string book, int quan)
-        {
-            Bname.Text += "\n" + book;
-            Quan.Text += "\n" + quan;
-            Price.Text += "\n" + price;
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             Form1 f1 = new Form1();

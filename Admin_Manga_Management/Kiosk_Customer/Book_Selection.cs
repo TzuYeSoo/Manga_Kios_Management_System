@@ -46,7 +46,6 @@ namespace Kiosk_Customer
                 BookS.getBookID = Convert.ToInt16(rdr.GetValue(0));
                 BookS.getBook = (string)rdr.GetValue(1);
                 BookS.getBookPrice = Convert.ToDouble(rdr.GetValue(2));
-                
                 Books.Controls.Add(BookS);
             }
             rdr.Close(); 
@@ -81,7 +80,7 @@ namespace Kiosk_Customer
             cat.Clicked.Visible = true;
             Books.Controls.Clear();
 
-            sqlcom = new SqlCommand("SELECT Book.Book_ID, Book_Name, Book_Price, BookImage FROM Book INNER JOIN " +
+            sqlcom = new SqlCommand("SELECT Book.Book_ID, Book_Name, Book_Price, BookImage, Bookgenre FROM Book INNER JOIN " +
                 "Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID WHERE Bookgenre = @genre", sqlcon);
             sqlcom.Parameters.AddWithValue("@genre", cat.CategoryLabel.Text);
             rdr = sqlcom.ExecuteReader();
@@ -98,12 +97,11 @@ namespace Kiosk_Customer
 
                 }
                 Array.Clear(imageBynary, 0, imageBynary.Length);
-                //MessageBox.Show(""+rdr.GetValue(0));
                 BookS.BookImage.Tag = rdr.GetValue(3);
                 BookS.getBookID = Convert.ToInt16(rdr.GetValue(0));
                 BookS.getBook = (string)rdr.GetValue(1);
                 BookS.getBookPrice = Convert.ToDouble(rdr.GetValue(2));
-
+                BookS.Genre.Text = (string)rdr.GetValue(4);
                 Books.Controls.Add(BookS);
             }
             sqlcon.Close();
