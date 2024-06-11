@@ -14,7 +14,6 @@ C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Mana
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.SelectBook.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.AddToCart.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Book_Cart.resources
-C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Checkout_Cus.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Cart_Control.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Checkout_Books.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\bin\Debug\Kiosk_Customer.exe.config
@@ -109,3 +108,6 @@ C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Managem
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.csproj.CoreCompileInputs.cache
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.exe
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.pdb
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Complete_Order.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Category_Bar.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Customer_Number.resources

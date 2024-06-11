@@ -136,9 +136,10 @@ namespace Admin_Manga_Management
                 LogIn logIn = new LogIn();
 
                 empID = logIn.EID;
-                sqlcom = new SqlCommand("UPDATE Customers SET Total_Cost = @tcost, Customer_Status = 2, Employee_ID = @eid", sqlcon);
+                sqlcom = new SqlCommand("UPDATE Customers SET Total_Cost = @tcost, Customer_Status = 2, Employee_ID = @eid WHERE Customer_ID = @CID", sqlcon);
                 sqlcom.Parameters.AddWithValue("@eid", empID);
                 sqlcom.Parameters.AddWithValue("@tcost", Finalcost);
+                sqlcom.Parameters.AddWithValue("@CID", getCID);
                 sqlcom.ExecuteNonQuery();
                 Cashier_REC cre = new Cashier_REC();
                 for (int i = 0; i < bid.Count; i++)
@@ -155,12 +156,11 @@ namespace Admin_Manga_Management
                     cre.Tcost.Text = TCost.Text;
                     cre.Cash.Text = cash.Text;
                     cre.Change.Text = cash.Text;
-                    cre.ShowDialog();
+
                     rdr.Close();
                     mindstock(bid.ElementAt(i), quan.ElementAt(i));
                 }
-                Cashier_REC cashier_REC = new Cashier_REC();
-
+                cre.ShowDialog();
                 this.Close();
 
             }

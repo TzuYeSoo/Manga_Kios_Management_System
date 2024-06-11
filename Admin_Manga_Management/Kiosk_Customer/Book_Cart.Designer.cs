@@ -39,18 +39,16 @@
             // CartPanel
             // 
             this.CartPanel.AutoScroll = true;
-            this.CartPanel.Location = new System.Drawing.Point(98, 24);
-            this.CartPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.CartPanel.Location = new System.Drawing.Point(147, 37);
             this.CartPanel.Name = "CartPanel";
-            this.CartPanel.Size = new System.Drawing.Size(321, 210);
+            this.CartPanel.Size = new System.Drawing.Size(482, 323);
             this.CartPanel.TabIndex = 0;
             // 
             // check_out
             // 
-            this.check_out.Location = new System.Drawing.Point(448, 252);
-            this.check_out.Margin = new System.Windows.Forms.Padding(2);
+            this.check_out.Location = new System.Drawing.Point(672, 388);
             this.check_out.Name = "check_out";
-            this.check_out.Size = new System.Drawing.Size(68, 22);
+            this.check_out.Size = new System.Drawing.Size(102, 34);
             this.check_out.TabIndex = 1;
             this.check_out.Text = "Checkout";
             this.check_out.UseVisualStyleBackColor = true;
@@ -58,10 +56,9 @@
             // 
             // back_Book
             // 
-            this.back_Book.Location = new System.Drawing.Point(8, 8);
-            this.back_Book.Margin = new System.Windows.Forms.Padding(2);
+            this.back_Book.Location = new System.Drawing.Point(12, 12);
             this.back_Book.Name = "back_Book";
-            this.back_Book.Size = new System.Drawing.Size(50, 20);
+            this.back_Book.Size = new System.Drawing.Size(75, 31);
             this.back_Book.TabIndex = 2;
             this.back_Book.Text = "Back";
             this.back_Book.UseVisualStyleBackColor = true;
@@ -71,36 +68,33 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(304, 236);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(456, 363);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(103, 22);
             this.label1.TabIndex = 3;
             this.label1.Text = "Total Cost: ";
             // 
             // TTPrice
             // 
             this.TTPrice.AutoSize = true;
-            this.TTPrice.Location = new System.Drawing.Point(354, 236);
-            this.TTPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TTPrice.Location = new System.Drawing.Point(531, 363);
             this.TTPrice.Name = "TTPrice";
-            this.TTPrice.Size = new System.Drawing.Size(0, 13);
+            this.TTPrice.Size = new System.Drawing.Size(0, 20);
             this.TTPrice.TabIndex = 4;
             // 
             // Book_Cart
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(533, 292);
+            this.ClientSize = new System.Drawing.Size(800, 449);
             this.Controls.Add(this.TTPrice);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.back_Book);
             this.Controls.Add(this.check_out);
             this.Controls.Add(this.CartPanel);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Book_Cart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EIWA STORE";
@@ -111,11 +105,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.FlowLayoutPanel CartPanel;
         private System.Windows.Forms.Button check_out;
         private System.Windows.Forms.Button back_Book;
         public System.Windows.Forms.Label TTPrice;
         public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.FlowLayoutPanel CartPanel;
     }
 }

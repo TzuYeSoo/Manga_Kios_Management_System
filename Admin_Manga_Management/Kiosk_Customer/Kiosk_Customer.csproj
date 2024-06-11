@@ -70,11 +70,23 @@
     <Compile Include="BookInfo.Designer.cs">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Category_Bar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Category_Bar.Designer.cs">
+      <DependentUpon>Category_Bar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Complete_Order.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Complete_Order.Designer.cs">
       <DependentUpon>Complete_Order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Number.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Number.Designer.cs">
+      <DependentUpon>Customer_Number.cs</DependentUpon>
     </Compile>
     <Compile Include="Kiosk_Home.cs">
       <SubType>Form</SubType>
@@ -120,8 +132,14 @@
     <EmbeddedResource Include="BookInfo.resx">
       <DependentUpon>BookInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Category_Bar.resx">
+      <DependentUpon>Category_Bar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Complete_Order.resx">
       <DependentUpon>Complete_Order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Number.resx">
+      <DependentUpon>Customer_Number.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kiosk_Home.resx">
       <DependentUpon>Kiosk_Home.cs</DependentUpon>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,12 +21,12 @@ namespace Kiosk_Customer
         }
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
-        public static LinkedList<int> ID = new LinkedList<int>();
-        public static LinkedList<int> Quantity = new LinkedList<int>();
+        public static List<int> ID = new List<int>();
+        public static List<int> Quantity = new List<int>();
         private int setID, setquan;
         private decimal tcost;
-        public int getID { get { return setID; } set { setID = value; ID.AddLast(value); } }
-        public int getQuantity { get { return setquan; } set { setquan = value; Quantity.AddLast(value); } }
+        public int getID { get { return setID; } set { setID = value; ID.Add(value); } }
+        public int getQuantity { get { return setquan; } set { setquan = value; Quantity.Add(value); } }
         public decimal getTcost { get { return tcost; }set { tcost = value; } }
         
         public void Book_CartOUt(int id, int quan)
@@ -52,6 +53,7 @@ namespace Kiosk_Customer
                 add.Quans.Text = quan.ToString();
                 add.getquan = quan;
                 add.getID = id;
+                add.label1.Text = id.ToString();
                 CartPanel.Controls.Add(add);
                 add.gettcost = tcost;
 
@@ -106,6 +108,11 @@ namespace Kiosk_Customer
             }
             ID.Clear();
             Quantity.Clear();
+        }
+        public void updateQuan(int id)
+        {
+            var quan = ID.IndexOf(id);
+           
         }
     }
 }

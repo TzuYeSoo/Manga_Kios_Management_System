@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -25,7 +26,8 @@ namespace Kiosk_Customer
         private int ID, quan;
         static LinkedList<int> IDS = new LinkedList<int>();
         static LinkedList<int> Quan = new LinkedList<int>();
- 
+        static Customer_Number csnum;
+
         private void COrder_Click(object sender, EventArgs e)
         {
             
@@ -47,30 +49,68 @@ namespace Kiosk_Customer
                 sqlcom2.Parameters.AddWithValue("@name", Name.Text);
                 SqlDataReader rdr = sqlcom2.ExecuteReader();
 
-                Book_Cart bc = new Book_Cart();
-                bc.removecarts();
-                bc.Hide();
-
+               
                 if (rdr.Read())
                 {
                     cid = Convert.ToInt32(rdr.GetValue(0));
                 }
                 rdr.Close();
-                    for(int i = 0;  i < IDS.Count; i++)
-                    {
-                        sqlcom = new SqlCommand("INSERT INTO OrderBook Values(@CID, @BID, @quan)", sqlcon);
-                        sqlcom.Parameters.AddWithValue("@CID", cid);
-                        sqlcom.Parameters.AddWithValue("@BID", IDS.ElementAt(i));
-                        sqlcom.Parameters.AddWithValue("@quan", Quan.ElementAt(i));
-                        sqlcom.ExecuteNonQuery();
-                    }
 
-                
-               
+                Book_Cart bc = new Book_Cart();
+                bc.removecarts();
+                bc.Hide();
+                csnum = new Customer_Number();
+                for (int i = 0; i < IDS.Count; i++)
+                {
+                    sqlcom = new SqlCommand("INSERT INTO OrderBook Values(@CID, @BID, @quan)", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@CID", cid);
+                    sqlcom.Parameters.AddWithValue("@BID", IDS.ElementAt(i));
+                    sqlcom.Parameters.AddWithValue("@quan", Quan.ElementAt(i));
+                    sqlcom.ExecuteNonQuery();
+                }
+
+                for (int i = 0; i < IDS.Count; i++)
+                {
+                    string bname;
+                    decimal price;
+          
+                    sqlcom = new SqlCommand("SELECT Book_Name, Book_Price FROM Book WHERE Book_ID = @ID", sqlcon);
+                    sqlcom.Parameters.AddWithValue("@ID", IDS.ElementAt(i));
+
+                    SqlDataReader rdr1 = sqlcom.ExecuteReader();
+
+                    if (rdr1.Read())
+                    {
+                        if(csnum.tcost.Text == "<Total Price>" && csnum.Bname.Text == "<Book Name>" && csnum.Price.Text == "<Price>" && csnum.Quan.Text == "<Quantity>")
+                        {
+                            
+                            csnum.tcost.Text = iTCOST.ToString();
+                            csnum.Bname.Text = (string)rdr1.GetValue(0);
+                            csnum.Price.Text = rdr1.GetValue(1).ToString();
+                            csnum.Quan.Text = Quan.ElementAt(i).ToString();
+                            csnum.ord_num.Text = cid.ToString();
+                        }
+                        else
+                        {
+                            
+                            csnum.Bname.Text += "\n" + (string)rdr1.GetValue(0);
+                            csnum.Price.Text += "\n" + rdr1.GetValue(1).ToString();
+                            csnum.Quan.Text += "\n" + Quan.ElementAt(i).ToString();
+                            
+                        }
+                       
+                        
+                    }
+                   
+                    
+                    rdr1.Close();
+
+
+                }
+                csnum.ShowDialog();
+
                 Name.Clear();
-                Form1 f1 = new Form1();
-                f1.Show();
-                this.Hide();
+                this.Close();
 
             }
             sqlcon.Close();
@@ -80,6 +120,12 @@ namespace Kiosk_Customer
 
             Random rand = new Random();
             ord = rand.Next(1,2000);  
+        }
+        public void CustQuery(int id, int quan)
+        {
+            csnum = new Customer_Number();
+
+            
         }
         public decimal TCOST { get { return iTCOST; } set { iTCOST = value;} }
         public int getidi { get { return ID; }set { ID = value; IDS.AddLast(value); } }

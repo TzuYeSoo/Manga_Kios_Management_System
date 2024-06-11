@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Kiosk_Customer
 {
@@ -22,6 +23,7 @@ namespace Kiosk_Customer
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
         private int getID;
+        private decimal tcost;
 
 
 
@@ -56,7 +58,7 @@ namespace Kiosk_Customer
                 BSelect.BookImage.Tag = rdr.GetValue(2);
                 BSelect.BN = (string)rdr.GetValue(0);
                 BSelect.Bp = Convert.ToDouble(rdr.GetValue(1));
-
+                BSelect.Quantity.Text = "1";
                 Selected_Book.Controls.Add(BSelect);
 
             }
@@ -67,12 +69,11 @@ namespace Kiosk_Customer
 
         private void Add_To_Cart_Click(object sender, EventArgs e)
         {
+            sqlcon.Open();
             SelectBook sl = new SelectBook();
-
-            if(sl.Quan != 0)
+            Book_Cart Bcart = new Book_Cart();
+            if (sl.Quan != 0)
             {
-                
-                Book_Cart Bcart = new Book_Cart();
                 Bcart.getID = ID;
                 Bcart.getQuantity = sl.Quan;
                 sl.Quan = 1;
@@ -83,7 +84,7 @@ namespace Kiosk_Customer
             {
                 MessageBox.Show("Please input Right Quantity!", "Quantity", MessageBoxButtons.OK,MessageBoxIcon.Error) ;
             }
-            
+            sqlcon.Close();
         }
     }
 }

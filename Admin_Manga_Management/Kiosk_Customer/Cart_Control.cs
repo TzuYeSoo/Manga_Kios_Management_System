@@ -95,6 +95,7 @@ namespace Kiosk_Customer
             if (this.ParentForm is Book_Cart mainForm)
             {
                 mainForm.TTPrice.Text = tcost.ToString();
+                mainForm.updateQuan(Convert.ToUInt16(label1.Text));
                 // Or directly access the label
                 // mainForm.MyLabel.Text = "Button in user control clicked!";
             }

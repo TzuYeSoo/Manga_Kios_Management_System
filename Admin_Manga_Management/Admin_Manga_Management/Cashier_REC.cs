@@ -17,11 +17,7 @@ namespace Admin_Manga_Management
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
 
-
-        }
         public void addText(decimal price, string book, int quan)
         {
             Bname.Text += "\n" + book;

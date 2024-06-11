@@ -72,7 +72,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.COrder);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Complete_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Order";
             this.ResumeLayout(false);

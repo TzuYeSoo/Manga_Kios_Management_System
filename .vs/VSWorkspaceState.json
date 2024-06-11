@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Admin_Manga_Management",
-    "\\Admin_Manga_Management\\Admin_Manga_Management"
+    "\\Admin_Manga_Management\\Admin_Manga_Management",
+    "\\Admin_Manga_Management\\Kiosk_Customer"
   ],
-  "SelectedNode": "\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_RecievePayment.cs",
+  "SelectedNode": "\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
   "PreviewInSolutionExplorer": false
 }
