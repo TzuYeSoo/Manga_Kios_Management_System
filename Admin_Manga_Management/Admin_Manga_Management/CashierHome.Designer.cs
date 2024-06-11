@@ -75,6 +75,7 @@
             this.Book_Items.Name = "Book_Items";
             this.Book_Items.Size = new System.Drawing.Size(563, 423);
             this.Book_Items.TabIndex = 7;
+            this.Book_Items.Paint += new System.Windows.Forms.PaintEventHandler(this.Book_Items_Paint);
             // 
             // PayOrder
             // 
