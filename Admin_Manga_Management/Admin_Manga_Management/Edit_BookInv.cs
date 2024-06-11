@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
@@ -23,7 +24,7 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom2;
         static SqlCommand sqlcom3;
         static DataTable dt = new DataTable();
-        static string BookOptions;
+        static bool checker, conID;
         static string BGname;
 
         private void Edit_BookInv_Load(object sender, EventArgs e)
@@ -41,12 +42,11 @@ namespace Admin_Manga_Management
             {
                 Book_GenreEdit.Items.Add(rdr.GetValue(0));
             }
-                Edit_BookName_Edit.ReadOnly = true;
-                Edit_BookPrice_Edit.ReadOnly = true;
-                Edit_BookQuanti_Edit.ReadOnly = true;
-                Edit_BookDesc_Edit.ReadOnly = true;
-                Book_GenreEdit.Visible = false;
-
+            Edit_BookName_Edit.ReadOnly = true;
+            Edit_BookPrice_Edit.ReadOnly = true;
+            Edit_BookQuanti_Edit.ReadOnly = true;
+            Edit_BookDesc_Edit.ReadOnly = true;
+            Book_GenreEdit.Visible = false;
             sqlcon.Close();
         }
 
@@ -57,15 +57,14 @@ namespace Admin_Manga_Management
             {
                 sqlcon.Open();
 
-                if (Edit_BookName_Edit.Text != "" && Confirm_BookID.Text != "" && Edit_BookQuanti_Edit.Text != ""
-                        && Edit_BookPrice_Edit.Text != "")
+                if (Edit_BookName_Edit.Text != "" && Confirm_BookID.Text != "" && Edit_BookPrice_Edit.Text != "" )
                 {
+                   
                     sqlcom3 = new SqlCommand($"UPDATE Book SET Book_Name = @bookname, " +
-                                    "Book_Price = @price, Book_Quantity = @quantity, Description = @description WHERE Book_ID = @bookID", sqlcon);
-                    sqlcom3.Parameters.Add("@bookID", Confirm_BookID.Text);
+                                    "Book_Price = @price, Description = @description WHERE Book_ID = @bookID", sqlcon);
+                    sqlcom3.Parameters.Add("@bookID", Convert.ToInt32(Confirm_BookID.Text));
                     sqlcom3.Parameters.Add("@bookname", Edit_BookName_Edit.Text);
-                    sqlcom3.Parameters.Add("@quantity", Edit_BookQuanti_Edit.Text);
-                    sqlcom3.Parameters.Add("@price", Edit_BookPrice_Edit.Text);
+                    sqlcom3.Parameters.Add("@price", Convert.ToDecimal(Edit_BookPrice_Edit.Text));
                     sqlcom3.Parameters.Add("@description", Edit_BookDesc_Edit.Text);
                     sqlcom3.ExecuteNonQuery();
 
@@ -88,23 +87,29 @@ namespace Admin_Manga_Management
                         }
 
                     }
-                }
-                Edit_BookName_Edit.Clear();
-                Edit_BookPrice_Edit.Clear();
-                Edit_BookDesc_Edit.Clear();
-                Edit_BookQuanti_Edit.Clear();
-                Confirm_BookID.Clear();
+                    Edit_BookName_Edit.Clear();
+                    Edit_BookPrice_Edit.Clear();
+                    Edit_BookDesc_Edit.Clear();
+                    Edit_BookQuanti_Edit.Clear();
+                    Confirm_BookID.Clear();
 
-                Edit_BookName_Edit.ReadOnly = true;
-                Edit_BookPrice_Edit.ReadOnly = true;
-                Edit_BookDesc_Edit.ReadOnly = true;
-                for (int x = 0; x < Book_GenreEdit.Items.Count; x++)
+                    Edit_BookName_Edit.ReadOnly = true;
+                    Edit_BookPrice_Edit.ReadOnly = true;
+                    Edit_BookDesc_Edit.ReadOnly = true;
+                    for (int x = 0; x < Book_GenreEdit.Items.Count; x++)
+                    {
+                        Book_GenreEdit.SetItemChecked(x, false);
+                    }
+                    Book_GenreEdit.Visible = false;
+                    datagrid();
+                }
+                else
                 {
-                    Book_GenreEdit.SetItemChecked(x, false);
+                    MessageBox.Show("Cannot null credentials try removing books", "Null Values");
                 }
-                Book_GenreEdit.Visible = false;
+               
 
-                datagrid();
+                
                 sqlcon.Close();
 
             }
@@ -137,62 +142,141 @@ namespace Admin_Manga_Management
 
         private void Confirm_ID_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Confirm to edit this ID", "EDIT BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            checkID();
+            sqlcon.Open();
+            if(conID == true)
             {
-                sqlcon.Open();
                 if (Confirm_BookID.Text != "")
                 {
-
-                    Edit_BookName_Edit.ReadOnly = false;
-                    Edit_BookPrice_Edit.ReadOnly = false;
-                    Edit_BookQuanti_Edit.ReadOnly = false;
-                    Edit_BookDesc_Edit.ReadOnly = false;
-                    Confirm_BookID.ReadOnly = true;
-                    Book_GenreEdit.Visible = true;
-
-                    sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, Book_Quantity, Description FROM Book WHERE Book_ID = '" + Confirm_BookID.Text + "'", sqlcon);
-                    SqlDataReader rdr = sqlcom.ExecuteReader();
-
-                    if (rdr.Read())
+                    if (MessageBox.Show("Confirm to edit this ID", "EDIT BOOK", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        Edit_BookName_Edit.Text = (string)rdr.GetValue(1);
-                        Edit_BookPrice_Edit.Text = rdr.GetValue(2).ToString();
-                        Edit_BookQuanti_Edit.Text = rdr.GetValue(3).ToString();
-                        if (rdr.GetValue(4).ToString() != "")
+                        checker = true;
+                        Edit_BookName_Edit.ReadOnly = false;
+                        Edit_BookPrice_Edit.ReadOnly = false;
+                        Edit_BookQuanti_Edit.ReadOnly = false;
+                        Edit_BookDesc_Edit.ReadOnly = false;
+                        Edit_BookQuanti_Edit.ReadOnly = true;
+                        Book_GenreEdit.Visible = true;
+
+                        sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, Book_Quantity, Description FROM Book WHERE Book_ID = '" + Confirm_BookID.Text + "'", sqlcon);
+                        SqlDataReader rdr = sqlcom.ExecuteReader();
+
+                        if (rdr.Read())
                         {
-                            Edit_BookDesc_Edit.Text = (string)rdr.GetValue(4);
+                            Edit_BookName_Edit.Text = (string)rdr.GetValue(1);
+                            Edit_BookPrice_Edit.Text = rdr.GetValue(2).ToString();
+                            Edit_BookQuanti_Edit.Text = rdr.GetValue(3).ToString();
+                            if (rdr.GetValue(4).ToString() != "")
+                            {
+                                Edit_BookDesc_Edit.Text = (string)rdr.GetValue(4);
+                            }
+                           
+
+
+
+                        }
+                        rdr.Close();
+
+                        sqlcom2 = new SqlCommand("SELECT Bookgenre FROM Book_GenreName WHERE Book_ID = '" + Confirm_BookID.Text + "'", sqlcon);
+                        SqlDataReader rdr1 = sqlcom2.ExecuteReader();
+
+                        while (rdr1.Read())
+                        {
+                            for (int i = 0; i < Book_GenreEdit.Items.Count; i++)
+                            {
+                                string Booksss = $"{Book_GenreEdit.Items[i]}";
+
+                                if (Booksss.Equals((string)rdr1.GetValue(0)))
+                                {
+                                    Book_GenreEdit.SetItemChecked(i, true);
+                                }
+                            }
                         }
 
-
+                        Book_GenreEdit.Sorted = true;
 
                     }
-                    rdr.Close();
-
-
-
                 }
-                sqlcom2 = new SqlCommand("SELECT Bookgenre FROM Book_GenreName WHERE Book_ID = '" + Confirm_BookID.Text + "'", sqlcon);
-                SqlDataReader rdr1 = sqlcom2.ExecuteReader();
-
-                while (rdr1.Read())
+                else
                 {
-                    for (int i = 0; i < Book_GenreEdit.Items.Count; i++)
-                    {
-                        string Booksss = $"{Book_GenreEdit.Items[i]}";
-
-                        if (Booksss.Equals((string)rdr1.GetValue(0)))
-                        {
-                            Book_GenreEdit.SetItemChecked(i, true);
-                        }
-                    }
+                    MessageBox.Show("Please Input Book ID first");
                 }
-
-                Book_GenreEdit.Sorted = true;
-
-
-                sqlcon.Close();
-
             }
+            else
+            {
+                MessageBox.Show("Invalid Book ID");
+                Confirm_BookID.Clear();
+            }
+
+            sqlcon.Close();
+        }
+
+        private void EditStocks_Click(object sender, EventArgs e)
+        {
+            if (Confirm_BookID.Text != "" && checker == true)
+            {
+                Edit_BookStocks ebs = new Edit_BookStocks();
+                ebs.getID = Convert.ToInt32(Confirm_BookID.Text);
+                
+                ebs.ShowDialog();   
+                this.Close();
+            }
+            else if(Confirm_BookID.Text == "")
+            {
+                MessageBox.Show("Please Input the ID first");
+            }else if (checker == false)
+            {
+                MessageBox.Show("Confirm ID first");
+            }
+        }
+
+        private void Confirm_BookID_TextChanged(object sender, EventArgs e)
+        {
+            Match match = Regex.Match(Confirm_BookID.Text, "^[0-9]+$", RegexOptions.IgnoreCase);
+            if (!match.Success)
+            {
+               Confirm_BookID.Clear();
+            }
+        }
+
+        private void Edit_BookPrice_Edit_TextChanged(object sender, EventArgs e)
+        {
+            if (!double.TryParse(Edit_BookPrice_Edit.Text, out double number))
+            {
+                Edit_BookPrice_Edit.Clear();
+            }
+            /*
+                Match match = Regex.Match(Edit_BookPrice_Edit.Text, "^[0-9]+$", RegexOptions.IgnoreCase);
+            if (!match.Success)
+            {
+                Edit_BookPrice_Edit.Clear();
+            }
+            */
+        }
+
+      
+
+        public void checkID()
+        {
+            sqlcon.Open();
+            sqlcom = new SqlCommand("SELECT Book_ID FROM Book", sqlcon);
+            SqlDataReader rdr = sqlcom.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                if (Convert.ToInt32(Confirm_BookID.Text) == Convert.ToInt32(rdr.GetValue(0)))
+                {
+                    conID = true;
+                    break;
+                }
+                else if (Convert.ToInt32(Confirm_BookID.Text) != Convert.ToInt32(rdr.GetValue(0)))
+                {
+                    conID = false;
+                }
+               
+            }
+            rdr.Close();
+            sqlcon.Close();
         }
     }
 }

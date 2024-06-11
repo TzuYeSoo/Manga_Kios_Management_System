@@ -22,7 +22,7 @@ namespace Kiosk_Customer
         }
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
-        private int getID, quantity = 1;
+        private int getID, quantity = 1, Book_quan;
         private decimal tcost;
         static SqlDataReader rdr;
 
@@ -37,32 +37,12 @@ namespace Kiosk_Customer
         public void BookPanel()
         {
             sqlcon.Open();
-            sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, Description, BookImage FROM Book WHERE Book_ID = @BID", sqlcon);
+            sqlcom = new SqlCommand("SELECT Book_Name, Book_Price, Description, BookImage, Book_Quantity FROM Book WHERE Book_ID = @BID", sqlcon);
             sqlcom.Parameters.AddWithValue("@BID", ID);
             rdr = sqlcom.ExecuteReader();
 
             if (rdr.Read())
             {
-                /*
-                SelectBook BSelect = new SelectBook();
-
-                byte[] imageBynari = (byte[])rdr.GetValue(2);
-
-                using (MemoryStream ms = new MemoryStream(imageBynari))
-                {
-                    BSelect.BookImage.Image = Image.FromStream(ms);
-                    BSelect.BookImage.SizeMode = PictureBoxSizeMode.StretchImage;
-                }
-                Array.Clear(imageBynari, 0, imageBynari.Length);
-
-
-                BSelect.BookImage.Tag = rdr.GetValue(2);
-                BSelect.BN = (string)rdr.GetValue(0);
-                BSelect.Bp = Convert.ToDouble(rdr.GetValue(1));
-                BSelect.Quantity.Text = "1";
-                Selected_Book.Controls.Add(BSelect);
-                */
-
                 byte[] imageBynari = (byte[])rdr.GetValue(3);
 
                 using (MemoryStream ms = new MemoryStream(imageBynari))
@@ -78,6 +58,7 @@ namespace Kiosk_Customer
                 Book_Price.Text = rdr.GetValue(1).ToString();
                 desc.Text = (string)rdr.GetValue(2);
                 Quantity.Text = "1";
+                Book_quan = Convert.ToInt32(rdr.GetValue(4));
 
             }
             rdr.Close();
@@ -109,8 +90,16 @@ namespace Kiosk_Customer
                         int quan = Book_Cart.BookID.IndexOf(getID);
 
                         int new_quan = Convert.ToInt32(Quantity.Text) + Convert.ToInt32(Book_Cart.QuantityID[quan]);
-                        Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), new_quan);
-                        this.Hide();
+                        if(new_quan > Book_quan)
+                        {
+                            MessageBox.Show("Sorry but stock is low");
+                        }
+                        else
+                        {
+                            Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), new_quan);
+                            this.Hide();
+                        }
+                        
                     }
                 }
                 else
@@ -132,9 +121,14 @@ namespace Kiosk_Customer
 
         private void AddQuan_Click(object sender, EventArgs e)
         {
-            //sqlcon.Open();
-            Quantity.Text = (++quantity).ToString();
-
+            if (quantity < Book_quan)
+            {
+                Quantity.Text = (++quantity).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Sorry but stock is low");
+            }
         }
 
         private void MinQuan_Click(object sender, EventArgs e)

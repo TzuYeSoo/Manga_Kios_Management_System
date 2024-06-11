@@ -106,5 +106,12 @@ namespace Admin_Manga_Management
 
             sqlcon.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Stocks_reports srp = new Stocks_reports();
+            srp.Show();
+            this.Hide();
+        }
     }
 }

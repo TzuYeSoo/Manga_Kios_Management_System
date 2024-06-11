@@ -64,11 +64,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book_Report_Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Book_Report_Panel.Designer.cs">
+      <DependentUpon>Book_Report_Panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier_CompleteOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Cashier_CompleteOrder.Designer.cs">
       <DependentUpon>Cashier_CompleteOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_BookStocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_BookStocks.Designer.cs">
+      <DependentUpon>Edit_BookStocks.cs</DependentUpon>
     </Compile>
     <Compile Include="Encap.cs" />
     <Compile Include="Database1DataSet.Designer.cs">
@@ -151,6 +163,12 @@
     <Compile Include="Cashier_REC.Designer.cs">
       <DependentUpon>Cashier_REC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stocks_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stocks_reports.Designer.cs">
+      <DependentUpon>Stocks_reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Setting_Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,6 +249,9 @@
     <EmbeddedResource Include="Book_Inv.resx">
       <DependentUpon>Book_Inv.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Book_Report_Panel.resx">
+      <DependentUpon>Book_Report_Panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cahsier_kios_Cus.resx">
       <DependentUpon>Cahsier_kios_Cus.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_BookInv.resx">
       <DependentUpon>Edit_BookInv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_BookStocks.resx">
+      <DependentUpon>Edit_BookStocks.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Transaction.resx">
       <DependentUpon>Edit_Transaction.cs</DependentUpon>
@@ -295,6 +319,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Stocks_reports.resx">
+      <DependentUpon>Stocks_reports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Transaction.resx">
       <DependentUpon>Transaction.cs</DependentUpon>
     </EmbeddedResource>

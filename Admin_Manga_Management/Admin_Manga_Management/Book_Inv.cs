@@ -72,12 +72,6 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
-        private void RemoveBook_Book_Click(object sender, EventArgs e)
-        {
-            Remove_Book rm = new Remove_Book();
-            rm.Show();
-            this.Hide();
-        }
 
         private void Search_Book_Bar_Admin_TextChanged(object sender, EventArgs e)
         {
@@ -96,6 +90,13 @@ namespace Admin_Manga_Management
             BookInv_GrideView.DataSource = Book_Inventory;
 
             sqlcon.Close();
+        }
+
+        private void StocksRep_Click(object sender, EventArgs e)
+        {
+            Stocks_reports rep = new Stocks_reports();
+            rep.Show(); 
+            this.Hide();
         }
     }
 }

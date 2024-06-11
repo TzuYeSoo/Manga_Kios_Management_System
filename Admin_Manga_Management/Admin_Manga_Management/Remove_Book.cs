@@ -125,9 +125,9 @@ namespace Admin_Manga_Management
             {
                 if (RConfirm_BookID.Text != "")
                 {
-                    if (MessageBox.Show("Do you want to retrieve this Book?", "Retrieve Book", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                    if (MessageBox.Show("Do you want to remove this Book? \n doing this will bring quantity down to 0", "Retrieve Book", MessageBoxButtons.OKCancel) == DialogResult.OK)
                     {
-                        sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 0 WHERE Book_ID = @EMPID", sqlcon);
+                        sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 0, Book_Quantity = 0 WHERE Book_ID = @EMPID", sqlcon);
                         sqlcom.Parameters.AddWithValue("@EMPID", RConfirm_BookID.Text);
                         sqlcom.ExecuteNonQuery();
 

@@ -87,5 +87,11 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
+        private void StockRep_Click(object sender, EventArgs e)
+        {
+            Stocks_reports rep = new Stocks_reports();
+            rep.Show();
+            this.Hide();
+        }
     }
 }

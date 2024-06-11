@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -65,7 +66,7 @@ namespace Admin_Manga_Management
                 }
             }
             if (Add_BookID_Add.Text != "" && Add_BookName_Add.Text != "" && Add_BookPrice_Add.Text != ""
-                        && Add_BookQuantity_Add.Text != "")
+                        && Add_BookQuantity_Add.Text != "" && Add_BookQuantity_Add.Text == "0")
             {
                 sqlcon.Open();
                 //try
@@ -172,6 +173,23 @@ namespace Admin_Manga_Management
                 }
 
             
+        }
+
+        private void Add_BookQuantity_Add_TextChanged(object sender, EventArgs e)
+        {
+            Match match = Regex.Match(Add_BookQuantity_Add.Text, "^[0-9]+$", RegexOptions.IgnoreCase);
+            if (!match.Success)
+            {
+                Add_BookQuantity_Add.Clear();
+            }
+        }
+
+        private void Add_BookPrice_Add_TextChanged(object sender, EventArgs e)
+        {
+            if (!double.TryParse(Add_BookPrice_Add.Text, out double number))
+            {
+                Add_BookPrice_Add.Clear();
+            }
         }
     }
 }
