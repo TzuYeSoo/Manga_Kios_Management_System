@@ -68,7 +68,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Kiosk_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "EIWA STORE";
+            this.Text = "EIWA MANGA STORE";
             this.Load += new System.EventHandler(this.Kiosk_Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -82,7 +82,7 @@
             this.Staffs.Name = "Staffs";
             this.Staffs.Size = new System.Drawing.Size(194, 47);
             this.Staffs.TabIndex = 2;
-            this.Staffs.Text = "Staff Management";
+            this.Staffs.Text = "Manage Staffs";
             this.Staffs.UseVisualStyleBackColor = false;
             this.Staffs.Click += new System.EventHandler(this.Staffs_Click);
             // 
@@ -176,7 +176,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(10, 129);
+            this.pictureBox5.Location = new System.Drawing.Point(19, 129);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.TabIndex = 9;
@@ -245,7 +245,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Dashboard_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Administrator";
             this.Load += new System.EventHandler(this.Dashboard_Home_Load);
             ((System.ComponentModel.ISupportInitialize)(this.customersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();

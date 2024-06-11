@@ -82,6 +82,7 @@
             this.PayOrder.Name = "PayOrder";
             this.PayOrder.Size = new System.Drawing.Size(522, 361);
             this.PayOrder.TabIndex = 8;
+            this.PayOrder.Paint += new System.Windows.Forms.PaintEventHandler(this.PayOrder_Paint);
             // 
             // Payment
             // 
@@ -118,6 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1096, 554);
             this.Controls.Add(this.logout);
             this.Controls.Add(this.TotalPrice);

@@ -151,6 +151,11 @@ namespace Admin_Manga_Management
             this.Hide();
         }
 
+        private void PayOrder_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void Payment_Click(object sender, EventArgs e)
         {
             if (TotalPrice.Text != "<Total Price>" && TotalPrice.Text != "0")

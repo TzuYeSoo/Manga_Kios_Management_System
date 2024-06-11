@@ -19,7 +19,7 @@ namespace Admin_Manga_Management
 
         private void Log_Out_Click(object sender, EventArgs e) 
         {
-            if(MessageBox.Show("Do you want to log out?", "Sing Out", MessageBoxButtons.OKCancel) == DialogResult.OK)
+            if(MessageBox.Show("Do you want to log out?", "Log Out", MessageBoxButtons.OKCancel) == DialogResult.OK)
             {
                 LogIn log = new LogIn();
                 log.Show();

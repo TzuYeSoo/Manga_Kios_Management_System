@@ -181,9 +181,10 @@
             // Log_Out
             // 
             this.Log_Out.BackColor = System.Drawing.Color.Yellow;
-            this.Log_Out.Location = new System.Drawing.Point(700, 400);
+            this.Log_Out.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Log_Out.Location = new System.Drawing.Point(423, 384);
             this.Log_Out.Name = "Log_Out";
-            this.Log_Out.Size = new System.Drawing.Size(75, 23);
+            this.Log_Out.Size = new System.Drawing.Size(120, 37);
             this.Log_Out.TabIndex = 11;
             this.Log_Out.Text = "Log Out";
             this.Log_Out.UseVisualStyleBackColor = false;
