@@ -46,20 +46,20 @@
             // 
             this.Add_To_Cart.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_To_Cart.BackgroundImage")));
             this.Add_To_Cart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Add_To_Cart.Location = new System.Drawing.Point(632, 8);
-            this.Add_To_Cart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add_To_Cart.Location = new System.Drawing.Point(843, 10);
+            this.Add_To_Cart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add_To_Cart.Name = "Add_To_Cart";
-            this.Add_To_Cart.Size = new System.Drawing.Size(38, 41);
+            this.Add_To_Cart.Size = new System.Drawing.Size(51, 50);
             this.Add_To_Cart.TabIndex = 1;
             this.Add_To_Cart.UseVisualStyleBackColor = true;
             this.Add_To_Cart.Click += new System.EventHandler(this.Add_To_Cart_Click);
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(8, 8);
-            this.Back.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Back.Location = new System.Drawing.Point(11, 10);
+            this.Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Back.Name = "Back";
-            this.Back.Size = new System.Drawing.Size(50, 34);
+            this.Back.Size = new System.Drawing.Size(67, 42);
             this.Back.TabIndex = 3;
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = true;
@@ -67,39 +67,36 @@
             // 
             // Book_Image
             // 
-            this.Book_Image.Location = new System.Drawing.Point(73, 85);
-            this.Book_Image.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_Image.Location = new System.Drawing.Point(97, 105);
+            this.Book_Image.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Book_Image.Name = "Book_Image";
-            this.Book_Image.Size = new System.Drawing.Size(199, 182);
+            this.Book_Image.Size = new System.Drawing.Size(265, 224);
             this.Book_Image.TabIndex = 4;
             this.Book_Image.TabStop = false;
             // 
             // desc
             // 
-            this.desc.Location = new System.Drawing.Point(480, 85);
-            this.desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.desc.Location = new System.Drawing.Point(640, 105);
             this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(173, 182);
+            this.desc.Size = new System.Drawing.Size(231, 224);
             this.desc.TabIndex = 5;
             this.desc.Text = "Book Desciption:";
             // 
             // Book_Price
             // 
             this.Book_Price.AutoSize = true;
-            this.Book_Price.Location = new System.Drawing.Point(299, 113);
-            this.Book_Price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Book_Price.Location = new System.Drawing.Point(399, 139);
             this.Book_Price.Name = "Book_Price";
-            this.Book_Price.Size = new System.Drawing.Size(71, 13);
+            this.Book_Price.Size = new System.Drawing.Size(87, 16);
             this.Book_Price.TabIndex = 6;
             this.Book_Price.Text = "<Book Price>";
             // 
             // Book_Name
             // 
             this.Book_Name.AutoSize = true;
-            this.Book_Name.Location = new System.Drawing.Point(299, 85);
-            this.Book_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Book_Name.Location = new System.Drawing.Point(399, 105);
             this.Book_Name.Name = "Book_Name";
-            this.Book_Name.Size = new System.Drawing.Size(75, 13);
+            this.Book_Name.Size = new System.Drawing.Size(93, 16);
             this.Book_Name.TabIndex = 7;
             this.Book_Name.Text = "<Book Name>";
             // 
@@ -108,10 +105,10 @@
             this.MinQuan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("MinQuan.BackgroundImage")));
             this.MinQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.MinQuan.Cursor = System.Windows.Forms.Cursors.Default;
-            this.MinQuan.Location = new System.Drawing.Point(102, 271);
-            this.MinQuan.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.MinQuan.Location = new System.Drawing.Point(136, 334);
+            this.MinQuan.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.MinQuan.Name = "MinQuan";
-            this.MinQuan.Size = new System.Drawing.Size(23, 25);
+            this.MinQuan.Size = new System.Drawing.Size(31, 31);
             this.MinQuan.TabIndex = 9;
             this.MinQuan.UseVisualStyleBackColor = true;
             this.MinQuan.Click += new System.EventHandler(this.MinQuan_Click);
@@ -121,10 +118,10 @@
             this.AddQuan.BackColor = System.Drawing.Color.Transparent;
             this.AddQuan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AddQuan.BackgroundImage")));
             this.AddQuan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.AddQuan.Location = new System.Drawing.Point(190, 270);
-            this.AddQuan.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.AddQuan.Location = new System.Drawing.Point(253, 332);
+            this.AddQuan.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
             this.AddQuan.Name = "AddQuan";
-            this.AddQuan.Size = new System.Drawing.Size(23, 25);
+            this.AddQuan.Size = new System.Drawing.Size(31, 31);
             this.AddQuan.TabIndex = 8;
             this.AddQuan.UseVisualStyleBackColor = false;
             this.AddQuan.Click += new System.EventHandler(this.AddQuan_Click);
@@ -132,31 +129,29 @@
             // Quantity
             // 
             this.Quantity.AutoSize = true;
-            this.Quantity.Location = new System.Drawing.Point(150, 276);
-            this.Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Quantity.Location = new System.Drawing.Point(173, 341);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(58, 13);
+            this.Quantity.Size = new System.Drawing.Size(69, 16);
             this.Quantity.TabIndex = 10;
             this.Quantity.Text = "<Quantity>";
             this.Quantity.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Genre
             // 
-            this.Genre.Location = new System.Drawing.Point(299, 144);
-            this.Genre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Genre.Location = new System.Drawing.Point(399, 177);
             this.Genre.Name = "Genre";
-            this.Genre.Size = new System.Drawing.Size(163, 123);
+            this.Genre.Size = new System.Drawing.Size(217, 151);
             this.Genre.TabIndex = 11;
             this.Genre.Text = "Genre:";
             // 
             // BookInfo
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(691, 330);
+            this.ClientSize = new System.Drawing.Size(921, 406);
             this.Controls.Add(this.Genre);
             this.Controls.Add(this.Quantity);
             this.Controls.Add(this.MinQuan);
@@ -167,7 +162,7 @@
             this.Controls.Add(this.Book_Image);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.Add_To_Cart);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "BookInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EIWA MANGA STORE";

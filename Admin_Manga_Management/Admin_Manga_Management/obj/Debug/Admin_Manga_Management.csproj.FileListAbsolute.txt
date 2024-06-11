@@ -312,3 +312,4 @@ C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Mana
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_REC.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_Books.resources
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.PayCus.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_REC.resources

@@ -21,12 +21,12 @@ namespace Kiosk_Customer
         }
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
-        public static List<int> ID = new List<int>();
-        public static List<int> Quantity = new List<int>();
+        public static ArrayList BookID = new ArrayList();
+        public static ArrayList QuantityID = new ArrayList();
         private int setID, setquan;
         private decimal tcost;
-        public int getID { get { return setID; } set { setID = value; ID.Add(value); } }
-        public int getQuantity { get { return setquan; } set { setquan = value; Quantity.Add(value); } }
+        public int getID { get { return setID; } set { setID = value; BookID.Add(value); } }
+        public int getQuantity { get { return setquan; } set { setquan = value; QuantityID.Add(value); } }
         public decimal getTcost { get { return tcost; }set { tcost = value; } }
         
         public void Book_CartOUt(int id, int quan)
@@ -92,27 +92,22 @@ namespace Kiosk_Customer
         public void showBooks()
         {
    
-            for (int i = 0; i < ID.Count; i++)
+            for (int i = 0; i < BookID.Count; i++)
             {
-                    Book_CartOUt(ID.ElementAt(i), Quantity.ElementAt(i));
+                Book_CartOUt(Convert.ToInt32(BookID[i]), Convert.ToInt32(QuantityID[i]));
             }
             
         }
         public void removecarts()
         {
             Complete_Order co = new Complete_Order();
-            for (int i = 0;i < ID.Count; i++)
+            for (int i = 0;i < BookID.Count; i++)
             {
-                co.getidi = ID.ElementAt(i);
-                co.getquan = Quantity.ElementAt(i);
+                co.getidi = Convert.ToInt32(BookID[i]);
+                co.getquan = Convert.ToInt32(QuantityID[i]);
             }
-            ID.Clear();
-            Quantity.Clear();
-        }
-        public void updateQuan(int id)
-        {
-            var quan = ID.IndexOf(id);
-           
+            BookID.Clear();
+            QuantityID.Clear();
         }
     }
 }

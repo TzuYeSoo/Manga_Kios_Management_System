@@ -85,6 +85,7 @@ namespace Kiosk_Customer
             if (this.ParentForm is Book_Cart mainForm)
             {
                 mainForm.TTPrice.Text = tcost.ToString();
+                Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), quantity);
                 // Or directly access the label
                 // mainForm.MyLabel.Text = "Button in user control clicked!";
             }
@@ -95,11 +96,21 @@ namespace Kiosk_Customer
             if (this.ParentForm is Book_Cart mainForm)
             {
                 mainForm.TTPrice.Text = tcost.ToString();
-                mainForm.updateQuan(Convert.ToUInt16(label1.Text));
+                Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), quantity);
                 // Or directly access the label
                 // mainForm.MyLabel.Text = "Button in user control clicked!";
             }
         }
 
+        private void Remove_Book_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to remove this into your cart?", "Remove From Cart", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Book_Cart.QuantityID.Remove(Book_Cart.BookID.IndexOf(getID));
+                Book_Cart.BookID.Remove(getID);
+                this.Dispose();
+            }
+           
+        }
     }
 }

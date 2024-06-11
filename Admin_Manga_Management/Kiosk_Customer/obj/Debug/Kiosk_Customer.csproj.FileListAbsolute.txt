@@ -113,3 +113,5 @@ C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Mana
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Customer_Number.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Category_Bar.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Customer_Number.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Category_Bar.resources
+C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Kiosk_Customer\obj\Debug\Kiosk_Customer.Customer_Number.resources

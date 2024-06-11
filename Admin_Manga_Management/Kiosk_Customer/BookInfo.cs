@@ -99,12 +99,28 @@ namespace Kiosk_Customer
         private void Add_To_Cart_Click(object sender, EventArgs e)
         {
             sqlcon.Open();
-            Book_Cart Bcart = new Book_Cart();
+
             if (Quantity.Text != "0")
             {
-                Bcart.getID = ID;
-                Bcart.getQuantity = Convert.ToInt32(Quantity.Text);
-                this.Hide();
+                if (Book_Cart.BookID.Contains(getID))
+                {
+                    if(MessageBox.Show("This Book is already in your cart do you want to add quantity?","Already in Cart", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                    {
+                        int quan = Book_Cart.BookID.IndexOf(getID);
+
+                        int new_quan = Convert.ToInt32(Quantity.Text) + Convert.ToInt32(Book_Cart.QuantityID[quan]);
+                        Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), new_quan);
+                        this.Hide();
+                    }
+                }
+                else
+                {
+                    Book_Cart Bcart = new Book_Cart();
+                    Bcart.getID = ID;
+                    Bcart.getQuantity = Convert.ToInt32(Quantity.Text);
+                    this.Hide();
+                }
+               
 
             }
             else
