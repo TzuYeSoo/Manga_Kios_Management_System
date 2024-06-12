@@ -29,6 +29,7 @@ namespace Admin_Manga_Management
         static SqlCommand sqlcom2;
         static DataTable dt = new DataTable();
         static string BookOptionsts;
+        static bool successImage = false;
         static string BGName;
         static int BookID;
         private void Add_Book_Load(object sender, EventArgs e)
@@ -65,8 +66,8 @@ namespace Admin_Manga_Management
                     imageBytes = ms.ToArray();
                 }
             }
-            if (Add_BookID_Add.Text != "" && Add_BookName_Add.Text != "" && Add_BookPrice_Add.Text != ""
-                        && Add_BookQuantity_Add.Text != "" && Add_BookQuantity_Add.Text == "0")
+            if (Add_BookName_Add.Text != "" && Add_BookPrice_Add.Text != ""
+                        && Add_BookQuantity_Add.Text != "" && Add_BookQuantity_Add.Text != "0" && successImage == true)
             {
                 sqlcon.Open();
                 //try
@@ -82,7 +83,7 @@ namespace Admin_Manga_Management
                     sqlcom.Parameters.AddWithValue("@bookstat", 1);
                     sqlcom.Parameters.AddWithValue("@BookImage", imageBytes ?? (object)DBNull.Value);
                     sqlcom.ExecuteNonQuery();
-
+                    successImage = false;
 
                     for (int i = 0; i < GenreNames.Items.Count; i++)
                         {
@@ -110,6 +111,8 @@ namespace Admin_Manga_Management
                         Add_BookQuantity_Add.Clear();
                         Add_BookDescrip_Add.Clear();
                         Add_BookPrice_Add.Clear();
+                        Book_Image.Image.Dispose();
+                        Book_Image.Image = null;
                         for (int i = 0; i < GenreNames.Items.Count; i++)
                         {
                             GenreNames.SetItemChecked(i, false);
@@ -130,7 +133,7 @@ namespace Admin_Manga_Management
             }
             else
             {
-                MessageBox.Show("Please Input Credentials");
+                MessageBox.Show("Please Incomplete Details");
             }
 
         }
@@ -158,19 +161,20 @@ namespace Admin_Manga_Management
 
         private void Book_Image_Click(object sender, EventArgs e)
         {
-            // try
-            // {
             Book_Image.SizeMode = PictureBoxSizeMode.StretchImage;
             OpenFileDialog ofd = new OpenFileDialog
-                {
-                    Filter = "Image Files|*.jpg;*.jpeg;*.bmp"
-                };
-                if(ofd.ShowDialog() == DialogResult.OK)
-                {
-                    string imagePath = ofd.FileName;
-                    Book_Im = Image.FromFile(ofd.FileName);
-                    Book_Image.Image = Book_Im;
-                }
+            {
+                Filter = "Image Files|*.jpg;*.jpeg;*.bmp"
+            };
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                successImage = true;
+                string imagePath = ofd.FileName;
+                Book_Im = Image.FromFile(ofd.FileName);
+                Book_Image.Image = Book_Im;
+                
+
+            }
 
             
         }
