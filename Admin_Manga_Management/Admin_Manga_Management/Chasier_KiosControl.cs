@@ -16,5 +16,7 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
+
+
     }
 }

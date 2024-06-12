@@ -21,7 +21,7 @@ namespace Kiosk_Customer
     }
     public class sqlConnector
     {
-        public static string connector = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Nicol\source\repos\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\Database1.mdf;Integrated Security=True";
+        public static string connector = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\Database1.mdf;Integrated Security=True";
 
     }
 }

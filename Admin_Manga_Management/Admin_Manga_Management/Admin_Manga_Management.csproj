@@ -163,6 +163,12 @@
     <Compile Include="Cashier_REC.Designer.cs">
       <DependentUpon>Cashier_REC.cs</DependentUpon>
     </Compile>
+    <Compile Include="WalkComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WalkComplete.Designer.cs">
+      <DependentUpon>WalkComplete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stocks_reports.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,6 +249,12 @@
     <Compile Include="Cash_Home.Designer.cs">
       <DependentUpon>Cash_Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cashier_Walk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cashier_Walk.Designer.cs">
+      <DependentUpon>Cashier_Walk.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add_Book.resx">
       <DependentUpon>Add_Book.cs</DependentUpon>
     </EmbeddedResource>
@@ -291,6 +303,9 @@
     <EmbeddedResource Include="Cashier_REC.resx">
       <DependentUpon>Cashier_REC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WalkComplete.resx">
+      <DependentUpon>WalkComplete.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Remove_Admin.resx">
       <DependentUpon>Remove_Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -330,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PayCus.resx">
       <DependentUpon>PayCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_Walk.resx">
+      <DependentUpon>Cashier_Walk.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>

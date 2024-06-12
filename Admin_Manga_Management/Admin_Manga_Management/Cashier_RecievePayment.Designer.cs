@@ -43,10 +43,9 @@
             // 
             this.CashR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CashR.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.CashR.Location = new System.Drawing.Point(76, 204);
-            this.CashR.Margin = new System.Windows.Forms.Padding(2);
+            this.CashR.Location = new System.Drawing.Point(114, 314);
             this.CashR.Name = "CashR";
-            this.CashR.Size = new System.Drawing.Size(391, 23);
+            this.CashR.Size = new System.Drawing.Size(584, 31);
             this.CashR.TabIndex = 0;
             this.CashR.Text = "Insert Money Recieved";
             this.CashR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -54,10 +53,9 @@
             // 
             // Complete
             // 
-            this.Complete.Location = new System.Drawing.Point(222, 274);
-            this.Complete.Margin = new System.Windows.Forms.Padding(2);
+            this.Complete.Location = new System.Drawing.Point(333, 422);
             this.Complete.Name = "Complete";
-            this.Complete.Size = new System.Drawing.Size(121, 31);
+            this.Complete.Size = new System.Drawing.Size(182, 48);
             this.Complete.TabIndex = 1;
             this.Complete.Text = "Complete Transaction";
             this.Complete.UseVisualStyleBackColor = true;
@@ -65,58 +63,52 @@
             // 
             // corder
             // 
-            this.corder.Location = new System.Drawing.Point(17, 10);
-            this.corder.Margin = new System.Windows.Forms.Padding(2);
+            this.corder.Location = new System.Drawing.Point(26, 15);
             this.corder.Name = "corder";
-            this.corder.Size = new System.Drawing.Size(525, 164);
+            this.corder.Size = new System.Drawing.Size(788, 252);
             this.corder.TabIndex = 2;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(17, 179);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 276);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(525, 8);
+            this.pictureBox1.Size = new System.Drawing.Size(788, 12);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // TCost
             // 
             this.TCost.AutoSize = true;
-            this.TCost.Location = new System.Drawing.Point(473, 189);
-            this.TCost.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TCost.Location = new System.Drawing.Point(710, 291);
             this.TCost.Name = "TCost";
-            this.TCost.Size = new System.Drawing.Size(0, 13);
+            this.TCost.Size = new System.Drawing.Size(0, 20);
             this.TCost.TabIndex = 4;
             this.TCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // cash
             // 
             this.cash.AutoSize = true;
-            this.cash.Location = new System.Drawing.Point(473, 213);
-            this.cash.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.cash.Location = new System.Drawing.Point(710, 328);
             this.cash.Name = "cash";
-            this.cash.Size = new System.Drawing.Size(0, 13);
+            this.cash.Size = new System.Drawing.Size(0, 20);
             this.cash.TabIndex = 5;
             this.cash.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // change
             // 
             this.change.AutoSize = true;
-            this.change.Location = new System.Drawing.Point(473, 240);
-            this.change.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.change.Location = new System.Drawing.Point(710, 369);
             this.change.Name = "change";
-            this.change.Size = new System.Drawing.Size(0, 13);
+            this.change.Size = new System.Drawing.Size(0, 20);
             this.change.TabIndex = 6;
             this.change.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ConPayment
             // 
-            this.ConPayment.Location = new System.Drawing.Point(222, 235);
-            this.ConPayment.Margin = new System.Windows.Forms.Padding(2);
+            this.ConPayment.Location = new System.Drawing.Point(333, 362);
             this.ConPayment.Name = "ConPayment";
-            this.ConPayment.Size = new System.Drawing.Size(121, 31);
+            this.ConPayment.Size = new System.Drawing.Size(182, 48);
             this.ConPayment.TabIndex = 7;
             this.ConPayment.Text = "Confirm Payment";
             this.ConPayment.UseVisualStyleBackColor = true;
@@ -124,9 +116,9 @@
             // 
             // Cashier_RecievePayment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 318);
+            this.ClientSize = new System.Drawing.Size(840, 489);
             this.Controls.Add(this.ConPayment);
             this.Controls.Add(this.change);
             this.Controls.Add(this.cash);
@@ -135,7 +127,6 @@
             this.Controls.Add(this.corder);
             this.Controls.Add(this.Complete);
             this.Controls.Add(this.CashR);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cashier_RecievePayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cashier Kiosk";

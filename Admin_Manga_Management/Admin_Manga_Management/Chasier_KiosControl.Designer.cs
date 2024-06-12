@@ -33,69 +33,84 @@
             this.OrdNumber = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CustIDlabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // CusN
             // 
             this.CusN.AutoSize = true;
-            this.CusN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CusN.Location = new System.Drawing.Point(13, 24);
+            this.CusN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusN.Location = new System.Drawing.Point(15, 30);
             this.CusN.Name = "CusN";
-            this.CusN.Size = new System.Drawing.Size(212, 29);
+            this.CusN.Size = new System.Drawing.Size(165, 25);
             this.CusN.TabIndex = 0;
             this.CusN.Text = "Customer Name: ";
             // 
             // CustName
             // 
             this.CustName.AutoSize = true;
-            this.CustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustName.Location = new System.Drawing.Point(231, 24);
+            this.CustName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustName.Location = new System.Drawing.Point(201, 30);
             this.CustName.Name = "CustName";
-            this.CustName.Size = new System.Drawing.Size(111, 29);
+            this.CustName.Size = new System.Drawing.Size(88, 25);
             this.CustName.TabIndex = 1;
             this.CustName.Text = "<Name>";
             // 
             // OrdNumber
             // 
             this.OrdNumber.AutoSize = true;
-            this.OrdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.OrdNumber.Location = new System.Drawing.Point(466, 24);
+            this.OrdNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.OrdNumber.Location = new System.Drawing.Point(362, 30);
             this.OrdNumber.Name = "OrdNumber";
-            this.OrdNumber.Size = new System.Drawing.Size(203, 29);
+            this.OrdNumber.Size = new System.Drawing.Size(160, 25);
             this.OrdNumber.TabIndex = 2;
             this.OrdNumber.Text = "<Order Number>";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 70);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 78);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1094, 14);
+            this.pictureBox1.Size = new System.Drawing.Size(541, 12);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // CustIDlabel
             // 
             this.CustIDlabel.AutoSize = true;
-            this.CustIDlabel.Location = new System.Drawing.Point(718, 48);
+            this.CustIDlabel.Location = new System.Drawing.Point(16, 10);
             this.CustIDlabel.Name = "CustIDlabel";
-            this.CustIDlabel.Size = new System.Drawing.Size(41, 16);
+            this.CustIDlabel.Size = new System.Drawing.Size(49, 20);
             this.CustIDlabel.TabIndex = 4;
             this.CustIDlabel.Text = "Cusid";
             this.CustIDlabel.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(71, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "BID";
+            this.label1.Visible = false;
+            // 
             // Chasier_KiosControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CustIDlabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.OrdNumber);
             this.Controls.Add(this.CustName);
             this.Controls.Add(this.CusN);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Chasier_KiosControl";
-            this.Size = new System.Drawing.Size(1094, 84);
+            this.Size = new System.Drawing.Size(541, 89);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -109,5 +124,6 @@
         public System.Windows.Forms.Label CustName;
         public System.Windows.Forms.Label OrdNumber;
         public System.Windows.Forms.Label CustIDlabel;
+        public System.Windows.Forms.Label label1;
     }
 }

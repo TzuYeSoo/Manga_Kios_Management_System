@@ -37,7 +37,7 @@ namespace Admin_Manga_Management
 
             if (rdr.Read())
             {
-                gettcost = gettcost + Convert.ToDecimal(rdr.GetValue(0));
+                gettcost += Convert.ToDecimal(rdr.GetValue(0));
             }
 
             rdr.Close();
@@ -59,7 +59,7 @@ namespace Admin_Manga_Management
 
                 if (rdr.Read())
                 {
-                    gettcost = gettcost - Convert.ToDecimal(rdr.GetValue(0));
+                    gettcost -= Convert.ToDecimal(rdr.GetValue(0));
                 }
 
                 rdr.Close();

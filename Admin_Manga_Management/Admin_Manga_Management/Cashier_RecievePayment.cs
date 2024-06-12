@@ -75,7 +75,6 @@ namespace Admin_Manga_Management
             getlist();
             for(int i = 0; i < bid.Count; i++)
             {
-              //+ bid.ElementAt(i));
                 Customer_Order(quan.ElementAt(i), bid.ElementAt(i));
             }
         }
@@ -159,8 +158,11 @@ namespace Admin_Manga_Management
 
                     rdr.Close();
                     mindstock(bid.ElementAt(i), quan.ElementAt(i));
+                    Stockrep(bid.ElementAt(i), quan.ElementAt(i));
                 }
                 cre.ShowDialog();
+                Cahsier_kios_Cus ckc = new Cahsier_kios_Cus();
+                ckc.CustPanel.Controls.Clear();
                 this.Close();
 
             }
@@ -184,6 +186,16 @@ namespace Admin_Manga_Management
             sqlcom = new SqlCommand("UPDATE Book SET Book_Quantity = @bnum WHERE Book_ID = @bid", sqlcon);
             sqlcom.Parameters.AddWithValue("@bid", id);
             sqlcom.Parameters.AddWithValue("@bnum", Quans - quan);
+            sqlcom.ExecuteNonQuery();
+
+        }
+        public void Stockrep(int BID, int quan)
+        {
+            sqlcom = new SqlCommand("INSERT INTO Stocks_Report VALUES (@date, @desc, @BID, @Quantity)", sqlcon);
+            sqlcom.Parameters.AddWithValue("@BID", BID);
+            sqlcom.Parameters.AddWithValue("@Date", DateTime.Now);
+            sqlcom.Parameters.AddWithValue("@desc", "Sales");
+            sqlcom.Parameters.AddWithValue("@Quantity", quan);
             sqlcom.ExecuteNonQuery();
 
         }

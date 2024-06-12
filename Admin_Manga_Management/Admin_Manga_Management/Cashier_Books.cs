@@ -16,5 +16,16 @@ namespace Admin_Manga_Management
         {
             InitializeComponent();
         }
+
+        private void bookim_Click(object sender, EventArgs e)
+        {
+            CashierHome ch = new CashierHome();
+            PayCus pay = new PayCus();
+            pay.Bname.Text = Bname.Text;
+            pay.OrderPrice.Text = Bprice.Text;
+            pay.Cname.Text = "New Customer";
+            pay.LabelQuan.Text = "1";
+            ch.Newcust.Controls.Add(pay);
+        }
     }
 }
