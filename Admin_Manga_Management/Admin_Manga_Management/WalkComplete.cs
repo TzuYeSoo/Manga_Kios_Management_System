@@ -20,6 +20,8 @@ namespace Admin_Manga_Management
         static SqlConnection sqlcon = new SqlConnection(sqlConnector.connector);
         static SqlCommand sqlcom;
         static decimal totalcost;
+        static bool checker;
+        private int cid;
         private void CashR_TextChanged(object sender, EventArgs e)
         {
             if (!double.TryParse(CashR.Text, out double number))
@@ -74,10 +76,75 @@ namespace Admin_Manga_Management
 
         private void Complete_Click(object sender, EventArgs e)
         {
-            sqlcon.Open();
+            if (MessageBox.Show("Complete this transaction ", "Complete Transaction", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                sqlcon.Open();
+                LogIn log = new LogIn();
+                sqlcom = new SqlCommand("INSERT INTO Customers VALUES(@Customer,0,@empID,@Date,@TotalCost,2, @Cuspay)", sqlcon);
+                sqlcom.Parameters.AddWithValue("@Customer", "Customer");
+                sqlcom.Parameters.AddWithValue("@empID", log.EID);
+                sqlcom.Parameters.AddWithValue("@Date", DateTime.Now.ToString("yyyy/MM/dd"));
+                sqlcom.Parameters.AddWithValue("@TotalCost", Convert.ToDecimal(TCost.Text));
+                sqlcom.Parameters.AddWithValue("@Cuspay", Convert.ToDecimal(cash.Text));
+                sqlcom.ExecuteNonQuery();
 
-            sqlcom = new SqlCommand();
-            sqlcon.Close();
+                for (int i = 0; i < CashierHome.getBIDS.Count; i++)
+                {
+                    update_Bookquan(Convert.ToInt32(CashierHome.getBIDS[i]), Convert.ToInt32(CashierHome.getBIDS[i]));
+                    stockR(Convert.ToInt32(CashierHome.getBIDS[i]), Convert.ToInt32(CashierHome.getBIDS[i]));
+                }
+
+                WalkIn_Rec wr = new WalkIn_Rec();
+                wr.ShowDialog();
+                this.Close();
+                sqlcon.Close();
+            }
+        }
+        public void update_Bookquan(int id, int quan)
+        {
+            sqlcom = new SqlCommand("SELECT Book_Quantity FROM Book WHERE Book_ID = @BID", sqlcon);
+            sqlcom.Parameters.AddWithValue("@BID", id);
+            int quans = 0;
+            SqlDataReader rdr = sqlcom.ExecuteReader();
+
+            if (rdr.Read())
+            {
+                if(quan == Convert.ToInt32(rdr.GetValue(0)))
+                {
+                    checker = true;
+                }
+                else
+                {
+                    checker = false;
+                    quans = quan - Convert.ToInt32(rdr.GetValue(0));
+                }
+            }
+            rdr.Close();
+            if (checker == true)
+            {
+                sqlcom = new SqlCommand("UPDATE Book SET Book_Status = 0, Book_Quantity = 0 WHERE Book_ID = @BID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@BID", id);
+                sqlcom.ExecuteNonQuery();
+            }
+            else
+            {
+               
+                sqlcom = new SqlCommand("UPDATE Book SET Book_Quantity = @quan WHERE Book_ID = @BID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@BID", id);
+                sqlcom.Parameters.AddWithValue("@quan", quans);
+                sqlcom.ExecuteNonQuery();
+            }
+
+
+        }
+        public void stockR(int id, int quan)
+        {
+            sqlcom = new SqlCommand("INSERT INTO Stocks_Report VALUES (@date, @desc, @bid, @Quan)", sqlcon);
+            sqlcom.Parameters.AddWithValue("@Date", DateTime.Now.ToString("yyyy/MM/dd"));
+            sqlcom.Parameters.AddWithValue("@desc","Sales");
+            sqlcom.Parameters.AddWithValue("@bid", id);
+            sqlcom.Parameters.AddWithValue("@Quan", quan);
+            sqlcom.ExecuteNonQuery();
         }
     }
 }
