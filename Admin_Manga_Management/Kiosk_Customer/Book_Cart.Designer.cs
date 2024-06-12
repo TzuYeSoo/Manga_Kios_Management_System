@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Book_Cart));
             this.CartPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.check_out = new System.Windows.Forms.Button();
             this.back_Book = new System.Windows.Forms.Button();
@@ -40,7 +39,7 @@
             // 
             this.CartPanel.AutoScroll = true;
             this.CartPanel.Location = new System.Drawing.Point(98, 24);
-            this.CartPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CartPanel.Margin = new System.Windows.Forms.Padding(2);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(321, 210);
             this.CartPanel.TabIndex = 0;
@@ -48,7 +47,7 @@
             // check_out
             // 
             this.check_out.Location = new System.Drawing.Point(448, 252);
-            this.check_out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.check_out.Margin = new System.Windows.Forms.Padding(2);
             this.check_out.Name = "check_out";
             this.check_out.Size = new System.Drawing.Size(68, 22);
             this.check_out.TabIndex = 1;
@@ -59,7 +58,7 @@
             // back_Book
             // 
             this.back_Book.Location = new System.Drawing.Point(8, 8);
-            this.back_Book.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.back_Book.Margin = new System.Windows.Forms.Padding(2);
             this.back_Book.Name = "back_Book";
             this.back_Book.Size = new System.Drawing.Size(50, 20);
             this.back_Book.TabIndex = 2;
@@ -92,7 +91,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.TTPrice);
@@ -100,7 +99,7 @@
             this.Controls.Add(this.back_Book);
             this.Controls.Add(this.check_out);
             this.Controls.Add(this.CartPanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Book_Cart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EIWA MANGA STORE";

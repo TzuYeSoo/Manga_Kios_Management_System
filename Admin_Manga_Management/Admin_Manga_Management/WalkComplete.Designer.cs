@@ -44,7 +44,7 @@
             // ConPayment
             // 
             this.ConPayment.Location = new System.Drawing.Point(222, 237);
-            this.ConPayment.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ConPayment.Margin = new System.Windows.Forms.Padding(2);
             this.ConPayment.Name = "ConPayment";
             this.ConPayment.Size = new System.Drawing.Size(121, 31);
             this.ConPayment.TabIndex = 15;
@@ -86,7 +86,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox1.Location = new System.Drawing.Point(17, 181);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(525, 8);
             this.pictureBox1.TabIndex = 11;
@@ -95,7 +95,7 @@
             // Complete
             // 
             this.Complete.Location = new System.Drawing.Point(222, 276);
-            this.Complete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Complete.Margin = new System.Windows.Forms.Padding(2);
             this.Complete.Name = "Complete";
             this.Complete.Size = new System.Drawing.Size(121, 31);
             this.Complete.TabIndex = 9;
@@ -108,7 +108,7 @@
             this.CashR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CashR.ForeColor = System.Drawing.SystemColors.ControlText;
             this.CashR.Location = new System.Drawing.Point(76, 205);
-            this.CashR.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CashR.Margin = new System.Windows.Forms.Padding(2);
             this.CashR.Name = "CashR";
             this.CashR.Size = new System.Drawing.Size(391, 23);
             this.CashR.TabIndex = 8;
@@ -118,10 +118,11 @@
             // Bookname
             // 
             this.Bookname.AutoSize = true;
+            this.Bookname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bookname.Location = new System.Drawing.Point(15, 16);
             this.Bookname.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Bookname.Name = "Bookname";
-            this.Bookname.Size = new System.Drawing.Size(75, 13);
+            this.Bookname.Size = new System.Drawing.Size(86, 15);
             this.Bookname.TabIndex = 16;
             this.Bookname.Text = "<Book Name>";
             this.Bookname.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -129,20 +130,22 @@
             // Quantity
             // 
             this.Quantity.AutoSize = true;
+            this.Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Quantity.Location = new System.Drawing.Point(399, 16);
             this.Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantity.Name = "Quantity";
-            this.Quantity.Size = new System.Drawing.Size(58, 13);
+            this.Quantity.Size = new System.Drawing.Size(65, 15);
             this.Quantity.TabIndex = 17;
             this.Quantity.Text = "<Quantity>";
             // 
             // Price
             // 
             this.Price.AutoSize = true;
-            this.Price.Location = new System.Drawing.Point(473, 16);
+            this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Price.Location = new System.Drawing.Point(473, 15);
             this.Price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(71, 13);
+            this.Price.Size = new System.Drawing.Size(80, 15);
             this.Price.TabIndex = 18;
             this.Price.Text = "<Book Price>";
             // 
@@ -150,6 +153,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(560, 318);
             this.Controls.Add(this.Price);
             this.Controls.Add(this.Quantity);
@@ -161,7 +165,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Complete);
             this.Controls.Add(this.CashR);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "WalkComplete";
             this.Text = "Complete";
             this.Load += new System.EventHandler(this.WalkComplete_Load);

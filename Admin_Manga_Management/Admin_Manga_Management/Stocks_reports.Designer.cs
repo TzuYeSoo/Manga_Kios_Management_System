@@ -138,7 +138,7 @@
             // 
             this.Book_Activity.AutoScroll = true;
             this.Book_Activity.Location = new System.Drawing.Point(219, 66);
-            this.Book_Activity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Book_Activity.Margin = new System.Windows.Forms.Padding(2);
             this.Book_Activity.Name = "Book_Activity";
             this.Book_Activity.Size = new System.Drawing.Size(585, 375);
             this.Book_Activity.TabIndex = 25;
@@ -200,7 +200,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 450);
@@ -222,6 +222,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(813, 450);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.Book_Activity);
@@ -237,8 +238,9 @@
             this.Controls.Add(this.Staffs);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Stocks_reports";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";
             this.Load += new System.EventHandler(this.Stocks_reports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

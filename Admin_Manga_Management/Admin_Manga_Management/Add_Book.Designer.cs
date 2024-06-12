@@ -53,30 +53,32 @@
             // Add_BookID_Add
             // 
             this.Add_BookID_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_BookID_Add.Location = new System.Drawing.Point(37, 89);
-            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_BookID_Add.Location = new System.Drawing.Point(28, 72);
+            this.Add_BookID_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookID_Add.Name = "Add_BookID_Add";
-            this.Add_BookID_Add.Size = new System.Drawing.Size(184, 27);
+            this.Add_BookID_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookID_Add.TabIndex = 0;
             // 
             // Book_GrideView_BookADD
             // 
             this.Book_GrideView_BookADD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Book_GrideView_BookADD.Location = new System.Drawing.Point(37, 342);
-            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Book_GrideView_BookADD.Location = new System.Drawing.Point(28, 278);
+            this.Book_GrideView_BookADD.Margin = new System.Windows.Forms.Padding(2);
             this.Book_GrideView_BookADD.Name = "Book_GrideView_BookADD";
             this.Book_GrideView_BookADD.RowHeadersWidth = 51;
             this.Book_GrideView_BookADD.RowTemplate.Height = 24;
-            this.Book_GrideView_BookADD.Size = new System.Drawing.Size(994, 174);
+            this.Book_GrideView_BookADD.Size = new System.Drawing.Size(746, 141);
             this.Book_GrideView_BookADD.TabIndex = 1;
             // 
             // Add_BookINV
             // 
             this.Add_BookINV.AutoSize = true;
+            this.Add_BookINV.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Add_BookINV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_BookINV.Location = new System.Drawing.Point(0, -1);
+            this.Add_BookINV.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Add_BookINV.Name = "Add_BookINV";
-            this.Add_BookINV.Size = new System.Drawing.Size(123, 29);
+            this.Add_BookINV.Size = new System.Drawing.Size(98, 25);
             this.Add_BookINV.TabIndex = 2;
             this.Add_BookINV.Text = "Add Book";
             this.Add_BookINV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -84,10 +86,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 65);
+            this.label1.Location = new System.Drawing.Point(25, 55);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.Size = new System.Drawing.Size(57, 17);
             this.label1.TabIndex = 3;
             this.label1.Text = "Book ID";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -95,39 +99,41 @@
             // Add_BookQuantity_Add
             // 
             this.Add_BookQuantity_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_BookQuantity_Add.Location = new System.Drawing.Point(251, 89);
-            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_BookQuantity_Add.Location = new System.Drawing.Point(188, 72);
+            this.Add_BookQuantity_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookQuantity_Add.Name = "Add_BookQuantity_Add";
-            this.Add_BookQuantity_Add.Size = new System.Drawing.Size(184, 27);
+            this.Add_BookQuantity_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookQuantity_Add.TabIndex = 5;
             this.Add_BookQuantity_Add.TextChanged += new System.EventHandler(this.Add_BookQuantity_Add_TextChanged);
             // 
             // Add_BookPrice_Add
             // 
             this.Add_BookPrice_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_BookPrice_Add.Location = new System.Drawing.Point(37, 194);
-            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_BookPrice_Add.Location = new System.Drawing.Point(28, 158);
+            this.Add_BookPrice_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookPrice_Add.Name = "Add_BookPrice_Add";
-            this.Add_BookPrice_Add.Size = new System.Drawing.Size(184, 27);
+            this.Add_BookPrice_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookPrice_Add.TabIndex = 6;
             this.Add_BookPrice_Add.TextChanged += new System.EventHandler(this.Add_BookPrice_Add_TextChanged);
             // 
             // Add_BookName_Add
             // 
             this.Add_BookName_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_BookName_Add.Location = new System.Drawing.Point(37, 142);
-            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_BookName_Add.Location = new System.Drawing.Point(28, 115);
+            this.Add_BookName_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookName_Add.Name = "Add_BookName_Add";
-            this.Add_BookName_Add.Size = new System.Drawing.Size(184, 27);
+            this.Add_BookName_Add.Size = new System.Drawing.Size(139, 23);
             this.Add_BookName_Add.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(247, 118);
+            this.label2.Location = new System.Drawing.Point(185, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 20);
+            this.label2.Size = new System.Drawing.Size(84, 17);
             this.label2.TabIndex = 8;
             this.label2.Text = "Book Genre";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -135,10 +141,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(33, 171);
+            this.label3.Location = new System.Drawing.Point(25, 141);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(91, 20);
+            this.label3.Size = new System.Drawing.Size(76, 17);
             this.label3.TabIndex = 9;
             this.label3.Text = "Book Price";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,10 +154,12 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(247, 65);
+            this.label4.Location = new System.Drawing.Point(185, 55);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 20);
+            this.label4.Size = new System.Drawing.Size(97, 17);
             this.label4.TabIndex = 10;
             this.label4.Text = "Book Quantity";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -157,10 +167,12 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(33, 118);
+            this.label5.Location = new System.Drawing.Point(25, 98);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(96, 20);
+            this.label5.Size = new System.Drawing.Size(81, 17);
             this.label5.TabIndex = 11;
             this.label5.Text = "Book Name";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -168,20 +180,22 @@
             // Add_BookDescrip_Add
             // 
             this.Add_BookDescrip_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add_BookDescrip_Add.Location = new System.Drawing.Point(460, 89);
-            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_BookDescrip_Add.Location = new System.Drawing.Point(345, 72);
+            this.Add_BookDescrip_Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add_BookDescrip_Add.Multiline = true;
             this.Add_BookDescrip_Add.Name = "Add_BookDescrip_Add";
-            this.Add_BookDescrip_Add.Size = new System.Drawing.Size(296, 200);
+            this.Add_BookDescrip_Add.Size = new System.Drawing.Size(223, 163);
             this.Add_BookDescrip_Add.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(456, 65);
+            this.label6.Location = new System.Drawing.Point(342, 55);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 20);
+            this.label6.Size = new System.Drawing.Size(115, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Book Description";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -190,10 +204,10 @@
             // 
             this.button1.BackColor = System.Drawing.Color.IndianRed;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(965, 11);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(724, 9);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
+            this.button1.Size = new System.Drawing.Size(56, 25);
             this.button1.TabIndex = 14;
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = false;
@@ -203,10 +217,10 @@
             // 
             this.Add_Book_FROMADD.BackColor = System.Drawing.Color.LightGreen;
             this.Add_Book_FROMADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_Book_FROMADD.Location = new System.Drawing.Point(460, 293);
-            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add_Book_FROMADD.Location = new System.Drawing.Point(345, 238);
+            this.Add_Book_FROMADD.Margin = new System.Windows.Forms.Padding(2);
             this.Add_Book_FROMADD.Name = "Add_Book_FROMADD";
-            this.Add_Book_FROMADD.Size = new System.Drawing.Size(296, 27);
+            this.Add_Book_FROMADD.Size = new System.Drawing.Size(222, 22);
             this.Add_Book_FROMADD.TabIndex = 15;
             this.Add_Book_FROMADD.Text = "Add Book";
             this.Add_Book_FROMADD.UseVisualStyleBackColor = false;
@@ -215,10 +229,9 @@
             // GenreNames
             // 
             this.GenreNames.FormattingEnabled = true;
-            this.GenreNames.Location = new System.Drawing.Point(251, 140);
-            this.GenreNames.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GenreNames.Location = new System.Drawing.Point(188, 114);
             this.GenreNames.Name = "GenreNames";
-            this.GenreNames.Size = new System.Drawing.Size(184, 174);
+            this.GenreNames.Size = new System.Drawing.Size(139, 139);
             this.GenreNames.TabIndex = 16;
             // 
             // Book_Image
@@ -226,22 +239,21 @@
             this.Book_Image.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Book_Image.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Book_Image.BackgroundImage")));
             this.Book_Image.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Book_Image.Location = new System.Drawing.Point(783, 65);
-            this.Book_Image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Book_Image.Location = new System.Drawing.Point(587, 53);
             this.Book_Image.Name = "Book_Image";
-            this.Book_Image.Size = new System.Drawing.Size(248, 255);
+            this.Book_Image.Size = new System.Drawing.Size(186, 207);
             this.Book_Image.TabIndex = 17;
             this.Book_Image.TabStop = false;
             this.Book_Image.Click += new System.EventHandler(this.Book_Image_Click);
             // 
             // Add_Book
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1053, 544);
+            this.ClientSize = new System.Drawing.Size(790, 442);
             this.Controls.Add(this.Book_Image);
             this.Controls.Add(this.GenreNames);
             this.Controls.Add(this.Add_Book_FROMADD);
@@ -259,7 +271,7 @@
             this.Controls.Add(this.Add_BookINV);
             this.Controls.Add(this.Book_GrideView_BookADD);
             this.Controls.Add(this.Add_BookID_Add);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Add_Book";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";

@@ -39,51 +39,60 @@
             // Book_Name
             // 
             this.Book_Name.AutoSize = true;
-            this.Book_Name.Location = new System.Drawing.Point(17, 16);
+            this.Book_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Book_Name.Location = new System.Drawing.Point(13, 13);
+            this.Book_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Book_Name.Name = "Book_Name";
-            this.Book_Name.Size = new System.Drawing.Size(93, 16);
+            this.Book_Name.Size = new System.Drawing.Size(86, 15);
             this.Book_Name.TabIndex = 0;
             this.Book_Name.Text = "<Book Name>";
             // 
             // Book_Quantity
             // 
             this.Book_Quantity.AutoSize = true;
-            this.Book_Quantity.Location = new System.Drawing.Point(136, 16);
+            this.Book_Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Book_Quantity.Location = new System.Drawing.Point(102, 13);
+            this.Book_Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Book_Quantity.Name = "Book_Quantity";
-            this.Book_Quantity.Size = new System.Drawing.Size(69, 16);
+            this.Book_Quantity.Size = new System.Drawing.Size(65, 15);
             this.Book_Quantity.TabIndex = 1;
             this.Book_Quantity.Text = "<Quantity>";
             // 
             // Description
             // 
             this.Description.AllowDrop = true;
-            this.Description.Location = new System.Drawing.Point(436, 16);
+            this.Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Description.Location = new System.Drawing.Point(327, 13);
+            this.Description.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(341, 69);
+            this.Description.Size = new System.Drawing.Size(256, 56);
             this.Description.TabIndex = 2;
             this.Description.Text = "<Description>";
             // 
             // Date_Report
             // 
             this.Date_Report.AutoSize = true;
-            this.Date_Report.Location = new System.Drawing.Point(272, 16);
+            this.Date_Report.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Date_Report.Location = new System.Drawing.Point(204, 13);
+            this.Date_Report.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Date_Report.Name = "Date_Report";
-            this.Date_Report.Size = new System.Drawing.Size(50, 16);
+            this.Date_Report.Size = new System.Drawing.Size(47, 15);
             this.Date_Report.TabIndex = 3;
             this.Date_Report.Text = "<Date>";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(-2, 83);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(783, 17);
+            this.pictureBox1.Size = new System.Drawing.Size(587, 14);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
             // Book_Report_Panel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Controls.Add(this.pictureBox1);
@@ -91,8 +100,9 @@
             this.Controls.Add(this.Description);
             this.Controls.Add(this.Book_Quantity);
             this.Controls.Add(this.Book_Name);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Book_Report_Panel";
-            this.Size = new System.Drawing.Size(780, 119);
+            this.Size = new System.Drawing.Size(585, 97);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

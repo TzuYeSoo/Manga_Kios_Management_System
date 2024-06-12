@@ -72,7 +72,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.Gray;
             this.pictureBox1.Location = new System.Drawing.Point(1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
@@ -126,15 +126,15 @@
             this.tcost.AutoSize = true;
             this.tcost.Location = new System.Drawing.Point(765, 427);
             this.tcost.Name = "tcost";
-            this.tcost.Size = new System.Drawing.Size(101, 20);
+            this.tcost.Size = new System.Drawing.Size(70, 13);
             this.tcost.TabIndex = 19;
             this.tcost.Text = "<Total Price>";
             // 
             // Cahsier_kios_Cus
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1512, 568);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
+            this.ClientSize = new System.Drawing.Size(1444, 568);
             this.Controls.Add(this.tcost);
             this.Controls.Add(this.Payment);
             this.Controls.Add(this.PayOrder);

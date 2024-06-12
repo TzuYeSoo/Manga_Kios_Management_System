@@ -45,7 +45,7 @@
             // 
             this.Search_Box_Book.Location = new System.Drawing.Point(1012, 74);
             this.Search_Box_Book.Name = "Search_Box_Book";
-            this.Search_Box_Book.Size = new System.Drawing.Size(488, 30);
+            this.Search_Box_Book.Size = new System.Drawing.Size(488, 22);
             this.Search_Box_Book.TabIndex = 4;
             // 
             // Walkin
@@ -102,12 +102,13 @@
             this.TotalPrice.AutoSize = true;
             this.TotalPrice.Location = new System.Drawing.Point(412, 446);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(0, 25);
+            this.TotalPrice.Size = new System.Drawing.Size(0, 16);
             this.TotalPrice.TabIndex = 0;
             // 
             // logout
             // 
             this.logout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logout.Location = new System.Drawing.Point(0, 280);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(291, 44);
@@ -117,7 +118,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
@@ -127,7 +128,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(0, 200);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(291, 44);
@@ -139,8 +140,8 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1512, 568);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
+            this.ClientSize = new System.Drawing.Size(1444, 568);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Walkin);
             this.Controls.Add(this.logout);

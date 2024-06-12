@@ -89,6 +89,7 @@
             // labelCutomersID
             // 
             this.labelCutomersID.AutoSize = true;
+            this.labelCutomersID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelCutomersID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCutomersID.Location = new System.Drawing.Point(9, 58);
             this.labelCutomersID.Name = "labelCutomersID";
@@ -99,6 +100,7 @@
             // labelBookID
             // 
             this.labelBookID.AutoSize = true;
+            this.labelBookID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelBookID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelBookID.Location = new System.Drawing.Point(163, 58);
             this.labelBookID.Name = "labelBookID";
@@ -109,6 +111,7 @@
             // labelCashierID
             // 
             this.labelCashierID.AutoSize = true;
+            this.labelCashierID.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelCashierID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCashierID.Location = new System.Drawing.Point(477, 61);
             this.labelCashierID.Name = "labelCashierID";
@@ -119,6 +122,7 @@
             // labelCustomerName
             // 
             this.labelCustomerName.AutoSize = true;
+            this.labelCustomerName.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelCustomerName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelCustomerName.Location = new System.Drawing.Point(9, 110);
             this.labelCustomerName.Name = "labelCustomerName";
@@ -129,6 +133,7 @@
             // labelBookQuantity
             // 
             this.labelBookQuantity.AutoSize = true;
+            this.labelBookQuantity.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelBookQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelBookQuantity.Location = new System.Drawing.Point(322, 110);
             this.labelBookQuantity.Name = "labelBookQuantity";
@@ -140,6 +145,7 @@
             // labelDate
             // 
             this.labelDate.AutoSize = true;
+            this.labelDate.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.labelDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.labelDate.Location = new System.Drawing.Point(477, 110);
             this.labelDate.Name = "labelDate";
@@ -159,6 +165,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.Location = new System.Drawing.Point(-1, 0);
             this.label1.Name = "label1";
@@ -192,6 +199,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(322, 58);
             this.label2.Name = "label2";
@@ -219,7 +227,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BookNames);

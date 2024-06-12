@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Book_Inv));
             this.Dash_Book = new System.Windows.Forms.Button();
             this.Settings_Book = new System.Windows.Forms.Button();
             this.Trans_book = new System.Windows.Forms.Button();
@@ -62,6 +61,7 @@
             // 
             this.Dash_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Dash_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dash_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Dash_Book.ForeColor = System.Drawing.Color.Transparent;
             this.Dash_Book.Location = new System.Drawing.Point(0, 32);
             this.Dash_Book.Name = "Dash_Book";
@@ -75,6 +75,7 @@
             // 
             this.Settings_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Settings_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Settings_Book.ForeColor = System.Drawing.Color.Transparent;
             this.Settings_Book.Location = new System.Drawing.Point(0, 358);
             this.Settings_Book.Name = "Settings_Book";
@@ -87,6 +88,7 @@
             // 
             this.Trans_book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Trans_book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Trans_book.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Trans_book.ForeColor = System.Drawing.Color.Transparent;
             this.Trans_book.Location = new System.Drawing.Point(0, 292);
             this.Trans_book.Name = "Trans_book";
@@ -100,6 +102,7 @@
             // 
             this.Book_Book.BackColor = System.Drawing.Color.Silver;
             this.Book_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Book_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Book_Book.ForeColor = System.Drawing.Color.Transparent;
             this.Book_Book.Location = new System.Drawing.Point(0, 162);
             this.Book_Book.Name = "Book_Book";
@@ -112,6 +115,7 @@
             // 
             this.Staffs_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Staffs_Book.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Staffs_Book.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Staffs_Book.ForeColor = System.Drawing.Color.Transparent;
             this.Staffs_Book.Location = new System.Drawing.Point(0, 98);
             this.Staffs_Book.Name = "Staffs_Book";
@@ -135,7 +139,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(37, 40);
+            this.pictureBox6.Location = new System.Drawing.Point(34, 40);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.TabIndex = 10;
@@ -157,7 +161,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox4.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(29, 105);
+            this.pictureBox4.Location = new System.Drawing.Point(26, 105);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(30, 30);
             this.pictureBox4.TabIndex = 8;
@@ -168,7 +172,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox3.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Transactions_removebg_preview;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(37, 300);
+            this.pictureBox3.Location = new System.Drawing.Point(34, 300);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.TabIndex = 7;
@@ -179,7 +183,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Silver;
             this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(20, 166);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 166);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 40);
             this.pictureBox2.TabIndex = 6;
@@ -187,7 +191,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 450);
@@ -222,7 +226,7 @@
             // 
             this.BookInv_GrideView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BookInv_GrideView.Location = new System.Drawing.Point(210, 129);
-            this.BookInv_GrideView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BookInv_GrideView.Margin = new System.Windows.Forms.Padding(2);
             this.BookInv_GrideView.Name = "BookInv_GrideView";
             this.BookInv_GrideView.RowHeadersWidth = 62;
             this.BookInv_GrideView.RowTemplate.Height = 28;
@@ -232,7 +236,7 @@
             // Search_Book_Bar_Admin
             // 
             this.Search_Book_Bar_Admin.Location = new System.Drawing.Point(210, 80);
-            this.Search_Book_Bar_Admin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Search_Book_Bar_Admin.Margin = new System.Windows.Forms.Padding(2);
             this.Search_Book_Bar_Admin.Name = "Search_Book_Bar_Admin";
             this.Search_Book_Bar_Admin.Size = new System.Drawing.Size(289, 20);
             this.Search_Book_Bar_Admin.TabIndex = 34;
@@ -242,6 +246,7 @@
             // 
             this.StocksRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.StocksRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StocksRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StocksRep.ForeColor = System.Drawing.Color.Transparent;
             this.StocksRep.Location = new System.Drawing.Point(0, 228);
             this.StocksRep.Name = "StocksRep";
@@ -256,7 +261,7 @@
             this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox8.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(21, 231);
+            this.pictureBox8.Location = new System.Drawing.Point(18, 231);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(40, 40);
             this.pictureBox8.TabIndex = 36;
@@ -266,7 +271,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(813, 450);
             this.Controls.Add(this.pictureBox8);

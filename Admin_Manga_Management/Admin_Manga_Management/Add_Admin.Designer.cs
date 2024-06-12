@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Add_Admin));
             this.AdminUsername_Add = new System.Windows.Forms.TextBox();
             this.AdminPass_Add = new System.Windows.Forms.TextBox();
             this.AdminCon_Add = new System.Windows.Forms.TextBox();
@@ -82,6 +81,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(-1, 0);
             this.label1.Name = "label1";
@@ -92,6 +92,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(40, 70);
             this.label3.Name = "label3";
@@ -102,6 +103,7 @@
             // Admin_Pass_Label
             // 
             this.Admin_Pass_Label.AutoSize = true;
+            this.Admin_Pass_Label.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Admin_Pass_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Admin_Pass_Label.Location = new System.Drawing.Point(40, 113);
             this.Admin_Pass_Label.Name = "Admin_Pass_Label";
@@ -112,6 +114,7 @@
             // Admin_Con_Label
             // 
             this.Admin_Con_Label.AutoSize = true;
+            this.Admin_Con_Label.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Admin_Con_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Admin_Con_Label.Location = new System.Drawing.Point(427, 69);
             this.Admin_Con_Label.Name = "Admin_Con_Label";
@@ -171,6 +174,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(233, 69);
             this.label2.Name = "label2";
@@ -200,6 +204,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.Location = new System.Drawing.Point(233, 112);
             this.label5.Name = "label5";
@@ -219,7 +224,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(746, 381);
             this.Controls.Add(this.label5);

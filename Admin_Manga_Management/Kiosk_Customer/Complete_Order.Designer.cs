@@ -36,7 +36,7 @@
             // COrder
             // 
             this.COrder.Location = new System.Drawing.Point(56, 101);
-            this.COrder.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.COrder.Margin = new System.Windows.Forms.Padding(2);
             this.COrder.Name = "COrder";
             this.COrder.Size = new System.Drawing.Size(167, 24);
             this.COrder.TabIndex = 0;
@@ -47,17 +47,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.label1.Location = new System.Drawing.Point(54, 63);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 1;
             this.label1.Text = "Name";
             // 
             // Name
             // 
             this.Name.Location = new System.Drawing.Point(56, 78);
-            this.Name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name.Margin = new System.Windows.Forms.Padding(2);
             this.Name.Name = "Name";
             this.Name.Size = new System.Drawing.Size(168, 20);
             this.Name.TabIndex = 2;
@@ -71,7 +72,8 @@
             this.Controls.Add(this.Name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.COrder);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "Complete_Order";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Complete Order";
             this.ResumeLayout(false);

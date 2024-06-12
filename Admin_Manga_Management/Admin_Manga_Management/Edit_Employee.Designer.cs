@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Edit_Employee));
             this.Search_Bar = new System.Windows.Forms.TextBox();
             this.Confirm_ID = new System.Windows.Forms.Button();
             this.comboBoxEmpPos = new System.Windows.Forms.ComboBox();
@@ -60,12 +59,13 @@
             // 
             // Confirm_ID
             // 
+            this.Confirm_ID.BackColor = System.Drawing.Color.Lime;
             this.Confirm_ID.Location = new System.Drawing.Point(148, 84);
             this.Confirm_ID.Name = "Confirm_ID";
             this.Confirm_ID.Size = new System.Drawing.Size(75, 23);
             this.Confirm_ID.TabIndex = 1;
             this.Confirm_ID.Text = "Confirm ID";
-            this.Confirm_ID.UseVisualStyleBackColor = true;
+            this.Confirm_ID.UseVisualStyleBackColor = false;
             this.Confirm_ID.Click += new System.EventHandler(this.Confirm_ID_Click);
             // 
             // comboBoxEmpPos
@@ -91,6 +91,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(-1, 0);
             this.label1.Name = "label1";
@@ -112,6 +113,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(14, 65);
             this.label2.Name = "label2";
@@ -136,6 +138,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(14, 114);
             this.label3.Name = "label3";
@@ -164,6 +167,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.Location = new System.Drawing.Point(250, 114);
             this.label4.Name = "label4";
@@ -181,6 +185,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label5.Location = new System.Drawing.Point(250, 68);
             this.label5.Name = "label5";
@@ -191,6 +196,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.Location = new System.Drawing.Point(442, 68);
             this.label6.Name = "label6";
@@ -208,6 +214,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.Location = new System.Drawing.Point(442, 114);
             this.label7.Name = "label7";
@@ -219,7 +226,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.textBoxEmpcon);

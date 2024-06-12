@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Remove_Admin));
             this.Remove_Admin_GrideView = new System.Windows.Forms.DataGridView();
             this.AdminID_Remove = new System.Windows.Forms.TextBox();
             this.Remove_Remove = new System.Windows.Forms.Button();
@@ -76,6 +75,7 @@
             // Admin_RemoveLabel
             // 
             this.Admin_RemoveLabel.AutoSize = true;
+            this.Admin_RemoveLabel.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Admin_RemoveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_RemoveLabel.Location = new System.Drawing.Point(0, 0);
             this.Admin_RemoveLabel.Name = "Admin_RemoveLabel";
@@ -86,6 +86,7 @@
             // AdminID_RemoveLabel
             // 
             this.AdminID_RemoveLabel.AutoSize = true;
+            this.AdminID_RemoveLabel.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.AdminID_RemoveLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.AdminID_RemoveLabel.Location = new System.Drawing.Point(18, 74);
             this.AdminID_RemoveLabel.Name = "AdminID_RemoveLabel";
@@ -130,6 +131,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(18, 265);
             this.label1.Name = "label1";
@@ -172,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(674, 496);
             this.Controls.Add(this.RConfirm_ID);

@@ -62,27 +62,30 @@
             // Quan
             // 
             this.Quan.AutoSize = true;
+            this.Quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Quan.Location = new System.Drawing.Point(122, 97);
             this.Quan.Name = "Quan";
-            this.Quan.Size = new System.Drawing.Size(58, 13);
+            this.Quan.Size = new System.Drawing.Size(65, 15);
             this.Quan.TabIndex = 16;
             this.Quan.Text = "<Quantity>";
             // 
             // Price
             // 
             this.Price.AutoSize = true;
+            this.Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Price.Location = new System.Drawing.Point(186, 97);
             this.Price.Name = "Price";
-            this.Price.Size = new System.Drawing.Size(43, 13);
+            this.Price.Size = new System.Drawing.Size(49, 15);
             this.Price.TabIndex = 15;
             this.Price.Text = "<Price>";
             // 
             // Bname
             // 
             this.Bname.AutoSize = true;
+            this.Bname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bname.Location = new System.Drawing.Point(13, 97);
             this.Bname.Name = "Bname";
-            this.Bname.Size = new System.Drawing.Size(75, 13);
+            this.Bname.Size = new System.Drawing.Size(86, 15);
             this.Bname.TabIndex = 14;
             this.Bname.Text = "<Book Name>";
             // 
@@ -100,33 +103,36 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(-15, 232);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(241, 13);
+            this.label7.Size = new System.Drawing.Size(256, 13);
             this.label7.TabIndex = 18;
-            this.label7.Text = "------------------------------------------------------------------------------";
+            this.label7.Text = "---------------------------------------------------------------------------------" +
+    "--";
             // 
             // ord_num
             // 
             this.ord_num.AutoSize = true;
-            this.ord_num.Location = new System.Drawing.Point(160, 283);
+            this.ord_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.ord_num.Location = new System.Drawing.Point(139, 279);
             this.ord_num.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ord_num.Name = "ord_num";
-            this.ord_num.Size = new System.Drawing.Size(85, 13);
+            this.ord_num.Size = new System.Drawing.Size(100, 15);
             this.ord_num.TabIndex = 19;
             this.ord_num.Text = "<Order Number>";
             // 
             // tcost
             // 
             this.tcost.AutoSize = true;
+            this.tcost.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.tcost.Location = new System.Drawing.Point(160, 245);
             this.tcost.Name = "tcost";
-            this.tcost.Size = new System.Drawing.Size(70, 13);
+            this.tcost.Size = new System.Drawing.Size(79, 15);
             this.tcost.TabIndex = 20;
             this.tcost.Text = "<Total Price>";
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(71, 322);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(99, 21);
             this.button1.TabIndex = 21;
@@ -138,6 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(236, 352);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tcost);
@@ -149,7 +156,7 @@
             this.Controls.Add(this.Bname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Customer_Number";
             this.Text = "Kiosk";
             this.ResumeLayout(false);

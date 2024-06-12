@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Admin));
             this.Dashboard = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
             this.Staffs = new System.Windows.Forms.Button();
@@ -53,6 +52,7 @@
             // 
             this.Dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Dashboard.ForeColor = System.Drawing.Color.Transparent;
             this.Dashboard.Location = new System.Drawing.Point(0, 40);
             this.Dashboard.Name = "Dashboard";
@@ -64,8 +64,9 @@
             // 
             // Settings
             // 
-            this.Settings.BackColor = System.Drawing.Color.Silver;
+            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Settings.Location = new System.Drawing.Point(0, 360);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(194, 47);
@@ -77,6 +78,7 @@
             // 
             this.Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.Staffs.Location = new System.Drawing.Point(0, 120);
             this.Staffs.Name = "Staffs";
@@ -90,6 +92,7 @@
             // 
             this.Book_Inv.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.Book_Inv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Book_Inv.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Book_Inv.ForeColor = System.Drawing.Color.Transparent;
             this.Book_Inv.Location = new System.Drawing.Point(0, 200);
             this.Book_Inv.Name = "Book_Inv";
@@ -103,6 +106,7 @@
             // 
             this.TransHis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
             this.TransHis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TransHis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.TransHis.ForeColor = System.Drawing.Color.Transparent;
             this.TransHis.Location = new System.Drawing.Point(0, 280);
             this.TransHis.Name = "TransHis";
@@ -117,7 +121,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(35, 49);
+            this.pictureBox6.Location = new System.Drawing.Point(33, 49);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.TabIndex = 10;
@@ -128,7 +132,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(28, 129);
+            this.pictureBox5.Location = new System.Drawing.Point(25, 129);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.TabIndex = 9;
@@ -139,7 +143,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 205);
+            this.pictureBox4.Location = new System.Drawing.Point(20, 205);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 35);
             this.pictureBox4.TabIndex = 8;
@@ -171,7 +175,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 450);
@@ -194,7 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Log_Out);

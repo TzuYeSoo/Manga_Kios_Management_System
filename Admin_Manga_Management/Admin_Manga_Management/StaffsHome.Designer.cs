@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffsHome));
             this.Dash_Staffs = new System.Windows.Forms.Button();
             this.Settings_Staffs = new System.Windows.Forms.Button();
             this.Trans_Staffs = new System.Windows.Forms.Button();
@@ -72,6 +71,7 @@
             // 
             this.Dash_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Dash_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dash_Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Dash_Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.Dash_Staffs.Location = new System.Drawing.Point(0, 32);
             this.Dash_Staffs.Name = "Dash_Staffs";
@@ -85,6 +85,7 @@
             // 
             this.Settings_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Settings_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Settings_Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Settings_Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.Settings_Staffs.Location = new System.Drawing.Point(0, 358);
             this.Settings_Staffs.Name = "Settings_Staffs";
@@ -99,6 +100,7 @@
             this.Trans_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Trans_Staffs.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Trans_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Trans_Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Trans_Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.Trans_Staffs.Location = new System.Drawing.Point(0, 292);
             this.Trans_Staffs.Name = "Trans_Staffs";
@@ -112,6 +114,7 @@
             // 
             this.BookInv_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.BookInv_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BookInv_Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.BookInv_Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.BookInv_Staffs.Location = new System.Drawing.Point(0, 162);
             this.BookInv_Staffs.Name = "BookInv_Staffs";
@@ -125,6 +128,7 @@
             // 
             this.Staffs_Staffs.BackColor = System.Drawing.Color.Silver;
             this.Staffs_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Staffs_Staffs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Staffs_Staffs.ForeColor = System.Drawing.Color.Transparent;
             this.Staffs_Staffs.Location = new System.Drawing.Point(0, 98);
             this.Staffs_Staffs.Name = "Staffs_Staffs";
@@ -156,6 +160,7 @@
             // Admin_Text
             // 
             this.Admin_Text.AutoSize = true;
+            this.Admin_Text.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.Admin_Text.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Admin_Text.Location = new System.Drawing.Point(218, 41);
             this.Admin_Text.Name = "Admin_Text";
@@ -221,7 +226,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Silver;
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(29, 105);
+            this.pictureBox6.Location = new System.Drawing.Point(26, 105);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.TabIndex = 10;
@@ -232,7 +237,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Transactions_removebg_preview;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(34, 300);
+            this.pictureBox5.Location = new System.Drawing.Point(32, 300);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.TabIndex = 9;
@@ -254,7 +259,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox3.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 40);
+            this.pictureBox3.Location = new System.Drawing.Point(34, 40);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.TabIndex = 7;
@@ -273,17 +278,19 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox1.BackColor = System.Drawing.Color.DarkGray;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(194, 450);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // StockRep
             // 
             this.StockRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.StockRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.StockRep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.StockRep.ForeColor = System.Drawing.Color.Transparent;
             this.StockRep.Location = new System.Drawing.Point(0, 228);
             this.StockRep.Name = "StockRep";
@@ -298,7 +305,7 @@
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox7.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(20, 231);
+            this.pictureBox7.Location = new System.Drawing.Point(19, 231);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(40, 41);
             this.pictureBox7.TabIndex = 23;
@@ -308,7 +315,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(831, 450);
             this.Controls.Add(this.pictureBox7);
