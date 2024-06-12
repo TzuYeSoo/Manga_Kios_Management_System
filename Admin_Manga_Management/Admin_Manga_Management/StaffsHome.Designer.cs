@@ -53,6 +53,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.StockRep = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cashierBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.adminBindingSource)).BeginInit();
@@ -64,6 +65,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // Dash_Staffs
@@ -71,10 +73,9 @@
             this.Dash_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Dash_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Dash_Staffs.ForeColor = System.Drawing.Color.Transparent;
-            this.Dash_Staffs.Location = new System.Drawing.Point(0, 40);
-            this.Dash_Staffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Dash_Staffs.Location = new System.Drawing.Point(0, 32);
             this.Dash_Staffs.Name = "Dash_Staffs";
-            this.Dash_Staffs.Size = new System.Drawing.Size(259, 58);
+            this.Dash_Staffs.Size = new System.Drawing.Size(194, 47);
             this.Dash_Staffs.TabIndex = 1;
             this.Dash_Staffs.Text = "Dashboard";
             this.Dash_Staffs.UseVisualStyleBackColor = false;
@@ -85,10 +86,9 @@
             this.Settings_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.Settings_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings_Staffs.ForeColor = System.Drawing.Color.Transparent;
-            this.Settings_Staffs.Location = new System.Drawing.Point(0, 440);
-            this.Settings_Staffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Settings_Staffs.Location = new System.Drawing.Point(0, 358);
             this.Settings_Staffs.Name = "Settings_Staffs";
-            this.Settings_Staffs.Size = new System.Drawing.Size(259, 58);
+            this.Settings_Staffs.Size = new System.Drawing.Size(194, 47);
             this.Settings_Staffs.TabIndex = 2;
             this.Settings_Staffs.Text = "Settings";
             this.Settings_Staffs.UseVisualStyleBackColor = false;
@@ -100,10 +100,9 @@
             this.Trans_Staffs.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Trans_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Trans_Staffs.ForeColor = System.Drawing.Color.Transparent;
-            this.Trans_Staffs.Location = new System.Drawing.Point(0, 360);
-            this.Trans_Staffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Trans_Staffs.Location = new System.Drawing.Point(0, 292);
             this.Trans_Staffs.Name = "Trans_Staffs";
-            this.Trans_Staffs.Size = new System.Drawing.Size(259, 58);
+            this.Trans_Staffs.Size = new System.Drawing.Size(194, 47);
             this.Trans_Staffs.TabIndex = 3;
             this.Trans_Staffs.Text = "Transaction";
             this.Trans_Staffs.UseVisualStyleBackColor = false;
@@ -114,10 +113,9 @@
             this.BookInv_Staffs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.BookInv_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BookInv_Staffs.ForeColor = System.Drawing.Color.Transparent;
-            this.BookInv_Staffs.Location = new System.Drawing.Point(0, 200);
-            this.BookInv_Staffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BookInv_Staffs.Location = new System.Drawing.Point(0, 162);
             this.BookInv_Staffs.Name = "BookInv_Staffs";
-            this.BookInv_Staffs.Size = new System.Drawing.Size(259, 58);
+            this.BookInv_Staffs.Size = new System.Drawing.Size(194, 47);
             this.BookInv_Staffs.TabIndex = 4;
             this.BookInv_Staffs.Text = "Book Inventory";
             this.BookInv_Staffs.UseVisualStyleBackColor = false;
@@ -128,10 +126,9 @@
             this.Staffs_Staffs.BackColor = System.Drawing.Color.Silver;
             this.Staffs_Staffs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Staffs_Staffs.ForeColor = System.Drawing.Color.Transparent;
-            this.Staffs_Staffs.Location = new System.Drawing.Point(0, 120);
-            this.Staffs_Staffs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Staffs_Staffs.Location = new System.Drawing.Point(0, 98);
             this.Staffs_Staffs.Name = "Staffs_Staffs";
-            this.Staffs_Staffs.Size = new System.Drawing.Size(259, 58);
+            this.Staffs_Staffs.Size = new System.Drawing.Size(194, 47);
             this.Staffs_Staffs.TabIndex = 5;
             this.Staffs_Staffs.Text = "Manage Staffs";
             this.Staffs_Staffs.UseVisualStyleBackColor = false;
@@ -160,10 +157,9 @@
             // 
             this.Admin_Text.AutoSize = true;
             this.Admin_Text.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Admin_Text.Location = new System.Drawing.Point(291, 50);
-            this.Admin_Text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Admin_Text.Location = new System.Drawing.Point(218, 41);
             this.Admin_Text.Name = "Admin_Text";
-            this.Admin_Text.Size = new System.Drawing.Size(127, 29);
+            this.Admin_Text.Size = new System.Drawing.Size(99, 25);
             this.Admin_Text.TabIndex = 13;
             this.Admin_Text.Text = "Employee";
             // 
@@ -179,10 +175,9 @@
             // 
             this.Add_User_Admin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Add_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add_User_Admin.Location = new System.Drawing.Point(739, 50);
-            this.Add_User_Admin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Add_User_Admin.Location = new System.Drawing.Point(554, 41);
             this.Add_User_Admin.Name = "Add_User_Admin";
-            this.Add_User_Admin.Size = new System.Drawing.Size(100, 28);
+            this.Add_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Add_User_Admin.TabIndex = 18;
             this.Add_User_Admin.Text = "Add";
             this.Add_User_Admin.UseVisualStyleBackColor = false;
@@ -192,10 +187,9 @@
             // 
             this.Edit_User_Admin.BackColor = System.Drawing.SystemColors.Info;
             this.Edit_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Edit_User_Admin.Location = new System.Drawing.Point(845, 50);
-            this.Edit_User_Admin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Edit_User_Admin.Location = new System.Drawing.Point(634, 41);
             this.Edit_User_Admin.Name = "Edit_User_Admin";
-            this.Edit_User_Admin.Size = new System.Drawing.Size(100, 28);
+            this.Edit_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Edit_User_Admin.TabIndex = 19;
             this.Edit_User_Admin.Text = "Edit";
             this.Edit_User_Admin.UseVisualStyleBackColor = false;
@@ -205,10 +199,9 @@
             // 
             this.Remove_User_Admin.BackColor = System.Drawing.Color.LightCoral;
             this.Remove_User_Admin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Remove_User_Admin.Location = new System.Drawing.Point(955, 50);
-            this.Remove_User_Admin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Remove_User_Admin.Location = new System.Drawing.Point(716, 41);
             this.Remove_User_Admin.Name = "Remove_User_Admin";
-            this.Remove_User_Admin.Size = new System.Drawing.Size(100, 28);
+            this.Remove_User_Admin.Size = new System.Drawing.Size(75, 23);
             this.Remove_User_Admin.TabIndex = 20;
             this.Remove_User_Admin.Text = "Remove";
             this.Remove_User_Admin.UseVisualStyleBackColor = false;
@@ -217,11 +210,10 @@
             // Employee_Data
             // 
             this.Employee_Data.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Employee_Data.Location = new System.Drawing.Point(300, 94);
-            this.Employee_Data.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Employee_Data.Location = new System.Drawing.Point(225, 76);
             this.Employee_Data.Name = "Employee_Data";
             this.Employee_Data.RowHeadersWidth = 62;
-            this.Employee_Data.Size = new System.Drawing.Size(759, 407);
+            this.Employee_Data.Size = new System.Drawing.Size(569, 331);
             this.Employee_Data.TabIndex = 21;
             // 
             // pictureBox6
@@ -229,10 +221,9 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Silver;
             this.pictureBox6.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.staff_removebg_preview__1_;
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(39, 129);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Location = new System.Drawing.Point(29, 105);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox6.Size = new System.Drawing.Size(30, 30);
             this.pictureBox6.TabIndex = 10;
             this.pictureBox6.TabStop = false;
             // 
@@ -241,10 +232,9 @@
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Transactions_removebg_preview;
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(45, 369);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Location = new System.Drawing.Point(34, 300);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
@@ -253,10 +243,9 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox4.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(21, 204);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Location = new System.Drawing.Point(16, 166);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(40, 41);
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
@@ -265,10 +254,9 @@
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox3.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Dash_removebg_preview;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(48, 49);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 40);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
             this.pictureBox3.TabIndex = 7;
             this.pictureBox3.TabStop = false;
             // 
@@ -277,10 +265,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(60, 449);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(45, 365);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 37);
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 
@@ -288,9 +275,8 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 554);
+            this.pictureBox1.Size = new System.Drawing.Size(194, 450);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -299,22 +285,33 @@
             this.StockRep.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.StockRep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.StockRep.ForeColor = System.Drawing.Color.Transparent;
-            this.StockRep.Location = new System.Drawing.Point(0, 280);
-            this.StockRep.Margin = new System.Windows.Forms.Padding(4);
+            this.StockRep.Location = new System.Drawing.Point(0, 228);
             this.StockRep.Name = "StockRep";
-            this.StockRep.Size = new System.Drawing.Size(259, 58);
+            this.StockRep.Size = new System.Drawing.Size(194, 47);
             this.StockRep.TabIndex = 22;
             this.StockRep.Text = "Stocks Report";
             this.StockRep.UseVisualStyleBackColor = false;
             this.StockRep.Click += new System.EventHandler(this.StockRep_Click);
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
+            this.pictureBox7.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.Books_removebg_preview;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox7.Location = new System.Drawing.Point(20, 231);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(40, 41);
+            this.pictureBox7.TabIndex = 23;
+            this.pictureBox7.TabStop = false;
+            // 
             // StaffsHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1108, 554);
+            this.ClientSize = new System.Drawing.Size(831, 450);
+            this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.StockRep);
             this.Controls.Add(this.Employee_Data);
             this.Controls.Add(this.Remove_User_Admin);
@@ -332,7 +329,6 @@
             this.Controls.Add(this.Settings_Staffs);
             this.Controls.Add(this.Dash_Staffs);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StaffsHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrator";
@@ -348,6 +344,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,5 +375,6 @@
         private System.Windows.Forms.Button Remove_User_Admin;
         private System.Windows.Forms.DataGridView Employee_Data;
         private System.Windows.Forms.Button StockRep;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }
