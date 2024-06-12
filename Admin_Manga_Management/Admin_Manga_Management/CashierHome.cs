@@ -82,6 +82,18 @@ namespace Admin_Manga_Management
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to leave this site","LEave this site", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Newcust.Controls.Clear();
+                Cashier_StockView csv = new Cashier_StockView();
+                csv.Show();
+                this.Close();
+            }
+            
+        }
+
         public void book_Click(object sender, EventArgs e)
         {
             Cashier_Books book = (Cashier_Books)sender;

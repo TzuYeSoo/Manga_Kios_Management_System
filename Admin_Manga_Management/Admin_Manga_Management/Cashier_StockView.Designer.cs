@@ -33,7 +33,7 @@
             this.Kios_Cus = new System.Windows.Forms.Button();
             this.Walkin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Stocks = new System.Windows.Forms.FlowLayoutPanel();
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -91,12 +91,13 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
-            // flowLayoutPanel1
+            // Stocks
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(348, 62);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(716, 375);
-            this.flowLayoutPanel1.TabIndex = 24;
+            this.Stocks.AutoScroll = true;
+            this.Stocks.Location = new System.Drawing.Point(348, 62);
+            this.Stocks.Name = "Stocks";
+            this.Stocks.Size = new System.Drawing.Size(716, 375);
+            this.Stocks.TabIndex = 24;
             // 
             // textBox1
             // 
@@ -104,6 +105,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(389, 26);
             this.textBox1.TabIndex = 25;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Cashier_StockView
             // 
@@ -111,7 +113,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1076, 456);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.Stocks);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Kios_Cus);
@@ -119,6 +121,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Cashier_StockView";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Cashier_StockView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,7 +135,7 @@
         private System.Windows.Forms.Button Kios_Cus;
         private System.Windows.Forms.Button Walkin;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel Stocks;
         private System.Windows.Forms.TextBox textBox1;
     }
 }

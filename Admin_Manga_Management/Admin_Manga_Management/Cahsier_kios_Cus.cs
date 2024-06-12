@@ -161,5 +161,16 @@ namespace Admin_Manga_Management
                 this.Close();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to leave this site", "LEave this site", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                PayOrder.Controls.Clear();
+                Cashier_StockView csv = new Cashier_StockView();
+                csv.Show();
+                this.Close();
+            }
+        }
     }
 }

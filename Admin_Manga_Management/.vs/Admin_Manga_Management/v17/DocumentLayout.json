@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashier_stockview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,8 +19,16 @@
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cahsier_kios_cus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|c:\\users\\p102p9ph1\\desktop\\visuals\\manga_kios_management_system\\admin_manga_management\\admin_manga_management\\cashierstock_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BC114B95-D3AE-4DD6-AD49-0C5070DD7A13}|Admin_Manga_Management\\Admin_Manga_Management.csproj|solutionrelative:admin_manga_management\\cashierstock_control.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +38,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CashierHome.cs",
+              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",
+              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
+              "RelativeToolTip": "Admin_Manga_Management\\CashierHome.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAWwFsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:13:55.471Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -42,33 +64,45 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CashierStock_Control.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierStock_Control.cs",
+              "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierStock_Control.cs",
+              "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierStock_Control.cs [Design]",
+              "RelativeToolTip": "Admin_Manga_Management\\CashierStock_Control.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:00:21.613Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Cahsier_kios_Cus.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Cahsier_kios_Cus.cs",
               "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cahsier_kios_Cus.cs",
               "RelativeToolTip": "Admin_Manga_Management\\Cahsier_kios_Cus.cs",
-              "ViewState": "AQIAAI4AAAAAAAAAAADwv6EAAAANAAAA",
+              "ViewState": "AQIAAJgAAAAAAAAAAAAewK0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T17:16:41.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Cashier_StockView.cs",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_StockView.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Cashier_StockView.cs",
               "ToolTip": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_StockView.cs",
               "RelativeToolTip": "Admin_Manga_Management\\Cashier_StockView.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAWwCwAAAAYAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAewFIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-12T17:16:34.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Cashier_StockView.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\Cashier_StockView.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\Cashier_StockView.cs",
@@ -92,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CashierHome.cs [Design]",
               "DocumentMoniker": "C:\\Users\\P102P9PH1\\Desktop\\Visuals\\Manga_Kios_Management_System\\Admin_Manga_Management\\Admin_Manga_Management\\CashierHome.cs",
               "RelativeDocumentMoniker": "Admin_Manga_Management\\CashierHome.cs",

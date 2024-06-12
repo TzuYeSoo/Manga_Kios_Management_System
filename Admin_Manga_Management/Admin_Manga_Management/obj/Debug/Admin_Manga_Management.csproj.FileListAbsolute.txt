@@ -331,3 +331,5 @@ C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Managem
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Stocks_reports.resources
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_Walk.resources
 C:\Users\maxime\Documents\kiosk\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.WalkIn_Rec.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.CashierStock_Control.resources
+C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Cashier_StockView.resources

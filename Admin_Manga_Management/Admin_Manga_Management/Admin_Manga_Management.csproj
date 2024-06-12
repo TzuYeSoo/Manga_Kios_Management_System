@@ -70,6 +70,12 @@
     <Compile Include="Book_Report_Panel.Designer.cs">
       <DependentUpon>Book_Report_Panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="CashierStock_Control.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CashierStock_Control.Designer.cs">
+      <DependentUpon>CashierStock_Control.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cashier_CompleteOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CashierHome.resx">
       <DependentUpon>CashierHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierStock_Control.resx">
+      <DependentUpon>CashierStock_Control.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier_CompleteOrder.resx">
       <DependentUpon>Cashier_CompleteOrder.cs</DependentUpon>
