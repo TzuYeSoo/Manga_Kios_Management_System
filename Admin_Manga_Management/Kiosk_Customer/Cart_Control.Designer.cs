@@ -45,7 +45,7 @@
             this.Min_Quan.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Min_Quan.BackgroundImage")));
             this.Min_Quan.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Min_Quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Min_Quan.Location = new System.Drawing.Point(76, 204);
+            this.Min_Quan.Location = new System.Drawing.Point(76, 202);
             this.Min_Quan.Margin = new System.Windows.Forms.Padding(2);
             this.Min_Quan.Name = "Min_Quan";
             this.Min_Quan.Size = new System.Drawing.Size(22, 24);

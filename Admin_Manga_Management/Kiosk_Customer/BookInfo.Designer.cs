@@ -76,6 +76,7 @@
             // 
             // desc
             // 
+            this.desc.BackColor = System.Drawing.Color.Silver;
             this.desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.desc.Location = new System.Drawing.Point(480, 85);
             this.desc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -87,6 +88,7 @@
             // Book_Price
             // 
             this.Book_Price.AutoSize = true;
+            this.Book_Price.BackColor = System.Drawing.Color.Silver;
             this.Book_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Book_Price.Location = new System.Drawing.Point(299, 113);
             this.Book_Price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -98,6 +100,7 @@
             // Book_Name
             // 
             this.Book_Name.AutoSize = true;
+            this.Book_Name.BackColor = System.Drawing.Color.Silver;
             this.Book_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Book_Name.Location = new System.Drawing.Point(299, 85);
             this.Book_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -135,8 +138,9 @@
             // Quantity
             // 
             this.Quantity.AutoSize = true;
+            this.Quantity.BackColor = System.Drawing.Color.Silver;
             this.Quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Quantity.Location = new System.Drawing.Point(130, 277);
+            this.Quantity.Location = new System.Drawing.Point(125, 275);
             this.Quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Quantity.Name = "Quantity";
             this.Quantity.Size = new System.Drawing.Size(65, 15);
@@ -146,6 +150,7 @@
             // 
             // Genre
             // 
+            this.Genre.BackColor = System.Drawing.Color.Silver;
             this.Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.Genre.Location = new System.Drawing.Point(299, 144);
             this.Genre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);

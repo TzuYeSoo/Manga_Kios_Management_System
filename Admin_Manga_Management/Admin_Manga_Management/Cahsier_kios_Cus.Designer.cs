@@ -87,7 +87,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(291, 44);
             this.button1.TabIndex = 16;
-            this.button1.Text = "Self-Service Customer";
+            this.button1.Text = "Stocks";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -127,7 +127,7 @@
             this.tcost.AutoSize = true;
             this.tcost.Location = new System.Drawing.Point(765, 427);
             this.tcost.Name = "tcost";
-            this.tcost.Size = new System.Drawing.Size(101, 20);
+            this.tcost.Size = new System.Drawing.Size(70, 13);
             this.tcost.TabIndex = 19;
             this.tcost.Text = "<Total Price>";
             // 

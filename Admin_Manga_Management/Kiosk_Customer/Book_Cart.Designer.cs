@@ -46,31 +46,34 @@
             // 
             // check_out
             // 
+            this.check_out.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.check_out.Location = new System.Drawing.Point(448, 252);
             this.check_out.Margin = new System.Windows.Forms.Padding(2);
             this.check_out.Name = "check_out";
             this.check_out.Size = new System.Drawing.Size(68, 22);
             this.check_out.TabIndex = 1;
             this.check_out.Text = "Checkout";
-            this.check_out.UseVisualStyleBackColor = true;
+            this.check_out.UseVisualStyleBackColor = false;
             this.check_out.Click += new System.EventHandler(this.check_out_Click);
             // 
             // back_Book
             // 
+            this.back_Book.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.back_Book.Location = new System.Drawing.Point(8, 8);
             this.back_Book.Margin = new System.Windows.Forms.Padding(2);
             this.back_Book.Name = "back_Book";
             this.back_Book.Size = new System.Drawing.Size(50, 20);
             this.back_Book.TabIndex = 2;
             this.back_Book.Text = "Back";
-            this.back_Book.UseVisualStyleBackColor = true;
+            this.back_Book.UseVisualStyleBackColor = false;
             this.back_Book.Click += new System.EventHandler(this.back_Book_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(304, 236);
+            this.label1.Location = new System.Drawing.Point(296, 236);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 15);
@@ -91,7 +94,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(533, 292);
             this.Controls.Add(this.TTPrice);
