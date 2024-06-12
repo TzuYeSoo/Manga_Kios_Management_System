@@ -182,11 +182,20 @@ namespace Admin_Manga_Management
             }
             rdr.Close();
 
-
-            sqlcom = new SqlCommand("UPDATE Book SET Book_Quantity = @bnum WHERE Book_ID = @bid", sqlcon);
-            sqlcom.Parameters.AddWithValue("@bid", id);
-            sqlcom.Parameters.AddWithValue("@bnum", Quans - quan);
-            sqlcom.ExecuteNonQuery();
+            if(quan == Quans)
+            {
+                sqlcom = new SqlCommand("UPDATE Book SET Book_Quantity = 0 AND Book_Status = 0 WHERE Book_ID = @bid", sqlcon);
+                sqlcom.Parameters.AddWithValue("@bid", id);
+                sqlcom.ExecuteNonQuery();
+            }
+            else
+            {
+                sqlcom = new SqlCommand("UPDATE Book SET Book_Quantity = @bnum WHERE Book_ID = @bid", sqlcon);
+                sqlcom.Parameters.AddWithValue("@bid", id);
+                sqlcom.Parameters.AddWithValue("@bnum", Quans - quan);
+                sqlcom.ExecuteNonQuery();
+            }
+           
 
         }
         public void Stockrep(int BID, int quan)

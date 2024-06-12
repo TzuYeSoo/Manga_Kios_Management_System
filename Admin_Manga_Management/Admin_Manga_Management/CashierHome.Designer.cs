@@ -45,7 +45,7 @@
             // 
             this.Search_Box_Book.Location = new System.Drawing.Point(1012, 74);
             this.Search_Box_Book.Name = "Search_Box_Book";
-            this.Search_Box_Book.Size = new System.Drawing.Size(488, 22);
+            this.Search_Box_Book.Size = new System.Drawing.Size(488, 30);
             this.Search_Box_Book.TabIndex = 4;
             // 
             // Walkin
@@ -102,7 +102,7 @@
             this.TotalPrice.AutoSize = true;
             this.TotalPrice.Location = new System.Drawing.Point(412, 446);
             this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.Size = new System.Drawing.Size(0, 16);
+            this.TotalPrice.Size = new System.Drawing.Size(0, 25);
             this.TotalPrice.TabIndex = 0;
             // 
             // logout
@@ -115,6 +115,7 @@
             this.logout.TabIndex = 10;
             this.logout.Text = "Log out";
             this.logout.UseVisualStyleBackColor = true;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // pictureBox1
             // 

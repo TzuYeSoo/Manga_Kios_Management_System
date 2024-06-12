@@ -145,7 +145,6 @@ C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Mana
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Admin_Manga_Management.exe.config
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Admin_Manga_Management.exe
 C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Admin_Manga_Management.pdb
-C:\Users\P102P9PH1\Desktop\Visuals\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\obj\Debug\Admin_Manga_Management.Remove_Book.resources
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Database1.mdf
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Database1_log.ldf
 C:\Users\legas\OneDrive\Desktop\Manga Management\Manga_Kios_Management_System\Admin_Manga_Management\Admin_Manga_Management\bin\Debug\Admin_Manga_Management.exe.config

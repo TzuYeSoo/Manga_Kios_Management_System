@@ -97,8 +97,9 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(291, 44);
             this.button2.TabIndex = 17;
-            this.button2.Text = "Self-Service Customer";
+            this.button2.Text = "Log out";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PayOrder
             // 
@@ -126,7 +127,7 @@
             this.tcost.AutoSize = true;
             this.tcost.Location = new System.Drawing.Point(765, 427);
             this.tcost.Name = "tcost";
-            this.tcost.Size = new System.Drawing.Size(70, 13);
+            this.tcost.Size = new System.Drawing.Size(101, 20);
             this.tcost.TabIndex = 19;
             this.tcost.Text = "<Total Price>";
             // 

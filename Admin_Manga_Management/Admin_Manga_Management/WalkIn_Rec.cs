@@ -22,11 +22,13 @@ namespace Admin_Manga_Management
         static decimal totalcost;
         private void WalkIn_Rec_Load(object sender, EventArgs e)
         {
+            sqlcon.Open();
             for (int i = 0; i < CashierHome.getBIDS.Count; i++)
             {
                 reciept(Convert.ToInt32(CashierHome.getBIDS[i]), Convert.ToInt32(CashierHome.getQuantity[i]));
             }
             Tcost.Text = totalcost.ToString();
+            sqlcon.Close();
 
         }
         public void reciept(int id, int quan)

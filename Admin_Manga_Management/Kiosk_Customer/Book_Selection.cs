@@ -25,7 +25,7 @@ namespace Kiosk_Customer
         static SqlDataReader rdr;
         public void BookShow()
         {
-            sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, BookImage FROM Book", sqlcon);  
+            sqlcom = new SqlCommand("SELECT Book_ID, Book_Name, Book_Price, BookImage FROM Book WHERE Book_Status = 1 AND Book_Quantity > 0", sqlcon);  
             rdr = sqlcom.ExecuteReader();
 
             while (rdr.Read())
@@ -81,7 +81,7 @@ namespace Kiosk_Customer
             Books.Controls.Clear();
 
             sqlcom = new SqlCommand("SELECT Book.Book_ID, Book_Name, Book_Price, BookImage, Bookgenre FROM Book INNER JOIN " +
-                "Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID WHERE Bookgenre = @genre", sqlcon);
+                "Book_GenreName ON Book.Book_ID = Book_GenreName.Book_ID WHERE Bookgenre = @genre AND Book_Status = 1 AND Book_Quantity > 0", sqlcon);
             sqlcom.Parameters.AddWithValue("@genre", cat.CategoryLabel.Text);
             rdr = sqlcom.ExecuteReader();
             while (rdr.Read())

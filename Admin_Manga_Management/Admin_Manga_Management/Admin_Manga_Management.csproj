@@ -163,6 +163,12 @@
     <Compile Include="Cashier_REC.Designer.cs">
       <DependentUpon>Cashier_REC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cashier_StockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cashier_StockView.Designer.cs">
+      <DependentUpon>Cashier_StockView.cs</DependentUpon>
+    </Compile>
     <Compile Include="WalkComplete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cashier_RecievePayment.resx">
       <DependentUpon>Cashier_RecievePayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cashier_StockView.resx">
+      <DependentUpon>Cashier_StockView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cash_Home.resx">
       <DependentUpon>Cash_Home.cs</DependentUpon>

@@ -104,12 +104,33 @@ namespace Kiosk_Customer
 
         private void Remove_Book_Click(object sender, EventArgs e)
         {
+            sqlcon.Open();
             if (MessageBox.Show("Are you sure you want to remove this into your cart?", "Remove From Cart", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
+                decimal minusR = 0;
+
+                sqlcom = new SqlCommand("SELECT Book_Price FROM Book WHERE Book_ID = @BID", sqlcon);
+                sqlcom.Parameters.AddWithValue("@BID", getID);
+                SqlDataReader rdr = sqlcom.ExecuteReader();
+
+                if (rdr.Read())
+                {
+                    minusR = (Convert.ToInt32(Book_Cart.QuantityID[Book_Cart.BookID.IndexOf(getID)]) * Convert.ToDecimal(rdr.GetValue(0)));
+                }
+                rdr.Close();
+
+                if (this.ParentForm is Book_Cart mainForm)
+                {
+                    mainForm.TTPrice.Text = (tcost - minusR).ToString();
+                    Book_Cart.QuantityID.Insert(Book_Cart.BookID.IndexOf(getID), quantity);
+                    // Or directly access the label
+                    // mainForm.MyLabel.Text = "Button in user control clicked!";
+                }
                 Book_Cart.QuantityID.Remove(Book_Cart.BookID.IndexOf(getID));
                 Book_Cart.BookID.Remove(getID);
                 this.Dispose();
             }
+            sqlcon.Close();
            
         }
     }

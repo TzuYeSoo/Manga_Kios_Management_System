@@ -70,6 +70,18 @@ namespace Admin_Manga_Management
             }
             sqlcon.Close();
         }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to log out?", "Log out Account", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                LogIn log = new LogIn();
+                log.Show();
+                this.Close();
+            }
+
+        }
+
         public void book_Click(object sender, EventArgs e)
         {
             Cashier_Books book = (Cashier_Books)sender;

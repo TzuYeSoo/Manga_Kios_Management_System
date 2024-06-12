@@ -34,23 +34,22 @@ namespace Admin_Manga_Management
                 "INNER JOIN OrderBook ON Customers.Customer_ID = OrderBook.Customer_ID WHERE Customer_Status = 1", sqlcon);
 
 
-            
+
             SqlDataReader rdr = sqlcom.ExecuteReader();
             while (rdr.Read())
             {
-                if (!CID.Contains(Convert.ToInt16(rdr.GetValue(0))))
+                if (!CID.Contains(Convert.ToInt32(rdr.GetValue(0))))
                 {
                     CID.Add(Convert.ToInt32(rdr.GetValue(0)));
-
-                    
                 }
                 if (!BID.Contains(Convert.ToInt32(rdr.GetValue(1))))
                 {
                     BID.Add(Convert.ToInt32(rdr.GetValue(1)));
                 }
-                
+
 
             }
+            rdr.Close();
             rdr.Close();
             sqlcon.Close();
         }
@@ -150,6 +149,16 @@ namespace Admin_Manga_Management
             else
             {
                 MessageBox.Show("Please Input Order First");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Do you want to log out?", "Log out Account", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                LogIn log = new LogIn();
+                log.Show();
+                this.Close();
             }
         }
     }
