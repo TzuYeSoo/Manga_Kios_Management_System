@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stocks_reports));
             this.button2 = new System.Windows.Forms.Button();
             this.Settings_Ad = new System.Windows.Forms.Button();
             this.Trans_OP = new System.Windows.Forms.Button();
@@ -74,7 +75,7 @@
             this.Settings_Ad.Name = "Settings_Ad";
             this.Settings_Ad.Size = new System.Drawing.Size(194, 47);
             this.Settings_Ad.TabIndex = 18;
-            this.Settings_Ad.Text = "Settings";
+            this.Settings_Ad.Text = "Log Out";
             this.Settings_Ad.UseVisualStyleBackColor = false;
             this.Settings_Ad.Click += new System.EventHandler(this.Settings_Ad_Click);
             // 
@@ -192,9 +193,11 @@
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(38, 365);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 19;
             this.pictureBox2.TabStop = false;
             // 

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Admin));
             this.Dashboard = new System.Windows.Forms.Button();
             this.Settings = new System.Windows.Forms.Button();
             this.Staffs = new System.Windows.Forms.Button();
@@ -64,14 +65,15 @@
             // 
             // Settings
             // 
-            this.Settings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(84)))), ((int)(((byte)(84)))));
+            this.Settings.BackColor = System.Drawing.Color.Silver;
             this.Settings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Settings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.Settings.ForeColor = System.Drawing.Color.White;
             this.Settings.Location = new System.Drawing.Point(0, 360);
             this.Settings.Name = "Settings";
             this.Settings.Size = new System.Drawing.Size(194, 47);
             this.Settings.TabIndex = 2;
-            this.Settings.Text = "Settings";
+            this.Settings.Text = "Log Out";
             this.Settings.UseVisualStyleBackColor = false;
             // 
             // Staffs
@@ -166,10 +168,11 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 369);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(40, 369);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
             // 

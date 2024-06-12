@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Book_Inv));
             this.Dash_Book = new System.Windows.Forms.Button();
             this.Settings_Book = new System.Windows.Forms.Button();
             this.Trans_book = new System.Windows.Forms.Button();
@@ -81,7 +82,7 @@
             this.Settings_Book.Name = "Settings_Book";
             this.Settings_Book.Size = new System.Drawing.Size(194, 47);
             this.Settings_Book.TabIndex = 2;
-            this.Settings_Book.Text = "Settings";
+            this.Settings_Book.Text = "Log Out";
             this.Settings_Book.UseVisualStyleBackColor = false;
             // 
             // Trans_book
@@ -148,9 +149,9 @@
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.pictureBox5.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(37, 365);
+            this.pictureBox5.Location = new System.Drawing.Point(40, 366);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(30, 30);
             this.pictureBox5.TabIndex = 9;

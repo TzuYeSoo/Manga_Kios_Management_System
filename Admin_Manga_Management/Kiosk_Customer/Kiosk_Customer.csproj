@@ -102,12 +102,6 @@
     <Compile Include="BookChoice.Designer.cs">
       <DependentUpon>BookChoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="SelectBook.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="SelectBook.Designer.cs">
-      <DependentUpon>SelectBook.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cart_Control.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -156,9 +150,6 @@
     </Compile>
     <EmbeddedResource Include="BookChoice.resx">
       <DependentUpon>BookChoice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SelectBook.resx">
-      <DependentUpon>SelectBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cart_Control.resx">
       <DependentUpon>Cart_Control.cs</DependentUpon>

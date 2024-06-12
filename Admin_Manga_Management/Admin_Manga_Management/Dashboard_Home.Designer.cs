@@ -131,7 +131,7 @@
             this.Settings_Ad.Name = "Settings_Ad";
             this.Settings_Ad.Size = new System.Drawing.Size(194, 47);
             this.Settings_Ad.TabIndex = 5;
-            this.Settings_Ad.Text = "Settings";
+            this.Settings_Ad.Text = "Log Out";
             this.Settings_Ad.UseVisualStyleBackColor = false;
             this.Settings_Ad.Click += new System.EventHandler(this.Settings_Ad_Click);
             // 
@@ -214,7 +214,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(40, 365);
             this.pictureBox2.Name = "pictureBox2";

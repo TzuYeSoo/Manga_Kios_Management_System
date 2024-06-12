@@ -139,9 +139,10 @@
             // CashierHome
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSize = true;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(61)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1444, 568);
+            this.ClientSize = new System.Drawing.Size(1370, 568);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Walkin);
             this.Controls.Add(this.logout);

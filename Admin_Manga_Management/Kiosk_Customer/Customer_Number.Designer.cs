@@ -112,7 +112,7 @@
             // 
             this.ord_num.AutoSize = true;
             this.ord_num.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.ord_num.Location = new System.Drawing.Point(139, 279);
+            this.ord_num.Location = new System.Drawing.Point(160, 280);
             this.ord_num.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ord_num.Name = "ord_num";
             this.ord_num.Size = new System.Drawing.Size(100, 15);

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StaffsHome));
             this.Dash_Staffs = new System.Windows.Forms.Button();
             this.Settings_Staffs = new System.Windows.Forms.Button();
             this.Trans_Staffs = new System.Windows.Forms.Button();
@@ -91,7 +92,7 @@
             this.Settings_Staffs.Name = "Settings_Staffs";
             this.Settings_Staffs.Size = new System.Drawing.Size(194, 47);
             this.Settings_Staffs.TabIndex = 2;
-            this.Settings_Staffs.Text = "Settings";
+            this.Settings_Staffs.Text = "Log Out";
             this.Settings_Staffs.UseVisualStyleBackColor = false;
             this.Settings_Staffs.Click += new System.EventHandler(this.Settings_Staffs_Click);
             // 
@@ -268,9 +269,9 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
-            this.pictureBox2.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(45, 365);
+            this.pictureBox2.Location = new System.Drawing.Point(41, 366);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 30);
             this.pictureBox2.TabIndex = 6;

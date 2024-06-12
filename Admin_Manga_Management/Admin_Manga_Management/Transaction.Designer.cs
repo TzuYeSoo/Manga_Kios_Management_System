@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Transaction));
             this.customersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet1 = new Admin_Manga_Management.Database1DataSet1();
             this.Search_IDTrans = new System.Windows.Forms.TextBox();
@@ -124,7 +125,7 @@
             this.Settings_trans.Name = "Settings_trans";
             this.Settings_trans.Size = new System.Drawing.Size(194, 47);
             this.Settings_trans.TabIndex = 11;
-            this.Settings_trans.Text = "Settings";
+            this.Settings_trans.Text = "Log Out";
             this.Settings_trans.UseVisualStyleBackColor = false;
             this.Settings_trans.Click += new System.EventHandler(this.Settings_trans_Click);
             // 
@@ -173,9 +174,11 @@
             this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(86)))), ((int)(((byte)(86)))));
             this.pictureBox7.BackgroundImage = global::Admin_Manga_Management.Properties.Resources.settings_removebg_preview;
             this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(45, 365);
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(43, 367);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 18;
             this.pictureBox7.TabStop = false;
             // 
